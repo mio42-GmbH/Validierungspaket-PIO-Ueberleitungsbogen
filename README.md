@@ -2,7 +2,7 @@
 
 Disclaimer: This service is intended to help with the validation process. However, please note there is no claim to completeness, correctness or reliability.
 
-Introduction: This archive is supposed to be a guidance for developers in the implementation process of the medicinal information objects (MIOs). It contains the "Basis-Profile" (FHIR-profiles defined for reuse in various cases, e.g. "Patient" for the person who is being treated), the FHIR-resources used for the specific MIO, the validator and practical examples. Altogether, this package serves as an exemplary validation environment. The necessary dependencies are provided and can be integrated directly.
+Introduction: This archive is supposed to be a guidance for developers in the implementation process of the medicinal information objects (MIOs). It contains the "Basis-Profile" (FHIR-profiles defined for reuse in various cases, e.g. "Patient" for the person who is being treated), the FHIR-resources used for the specific MIO and practical examples. Altogether, this package serves as an exemplary validation environment. The necessary dependencies are provided and can be integrated directly.
 
 Alternatively, the dependencies can also be found here:
 
@@ -41,7 +41,7 @@ Der Service zur Validierung erhebt keinen Anspruch auf Vollständigkeit, Korrekt
 
 Einführung:
 Dieses Archiv soll als Orientierungshilfe für Entwickler:innen bei der Umsetzung der MIOs dienen. 
-Es enthält die verwendeten Basis-Profile, die Ressourcen des MIO, den Validator und Praxisbeispiele. Damit stellt diese Sammlung eine beispielhafte Validierungsumgebung dar. Die notwendigen Abhängigkeiten sind bereitgestellt und koennen direkt eingebunden werden.
+Es enthält die verwendeten Basis-Profile, die Ressourcen des MIO und Praxisbeispiele. Damit stellt diese Sammlung eine beispielhafte Validierungsumgebung dar. Die notwendigen Abhängigkeiten sind bereitgestellt und können direkt eingebunden werden.
 
 
 Die Dependencies finden Sie alternativ unter folgenden links:
