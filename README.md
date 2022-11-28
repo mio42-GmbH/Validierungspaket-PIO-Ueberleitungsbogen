@@ -1,4 +1,4 @@
-# Validationpackage MIO Überleitungsbogen Version 1.0.0
+# Validationpackage PIO Überleitungsbogen Version 1.0.0
 
 Disclaimer: This service is intended to help with the validation process. However, please note there is no claim to completeness, correctness or reliability.
 
@@ -34,7 +34,7 @@ java -jar validator_cli.jar .\Example\REAL_EXAMPLE_2_KBV_PR_MIO_ULB_Bundle.xml -
 Please note that a current version of Java is required (we would recommend the most recent one).
 
 
-# Validierungspaket MIO Überleitungsbogen Version 1.0.0
+# Validierungspaket PIO Überleitungsbogen Version 1.0.0
 
 Disclaimer: 
 Der Service zur Validierung erhebt keinen Anspruch auf Vollständigkeit, Korrektheit sowie Verbindlichkeit.
