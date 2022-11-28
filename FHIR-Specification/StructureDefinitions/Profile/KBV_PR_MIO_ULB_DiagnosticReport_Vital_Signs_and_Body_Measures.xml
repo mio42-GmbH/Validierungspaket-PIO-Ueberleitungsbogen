@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+	<url value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_DiagnosticReport_Vital_Signs_and_Body_Measures"/>
+	<version value="1.0.0"/>
+	<name value="KBV_PR_MIO_ULB_DiagnosticReport_Vital_Signs_and_Body_Measures"/>
+	<title value="KBV_PR_MIO_ULB_DiagnosticReport_Vital_Signs_and_Body_Measures"/>
+	<status value="draft"/>
+	<publisher value="Kassenärztliche Bundesvereinigung (KBV)"/>
+	<description value="Dieses Profil bündelt alle Vitalzeichen und Körpermaße."/>
+	<copyright value="Im folgenden Profil können Codes aus den Code-Systemen SNOMED CT®, LOINC, Ucum, ATC, ICD-10-GM, ICD-10-WHO, OPS, ALpha-ID/Alpha-ID-SE und ICF enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED CT® Clinical Terms® (SNOMED CT® CT®) which is used by permission of SNOMED CT® International. All rights reserved. SNOMED CT® CT®, was originally created by The College of American Pathologists. SNOMED CT® and SNOMED CT® CT are registered trademarks of SNOMED CT® International. Implementers of these artefacts must have the appropriate SNOMED CT® CT Affiliate license. This material contains content from LOINC (http://LOINC.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://LOINC.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at ​http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED 'AS IS.' ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. Dieses Material enthält Inhalte aus ATC. Die Erstellung erfolgte unter Verwendung der Datenträger der amtlichen Fassung der ATC-Klassifikation mit DDD des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM). Dieses Material enthält Inhalte aus ICD-10-GM, ICD-10-WHO, OPS Alpha-ID ans Alpha-ID-SE. Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM). Dieses Material enthält Inhalte aus ICF. Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Deutschen Instituts für Medizinische Dokumentation und Information (DIMDI). ICF-Kodes, -Begriffe und -Texte © Weltgesundheitsorganisation, übersetzt und herausgegeben durch das Deutsche Institut für Medizinische Dokumentation und Information von der International classification of functioning, disability and health – ICF, herausgegeben durch die Weltgesundheitsorganisation."/>
+	<fhirVersion value="4.0.1"/>
+	<mapping>
+		<identity value="workflow"/>
+		<uri value="http://hl7.org/fhir/workflow"/>
+		<name value="Workflow Pattern"/>
+	</mapping>
+	<mapping>
+		<identity value="v2"/>
+		<uri value="http://hl7.org/v2"/>
+		<name value="HL7 v2 Mapping"/>
+	</mapping>
+	<mapping>
+		<identity value="rim"/>
+		<uri value="http://hl7.org/v3"/>
+		<name value="RIM Mapping"/>
+	</mapping>
+	<mapping>
+		<identity value="w5"/>
+		<uri value="http://hl7.org/fhir/fivews"/>
+		<name value="FiveWs Pattern Mapping"/>
+	</mapping>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="DiagnosticReport"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="DiagnosticReport">
+			<path value="DiagnosticReport"/>
+			<definition value="Dieses Profil bündelt alle Vitalzeichen und Körpermaße."/>
+		</element>
+		<element id="DiagnosticReport.meta">
+			<path value="DiagnosticReport.meta"/>
+			<min value="1"/>
+		</element>
+		<element id="DiagnosticReport.meta.versionId">
+			<path value="DiagnosticReport.meta.versionId"/>
+			<max value="0"/>
+		</element>
+		<element id="DiagnosticReport.meta.lastUpdated">
+			<path value="DiagnosticReport.meta.lastUpdated"/>
+			<max value="0"/>
+		</element>
+		<element id="DiagnosticReport.meta.source">
+			<path value="DiagnosticReport.meta.source"/>
+			<max value="0"/>
+		</element>
+		<element id="DiagnosticReport.meta.profile">
+			<path value="DiagnosticReport.meta.profile"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_DiagnosticReport_Vital_Signs_and_Body_Measures|1.0.0"/>
+		</element>
+		<element id="DiagnosticReport.meta.security">
+			<path value="DiagnosticReport.meta.security"/>
+			<max value="0"/>
+		</element>
+		<element id="DiagnosticReport.meta.tag">
+			<path value="DiagnosticReport.meta.tag"/>
+			<max value="0"/>
+		</element>
+		<element id="DiagnosticReport.implicitRules">
+			<path value="DiagnosticReport.implicitRules"/>
+			<max value="0"/>
+		</element>
+		<element id="DiagnosticReport.language">
+			<path value="DiagnosticReport.language"/>
+			<max value="0"/>
+		</element>
+		<element id="DiagnosticReport.text">
+			<path value="DiagnosticReport.text"/>
+			<definition value="In diesem Element können die in der Instanz enthaltenen Informationen in einer menschenlesbaren Form zusammengefasst werden. Dabei ist zu beachten, dass keine Informationen aufgenommen werden dürfen, die nicht in strukturierter Form an anderer Stelle in der Instanz enthalten sind."/>
+		</element>
+		<element id="DiagnosticReport.text.status">
+			<path value="DiagnosticReport.text.status"/>
+			<patternCode value="extensions"/>
+		</element>
+		<element id="DiagnosticReport.contained">
+			<path value="DiagnosticReport.contained"/>
+			<max value="0"/>
+		</element>
+		<element id="DiagnosticReport.identifier">
+			<path value="DiagnosticReport.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="DiagnosticReport.basedOn">
+			<path value="DiagnosticReport.basedOn"/>
+			<max value="0"/>
+		</element>
+		<element id="DiagnosticReport.status">
+			<path value="DiagnosticReport.status"/>
+			<patternCode value="final"/>
+		</element>
+		<element id="DiagnosticReport.category">
+			<path value="DiagnosticReport.category"/>
+			<max value="0"/>
+		</element>
+		<element id="DiagnosticReport.code">
+			<path value="DiagnosticReport.code"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="DiagnosticReport.code.coding">
+			<path value="DiagnosticReport.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="1184593002"/>
+				<display value="Vital sign document section (record artifact)"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="DiagnosticReport.code.coding.system">
+			<path value="DiagnosticReport.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="DiagnosticReport.code.coding.version">
+			<path value="DiagnosticReport.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="DiagnosticReport.code.coding.code">
+			<path value="DiagnosticReport.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="DiagnosticReport.code.coding.display">
+			<path value="DiagnosticReport.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="DiagnosticReport.code.coding.userSelected">
+			<path value="DiagnosticReport.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="DiagnosticReport.code.text">
+			<path value="DiagnosticReport.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="DiagnosticReport.subject">
+			<path value="DiagnosticReport.subject"/>
+			<min value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="DiagnosticReport.subject.reference">
+			<path value="DiagnosticReport.subject.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="DiagnosticReport.subject.type">
+			<path value="DiagnosticReport.subject.type"/>
+			<max value="0"/>
+		</element>
+		<element id="DiagnosticReport.subject.identifier">
+			<path value="DiagnosticReport.subject.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="DiagnosticReport.subject.display">
+			<path value="DiagnosticReport.subject.display"/>
+			<max value="0"/>
+		</element>
+		<element id="DiagnosticReport.encounter">
+			<path value="DiagnosticReport.encounter"/>
+			<max value="0"/>
+		</element>
+		<element id="DiagnosticReport.effective[x]">
+			<path value="DiagnosticReport.effective[x]"/>
+			<slicing>
+				<discriminator>
+					<type value="type"/>
+					<path value="$this"/>
+				</discriminator>
+				<rules value="closed"/>
+			</slicing>
+			<type>
+				<code value="dateTime"/>
+			</type>
+		</element>
+		<element id="DiagnosticReport.effective[x]:effectiveDateTime">
+			<path value="DiagnosticReport.effective[x]"/>
+			<sliceName value="effectiveDateTime"/>
+			<type>
+				<code value="dateTime"/>
+			</type>
+		</element>
+		<element id="DiagnosticReport.issued">
+			<path value="DiagnosticReport.issued"/>
+			<max value="0"/>
+		</element>
+		<element id="DiagnosticReport.performer">
+			<path value="DiagnosticReport.performer"/>
+			<max value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Practitioner|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Organization|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_PractitionerRole|1.0.0"/>
+			</type>
+		</element>
+		<element id="DiagnosticReport.performer.reference">
+			<path value="DiagnosticReport.performer.reference"/>
+			<min value="1"/>
+		</element>
+		<element id="DiagnosticReport.performer.type">
+			<path value="DiagnosticReport.performer.type"/>
+			<max value="0"/>
+		</element>
+		<element id="DiagnosticReport.performer.identifier">
+			<path value="DiagnosticReport.performer.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="DiagnosticReport.performer.display">
+			<path value="DiagnosticReport.performer.display"/>
+			<max value="0"/>
+		</element>
+		<element id="DiagnosticReport.resultsInterpreter">
+			<path value="DiagnosticReport.resultsInterpreter"/>
+			<max value="0"/>
+		</element>
+		<element id="DiagnosticReport.specimen">
+			<path value="DiagnosticReport.specimen"/>
+			<max value="0"/>
+		</element>
+		<element id="DiagnosticReport.result">
+			<path value="DiagnosticReport.result"/>
+			<min value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Blood_Pressure|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Body_Weight|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Body_Height|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Heart_Rate|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Peripheral_Oxygen_Saturation|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Respiratory_Rate|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Body_Temperature|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Glucose_Concentration|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Assessment_Free|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="DiagnosticReport.result.reference">
+			<path value="DiagnosticReport.result.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="DiagnosticReport.result.type">
+			<path value="DiagnosticReport.result.type"/>
+			<max value="0"/>
+		</element>
+		<element id="DiagnosticReport.result.identifier">
+			<path value="DiagnosticReport.result.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="DiagnosticReport.result.display">
+			<path value="DiagnosticReport.result.display"/>
+			<max value="0"/>
+		</element>
+		<element id="DiagnosticReport.imagingStudy">
+			<path value="DiagnosticReport.imagingStudy"/>
+			<max value="0"/>
+		</element>
+		<element id="DiagnosticReport.media">
+			<path value="DiagnosticReport.media"/>
+			<max value="0"/>
+		</element>
+		<element id="DiagnosticReport.conclusion">
+			<path value="DiagnosticReport.conclusion"/>
+			<max value="0"/>
+		</element>
+		<element id="DiagnosticReport.conclusionCode">
+			<path value="DiagnosticReport.conclusionCode"/>
+			<max value="0"/>
+		</element>
+		<element id="DiagnosticReport.presentedForm">
+			<path value="DiagnosticReport.presentedForm"/>
+			<max value="0"/>
+		</element>
+	</differential>
+</StructureDefinition>

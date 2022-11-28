@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_ClinicalImpression_Individual_Functions_Barthel" />
+  <version value="1.0.0" />
+  <name value="KBV_PR_MIO_ULB_ClinicalImpression_Individual_Functions_Barthel" />
+  <title value="KBV_PR_MIO_ULB_ClinicalImpression_Individual_Functions_Barthel" />
+  <status value="draft" />
+  <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
+  <description value="Dieses Profil bündelt die einzelnen Elemente der Funktionsbeurteilung nach Barthel, für den Fall, dass der Barthel-Index nicht vollständig sondern nur ausgewählte Funktionen beurteilt werden." />
+  <copyright value="Im folgenden Profil können Codes aus den Code-Systemen SNOMED CT®, LOINC, Ucum, ATC, ICD-10-GM, ICD-10-WHO, OPS, Alpha-ID/Alpha-ID-SE und ICF enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED CT® Clinical Terms® (SNOMED CT® CT®) which is used by permission of SNOMED CT® International. All rights reserved. SNOMED CT® CT®, was originally created by The College of American Pathologists. SNOMED CT® and SNOMED CT® CT are registered trademarks of SNOMED CT® International. Implementers of these artefacts must have the appropriate SNOMED CT® CT Affiliate license. This material contains content from LOINC (http://LOINC.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://LOINC.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at ​http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED 'AS IS.' ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. Dieses Material enthält Inhalte aus ATC. Die Erstellung erfolgte unter Verwendung der Datenträger der amtlichen Fassung der ATC-Klassifikation mit DDD des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM). Dieses Material enthält Inhalte aus ICD-10-GM, ICD-10-WHO, OPS Alpha-ID ans Alpha-ID-SE. Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM). Dieses Material enthält Inhalte aus ICF. Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Deutschen Instituts für Medizinische Dokumentation und Information (DIMDI). ICF-Kodes, -Begriffe und -Texte © Weltgesundheitsorganisation, übersetzt und herausgegeben durch das Deutsche Institut für Medizinische Dokumentation und Information von der International classification of functioning, disability and health – ICF, herausgegeben durch die Weltgesundheitsorganisation." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="ClinicalImpression" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ClinicalImpression" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="ClinicalImpression">
+      <path value="ClinicalImpression" />
+      <definition value="Dieses Profil bündelt die einzelnen Elemente der Funktionsbeurteilung nach Barthel, für den Fall, dass der Barthel-Index nicht vollständig sondern nur ausgewählte Funktionen beurteilt werden." />
+    </element>
+    <element id="ClinicalImpression.meta">
+      <path value="ClinicalImpression.meta" />
+      <min value="1" />
+    </element>
+    <element id="ClinicalImpression.meta.versionId">
+      <path value="ClinicalImpression.meta.versionId" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.meta.lastUpdated">
+      <path value="ClinicalImpression.meta.lastUpdated" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.meta.source">
+      <path value="ClinicalImpression.meta.source" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.meta.profile">
+      <path value="ClinicalImpression.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <patternCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_ClinicalImpression_Individual_Functions_Barthel|1.0.0" />
+    </element>
+    <element id="ClinicalImpression.meta.security">
+      <path value="ClinicalImpression.meta.security" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.meta.tag">
+      <path value="ClinicalImpression.meta.tag" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.implicitRules">
+      <path value="ClinicalImpression.implicitRules" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.language">
+      <path value="ClinicalImpression.language" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.text">
+      <path value="ClinicalImpression.text" />
+    </element>
+    <element id="ClinicalImpression.text.status">
+      <path value="ClinicalImpression.text.status" />
+      <patternCode value="extensions" />
+    </element>
+    <element id="ClinicalImpression.contained">
+      <path value="ClinicalImpression.contained" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.identifier">
+      <path value="ClinicalImpression.identifier" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.status">
+      <path value="ClinicalImpression.status" />
+      <patternCode value="completed" />
+    </element>
+    <element id="ClinicalImpression.statusReason">
+      <path value="ClinicalImpression.statusReason" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.code">
+      <path value="ClinicalImpression.code" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.description">
+      <path value="ClinicalImpression.description" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.subject">
+      <path value="ClinicalImpression.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient|1.0.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalImpression.subject.reference">
+      <path value="ClinicalImpression.subject.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalImpression.subject.type">
+      <path value="ClinicalImpression.subject.type" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.subject.identifier">
+      <path value="ClinicalImpression.subject.identifier" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.subject.display">
+      <path value="ClinicalImpression.subject.display" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.encounter">
+      <path value="ClinicalImpression.encounter" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.effective[x]">
+      <path value="ClinicalImpression.effective[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="ClinicalImpression.effective[x]:effectiveDateTime">
+      <path value="ClinicalImpression.effective[x]" />
+      <sliceName value="effectiveDateTime" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="ClinicalImpression.date">
+      <path value="ClinicalImpression.date" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.assessor">
+      <path value="ClinicalImpression.assessor" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Practitioner|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_PractitionerRole|1.0.0" />
+      </type>
+    </element>
+    <element id="ClinicalImpression.assessor.reference">
+      <path value="ClinicalImpression.assessor.reference" />
+      <min value="1" />
+    </element>
+    <element id="ClinicalImpression.assessor.type">
+      <path value="ClinicalImpression.assessor.type" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.assessor.identifier">
+      <path value="ClinicalImpression.assessor.identifier" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.assessor.display">
+      <path value="ClinicalImpression.assessor.display" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.previous">
+      <path value="ClinicalImpression.previous" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.problem">
+      <path value="ClinicalImpression.problem" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.investigation">
+      <path value="ClinicalImpression.investigation" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalImpression.investigation.code">
+      <path value="ClinicalImpression.investigation.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalImpression.investigation.code.coding">
+      <path value="ClinicalImpression.investigation.code.coding" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.investigation.code.text">
+      <path value="ClinicalImpression.investigation.code.text" />
+      <min value="1" />
+      <patternString value="Einzelne Funktionen nach Barthel" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalImpression.investigation.item">
+      <path value="ClinicalImpression.investigation.item" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Mobility|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Transfer|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Toileting|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Bladder_Control|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Bowel_Control|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Climbing_Stairs|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Dressing|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Feeding|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Bathing|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Grooming|1.0.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalImpression.investigation.item.reference">
+      <path value="ClinicalImpression.investigation.item.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalImpression.investigation.item.type">
+      <path value="ClinicalImpression.investigation.item.type" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.investigation.item.identifier">
+      <path value="ClinicalImpression.investigation.item.identifier" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.investigation.item.display">
+      <path value="ClinicalImpression.investigation.item.display" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.protocol">
+      <path value="ClinicalImpression.protocol" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.summary">
+      <path value="ClinicalImpression.summary" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.finding">
+      <path value="ClinicalImpression.finding" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.prognosisCodeableConcept">
+      <path value="ClinicalImpression.prognosisCodeableConcept" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.prognosisReference">
+      <path value="ClinicalImpression.prognosisReference" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.supportingInfo">
+      <path value="ClinicalImpression.supportingInfo" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.note">
+      <path value="ClinicalImpression.note" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

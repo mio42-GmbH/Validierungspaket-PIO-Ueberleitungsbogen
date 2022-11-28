@@ -1,0 +1,28 @@
+<NamingSystem xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile value="http://fhir.de/StructureDefinition/namingsystem-de-basis"/>
+	</meta>
+	<name value="KBV_NS_MIO_ULB_Hilfsmittelverzeichnis"/>
+	<status value="draft"/>
+	<kind value="codesystem"/>
+	<date value="2022-08-01"/>
+	<publisher value="Kassenärztliche Bundesvereinigung (KBV)"/>
+	<contact>
+		<telecom>
+			<system value="url"/>
+			<value value="http://www.kbv.de"/>
+		</telecom>
+	</contact>
+	<type>
+		<coding>
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Identifier_Types"/>
+			<code value="GKV"/>
+		</coding>
+	</type>
+	<description value="Das NamingSystem dient der Abbildung des GKV-Hilfsmittelkatalog."/>
+	<uniqueId>
+		<type value="uri"/>
+		<value value="https://fhir.kbv.de/NamingSystem/KBV_NS_MIO_ULB_Hilfsmittelverzeichnis"/>
+		<preferred value="true"/>
+	</uniqueId>
+</NamingSystem>

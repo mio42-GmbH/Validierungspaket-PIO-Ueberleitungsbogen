@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Has_Member" />
+  <version value="1.0.0" />
+  <name value="KBV_EX_MIO_ULB_Reference_Has_Member" />
+  <title value="KBV_EX_MIO_ULB_Reference_Has_Member" />
+  <status value="draft" />
+  <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
+  <description value="Diese Extension dient der Referenzierung zu näher beschreibenden Profilen des vorliegenden Sachverhalts und wird genutzt, wenn in einer Observation eine Referenzierung über das Element &quot;hasMember&quot; nicht möglich ist." />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Observation" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <definition value="Diese Extension dient der Referenzierung zu näher beschreibenden Profilen des vorliegenden Sachverhalts und wird genutzt, wenn in einer Observation eine Referenzierung über das Element &quot;hasMember&quot; nicht möglich ist." />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Has_Member" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+      </type>
+    </element>
+    <element id="Extension.value[x]:valueReference">
+      <path value="Extension.value[x]" />
+      <sliceName value="valueReference" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+      </type>
+    </element>
+    <element id="Extension.value[x]:valueReference.reference">
+      <path value="Extension.value[x].reference" />
+      <min value="1" />
+    </element>
+    <element id="Extension.value[x]:valueReference.type">
+      <path value="Extension.value[x].type" />
+      <max value="0" />
+    </element>
+    <element id="Extension.value[x]:valueReference.identifier">
+      <path value="Extension.value[x].identifier" />
+      <max value="0" />
+    </element>
+    <element id="Extension.value[x]:valueReference.display">
+      <path value="Extension.value[x].display" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

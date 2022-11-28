@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Identifier_PKV_KVID_10" />
+  <version value="1.0.0" />
+  <name value="KBV_PR_MIO_ULB_Identifier_PKV_KVID_10" />
+  <title value="KBV_PR_MIO_ULB_Identifier_PKV_KVID_10" />
+  <status value="draft" />
+  <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
+  <description value="Identifier-Profil für den unveränderlichen 10-stelligen Teil der Versicherten ID der privaten Krankenversicherungen." />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <type value="Identifier" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Identifier.type">
+      <path value="Identifier.type" />
+      <min value="1" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://fhir.de/CodeSystem/identifier-type-de-basis" />
+          <code value="PKV" />
+        </coding>
+      </patternCodeableConcept>
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="http://fhir.de/ValueSet/identifier-type-de-basis" />
+      </binding>
+    </element>
+    <element id="Identifier.type.coding">
+      <path value="Identifier.type.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Identifier.type.coding.system">
+      <path value="Identifier.type.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Identifier.type.coding.code">
+      <path value="Identifier.type.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Identifier.type.coding.display">
+      <path value="Identifier.type.coding.display" />
+      <min value="1" />
+      <patternString value="Private Krankenversicherung" />
+    </element>
+    <element id="Identifier.type.coding.userSelected">
+      <path value="Identifier.type.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Identifier.type.text">
+      <path value="Identifier.type.text" />
+      <max value="0" />
+    </element>
+    <element id="Identifier.system">
+      <path value="Identifier.system" />
+      <min value="1" />
+      <fixedUri value="http://fhir.de/sid/pkv/kvid-10" />
+    </element>
+    <element id="Identifier.value">
+      <path value="Identifier.value" />
+      <min value="1" />
+      <constraint>
+        <key value="pkvid-1" />
+        <severity value="warning" />
+        <human value="Der unveränderliche Teil der PKVID muss 10-stellig sein und mit einem Großbuchstaben anfangen" />
+        <expression value="matches('^[A-Z][0-9]{9}$')" />
+        <source value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Identifier_PKV_KVID_10" />
+      </constraint>
+    </element>
+    <element id="Identifier.period">
+      <path value="Identifier.period" />
+      <max value="0" />
+    </element>
+    <element id="Identifier.assigner">
+      <path value="Identifier.assigner" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

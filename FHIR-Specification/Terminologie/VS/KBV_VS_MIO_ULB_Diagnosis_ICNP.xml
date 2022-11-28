@@ -1,0 +1,3144 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="KBV-VS-MIO-ULB-Diagnosis-ICNP"/>
+    <url value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Diagnosis_ICNP"/>
+    <version value="1.0.0"/>
+    <name value="KBV_VS_MIO_ULB_Diagnosis_ICNP"/>
+    <title value="Pflegeproblem/Pflegediagnose ICNP"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="Kassenärztliche Bundesvereinigung (KBV)"/>
+    <contact>
+        <telecom>
+            <system value="url"/>
+            <value value="https://mio.kbv.de"/>
+        </telecom>
+    </contact>
+    <description value="Dieses Valueset enthält die Codes zur Beschreibung von Pflegeproblem/Pflegediagnose ICNP."/>
+    <immutable value="false"/>
+    <copyright value="Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED &quot;AS IS.&quot; ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE."/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <filter>
+                <property value="concept"/>
+                <op value="in"/>
+                <value value="711112009"/>
+            </filter>
+        </include>
+    </compose>
+    <expansion>
+        <identifier value="d55b5c52-619a-11ed-95f5-005056ad7401"/>
+        <timestamp value="2022-11-11T09:28:36+01:00"/>
+        <total value="518"/>
+        <offset value="0"/>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="1023001"/>
+            <display value="Apnea (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="102834005"/>
+            <display value="Normal micturition (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="102912007"/>
+            <display value="Fear of death (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="102946008"/>
+            <display value="Abnormal sexual behavior (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="105531004"/>
+            <display value="Housing unsatisfactory (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="105593004"/>
+            <display value="Electrolyte imbalance (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="105981003"/>
+            <display value="Disorder of cardiac function (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="110477003"/>
+            <display value="Unrealistic expectation from treatment (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="110483000"/>
+            <display value="Tobacco user (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="12479006"/>
+            <display value="Compulsive behavior (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="125666000"/>
+            <display value="Burn (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="126946000"/>
+            <display value="Excessive cerumen in ear canal (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129588001"/>
+            <display value="Adult failure to thrive syndrome (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129618003"/>
+            <display value="Autonomic dysreflexia (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129688005"/>
+            <display value="Disturbed energy field (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129689002"/>
+            <display value="At risk for nutritional problem (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129691005"/>
+            <display value="At risk for constipation (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129692003"/>
+            <display value="At risk for urge incontinence (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129694002"/>
+            <display value="At risk for disuse syndrome (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129696000"/>
+            <display value="At risk for latex allergy response (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129698004"/>
+            <display value="At risk for loneliness (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129699007"/>
+            <display value="At risk for impaired parent / infant / child attachment (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129700008"/>
+            <display value="At risk for caregiver role strain (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129701007"/>
+            <display value="At risk for spiritual distress (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129702000"/>
+            <display value="At risk for peripheral neurovascular dysfunction (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129703005"/>
+            <display value="At risk for perioperative positioning injury (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129705003"/>
+            <display value="At risk for disproportionate growth (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129706002"/>
+            <display value="At risk for disorganized infant behavior (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129708001"/>
+            <display value="At risk for self-mutilation (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129710004"/>
+            <display value="At risk for post-trauma syndrome (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129711000"/>
+            <display value="At risk for relocation stress syndrome (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129713002"/>
+            <display value="At risk for powerlessness (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129821003"/>
+            <display value="Delayed surgical recovery (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129827004"/>
+            <display value="Ineffective therapeutic regimen management (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129828009"/>
+            <display value="Ineffective family therapeutic regimen management (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129829001"/>
+            <display value="Ineffective community therapeutic regimen management (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129831005"/>
+            <display value="Noncompliance with diagnostic testing (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129832003"/>
+            <display value="Noncompliance with dietary regimen (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129833008"/>
+            <display value="Noncompliance with fluid volume management (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129834002"/>
+            <display value="Noncompliance with medication regimen (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129835001"/>
+            <display value="Noncompliance with safety precautions (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129836000"/>
+            <display value="Noncompliance with therapeutic regimen (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129837009"/>
+            <display value="Ineffective protection (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129838004"/>
+            <display value="At risk for situational low self-esteem (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129839007"/>
+            <display value="At risk for falls (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129845004"/>
+            <display value="At risk for imbalanced nutrition, less than body requirements (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129846003"/>
+            <display value="Polypharmacy (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129847007"/>
+            <display value="Functional urinary incontinence (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129849005"/>
+            <display value="At risk for excess fluid volume (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129851009"/>
+            <display value="Alteration in bowel elimination (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129853007"/>
+            <display value="Total urinary incontinence (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129857008"/>
+            <display value="Impaired wheelchair mobility (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129859006"/>
+            <display value="Impaired bed mobility (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129860001"/>
+            <display value="Kinesthetic alteration (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129862009"/>
+            <display value="Deficient knowledge of diagnostic testing (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129863004"/>
+            <display value="Deficient knowledge of dietary regimen (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129864005"/>
+            <display value="Deficient knowledge of disease process (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129865006"/>
+            <display value="Deficient knowledge of fluid volume management (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129866007"/>
+            <display value="Deficient knowledge of medication regimen (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129867003"/>
+            <display value="Deficient knowledge of safety precautions (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129868008"/>
+            <display value="Deficient knowledge of therapeutic regimen (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129869000"/>
+            <display value="Death anxiety (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129870004"/>
+            <display value="Chronic low self-esteem (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129871000"/>
+            <display value="Situational low self-esteem (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129872007"/>
+            <display value="Socialization alteration (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129873002"/>
+            <display value="Parental role conflict (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129878006"/>
+            <display value="Dysfunctional family due to alcoholism (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129888007"/>
+            <display value="Spiritual state alteration (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129890008"/>
+            <display value="Musculoskeletal alteration (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129891007"/>
+            <display value="Caregiver role strain (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129892000"/>
+            <display value="Disuse syndrome (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129893005"/>
+            <display value="Respiratory alteration (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129895003"/>
+            <display value="Impaired spontaneous ventilation (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129897006"/>
+            <display value="Dysfunctional ventilatory weaning response (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129898001"/>
+            <display value="Cardiovascular system alteration (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129899009"/>
+            <display value="Blood pressure alteration (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129900004"/>
+            <display value="Cardiac output alteration (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="129904008"/>
+            <display value="Impaired dentition (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="130966005"/>
+            <display value="Chronic sorrow following life event (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="130968006"/>
+            <display value="Self-mutilation (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="130970002"/>
+            <display value="Health seeking behavior alteration (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="130971003"/>
+            <display value="Disorganized infant response to environment (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="130979001"/>
+            <display value="Comfort alteration (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="130983001"/>
+            <display value="At risk for autonomic dysreflexia (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="130984007"/>
+            <display value="Tactile alteration (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="130985008"/>
+            <display value="Disturbed sensory perception (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="130987000"/>
+            <display value="Acute confusion (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="130988005"/>
+            <display value="Chronic confusion (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="130989002"/>
+            <display value="Sleep deprivation (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="130994002"/>
+            <display value="Endocrine system alteration (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="131145007"/>
+            <display value="Altered immunity (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="13791008"/>
+            <display value="Asthenia (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="13954005"/>
+            <display value="Ischemic ulcer (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="1402001"/>
+            <display value="Fear (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="14621004"/>
+            <display value="Anticipatory grief (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="14760008"/>
+            <display value="Constipation (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="14783006"/>
+            <display value="Hyperbilirubinemia (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="15167005"/>
+            <display value="Alcohol abuse (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="160507001"/>
+            <display value="Abandoned child (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="160685001"/>
+            <display value="Bed-ridden (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="160689007"/>
+            <display value="Housebound (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="160707003"/>
+            <display value="Inadequate sanitation (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="160822004"/>
+            <display value="Relationship problems (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="160932005"/>
+            <display value="Financial problem (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="161052004"/>
+            <display value="At risk hypothermia (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="161112004"/>
+            <display value="Illiteracy (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="161133008"/>
+            <display value="School attendance poor (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="161838002"/>
+            <display value="Infant feeding problem (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="161898004"/>
+            <display value="Falls (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="161922009"/>
+            <display value="No cough (situation)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="161941007"/>
+            <display value="Dyspnea at rest (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="162028008"/>
+            <display value="No indigestion (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="162031009"/>
+            <display value="Indigestion (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="162089003"/>
+            <display value="Feces normal (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="162116003"/>
+            <display value="Increased frequency of urination (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="162221009"/>
+            <display value="Restlessness (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="16320008"/>
+            <display value="Feeling mixed emotions (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="16331000"/>
+            <display value="Heartburn (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="16386004"/>
+            <display value="Dry skin (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="16399001"/>
+            <display value="Difficulty coping with pain (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="165232002"/>
+            <display value="Urinary incontinence (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="17029006"/>
+            <display value="Feeling despair (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="17971005"/>
+            <display value="Sedated (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="18232000"/>
+            <display value="Difficulty coping (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="18963009"/>
+            <display value="Mood swings (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="190902006"/>
+            <display value="Fluid imbalance (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="191816009"/>
+            <display value="Drug dependence (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="199312002"/>
+            <display value="Finding related to risk factor in pregnancy (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="20301004"/>
+            <display value="Dysphasia (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="2073000"/>
+            <display value="Delusions (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="21522001"/>
+            <display value="Abdominal pain (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="21639008"/>
+            <display value="Hypervolemia (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="22220005"/>
+            <display value="Genuine stress incontinence (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="22253000"/>
+            <display value="Pain (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="225012006"/>
+            <display value="Feeling ashamed (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="225444004"/>
+            <display value="At risk for suicide (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="225465005"/>
+            <display value="Unwilling (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="225472006"/>
+            <display value="Feels life is meaningless (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="225507001"/>
+            <display value="Altered body image (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="225508006"/>
+            <display value="Poor self-image (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="225943002"/>
+            <display value="At risk of cross-infection (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="225999004"/>
+            <display value="At risk of deep vein thrombosis (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="228151002"/>
+            <display value="Personal care disability (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="228153004"/>
+            <display value="Personal hygiene disability (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="228158008"/>
+            <display value="Walking disability (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="229665008"/>
+            <display value="Expressive dysphasia (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="234097001"/>
+            <display value="Lymphedema (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="236423003"/>
+            <display value="Renal impairment (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="237355007"/>
+            <display value="Milk engorgement of breast (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="238131007"/>
+            <display value="Overweight (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="23935006"/>
+            <display value="Diversional activity deficit (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="24199005"/>
+            <display value="Feeling agitated (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="247404004"/>
+            <display value="Allodynia (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="247444006"/>
+            <display value="Excoriation of skin (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="248004009"/>
+            <display value="Physical aggression (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="248062006"/>
+            <display value="Self-injurious behavior (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="248342006"/>
+            <display value="Underweight (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="249366005"/>
+            <display value="Bleeding from nose (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="249475006"/>
+            <display value="Thirst symptom (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="249481003"/>
+            <display value="Finding of insufficient fluid intake (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="251359002"/>
+            <display value="Hearing improved (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="26079004"/>
+            <display value="Tremor (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="26110006"/>
+            <display value="Spiritual distress (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="26416006"/>
+            <display value="Drug abuse (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="26677001"/>
+            <display value="Sleep pattern disturbance (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="267036007"/>
+            <display value="Dyspnea (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="267064002"/>
+            <display value="Retention of urine (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="271719001"/>
+            <display value="Raised intracranial pressure (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="271782001"/>
+            <display value="Drowsy (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="27179007"/>
+            <display value="Disturbance in role performance (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="271801002"/>
+            <display value="Taste sense altered (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="271809000"/>
+            <display value="Peripheral edema (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="274663001"/>
+            <display value="Acute pain (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="276249004"/>
+            <display value="Withdrawn behavior (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="276306002"/>
+            <display value="Loss of initiative (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="277843001"/>
+            <display value="Problem behavior (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="278919001"/>
+            <display value="Communication disorder (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="284670008"/>
+            <display value="Nutritionally compromised (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="284807005"/>
+            <display value="Difficulty bathing self (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="284972002"/>
+            <display value="Difficulty performing dressing activity (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="285038001"/>
+            <display value="Difficulty managing medication (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="285304000"/>
+            <display value="At risk of pressure ulcer (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="286457005"/>
+            <display value="Difficulty preparing food for eating (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="286647002"/>
+            <display value="Low self-esteem (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="286650004"/>
+            <display value="Lacking belief in own ability (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="286933003"/>
+            <display value="Confusional state (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="289084000"/>
+            <display value="Difficulty performing breast-feeding (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="289128002"/>
+            <display value="Difficulty performing mouthcare activities (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="289560001"/>
+            <display value="Profuse vaginal discharge (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="289739009"/>
+            <display value="Uterine contractions problem (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="29738008"/>
+            <display value="Proteinuria (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="298222004"/>
+            <display value="Active range of joint movement reduced (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="299960009"/>
+            <display value="Nervous system problem (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="300228004"/>
+            <display value="Hearing problem (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="300686005"/>
+            <display value="Difficulty managing personal financial activities (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="300723007"/>
+            <display value="Difficulty performing shopping activities (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="300777006"/>
+            <display value="Does not play (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="301336003"/>
+            <display value="Body weight problem (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="301364008"/>
+            <display value="Pain of skin (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="301822002"/>
+            <display value="Abnormal vaginal bleeding (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="302866003"/>
+            <display value="Hypoglycemia (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="306741005"/>
+            <display value="Poor manual dexterity (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="307077003"/>
+            <display value="Feeling hopeless (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="31342001"/>
+            <display value="Increased vision (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="313424005"/>
+            <display value="At risk of disease (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="32000005"/>
+            <display value="Difficulty using verbal communication (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="32422007"/>
+            <display value="Hemi-neglect (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="33084007"/>
+            <display value="Personal identity confusion (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="33300005"/>
+            <display value="Feeling powerless (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="34095006"/>
+            <display value="Dehydration (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="3424008"/>
+            <display value="Tachycardia (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="366979004"/>
+            <display value="Depressed mood (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="370994008"/>
+            <display value="Seizure free (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="371597004"/>
+            <display value="Emaciated (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="371736008"/>
+            <display value="At risk for aspiration (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="373191003"/>
+            <display value="Self-toileting deficit (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="386661006"/>
+            <display value="Fever (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="386689009"/>
+            <display value="Hypothermia (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="386806002"/>
+            <display value="Impaired cognition (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="386807006"/>
+            <display value="Memory impairment (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="386816005"/>
+            <display value="Emotional problems (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="387603000"/>
+            <display value="Impairment of balance (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="39093002"/>
+            <display value="Post-trauma response (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="392562007"/>
+            <display value="At risk for sudden infant death syndrome (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="39623008"/>
+            <display value="At risk for poisoning injury (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="397540003"/>
+            <display value="Visual impairment (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="397878005"/>
+            <display value="Overflow incontinence of urine (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="397940009"/>
+            <display value="Victim of child abuse (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="399122003"/>
+            <display value="Swallowing problem (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="401207004"/>
+            <display value="Medication side effects present (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="404640003"/>
+            <display value="Dizziness (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="405786003"/>
+            <display value="Poor response to treatment (situation)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="406160009"/>
+            <display value="Impaired parenting (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="40733004"/>
+            <display value="Infectious disease (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="409030003"/>
+            <display value="Ineffective family coping (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="409031004"/>
+            <display value="At risk for perioperative injury (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="409032006"/>
+            <display value="Perioperative positioning injury (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="409041001"/>
+            <display value="Reproductive risk (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="409043003"/>
+            <display value="Infertility risk (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="409044009"/>
+            <display value="Contraception risk (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="409046006"/>
+            <display value="Perinatal risk (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="409048007"/>
+            <display value="Labor risk (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="409049004"/>
+            <display value="Delivery risk (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="409050004"/>
+            <display value="Postpartum risk (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="409054008"/>
+            <display value="Alteration in tissue perfusion (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="413585005"/>
+            <display value="Aspiration into respiratory tract (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="413588007"/>
+            <display value="At risk for dysfunctional grieving (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="414285001"/>
+            <display value="Allergy to food (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="414487007"/>
+            <display value="Ineffective health maintenance (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="416909000"/>
+            <display value="Impaired psychomotor performance (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="417716002"/>
+            <display value="At risk of neglect by others (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="417746004"/>
+            <display value="Traumatic injury (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="419145002"/>
+            <display value="Nightmares (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="419567006"/>
+            <display value="Delirious (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="419635000"/>
+            <display value="Surgical wound finding (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="420038007"/>
+            <display value="Feeling unhappy (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="422400008"/>
+            <display value="Vomiting (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="422587007"/>
+            <display value="Nausea (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="422650009"/>
+            <display value="Social isolation (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="422838000"/>
+            <display value="Moral distress (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="422923002"/>
+            <display value="Inadequate community resources (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="422930008"/>
+            <display value="Spiritual beliefs conflicting with healthcare plan (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="422935003"/>
+            <display value="Environment contains biological hazards (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="423192007"/>
+            <display value="At risk for acute confusion (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="423245001"/>
+            <display value="At risk for compromised human dignity (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="423754004"/>
+            <display value="Difficulty with caretaking responsibilities (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="423875000"/>
+            <display value="Deficient knowledge of family planning methods (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="423949003"/>
+            <display value="At risk for environmental contamination (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="424100000"/>
+            <display value="Limited ability to think abstractly (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="42427004"/>
+            <display value="At risk for suffocation (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="424466003"/>
+            <display value="Water supply insufficient (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="424582000"/>
+            <display value="Stress overload (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="424860001"/>
+            <display value="Low income (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="425022003"/>
+            <display value="Inadequate social support (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="430576002"/>
+            <display value="At risk for injury due to fall (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="430794006"/>
+            <display value="At risk for delirium (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="443903000"/>
+            <display value="Extravasation of lymph onto skin (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="444673007"/>
+            <display value="Hyperemesis (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="44635007"/>
+            <display value="Fecal impaction (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="44695005"/>
+            <display value="Paralysis (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="448177004"/>
+            <display value="Adverse drug interaction (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="449918009"/>
+            <display value="Cramp in lower leg (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="45346005"/>
+            <display value="Alteration in nutrition: more than body requirements (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="48694002"/>
+            <display value="Anxiety (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="48851009"/>
+            <display value="Impaired tissue integrity (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="48867003"/>
+            <display value="Bradycardia (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="49727002"/>
+            <display value="Cough (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="50048006"/>
+            <display value="At risk for deficient fluid volume (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="50177009"/>
+            <display value="Body temperature above reference range (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="52651000119105"/>
+            <display value="At risk of unplanned pregnancy (situation)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="53209001"/>
+            <display value="Decisional conflict (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="53339009"/>
+            <display value="Dysfunctional grieving (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="54840006"/>
+            <display value="Failure to thrive (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="55222007"/>
+            <display value="Breast tenderness (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="55406008"/>
+            <display value="Hyperalgesia (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="56018004"/>
+            <display value="Wheezing (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="56890008"/>
+            <display value="Victim of sexual aggression (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="56925008"/>
+            <display value="Abnormal sexual function (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="58219009"/>
+            <display value="Lactation problem (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="58424009"/>
+            <display value="Overeating (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="60845006"/>
+            <display value="Dyspnea on exertion (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="61372001"/>
+            <display value="Aggressive behavior (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="61578001"/>
+            <display value="Abnormal digestive tract function (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="62315008"/>
+            <display value="Diarrhea (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="62476001"/>
+            <display value="Disorientated (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="6471006"/>
+            <display value="Suicidal thoughts (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="65108000"/>
+            <display value="At risk for violence (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="66214007"/>
+            <display value="Substance abuse (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="66383009"/>
+            <display value="Gingivitis (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="66590003"/>
+            <display value="Alcohol dependence (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="67175002"/>
+            <display value="Impaired home maintenance management (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="67750007"/>
+            <display value="Ineffective airway clearance (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="68345001"/>
+            <display value="Apraxia (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="68566005"/>
+            <display value="Urinary tract infectious disease (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="68978004"/>
+            <display value="Hyperventilation (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="7011001"/>
+            <display value="Hallucinations (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="70153002"/>
+            <display value="Hemorrhoids (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704294006"/>
+            <display value="At risk for depressed mood during postpartum period (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704295007"/>
+            <display value="At risk for depressed mood (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704296008"/>
+            <display value="At risk of impaired respiratory system function (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704297004"/>
+            <display value="At risk of impaired nervous system function (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704298009"/>
+            <display value="At risk of impaired cardiac function (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704299001"/>
+            <display value="Health belief conflict (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704300009"/>
+            <display value="Environmental safety problem (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704301008"/>
+            <display value="Cultural belief conflict (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704302001"/>
+            <display value="Lack of symptom control (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704303006"/>
+            <display value="Problem with continuity of care (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704304000"/>
+            <display value="Impairment of child development (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704305004"/>
+            <display value="Impairment of caregiver child attachment (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704306003"/>
+            <display value="At risk of bradycardia (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704307007"/>
+            <display value="At risk of complication of stoma (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704308002"/>
+            <display value="Difficulty managing peritoneal dialysis (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704309005"/>
+            <display value="Difficulty managing nephrostomy care (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704340003"/>
+            <display value="Conflicting attitude towards treatment (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704341004"/>
+            <display value="Conflicting attitude towards medication management (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704342006"/>
+            <display value="Conflicting attitude towards exercise (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704343001"/>
+            <display value="Conflicting attitude towards dietary regime (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704344007"/>
+            <display value="Conflicting attitude towards care (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704348005"/>
+            <display value="At risk of hemorrhage (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704349002"/>
+            <display value="At risk of elder abuse (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704350002"/>
+            <display value="At risk of impaired child development (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704351003"/>
+            <display value="At risk of impaired family coping (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704352005"/>
+            <display value="At risk of delayed growth (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704353000"/>
+            <display value="At risk of environmental injury (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704354006"/>
+            <display value="At risk of anaphylaxis (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704355007"/>
+            <display value="At risk of impaired caregiver child attachment (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704356008"/>
+            <display value="At risk of health care associated complication (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704357004"/>
+            <display value="At risk of self-injurious behavior (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704358009"/>
+            <display value="At risk of nutritional deficit (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704359001"/>
+            <display value="At risk of polypharmacy (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704360006"/>
+            <display value="At risk for infection of eye (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704361005"/>
+            <display value="At risk of deficient food intake (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704362003"/>
+            <display value="At risk of hyperthermia (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704363008"/>
+            <display value="At risk of impaired infant development (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704364002"/>
+            <display value="At risk of ineffective tissue perfusion (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704365001"/>
+            <display value="At risk of dissatisfaction with healthcare (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704366000"/>
+            <display value="Inappropriate self disclosure (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704367009"/>
+            <display value="At risk of conflict between religious belief and healthcare recommendation (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704368004"/>
+            <display value="At risk of elopement from healthcare setting (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704369007"/>
+            <display value="Fatigue due to treatment (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704370008"/>
+            <display value="Impairment of infant development (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704371007"/>
+            <display value="Impairment of newborn development (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704372000"/>
+            <display value="Lack of trust in healthcare provider (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704373005"/>
+            <display value="Lack of trust (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704374004"/>
+            <display value="Lack of pride (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704375003"/>
+            <display value="Deficient knowledge of breast feeding (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704377006"/>
+            <display value="Deficient knowledge of peritoneal dialysis (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704379009"/>
+            <display value="Deficient knowledge of sexual behavior (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704381006"/>
+            <display value="Deficient knowledge of oral hygiene (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704383009"/>
+            <display value="Deficient knowledge of child development (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704400005"/>
+            <display value="Deficient knowledge of community services (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704402002"/>
+            <display value="Deficient knowledge of physical therapy (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704403007"/>
+            <display value="Deficient knowledge of fall prevention (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704404001"/>
+            <display value="Deficient knowledge of pain management (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704406004"/>
+            <display value="Deficient knowledge of symptom (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704413004"/>
+            <display value="At risk of vomiting (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704414005"/>
+            <display value="At risk of sleep impairment (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704415006"/>
+            <display value="At risk of impaired school performance (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704416007"/>
+            <display value="At risk of negative response to patient controlled analgesia (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704417003"/>
+            <display value="At risk of medication side effect (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704418008"/>
+            <display value="At risk of infection of oral mucous membrane (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704419000"/>
+            <display value="At risk of diarrhea (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704420006"/>
+            <display value="At risk of dehydration (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704421005"/>
+            <display value="At risk of coping impairment (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704422003"/>
+            <display value="At risk of apnea (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704423008"/>
+            <display value="Fear of abandonment (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704424002"/>
+            <display value="Fear of being a burden to others (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704425001"/>
+            <display value="Chronic fever (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704426000"/>
+            <display value="Impairment of mental alertness (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704427009"/>
+            <display value="Impairment of adult development (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704428004"/>
+            <display value="Impairment of adolescent development (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704429007"/>
+            <display value="Abnormal acid-base balance (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704446005"/>
+            <display value="Deficient knowledge of exercise (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704447001"/>
+            <display value="Lack of self awareness (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704448006"/>
+            <display value="Tendency to wander (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704449003"/>
+            <display value="Impairment of peripheral tissue perfusion (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704486002"/>
+            <display value="Difficulty managing urinary catheter (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704488001"/>
+            <display value="Impairment of psychological status (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704489009"/>
+            <display value="Lack of family support (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704491001"/>
+            <display value="Deficient knowledge of traditional therapy (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704657009"/>
+            <display value="Delayed physical recovery (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704658004"/>
+            <display value="Child at risk of neglect (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704659007"/>
+            <display value="Child at risk of abuse (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704660002"/>
+            <display value="Impairment of older adult development (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704661003"/>
+            <display value="Noncompliance with immunization regimen (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704662005"/>
+            <display value="Noncompliance with exercise regimen (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704674009"/>
+            <display value="At risk of dysfunctional family grieving (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704675005"/>
+            <display value="Inadequate pain control (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704676006"/>
+            <display value="At risk of negative response to nurse controlled analgesia (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704678007"/>
+            <display value="Depressed mood with postpartum onset (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704680001"/>
+            <display value="Deficient knowledge of behavior change process (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704681002"/>
+            <display value="At risk of negative quality of life (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="704682009"/>
+            <display value="At risk of transfer injury (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="705000008"/>
+            <display value="Low self-control (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="705016005"/>
+            <display value="Acute health crisis (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="705017001"/>
+            <display value="Impairment of acceptance of health status (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="705019003"/>
+            <display value="Difficulty managing stoma care (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="705021008"/>
+            <display value="Difficulty managing exercise regime (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="705039004"/>
+            <display value="Conflicting attitude of caregiver (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="705044006"/>
+            <display value="Caregiver difficulty performing caretaking (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="705045007"/>
+            <display value="Difficulty participating in care planning (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="705046008"/>
+            <display value="Deficit of medication supply (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="705047004"/>
+            <display value="Fear of contagion (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="705049001"/>
+            <display value="Difficulty self monitoring disease (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="705051002"/>
+            <display value="Difficulty managing dietary regimen (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="705053004"/>
+            <display value="Difficulty managing incontinence appliance (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="705086000"/>
+            <display value="Deficient knowledge of patient controlled analgesia (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="7058009"/>
+            <display value="Noncompliance with treatment (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="706869001"/>
+            <display value="Deficient knowledge of medication (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="706871001"/>
+            <display value="Poor response to enteral nutrition (situation)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="706872008"/>
+            <display value="Victim of elder abuse (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="706873003"/>
+            <display value="Suffering (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="706874009"/>
+            <display value="At risk of elder neglect (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="706875005"/>
+            <display value="Insufficient food supply (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="706876006"/>
+            <display value="Suspicion (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="706877002"/>
+            <display value="Problem with high complexity of treatment regime (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="706879004"/>
+            <display value="Physical injury due to physical abuse (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="706880001"/>
+            <display value="At risk of confusion (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="706881002"/>
+            <display value="Barrier to communication (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="706889000"/>
+            <display value="Transfer injury (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="706892001"/>
+            <display value="At risk of intimate partner abuse (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="706893006"/>
+            <display value="Victim of intimate partner abuse (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="706912001"/>
+            <display value="Complication of health care (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="70693003"/>
+            <display value="At risk for impaired skin integrity (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="70944005"/>
+            <display value="Impaired gas exchange (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="713142003"/>
+            <display value="At risk from passive smoking (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="713398008"/>
+            <display value="Deficient knowledge of travel health (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="713447003"/>
+            <display value="Deficient knowledge of parenting (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="713448008"/>
+            <display value="Deficient knowledge of infant feeding (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="713449000"/>
+            <display value="Deficient knowledge of infant care (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="713451001"/>
+            <display value="Deficient knowledge of labor and delivery (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="713452008"/>
+            <display value="Deficient knowledge of fetal development (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="713458007"/>
+            <display value="Lack of access to transportation (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="713459004"/>
+            <display value="Family grieving (situation)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="713460009"/>
+            <display value="Denial about illness severity (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="714656007"/>
+            <display value="Impaired fetal development (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="714657003"/>
+            <display value="At risk of radiation injury (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="714658008"/>
+            <display value="At risk of radiation exposure (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="714659000"/>
+            <display value="At risk of impaired urinary system function (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="714660005"/>
+            <display value="At risk of impaired psychological state (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="714661009"/>
+            <display value="At risk of impaired gastrointestinal system function (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="714662002"/>
+            <display value="At risk of impaired fetal development (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="714663007"/>
+            <display value="At risk of impaired ability to perform caretaking (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="714664001"/>
+            <display value="At risk of ulcer of foot due to diabetes mellitus (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="714665000"/>
+            <display value="At risk of adverse drug interaction (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="714666004"/>
+            <display value="Difficulty obtaining medication (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="714667008"/>
+            <display value="Fear about medication side effects (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="714668003"/>
+            <display value="Religious belief and healthcare recommendation conflict (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="714669006"/>
+            <display value="Impaired attitude to nutritional status (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="714670007"/>
+            <display value="Deficient knowledge of pregnancy (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="716186003"/>
+            <display value="No known allergy (situation)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="72042002"/>
+            <display value="Incontinence of feces (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="720822008"/>
+            <display value="Withdrawal symptom (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="720824009"/>
+            <display value="Victim of child neglect (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="733739009"/>
+            <display value="Improved dentition (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="733740006"/>
+            <display value="Ischemic ulcer absent (situation)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="733741005"/>
+            <display value="Impaired cardiovascular system function (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="733742003"/>
+            <display value="Improved balance (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="733744002"/>
+            <display value="Improvement in ability to use toilet independently (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="733816007"/>
+            <display value="Decreased withdrawn behavior (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="733817003"/>
+            <display value="Decreased social isolation (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="733818008"/>
+            <display value="Decreased despair (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="733819000"/>
+            <display value="Improved mood (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="733820006"/>
+            <display value="Improved self image (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="733826000"/>
+            <display value="Pain due to fracture (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="733827009"/>
+            <display value="Euphoria absent (situation)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="733903006"/>
+            <display value="Psychological resilience (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="733904000"/>
+            <display value="Lack of psychological resilience (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="74530003"/>
+            <display value="Uncompensated sensory deficit (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="75148009"/>
+            <display value="Employment problem (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="75408008"/>
+            <display value="Feeling angry (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="75803007"/>
+            <display value="Posterior rhinorrhea (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="7653001"/>
+            <display value="Self-feeding deficit (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="77427003"/>
+            <display value="Activity intolerance (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="78222005"/>
+            <display value="Denial - mental defense mechanism (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="78633001"/>
+            <display value="Altered thought processes (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="78648007"/>
+            <display value="At risk for infection (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="7919002"/>
+            <display value="Impaired skin integrity (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="79890006"/>
+            <display value="Loss of appetite (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="80394007"/>
+            <display value="Hyperglycemia (disorder)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="80601004"/>
+            <display value="At risk for activity intolerance (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="81763001"/>
+            <display value="At risk for injury (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="81935006"/>
+            <display value="Family conflict (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="82423001"/>
+            <display value="Chronic pain (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="82971005"/>
+            <display value="Impaired mobility (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="83156004"/>
+            <display value="Sense of smell impaired (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="8317005"/>
+            <display value="At risk for deficient parenting (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="84229001"/>
+            <display value="Fatigue (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="8517006"/>
+            <display value="Ex-smoker (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="85623003"/>
+            <display value="Ineffective thermoregulation (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="85949006"/>
+            <display value="Euphoria (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="87502001"/>
+            <display value="At risk for imbalanced body temperature (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="87557004"/>
+            <display value="Urge incontinence of urine (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="88598008"/>
+            <display value="Impaired social interaction (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="9097005"/>
+            <display value="Stigma (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="90987003"/>
+            <display value="Reflex incontinence of urine (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="91175000"/>
+            <display value="Seizure (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="95933007"/>
+            <display value="Neglected elder (finding)"/>
+        </contains>
+    </expansion>
+</ValueSet>

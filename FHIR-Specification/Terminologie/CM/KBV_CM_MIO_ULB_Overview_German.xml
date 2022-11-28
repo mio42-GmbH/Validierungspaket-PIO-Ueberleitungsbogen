@@ -1,0 +1,2683 @@
+<ConceptMap xmlns="http://hl7.org/fhir">
+	<id value="KBV-CM-MIO-ULB-Overview"/>
+	<url value="https://fhir.kbv.de/ConceptMap/KBV_CM_MIO_ULB_Overview"/>
+	<version value="1.0.0"/>
+	<name value="KBV_CM_MIO_ULB_Overview"/>
+	<title value="KBV_CM_MIO_ULB_Overview"/>
+	<status value="draft"/>
+	<experimental value="false"/>
+	<publisher value="Kassenärztliche Bundesvereinigung (KBV)"/>
+	<contact>
+		<telecom>
+			<system value="url"/>
+			<value value="https://mio.kbv.de"/>
+		</telecom>
+	</contact>
+	<description value="Diese Conceptmap verknüpft die Codes für KBV_CM_MIO_ULB_Overview mit deutschen Bezeichnungen."/>
+	<copyright value="Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED &quot;AS IS.&quot; ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE."/>
+	<group>
+		<source value="http://snomed.info/sct"/>
+		<sourceVersion value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Advance_Directive_Status_German"/>
+		<targetVersion value="1.0.0"/>
+		<element>
+			<code value="310301000:363713009=2667000"/>
+			<display value="Advance healthcare directive status (finding) : Has interpretation (attribute) = Absent (qualifier value)"/>
+			<target>
+				<code value="PersoenlicheErklaerungnichtvorhanden"/>
+				<display value="Persönliche Erklärung nicht vorhanden"/>
+				<equivalence value="narrower"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+		<element>
+			<code value="310301000:363713009=373068000"/>
+			<display value="Advance healthcare directive status (finding) : Has interpretation (attribute) = Undetermined (qualifier value)"/>
+			<target>
+				<code value="VorhandenseinvonPersoenlichenErklaerungenunbekannt"/>
+				<display value="Vorhandensein von Persönlichen Erklärungen unbekannt"/>
+				<equivalence value="narrower"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+		<element>
+			<code value="310301000:363713009=52101004"/>
+			<display value="Advance healthcare directive status (finding) : Has interpretation (attribute) = Present (qualifier value)"/>
+			<target>
+				<code value="PersoenlicheErklaerungvorhanden"/>
+				<display value="Persönliche Erklärung vorhanden"/>
+				<equivalence value="narrower"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+	</group>
+	<group>
+		<source value="http://snomed.info/sct"/>
+		<sourceVersion value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Allergies_German"/>
+		<targetVersion value="1.0.0"/>
+		<element>
+			<code value="420134006:363713009=2667000"/>
+			<display value="Propensity to adverse reaction (finding) : Has interpretation (attribute) = Absent (qualifier value)"/>
+			<target>
+				<code value="AllergienoderUnvertraeglichkeitenliegennichtvor"/>
+				<display value="Allergien oder Unverträglichkeiten liegen nicht vor"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="420134006:363713009=373068000"/>
+			<display value="Propensity to adverse reaction (finding) : Has interpretation (attribute) = Undetermined (qualifier value)"/>
+			<target>
+				<code value="VorliegenvonAllergienoderUnvertraeglichkeitenunbekannt"/>
+				<display value="Vorliegen von Allergien oder Unverträglichkeiten unbekannt"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="420134006:363713009=52101004"/>
+			<display value="Propensity to adverse reaction (finding) : Has interpretation (attribute) = Present (qualifier value)"/>
+			<target>
+				<code value="AllergienoderUnvertraeglichkeitenliegenvor"/>
+				<display value="Allergien oder Unverträglichkeiten liegen vor"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+	</group>
+	<group>
+		<source value="http://snomed.info/sct"/>
+		<sourceVersion value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Bladder_Continence_Status_German"/>
+		<targetVersion value="1.0.0"/>
+		<element>
+			<code value="129853007"/>
+			<display value="Total urinary incontinence (finding)"/>
+			<target>
+				<code value="Komplettinkontinent"/>
+				<display value="Komplett inkontinent"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="165234001"/>
+			<display value="Bladder: fully continent (finding)"/>
+			<target>
+				<code value="Staendigkontinent"/>
+				<display value="Ständig kontinent"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="450841000"/>
+			<display value="Intermittent urinary incontinence (finding)"/>
+			<target>
+				<code value="Ueberwiegendinkontinent"/>
+				<display value="Überwiegend inkontinent"/>
+				<equivalence value="inexact"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+		<element>
+			<code value="45850009"/>
+			<display value="Continent of urine (finding)"/>
+			<target>
+				<code value="Ueberwiegendkontinent"/>
+				<display value="Überwiegend kontinent"/>
+				<equivalence value="wider"/>
+			</target>
+		</element>
+	</group>
+	<group>
+		<source value="http://snomed.info/sct"/>
+		<sourceVersion value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Bowel_Continence_Status_German"/>
+		<targetVersion value="1.0.0"/>
+		<element>
+			<code value="1086911000119107"/>
+			<display value="Complete fecal incontinence (finding)"/>
+			<target>
+				<code value="Komplettinkontinent"/>
+				<display value="Komplett inkontinent"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="165230005"/>
+			<display value="Bowels: occasional accident (finding)"/>
+			<target>
+				<code value="Ueberwiegendkontinent"/>
+				<display value="Überwiegend kontinent"/>
+				<equivalence value="narrower"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+		<element>
+			<code value="24029004"/>
+			<display value="Bowels: fully continent (finding)"/>
+			<target>
+				<code value="Staendigkontinent"/>
+				<display value="Ständig kontinent"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="72042002"/>
+			<display value="Incontinence of feces (finding)"/>
+			<target>
+				<code value="Ueberwiegendinkontinent"/>
+				<display value="Überwiegend inkontinent"/>
+				<equivalence value="wider"/>
+			</target>
+		</element>
+	</group>
+	<group>
+		<source value="http://snomed.info/sct"/>
+		<sourceVersion value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Cognitive_Awareness_German"/>
+		<targetVersion value="1.0.0"/>
+		<element>
+			<code value="24473007"/>
+			<display value="Persistent vegetative state (disorder)"/>
+			<target>
+				<code value="Wachkoma"/>
+				<display value="Wachkoma"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="271591004"/>
+			<display value="Fully conscious (finding)"/>
+			<target>
+				<code value="keineBewusstseinsminderungodersteigerung"/>
+				<display value="keine Bewusstseinsminderung oder -steigerung"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="271782001"/>
+			<display value="Drowsy (finding)"/>
+			<target>
+				<code value="Somnolenz"/>
+				<display value="Somnolenz"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="274659008"/>
+			<display value="Semicoma (disorder)"/>
+			<target>
+				<code value="Sopor"/>
+				<display value="Sopor"/>
+				<equivalence value="inexact"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+		<element>
+			<code value="371632003"/>
+			<display value="Coma (disorder)"/>
+			<target>
+				<code value="Koma"/>
+				<display value="Koma"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="404640003"/>
+			<display value="Dizziness (finding)"/>
+			<target>
+				<code value="Benommenheit"/>
+				<display value="Benommenheit"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="423752000"/>
+			<display value="Hypervigilant behavior (finding)"/>
+			<target>
+				<code value="Hypervigilitaet"/>
+				<display value="Hypervigilität"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+	</group>
+	<group>
+		<source value="http://snomed.info/sct"/>
+		<sourceVersion value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Constraint_Control_Seclusion_German"/>
+		<targetVersion value="1.0.0"/>
+		<element>
+			<code value="129125009:363589002=225214000,408730004=410536001"/>
+			<display value="Procedure with explicit context (situation) : Associated procedure (attribute) = Procedures relating to control, restraint, seclusion and segregation (procedure) , Procedure context (attribute) = Contraindicated (qualifier value)"/>
+			<target>
+				<code value="FreiheitsentziehendeMassnahmensindnichtnotwendig"/>
+				<display value="Freiheitsentziehende Maßnahmen sind nicht notwendig."/>
+				<equivalence value="narrower"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+		<element>
+			<code value="129125009:363589002=225214000,408730004=410537005"/>
+			<display value="Procedure with explicit context (situation) : Associated procedure (attribute) = Procedures relating to control, restraint, seclusion and segregation (procedure) , Procedure context (attribute) = Action status unknown (qualifier value)"/>
+			<target>
+				<code value="EsistunbekanntobfreiheitsentziehendeMassnahmennotwendigsind"/>
+				<display value="Es ist unbekannt, ob freiheitsentziehende Maßnahmen notwendig sind."/>
+				<equivalence value="narrower"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+		<element>
+			<code value="129125009:363589002=225214000,408730004=897015005"/>
+			<display value="Procedure with explicit context (situation) : Associated procedure (attribute) = Procedures relating to control, restraint, seclusion and segregation (procedure) , Procedure context (attribute) = Recommended (qualifier value)"/>
+			<target>
+				<code value="FreiheitsentziehendeMassnahmensindnotwendig"/>
+				<display value="Freiheitsentziehende Maßnahmen sind notwendig."/>
+				<equivalence value="narrower"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+	</group>
+	<group>
+		<source value="http://snomed.info/sct"/>
+		<sourceVersion value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Disability_Degree_Presence_Status_German"/>
+		<targetVersion value="1.0.0"/>
+		<element>
+			<code value="404684003:363713009=2667000,47429007=(21134002:363713009=272520006)"/>
+			<display value="Clinical finding (finding) : Has interpretation (attribute) = Absent (qualifier value) , Associated with (attribute) = ( Disability (finding) : Has interpretation (attribute) = Degree findings (qualifier value) )"/>
+			<target>
+				<code value="EinBehinderungsgradistnichtvorhanden"/>
+				<display value="Ein Behinderungsgrad ist nicht vorhanden."/>
+				<equivalence value="inexact"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+		<element>
+			<code value="404684003:363713009=373068000,47429007=(21134002:363713009=272520006)"/>
+			<display value="Clinical finding (finding) : Has interpretation (attribute) = Undetermined (qualifier value) , Associated with (attribute) = ( Disability (finding) : Has interpretation (attribute) = Degree findings (qualifier value) )"/>
+			<target>
+				<code value="EsistunbekanntobeinBehinderungsgradvorhandenist"/>
+				<display value="Es ist unbekannt, ob ein Behinderungsgrad vorhanden ist."/>
+				<equivalence value="inexact"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+		<element>
+			<code value="404684003:363713009=52101004,47429007=(21134002:363713009=272520006)"/>
+			<display value="Clinical finding (finding) : Has interpretation (attribute) = Present (qualifier value) , Associated with (attribute) = ( Disability (finding) : Has interpretation (attribute) = Degree findings (qualifier value) )"/>
+			<target>
+				<code value="EinBehinderungsgradistvorhanden"/>
+				<display value="Ein Behinderungsgrad ist vorhanden."/>
+				<equivalence value="inexact"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+	</group>
+	<group>
+		<source value="http://snomed.info/sct"/>
+		<sourceVersion value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Disability_German"/>
+		<targetVersion value="1.0.0"/>
+		<element>
+			<code value="373572006:246090004=105719004"/>
+			<display value="Clinical finding absent (situation) : Associated finding (attribute) = Body disability AND/OR failure state (finding)"/>
+			<target>
+				<code value="Funktionseinschraenkungliegtnichtvor"/>
+				<display value="Funktionseinschränkung liegt nicht vor"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="373573001:246090004=105719004"/>
+			<display value="Clinical finding present (situation) : Associated finding (attribute) = Body disability AND/OR failure state (finding)"/>
+			<target>
+				<code value="Funktionseinschraenkungliegtvor"/>
+				<display value="Funktionseinschränkung liegt vor"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="413350009:{246090004=105719004,408729009=261665006,408732007=410604004,408731000=410512000}"/>
+			<display value="Finding with explicit context (situation) : { Associated finding (attribute) = Body disability AND/OR failure state (finding) , Finding context (attribute) = Unknown (qualifier value) , Subject relationship context (attribute) = Subject of record (person) , Temporal context (attribute) = Current or specified time (qualifier value) }"/>
+			<target>
+				<code value="VorliegenvonFunktionseinschraenkungenunbekannt"/>
+				<display value="Vorliegen von Funktionseinschränkungen unbekannt"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+	</group>
+	<group>
+		<source value="http://snomed.info/sct"/>
+		<sourceVersion value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Evacuation_Bladder_Content_German"/>
+		<targetVersion value="1.0.0"/>
+		<element>
+			<code value="106098005"/>
+			<display value="Urinary system finding (finding)"/>
+			<target>
+				<code value="andere"/>
+				<display value="andere"/>
+				<equivalence value="inexact"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+		<element>
+			<code value="302113004"/>
+			<display value="Urostomy present (finding)"/>
+			<target>
+				<code value="UrostomieKatheter"/>
+				<display value="Urostomie-Katheter"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="404684003:47429007=34759008,363713009=52101004"/>
+			<display value="Clinical finding (finding) : Associated with (attribute) = Urethral catheter, device (physical object) , Has interpretation (attribute) = Present (qualifier value)"/>
+			<target>
+				<code value="intraurethralerKatheter"/>
+				<display value="intraurethraler Katheter"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="404684003:47429007=414846002,363713009=52101004"/>
+			<display value="Clinical finding (finding) : Associated with (attribute) = Nephrostomy system (physical object) , Has interpretation (attribute) = Present (qualifier value)"/>
+			<target>
+				<code value="NephrostomieKatheter"/>
+				<display value="Nephrostomie-Katheter"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="440311000"/>
+			<display value="Suprapubic urinary catheter in situ (finding)"/>
+			<target>
+				<code value="suprapubischerCystostomieKatheter"/>
+				<display value="suprapubischer Cystostomie-Katheter"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+	</group>
+	<group>
+		<source value="http://snomed.info/sct"/>
+		<sourceVersion value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Evacuation_Intestinal_Contents_German"/>
+		<targetVersion value="1.0.0"/>
+		<element>
+			<code value="302111002"/>
+			<display value="Ileostomy present (finding)"/>
+			<target>
+				<code value="Ileostoma"/>
+				<display value="Ileostoma"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="302112009"/>
+			<display value="Colostomy present (finding)"/>
+			<target>
+				<code value="Colostoma"/>
+				<display value="Colostoma"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="404684003:47429007=266683002"/>
+			<display value="Clinical finding (finding) : Associated with (attribute) = Evacuation of gastrointestinal tract contents (procedure)"/>
+			<target>
+				<code value="andere"/>
+				<display value="andere"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="404684003:47429007=787802002"/>
+			<display value="Clinical finding (finding) : Associated with (attribute) = Insertion of flatus tube into rectum (procedure)"/>
+			<target>
+				<code value="RektumDarmrohr"/>
+				<display value="Rektum (Darmrohr)"/>
+				<equivalence value="narrower"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+	</group>
+	<group>
+		<source value="http://snomed.info/sct"/>
+		<sourceVersion value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Food_Administration_Form_German"/>
+		<targetVersion value="1.0.0"/>
+		<element>
+			<code value="225373002"/>
+			<display value="Percutaneous endoscopic gastrostomy feeding (regime/therapy)"/>
+			<target>
+				<code value="ErnaehrungueberperkutaneendoskopischeGastrostomie"/>
+				<display value="Ernährung über perkutane endoskopische Gastrostomie"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="230114001"/>
+			<display value="Central line feeding (regime/therapy)"/>
+			<target>
+				<code value="ZentraleintravenoeseErnaehrung"/>
+				<display value="Zentrale intravenöse Ernährung"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="230115000"/>
+			<display value="Peripheral line feeding (regime/therapy)"/>
+			<target>
+				<code value="PeriphereintravenoeseErnaehrung"/>
+				<display value="Periphere intravenöse Ernährung"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="289156007:363714003=870690008"/>
+			<display value="Feeding finding (finding) : Interprets (attribute) = Oral intake (observable entity)"/>
+			<target>
+				<code value="OraleKostdarreichungsform"/>
+				<display value="Orale Kostdarreichungsform"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="61420007"/>
+			<display value="Tube feeding of patient (regime/therapy)"/>
+			<target>
+				<code value="ErnaehrungueberMagensonde"/>
+				<display value="Ernährung über Magensonde"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+	</group>
+	<group>
+		<source value="http://snomed.info/sct"/>
+		<sourceVersion value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Food_Type_German"/>
+		<targetVersion value="1.0.0"/>
+		<element>
+			<code value="10888001"/>
+			<display value="Liquid diet (finding)"/>
+			<target>
+				<code value="FluessigeKost"/>
+				<display value="Flüssige Kost"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="11739001"/>
+			<display value="High residue diet (finding)"/>
+			<target>
+				<code value="BallaststoffreicheKost"/>
+				<display value="Ballaststoffreiche Kost"/>
+				<equivalence value="wider"/>
+			</target>
+		</element>
+		<element>
+			<code value="138045004"/>
+			<display value="Vegan diet (finding)"/>
+			<target>
+				<code value="VeganeKost"/>
+				<display value="Vegane Kost"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="14627000"/>
+			<display value="Increased protein diet (finding)"/>
+			<target>
+				<code value="EiweissreichKost"/>
+				<display value="Eiweißreich Kost"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="160670007"/>
+			<display value="Diabetic diet (finding)"/>
+			<target>
+				<code value="Diabeteskost"/>
+				<display value="Diabeteskost"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="16208003"/>
+			<display value="Low fat diet (finding)"/>
+			<target>
+				<code value="FettarmeKost"/>
+				<display value="Fettarme Kost"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="16985007"/>
+			<display value="Fasting (finding)"/>
+			<target>
+				<code value="Nuechtern"/>
+				<display value="Nüchtern"/>
+				<equivalence value="narrower"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+		<element>
+			<code value="182924003"/>
+			<display value="Light diet (finding)"/>
+			<target>
+				<code value="LeichteVollkost"/>
+				<display value="Leichte Vollkost"/>
+				<equivalence value="wider"/>
+			</target>
+		</element>
+		<element>
+			<code value="226217002"/>
+			<display value="Metabolic diet (finding)"/>
+			<target>
+				<code value="StoffwechseladaptierteDiaet"/>
+				<display value="Stoffwechseladaptierte Diät"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="226237003"/>
+			<display value="No pork diet (finding)"/>
+			<target>
+				<code value="SchweinefleischfreieKost"/>
+				<display value="Schweinefleischfreie Kost"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="22745007"/>
+			<display value="Purine restricted diet (finding)"/>
+			<target>
+				<code value="PurinarmKost"/>
+				<display value="Purinarm Kost"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="228067006"/>
+			<display value="Raw food (substance)"/>
+			<target>
+				<code value="Rohkost"/>
+				<display value="Rohkost"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="248126008"/>
+			<display value="Comfort eating (finding)"/>
+			<target>
+				<code value="Wunschkost"/>
+				<display value="Wunschkost"/>
+				<equivalence value="inexact"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+		<element>
+			<code value="26041009"/>
+			<display value="Potassium restricted diet (finding)"/>
+			<target>
+				<code value="KaliumarmeKost"/>
+				<display value="Kaliumarme Kost"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="267111003"/>
+			<display value="Vegan or strict vegetarian (finding)"/>
+			<target>
+				<code value="VegetarischeKost"/>
+				<display value="Vegetarische Kost"/>
+				<equivalence value="narrower"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+		<element>
+			<code value="359649009"/>
+			<display value="Weight reduction diet (finding)"/>
+			<target>
+				<code value="Reduktionskost"/>
+				<display value="Reduktionskost"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="36823005"/>
+			<display value="Normal diet (finding)"/>
+			<target>
+				<code value="Vollkost"/>
+				<display value="Vollkost"/>
+				<equivalence value="inexact"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+		<element>
+			<code value="38226001"/>
+			<display value="Bland diet (finding)"/>
+			<target>
+				<code value="Schonkost"/>
+				<display value="Schonkost"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="386619000"/>
+			<display value="Low sodium diet (finding)"/>
+			<target>
+				<code value="KochsalzarmeKost"/>
+				<display value="Kochsalzarme Kost"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="386620006"/>
+			<display value="No added salt diet (finding)"/>
+			<target>
+				<code value="KochsalzfreieKost"/>
+				<display value="Kochsalzfreie Kost"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="425458000"/>
+			<display value="Lactose-free diet (regime/therapy)"/>
+			<target>
+				<code value="LaktosefreiearmeKost"/>
+				<display value="Laktosefreie/-arme Kost"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="437391000124102"/>
+			<display value="Increased potassium diet (regime/therapy)"/>
+			<target>
+				<code value="KaliumreicheKost"/>
+				<display value="Kaliumreiche Kost"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="437651000124104"/>
+			<display value="Gluten free diet (regime/therapy)"/>
+			<target>
+				<code value="GlutenfreiearmeKost"/>
+				<display value="Glutenfreie/-arme Kost"/>
+				<equivalence value="narrower"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+		<element>
+			<code value="439101000124101"/>
+			<display value="Easy to chew diet (regime/therapy)"/>
+			<target>
+				<code value="WeicheKost"/>
+				<display value="Weiche Kost"/>
+				<equivalence value="inexact"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+		<element>
+			<code value="439121000124106"/>
+			<display value="Pureed diet (regime/therapy)"/>
+			<target>
+				<code value="PuerierteKost"/>
+				<display value="Pürierte Kost"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="68097001"/>
+			<display value="Increased calorie diet (finding)"/>
+			<target>
+				<code value="KalorienreicheAufbaukost"/>
+				<display value="Kalorienreiche Aufbaukost"/>
+				<equivalence value="wider"/>
+			</target>
+		</element>
+		<element>
+			<code value="765022009"/>
+			<display value="Lacto-vegetarian diet (regime/therapy)"/>
+			<target>
+				<code value="OvolactischohneFisch"/>
+				<display value="Ovo-lactisch ohne Fisch"/>
+				<equivalence value="wider"/>
+			</target>
+		</element>
+		<element>
+			<code value="765022009:424361007=735971005"/>
+			<display value="Lacto-vegetarian diet (regime/therapy) : Using substance (attribute) = Fish (substance)"/>
+			<target>
+				<code value="OvolactischmitFisch"/>
+				<display value="Ovo-lactisch mit Fisch"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="765025006"/>
+			<display value="Kosher diet (regime/therapy)"/>
+			<target>
+				<code value="KoschereKost"/>
+				<display value="Koschere Kost"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="765053006"/>
+			<display value="Low fructose diet (regime/therapy)"/>
+			<target>
+				<code value="FructosefreiearmeKost"/>
+				<display value="Fructosefreie/-arme Kost"/>
+				<equivalence value="narrower"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+		<element>
+			<code value="77806000"/>
+			<display value="Calorie restricted diet (finding)"/>
+			<target>
+				<code value="KalorienreduzierteKost"/>
+				<display value="Kalorienreduzierte Kost"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+	</group>
+	<group>
+		<source value="http://snomed.info/sct"/>
+		<sourceVersion value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Health_Care_Proxy_Type_German"/>
+		<targetVersion value="1.0.0"/>
+		<element>
+			<code value="186065003"/>
+			<display value="Power of attorney medical report (record artifact)"/>
+			<target>
+				<code value="Vorsorgevollmacht"/>
+				<display value="Vorsorgevollmacht"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="371538006"/>
+			<display value="Advance directive report (record artifact)"/>
+			<target>
+				<code value="Patientenverfuegung"/>
+				<display value="Patientenverfügung"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="772790007"/>
+			<display value="Organ donor card (record artifact)"/>
+			<target>
+				<code value="GewebeOrganspendeerklaerung"/>
+				<display value="Gewebe_Organspendeerklärung"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+	</group>
+	<group>
+		<source value="http://snomed.info/sct"/>
+		<sourceVersion value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Information_Legal_Guardian_German"/>
+		<targetVersion value="1.0.0"/>
+		<element>
+			<code value="243796009:{408732007=58626002}{246090004=(404684003:47429007=419891008)}{246090004=(310385006:363713009=2667000)}"/>
+			<display value="Situation with explicit context (situation) : { Subject relationship context (attribute) = Legal guardian (person) } { Associated finding (attribute) = ( Clinical finding (finding) : Associated with (attribute) = Record artifact (record artifact) ) } { Associated finding (attribute) = ( Information status (finding) : Has interpretation (attribute) = Absent (qualifier value) ) }"/>
+			<target>
+				<code value="GesetzlicheBetreuungliegtnichtvor"/>
+				<display value="Gesetzliche Betreuung liegt nicht vor"/>
+				<equivalence value="inexact"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+		<element>
+			<code value="243796009:{408732007=58626002}{246090004=(404684003:47429007=419891008)}{246090004=(310385006:363713009=373068000)}"/>
+			<display value="Situation with explicit context (situation) : { Subject relationship context (attribute) = Legal guardian (person) } { Associated finding (attribute) = ( Clinical finding (finding) : Associated with (attribute) = Record artifact (record artifact) ) } { Associated finding (attribute) = ( Information status (finding) : Has interpretation (attribute) = Undetermined (qualifier value) ) }"/>
+			<target>
+				<code value="VorliegenvongesetzlicherBetreuungunbekannt"/>
+				<display value="Vorliegen von gesetzlicher Betreuung unbekannt"/>
+				<equivalence value="inexact"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+		<element>
+			<code value="243796009:{408732007=58626002}{246090004=(404684003:47429007=419891008)}{246090004=(310385006:363713009=52101004)}"/>
+			<display value="Situation with explicit context (situation) : { Subject relationship context (attribute) = Legal guardian (person) } { Associated finding (attribute) = ( Clinical finding (finding) : Associated with (attribute) = Record artifact (record artifact) ) } { Associated finding (attribute) = ( Information status (finding) : Has interpretation (attribute) = Present (qualifier value) ) }"/>
+			<target>
+				<code value="GesetzlicheBetreuungliegtvor"/>
+				<display value="Gesetzliche Betreuung liegt vor"/>
+				<equivalence value="inexact"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+	</group>
+	<group>
+		<source value="http://snomed.info/sct"/>
+		<sourceVersion value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Information_Medication_German"/>
+		<targetVersion value="1.0.0"/>
+		<element>
+			<code value="242571000000102"/>
+			<display value="Patient not on medication (finding)"/>
+			<target>
+				<code value="Medikationliegtnichtvor"/>
+				<display value="Medikation liegt nicht vor"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="309298003:363713009=373068000"/>
+			<display value="Drug therapy finding (finding) : Has interpretation (attribute) = Undetermined (qualifier value)"/>
+			<target>
+				<code value="VorliegenvonMedikationunbekannt"/>
+				<display value="Vorliegen von Medikation unbekannt"/>
+				<equivalence value="narrower"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+		<element>
+			<code value="309298003:363713009=52101004"/>
+			<display value="Drug therapy finding (finding) : Has interpretation (attribute) = Present (qualifier value)"/>
+			<target>
+				<code value="Medikationliegtvor"/>
+				<display value="Medikation liegt vor"/>
+				<equivalence value="narrower"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+	</group>
+	<group>
+		<source value="http://snomed.info/sct"/>
+		<sourceVersion value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Isolation_Necessity_German"/>
+		<targetVersion value="1.0.0"/>
+		<element>
+			<code value="129125009:363589002=40174006,408730004=410537005"/>
+			<display value="Procedure with explicit context (situation) : Associated procedure (attribute) = Isolation procedure (procedure) , Procedure context (attribute) = Action status unknown (qualifier value)"/>
+			<target>
+				<code value="ErfordernisraeumlicherIsolationunbekannt"/>
+				<display value="Erfordernis räumlicher Isolation unbekannt"/>
+				<equivalence value="narrower"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+		<element>
+			<code value="129125009:363589002=40174006,408730004=897015005"/>
+			<display value="Procedure with explicit context (situation) : Associated procedure (attribute) = Isolation procedure (procedure) , Procedure context (attribute) = Recommended (qualifier value)"/>
+			<target>
+				<code value="RaeumlicheIsolationnotwendig"/>
+				<display value="Räumliche Isolation notwendig"/>
+				<equivalence value="narrower"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+		<element>
+			<code value="129125009:363589002=40174006,408730004=897016006"/>
+			<display value="Procedure with explicit context (situation) : Associated procedure (attribute) = Isolation procedure (procedure) , Procedure context (attribute) = Not recommended (qualifier value)"/>
+			<target>
+				<code value="RaeumlicheIsolationnichtnotwendig"/>
+				<display value="Räumliche Isolation nicht notwendig"/>
+				<equivalence value="narrower"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+	</group>
+	<group>
+		<source value="http://snomed.info/sct"/>
+		<sourceVersion value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Isolation_Type_German"/>
+		<targetVersion value="1.0.0"/>
+		<element>
+			<code value="170497006"/>
+			<display value="Isolation because of infection (procedure)"/>
+			<target>
+				<code value="FremdschutzIsolationSchutzanderer"/>
+				<display value="Fremdschutz Isolation (Schutz anderer)"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="275829005"/>
+			<display value="Reverse isolation (procedure)"/>
+			<target>
+				<code value="UmkehrisolationSchutzdesderPatientIn"/>
+				<display value="Umkehrisolation (Schutz des/der PatientIn)"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+	</group>
+	<group>
+		<source value="http://hl7.org/fhir/device-statement-status"/>
+		<sourceVersion value="4.0.1"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_KBV_VS_Base_Device_Use_Statement_Status_German"/>
+		<targetVersion value="1.0.0"/>
+		<element>
+			<code value="active"/>
+			<display value="Active"/>
+			<target>
+				<code value="Aktiv"/>
+				<display value="Aktiv"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="completed"/>
+			<display value="Completed"/>
+			<target>
+				<code value="Abgeschlossen"/>
+				<display value="Abgeschlossen"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="entered-in-error"/>
+			<display value="Entered in Error"/>
+			<target>
+				<code value="IrrtuemlicheEingabe"/>
+				<display value="Irrtümliche Eingabe"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="intended"/>
+			<display value="Intended"/>
+			<target>
+				<code value="Beabsichtigt"/>
+				<display value="Beabsichtigt"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="on-hold"/>
+			<display value="On Hold"/>
+			<target>
+				<code value="Suspendiert"/>
+				<display value="Suspendiert"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="stopped"/>
+			<display value="Stopped"/>
+			<target>
+				<code value="Gestoppt"/>
+				<display value="Gestoppt"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+	</group>
+	<group>
+		<source value="http://snomed.info/sct"/>
+		<sourceVersion value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Living_Condition_German"/>
+		<targetVersion value="1.0.0"/>
+		<element>
+			<code value="105529008"/>
+			<display value="Lives alone (finding)"/>
+			<target>
+				<code value="alleinlebend"/>
+				<display value="alleinlebend"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="11762561000119103"/>
+			<display value="Assisted living facility patient (finding)"/>
+			<target>
+				<code value="betreutesWohnen"/>
+				<display value="betreutes Wohnen"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="31879006"/>
+			<display value="Lives in a community (finding)"/>
+			<target>
+				<code value="WohnLebensgemeinschaft"/>
+				<display value="Wohn/Lebensgemeinschaft"/>
+				<equivalence value="wider"/>
+			</target>
+		</element>
+		<element>
+			<code value="365481000"/>
+			<display value="Finding of household composition (finding)"/>
+			<target>
+				<code value="AnderesWohnverhaeltnis"/>
+				<display value="Anderes Wohnverhältnis"/>
+				<equivalence value="wider"/>
+			</target>
+		</element>
+		<element>
+			<code value="365508006:{363714003=224209007,363713009=373068000}{418775008=84100007}"/>
+			<display value="Finding of residence and accommodation circumstances (finding) : { Interprets (attribute) = Residence and accommodation circumstances (observable entity) , Has interpretation (attribute) = Undetermined (qualifier value) } { Finding method (attribute) = History taking (procedure) }"/>
+			<target>
+				<code value="unbekannt"/>
+				<display value="unbekannt"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="365508006:{363714003=224209007,363713009=413456002}{418775008=84100007}"/>
+			<display value="Finding of residence and accommodation circumstances (finding) : { Interprets (attribute) = Residence and accommodation circumstances (observable entity) , Has interpretation (attribute) = Adult day care center (environment) } { Finding method (attribute) = History taking (procedure) }"/>
+			<target>
+				<code value="teilstationaer"/>
+				<display value="teilstationär"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="365508006:{363714003=224209007,363713009=440654001}{418775008=84100007}"/>
+			<display value="Finding of residence and accommodation circumstances (finding) : { Interprets (attribute) = Residence and accommodation circumstances (observable entity) , Has interpretation (attribute) = Inpatient environment (environment) } { Finding method (attribute) = History taking (procedure) }"/>
+			<target>
+				<code value="stationaer"/>
+				<display value="stationär"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+	</group>
+	<group>
+		<source value="urn:ietf:bcp:13"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_MIME_Types_German"/>
+		<targetVersion value="1.0.0"/>
+		<element>
+			<code value="application/pdf"/>
+			<display value="application/pdf"/>
+			<target>
+				<code value="PDFAnhang"/>
+				<display value="PDF-Anhang"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="image/jpeg"/>
+			<display value="image/jpeg"/>
+			<target>
+				<code value="JPEGBild"/>
+				<display value="JPEG-Bild"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="image/png"/>
+			<display value="image/png"/>
+			<target>
+				<code value="PNGBild"/>
+				<display value="PNG-Bild"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="image/tiff"/>
+			<display value="image/tiff"/>
+			<target>
+				<code value="TIFFBild"/>
+				<display value="TIFF-Bild"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="text/plain"/>
+			<display value="text/plain"/>
+			<target>
+				<code value="Klartext"/>
+				<display value="Klartext"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="text/rtf"/>
+			<display value="text/rtf"/>
+			<target>
+				<code value="RTFText"/>
+				<display value="RTF-Text"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+	</group>
+	<group>
+		<source value="http://snomed.info/sct"/>
+		<sourceVersion value="http://snomed.info/sct/900000000000207008/version/20200131"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Medical_Device_German"/>
+		<targetVersion value="1.0.0"/>
+		<element>
+			<code value="102303004"/>
+			<display value="Vascular prosthesis, device (physical object)"/>
+			<target>
+				<code value="Gefaessprothese"/>
+				<display value="Gefäßprothese"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="102314001"/>
+			<display value="Embolization coil, device (physical object)"/>
+			<target>
+				<code value="Embolisationsspule"/>
+				<display value="Embolisationsspule"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="102319006"/>
+			<display value="Percutaneous transluminal angioplasty balloon, device (physical object)"/>
+			<target>
+				<code value="PerkutanetransluminaleAngioplastieBallon"/>
+				<display value="Perkutane transluminale Angioplastie Ballon"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="118374007"/>
+			<display value="Silicone implant, device (physical object)"/>
+			<target>
+				<code value="Silikonimplantat"/>
+				<display value="Silikonimplantat"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="118375008"/>
+			<display value="Cardiac septum prosthesis, device (physical object)"/>
+			<target>
+				<code value="HerzscheidewandProthese"/>
+				<display value="Herzscheidewand-Prothese"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="118378005"/>
+			<display value="Pacemaker pulse generator, device (physical object)"/>
+			<target>
+				<code value="SchrittmacherImpulsgeber"/>
+				<display value="Schrittmacher-Impulsgeber"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="118425005"/>
+			<display value="Cerebral ventricular reservoir device (physical object)"/>
+			<target>
+				<code value="VentrikulaeresReservoir"/>
+				<display value="Ventrikuläres Reservoir"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="14106009"/>
+			<display value="Cardiac pacemaker, device (physical object)"/>
+			<target>
+				<code value="Herzschrittmacher"/>
+				<display value="Herzschrittmacher"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="16349000"/>
+			<display value="Orthopedic device (physical object)"/>
+			<target>
+				<code value="OrthopaedischesGeraet"/>
+				<display value="Orthopädisches Gerät"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="17107009"/>
+			<display value="Mitral valve prosthesis (physical object)"/>
+			<target>
+				<code value="Mitralklappenprothese"/>
+				<display value="Mitralklappenprothese"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="19923001"/>
+			<display value="Catheter, device (physical object)"/>
+			<target>
+				<code value="Katheter"/>
+				<display value="Katheter"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="2282003"/>
+			<display value="Prosthetic breast implant (physical object)"/>
+			<target>
+				<code value="Brustprothese"/>
+				<display value="Brustprothese"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="24073000"/>
+			<display value="Artificial cardiac valve prosthesis, device (physical object)"/>
+			<target>
+				<code value="KuenstlicheHerzklappenprothese"/>
+				<display value="Künstliche Herzklappenprothese"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="25510005"/>
+			<display value="Cardiac valve prosthesis (physical object)"/>
+			<target>
+				<code value="Herzklappenprothese"/>
+				<display value="Herzklappenprothese"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="257275005"/>
+			<display value="Spinal cage (physical object)"/>
+			<target>
+				<code value="Wirbelsaeulenkaefig"/>
+				<display value="Wirbelsäulenkäfig"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="257282009"/>
+			<display value="Non-valved conduit (physical object)"/>
+			<target>
+				<code value="LeitungohneVentil"/>
+				<display value="Leitung ohne Ventil"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="257283004"/>
+			<display value="Valved cardiac conduit (physical object)"/>
+			<target>
+				<code value="VentilierterHerzkanal"/>
+				<display value="Ventilierter Herzkanal"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="257327003"/>
+			<display value="Dynamic hip screw plate (physical object)"/>
+			<target>
+				<code value="DHSPlatte"/>
+				<display value="DHS-Platte"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="257343005"/>
+			<display value="Xenograft cardiac valve (physical object)"/>
+			<target>
+				<code value="XenotransplantatHerzklappe"/>
+				<display value="Xenotransplantat-Herzklappe"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="257362008"/>
+			<display value="Plastic stent (physical object)"/>
+			<target>
+				<code value="KunststoffStent"/>
+				<display value="Kunststoff-Stent"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="257363003"/>
+			<display value="Metal stent (physical object)"/>
+			<target>
+				<code value="MetallStent"/>
+				<display value="Metall-Stent"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="257366006"/>
+			<display value="JJ stent (physical object)"/>
+			<target>
+				<code value="JJStent"/>
+				<display value="JJ-Stent"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="258593008"/>
+			<display value="Ventricular shunt (physical object)"/>
+			<target>
+				<code value="VentrikulaererShunt"/>
+				<display value="Ventrikulärer Shunt"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="25937001"/>
+			<display value="Neurostimulator, device (physical object)"/>
+			<target>
+				<code value="NeurostimulatorGeraet"/>
+				<display value="Neurostimulator, Gerät"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="264824009"/>
+			<display value="Cardiac conduit (physical object)"/>
+			<target>
+				<code value="Herzleitung"/>
+				<display value="Herzleitung"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="268460000"/>
+			<display value="Intrauterine contraceptive device (physical object)"/>
+			<target>
+				<code value="IntrauterinesVerhuetungsmittel"/>
+				<display value="Intrauterines Verhütungsmittel"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="271003"/>
+			<display value="Bone plate, device (physical object)"/>
+			<target>
+				<code value="Knochenplatte"/>
+				<display value="Knochenplatte"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="272245008"/>
+			<display value="Maxillofacial prosthesis/appliance (physical object)"/>
+			<target>
+				<code value="KieferundGesichtsprothesegeraet"/>
+				<display value="Kiefer- und Gesichtsprothese / -gerät"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="272287005"/>
+			<display value="Inlay dental restoration (physical object)"/>
+			<target>
+				<code value="InlayZahnersatz"/>
+				<display value="Inlay-Zahnersatz"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="272307009"/>
+			<display value="Endosseous oral implant (physical object)"/>
+			<target>
+				<code value="EnossalesoralesImplantat"/>
+				<display value="Enossales orales Implantat"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="27606000"/>
+			<display value="Dental prosthesis, device (physical object)"/>
+			<target>
+				<code value="Zahnprothese"/>
+				<display value="Zahnprothese"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="286558002"/>
+			<display value="Ureteric stent (physical object)"/>
+			<target>
+				<code value="Ureterstent"/>
+				<display value="Ureterstent"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="286576009"/>
+			<display value="Urethral stent (physical object)"/>
+			<target>
+				<code value="Harnroehrenstent"/>
+				<display value="Harnröhrenstent"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="303277008"/>
+			<display value="Fallopian tube prosthesis (physical object)"/>
+			<target>
+				<code value="Eileiterprothese"/>
+				<display value="Eileiterprothese"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="303490004"/>
+			<display value="Cardiovascular implant (physical object)"/>
+			<target>
+				<code value="HerzKreislaufImplantat"/>
+				<display value="Herz-Kreislauf-Implantat"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="303497001"/>
+			<display value="Urogenital implant (physical object)"/>
+			<target>
+				<code value="Urogenitalimplantat"/>
+				<display value="Urogenitalimplantat"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="303499003"/>
+			<display value="Gastrointestinal implant (physical object)"/>
+			<target>
+				<code value="MagenDarmImplantat"/>
+				<display value="Magen-Darm-Implantat"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="303500007"/>
+			<display value="Auditory implant (physical object)"/>
+			<target>
+				<code value="Hoerimplantat"/>
+				<display value="Hörimplantat"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="303503009"/>
+			<display value="Musculoskeletal implant (physical object)"/>
+			<target>
+				<code value="MuskelSkelettImplantat"/>
+				<display value="Muskel-Skelett-Implantat"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="303515008"/>
+			<display value="Orbital implant (physical object)"/>
+			<target>
+				<code value="Orbitalimplantat"/>
+				<display value="Orbitalimplantat"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="303533002"/>
+			<display value="Hip joint implant (physical object)"/>
+			<target>
+				<code value="Hueftgelenkimplantat"/>
+				<display value="Hüftgelenkimplantat"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="303608005"/>
+			<display value="Ophthalmological implant (physical object)"/>
+			<target>
+				<code value="Augenimplantat"/>
+				<display value="Augenimplantat"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="303617005"/>
+			<display value="Vascular implant (physical object)"/>
+			<target>
+				<code value="Gefaessimplantat"/>
+				<display value="Gefäßimplantat"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="303618000"/>
+			<display value="Nervous system implant (physical object)"/>
+			<target>
+				<code value="ImplantatdesNervensystems"/>
+				<display value="Implantat des Nervensystems"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="303619008"/>
+			<display value="Cardiac implant (physical object)"/>
+			<target>
+				<code value="Herzimplantat"/>
+				<display value="Herzimplantat"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="303726000"/>
+			<display value="Shoulder joint prosthesis (physical object)"/>
+			<target>
+				<code value="Schultergelenkprothese"/>
+				<display value="Schultergelenkprothese"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="303947005"/>
+			<display value="Rod fixation system (physical object)"/>
+			<target>
+				<code value="Stangenfixierungssystem"/>
+				<display value="Stangenfixierungssystem"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="304070008"/>
+			<display value="Body wall implant (physical object)"/>
+			<target>
+				<code value="Koerperwandimplantat"/>
+				<display value="Körperwandimplantat"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="304120007"/>
+			<display value="Total hip replacement prosthesis (physical object)"/>
+			<target>
+				<code value="TotalHueftprothese"/>
+				<display value="Total Hüftprothese"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="304121006"/>
+			<display value="Femoral head prosthesis (physical object)"/>
+			<target>
+				<code value="Femurkopfprothese"/>
+				<display value="Femurkopfprothese"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="304124003"/>
+			<display value="Shoulder joint implant (physical object)"/>
+			<target>
+				<code value="Schultergelenkimplantat"/>
+				<display value="Schultergelenkimplantat"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="304184000"/>
+			<display value="Ankle joint implant (physical object)"/>
+			<target>
+				<code value="Sprunggelenkimplantat"/>
+				<display value="Sprunggelenkimplantat"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="304185004"/>
+			<display value="Foot joint implant (physical object)"/>
+			<target>
+				<code value="Fussgelenkimplantat"/>
+				<display value="Fußgelenkimplantat"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="304186003"/>
+			<display value="Hand joint implant (physical object)"/>
+			<target>
+				<code value="Handgelenkimplantat"/>
+				<display value="Handgelenkimplantat"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="31031000"/>
+			<display value="Orthopedic internal fixation system, device (physical object)"/>
+			<target>
+				<code value="OrthopaedischesinternesFixationssystem"/>
+				<display value="Orthopädisches internes Fixationssystem"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="314523008"/>
+			<display value="Joint implant (physical object)"/>
+			<target>
+				<code value="Gelenkimplantat"/>
+				<display value="Gelenkimplantat"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="339648008"/>
+			<display value="Colostomy bag (physical object)"/>
+			<target>
+				<code value="Kolostomiebeutel"/>
+				<display value="Kolostomiebeutel"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="341036005"/>
+			<display value="Colostomy set (physical object)"/>
+			<target>
+				<code value="KolostomieSet"/>
+				<display value="Kolostomie-Set"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="342706005"/>
+			<display value="Ileostomy set (physical object)"/>
+			<target>
+				<code value="IleostomieSet"/>
+				<display value="Ileostomie-Set"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="344088002"/>
+			<display value="Urostomy bag (physical object)"/>
+			<target>
+				<code value="UrostomieBeutel"/>
+				<display value="Urostomie-Beutel"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="344575009"/>
+			<display value="Urostomy set (physical object)"/>
+			<target>
+				<code value="UrostomieSet"/>
+				<display value="Urostomie-Set"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="34759008"/>
+			<display value="Urethral catheter, device (physical object)"/>
+			<target>
+				<code value="Harnroehrenkatheter"/>
+				<display value="Harnröhrenkatheter"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="360041000"/>
+			<display value="Implanted drug delivery system (physical object)"/>
+			<target>
+				<code value="ImplantiertesArzneimittelabgabesystem"/>
+				<display value="Implantiertes Arzneimittelabgabesystem"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="360046005"/>
+			<display value="Arterial stent (physical object)"/>
+			<target>
+				<code value="ArteriellerStent"/>
+				<display value="Arterieller Stent"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="360058005"/>
+			<display value="Intraventricular pump (physical object)"/>
+			<target>
+				<code value="IntraventrikulaerePumpe"/>
+				<display value="Intraventrikuläre Pumpe"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="360063009"/>
+			<display value="Prosthetic cardiac annuloplasty ring (physical object)"/>
+			<target>
+				<code value="ProthesenringfuerdieHerzanuloplastik"/>
+				<display value="Prothesenring für die Herzanuloplastik"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="360070009"/>
+			<display value="Laryngeal implant (physical object)"/>
+			<target>
+				<code value="Kehlkopfimplantat"/>
+				<display value="Kehlkopfimplantat"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="360100007"/>
+			<display value="Tracheal stent (physical object)"/>
+			<target>
+				<code value="Trachealstent"/>
+				<display value="Trachealstent"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="360103009"/>
+			<display value="Intracochlear prosthesis (physical object)"/>
+			<target>
+				<code value="IntracochleaereProthese"/>
+				<display value="Intracochleäre Prothese"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="360104003"/>
+			<display value="Extracochlear prosthesis (physical object)"/>
+			<target>
+				<code value="ExtracochleaereProthese"/>
+				<display value="Extracochleäre Prothese"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="360117000"/>
+			<display value="Gastric bubble (physical object)"/>
+			<target>
+				<code value="Magenblase"/>
+				<display value="Magenblase"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="360123005"/>
+			<display value="Biliary stent (physical object)"/>
+			<target>
+				<code value="Gallenstent"/>
+				<display value="Gallenstent"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="360129009"/>
+			<display value="Cardiac pacemaker lead (physical object)"/>
+			<target>
+				<code value="HerzschrittmacherElektrode"/>
+				<display value="Herzschrittmacher-Elektrode"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="360145006"/>
+			<display value="Bone prosthesis (physical object)"/>
+			<target>
+				<code value="Knochenprothese"/>
+				<display value="Knochenprothese"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="360329004"/>
+			<display value="Polyethylene terephthalate graft (physical object)"/>
+			<target>
+				<code value="DacronTransplantat"/>
+				<display value="Dacron-Transplantat"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="386124003"/>
+			<display value="Transseptal catheter (physical object)"/>
+			<target>
+				<code value="TransseptalerKatheter"/>
+				<display value="Transseptaler Katheter"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="398013009"/>
+			<display value="Implantable venous access port (physical object)"/>
+			<target>
+				<code value="ImplantierbarervenoeserZugang"/>
+				<display value="Implantierbarer venöser Zugang"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="413766009"/>
+			<display value="Carotid artery stent (physical object)"/>
+			<target>
+				<code value="Karotisstent"/>
+				<display value="Karotisstent"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="414580007"/>
+			<display value="Laryngeal keel (physical object)"/>
+			<target>
+				<code value="Kehlkopfkiel"/>
+				<display value="Kehlkopfkiel"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="417136005"/>
+			<display value="Ileostomy bag (physical object)"/>
+			<target>
+				<code value="IleostomieBeutel"/>
+				<display value="Ileostomie-Beutel"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="421168009"/>
+			<display value="Eye sphere implant (physical object)"/>
+			<target>
+				<code value="Augenkugelimplantat"/>
+				<display value="Augenkugelimplantat"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="423449009"/>
+			<display value="Pulmonary valve prosthesis (physical object)"/>
+			<target>
+				<code value="PulmonalklappenprotheseGeraet"/>
+				<display value="Pulmonalklappenprothese, Gerät"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="424921004"/>
+			<display value="Permanent cardiac pacemaker, device (physical object)"/>
+			<target>
+				<code value="PermanenterHerzschrittmacherGeraet"/>
+				<display value="Permanenter Herzschrittmacher, Gerät"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="429798007"/>
+			<display value="Artificial vertebral disc (physical object)"/>
+			<target>
+				<code value="KuenstlicheBandscheibe"/>
+				<display value="Künstliche Bandscheibe"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="43252007"/>
+			<display value="Cochlear prosthesis, device (physical object)"/>
+			<target>
+				<code value="CochleaProthese"/>
+				<display value="Cochlea-Prothese"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="45633005"/>
+			<display value="Peritoneal dialyzer, device (physical object)"/>
+			<target>
+				<code value="Peritonealdialysator"/>
+				<display value="Peritonealdialysator"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="465380004"/>
+			<display value="Silicone gel-filled breast implant (physical object)"/>
+			<target>
+				<code value="SilikongelgefuelltesBrustimplantat"/>
+				<display value="Silikongel-gefülltes Brustimplantat"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="52124006"/>
+			<display value="Central venous catheter, device (physical object)"/>
+			<target>
+				<code value="ZentralerVenenkatheter"/>
+				<display value="Zentraler Venenkatheter"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="6012004"/>
+			<display value="Hearing aid, device (physical object)"/>
+			<target>
+				<code value="Hoergeraet"/>
+				<display value="Hörgerät"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="63112008"/>
+			<display value="Bone wire, device (physical object)"/>
+			<target>
+				<code value="Knochendraht"/>
+				<display value="Knochendraht"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="63289001"/>
+			<display value="Surgical metal nail, device (physical object)"/>
+			<target>
+				<code value="ChirurgischerMetallnagelGeraet"/>
+				<display value="Chirurgischer Metallnagel, Gerät"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="65818007"/>
+			<display value="Stent (physical object)"/>
+			<target>
+				<code value="Stent"/>
+				<display value="Stent"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="67270000"/>
+			<display value="Hip prosthesis, device (physical object)"/>
+			<target>
+				<code value="Hueftprothese"/>
+				<display value="Hüftprothese"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="68183006"/>
+			<display value="Bone screw, device (physical object)"/>
+			<target>
+				<code value="Knochenschraube"/>
+				<display value="Knochenschraube"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="72506001"/>
+			<display value="Implantable defibrillator, device (physical object)"/>
+			<target>
+				<code value="ImplantierbarerDefibrillator"/>
+				<display value="Implantierbarer Defibrillator"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="74444006"/>
+			<display value="Limb prosthesis, device (physical object)"/>
+			<target>
+				<code value="Extremitaetenprothese"/>
+				<display value="Extremitätenprothese"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="77444004"/>
+			<display value="Bone pin, device (physical object)"/>
+			<target>
+				<code value="Knochenstift"/>
+				<display value="Knochenstift"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="77777004"/>
+			<display value="Bone staple, device (physical object)"/>
+			<target>
+				<code value="Knochenheftklammer"/>
+				<display value="Knochenheftklammer"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="84683006"/>
+			<display value="Aortic valve prosthesis (physical object)"/>
+			<target>
+				<code value="Aortenklappenprothese"/>
+				<display value="Aortenklappenprothese"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="90134004"/>
+			<display value="Metal periosteal implant, device (physical object)"/>
+			<target>
+				<code value="Metallperiostimplantat"/>
+				<display value="Metallperiostimplantat"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+	</group>
+	<group>
+		<source value="http://snomed.info/sct"/>
+		<sourceVersion value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Medical_Product_Information_German"/>
+		<targetVersion value="1.0.0"/>
+		<element>
+			<code value="373572006:246090004=404684003:47429007=63653004"/>
+			<display value="Clinical finding absent (situation) : Associated finding (attribute) = Clinical finding (finding) : Associated with (attribute) = Biomedical device (physical object)"/>
+			<target>
+				<code value="InformationenzuMedizinproduktenliegenvor"/>
+				<display value="Informationen zu Medizinprodukten liegen vor"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="373573001:246090004=404684003:47429007=63653004"/>
+			<display value="Clinical finding present (situation) : Associated finding (attribute) = Clinical finding (finding) : Associated with (attribute) = Biomedical device (physical object)"/>
+			<target>
+				<code value="InformationenzuMedizinproduktenliegenvor"/>
+				<display value="Informationen zu Medizinprodukten liegen vor"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="413350009:{246090004=(404684003:47429007=63653004),408729009=261665006,408732007=410604004,408731000=410512000}"/>
+			<display value="Finding with explicit context (situation) : { Associated finding (attribute) = ( Clinical finding (finding) : Associated with (attribute) = Biomedical device (physical object) ) , Finding context (attribute) = Unknown (qualifier value) , Subject relationship context (attribute) = Subject of record (person) , Temporal context (attribute) = Current or specified time (qualifier value) }"/>
+			<target>
+				<code value="VorliegenvonInformationenzuMedizinproduktenunbekannt"/>
+				<display value="Vorliegen von Informationen zu Medizinprodukten unbekannt"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+	</group>
+	<group>
+		<source value="http://snomed.info/sct"/>
+		<sourceVersion value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Nutritional_Information_German"/>
+		<targetVersion value="1.0.0"/>
+		<element>
+			<code value="373572006:246090004=300893006"/>
+			<display value="Clinical finding absent (situation) : Associated finding (attribute) = Nutritional finding (finding)"/>
+			<target>
+				<code value="InformationenzurErnaehrungliegennichtvor"/>
+				<display value="Informationen zur Ernährung liegen nicht vor"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="373573001:246090004=300893006"/>
+			<display value="Clinical finding present (situation) : Associated finding (attribute) = Nutritional finding (finding)"/>
+			<target>
+				<code value="InformationenzurErnaehrungliegenvor"/>
+				<display value="Informationen zur Ernährung liegen vor"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="413350009:{246090004=300893006,408729009=261665006,408732007=410604004,408731000=410512000}"/>
+			<display value="Finding with explicit context (situation) : { Associated finding (attribute) = Nutritional finding (finding) , Finding context (attribute) = Unknown (qualifier value) , Subject relationship context (attribute) = Subject of record (person) , Temporal context (attribute) = Current or specified time (qualifier value) }"/>
+			<target>
+				<code value="VorliegenvonInformationenzurErnaehrungunbekannt"/>
+				<display value="Vorliegen von Informationen zur Ernährung unbekannt"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+	</group>
+	<group>
+		<source value="http://snomed.info/sct"/>
+		<sourceVersion value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Orientation_Person_German"/>
+		<targetVersion value="1.0.0"/>
+		<element>
+			<code value="427645006"/>
+			<display value="Oriented to person (finding)"/>
+			<target>
+				<code value="OrientierungzurPersonvollvorhanden"/>
+				<display value="Orientierung zur Person voll vorhanden"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="427645006:363713009=260400001"/>
+			<display value="Oriented to person (finding) : Has interpretation (attribute) = Reduced (qualifier value)"/>
+			<target>
+				<code value="OrientierungzurPersonteilweisevorhanden"/>
+				<display value="Orientierung zur Person teilweise vorhanden"/>
+				<equivalence value="narrower"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+		<element>
+			<code value="62766000"/>
+			<display value="Disorientation for person (finding)"/>
+			<target>
+				<code value="OrientierungzurPersonnichtvorhanden"/>
+				<display value="Orientierung zur Person nicht vorhanden"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+	</group>
+	<group>
+		<source value="http://snomed.info/sct"/>
+		<sourceVersion value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Orientation_Place_German"/>
+		<targetVersion value="1.0.0"/>
+		<element>
+			<code value="427161009"/>
+			<display value="Oriented to place (finding)"/>
+			<target>
+				<code value="OrientierungzumOrtvollvorhanden"/>
+				<display value="Orientierung zum Ort voll vorhanden"/>
+				<equivalence value="wider"/>
+			</target>
+		</element>
+		<element>
+			<code value="427161009:363713009=260400001"/>
+			<display value="Oriented to place (finding) : Has interpretation (attribute) = Reduced (qualifier value)"/>
+			<target>
+				<code value="OrientierungzumOrtteilweisevorhanden"/>
+				<display value="Orientierung zum Ort teilweise vorhanden"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="72440003"/>
+			<display value="Disorientated in place (finding)"/>
+			<target>
+				<code value="OrientierungzumOrtnichtvorhanden"/>
+				<display value="Orientierung zum Ort nicht vorhanden"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+	</group>
+	<group>
+		<source value="http://snomed.info/sct"/>
+		<sourceVersion value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Orientation_Situation_German"/>
+		<targetVersion value="1.0.0"/>
+		<element>
+			<code value="247663003"/>
+			<display value="Orientated (finding)"/>
+			<target>
+				<code value="OrientierungzurSituationvollvorhanden"/>
+				<display value="Orientierung zur Situation voll vorhanden"/>
+				<equivalence value="wider"/>
+			</target>
+		</element>
+		<element>
+			<code value="247663003:363713009=260400001"/>
+			<display value="Orientated (finding) : Has interpretation (attribute) = Reduced (qualifier value)"/>
+			<target>
+				<code value="OrientierungzurSituationteilweisevorhanden"/>
+				<display value="Orientierung zur Situation teilweise vorhanden"/>
+				<equivalence value="wider"/>
+			</target>
+		</element>
+		<element>
+			<code value="62476001+385337002"/>
+			<display value="Disorientated (finding) + Finding related to ability to comprehend (finding)"/>
+			<target>
+				<code value="OrientierungzurSituationnichtvorhanden"/>
+				<display value="Orientierung zur Situation nicht vorhanden"/>
+				<equivalence value="inexact"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+	</group>
+	<group>
+		<source value="http://snomed.info/sct"/>
+		<sourceVersion value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Orientation_Time_German"/>
+		<targetVersion value="1.0.0"/>
+		<element>
+			<code value="19657006"/>
+			<display value="Disorientated in time (finding)"/>
+			<target>
+				<code value="OrientierungzurZeitnichtvorhanden"/>
+				<display value="Orientierung zur Zeit nicht vorhanden"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="426794005"/>
+			<display value="Oriented to time (finding)"/>
+			<target>
+				<code value="OrientierungzurZeitvollvorhanden"/>
+				<display value="Orientierung zur Zeit voll vorhanden"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="426794005:363713009=260400001"/>
+			<display value="Oriented to time (finding) : Has interpretation (attribute) = Reduced (qualifier value)"/>
+			<target>
+				<code value="OrientierungzurZeitteilweisevorhanden"/>
+				<display value="Orientierung zur Zeit teilweise vorhanden"/>
+				<equivalence value="inexact"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+	</group>
+	<group>
+		<source value="http://snomed.info/sct"/>
+		<sourceVersion value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Pain_Symptom_German"/>
+		<targetVersion value="1.0.0"/>
+		<element>
+			<code value="22253000"/>
+			<display value="Pain (finding)"/>
+			<target>
+				<code value="Schmerzsymptomatikliegtvor"/>
+				<display value="Schmerzsymptomatik liegt vor"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="413350009:{246090004=22253000,408729009=261665006,408732007=410604004,408731000=410512000}"/>
+			<display value="Finding with explicit context (situation) : { Associated finding (attribute) = Pain (finding) , Finding context (attribute) = Unknown (qualifier value) , Subject relationship context (attribute) = Subject of record (person) , Temporal context (attribute) = Current or specified time (qualifier value) }"/>
+			<target>
+				<code value="Schmerzsymptomatikkannnichtausgeschlossenwerden"/>
+				<display value="Schmerzsymptomatik kann nicht ausgeschlossen werden"/>
+				<equivalence value="wider"/>
+			</target>
+		</element>
+		<element>
+			<code value="81765008"/>
+			<display value="No pain (situation)"/>
+			<target>
+				<code value="Schmerzsymptomatikliegtnichtvor"/>
+				<display value="Schmerzsymptomatik liegt nicht vor"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+	</group>
+	<group>
+		<source value="http://snomed.info/sct"/>
+		<sourceVersion value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Payment_Exemption_German"/>
+		<targetVersion value="1.0.0"/>
+		<element>
+			<code value="184781001"/>
+			<display value="Has free prescriptions - automatic (finding)"/>
+			<target>
+				<code value="Zuzahlungsbefreiungvorhanden"/>
+				<display value="Zuzahlungsbefreiung vorhanden"/>
+				<equivalence value="narrower"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+		<element>
+			<code value="308315007:363713009=2667000"/>
+			<display value="Prescription payment exemption status (finding) : Has interpretation (attribute) = Absent (qualifier value)"/>
+			<target>
+				<code value="Zuzahlungsbefreiungnichtvorhanden"/>
+				<display value="Zuzahlungsbefreiung nicht vorhanden"/>
+				<equivalence value="inexact"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+		<element>
+			<code value="308315007:363713009=373068000"/>
+			<display value="Prescription payment exemption status (finding) : Has interpretation (attribute) = Undetermined (qualifier value)"/>
+			<target>
+				<code value="VorhandenseinZuzahlungsbefreiungunbekannt"/>
+				<display value="Vorhandensein Zuzahlungsbefreiung unbekannt"/>
+				<equivalence value="inexact"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+	</group>
+	<group>
+		<source value="http://snomed.info/sct"/>
+		<sourceVersion value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Presence_Respiratory_Support_German"/>
+		<targetVersion value="1.0.0"/>
+		<element>
+			<code value="106048009:47429007=40617009,363713009=2667000"/>
+			<display value="Respiratory finding (finding) : Associated with (attribute) = Artificial respiration (procedure) , Has interpretation (attribute) = Absent (qualifier value)"/>
+			<target>
+				<code value="Atmungsunterstuetzungliegtnichtvor"/>
+				<display value="Atmungsunterstützung liegt nicht vor"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="106048009:47429007=40617009,363713009=52101004"/>
+			<display value="Respiratory finding (finding) : Associated with (attribute) = Artificial respiration (procedure) , Has interpretation (attribute) = Present (qualifier value)"/>
+			<target>
+				<code value="Atmungsunterstuetzungliegtvor"/>
+				<display value="Atmungsunterstützung liegt vor"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+	</group>
+	<group>
+		<source value="http://snomed.info/sct"/>
+		<sourceVersion value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Problem_Presence_German"/>
+		<targetVersion value="1.0.0"/>
+		<element>
+			<code value="373572006:246090004=55607006"/>
+			<display value="Clinical finding absent (situation) : Associated finding (attribute) = Problem (finding)"/>
+			<target>
+				<code value="EsliegenkeineProblemevor"/>
+				<display value="Es liegen keine Probleme vor"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="373573001:246090004=55607006"/>
+			<display value="Clinical finding present (situation) : Associated finding (attribute) = Problem (finding)"/>
+			<target>
+				<code value="Problemeliegenvor"/>
+				<display value="Probleme liegen vor"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="413350009:{246090004=55607006,408729009=261665006,408732007=410604004,408731000=410512000}"/>
+			<display value="Finding with explicit context (situation) : { Associated finding (attribute) = Problem (finding) , Finding context (attribute) = Unknown (qualifier value) , Subject relationship context (attribute) = Subject of record (person) , Temporal context (attribute) = Current or specified time (qualifier value) }"/>
+			<target>
+				<code value="VorliegenvonProblemenunbekannt"/>
+				<display value="Vorliegen von Problemen unbekannt"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+	</group>
+	<group>
+		<source value="http://snomed.info/sct"/>
+		<sourceVersion value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Relatives_Involvement_German"/>
+		<targetVersion value="1.0.0"/>
+		<element>
+			<code value="224483009"/>
+			<display value="Relatives unable to care for patient (finding)"/>
+			<target>
+				<code value="PflegedurchAngehoerigenichtmoeglich"/>
+				<display value="Pflege durch Angehörige nicht möglich"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="406546002"/>
+			<display value="Relatives involved with care (finding)"/>
+			<target>
+				<code value="PflegedurchAngehoerigefindetstatt"/>
+				<display value="Pflege durch Angehörige findet statt"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="406546002:363713009=371150009"/>
+			<display value="Relatives involved with care (finding) : Has interpretation (attribute) = Able (qualifier value)"/>
+			<target>
+				<code value="PflegedurchAngehoerigemoeglich"/>
+				<display value="Pflege durch Angehörige möglich"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="406546002:363713009=373068000"/>
+			<display value="Relatives involved with care (finding) : Has interpretation (attribute) = Undetermined (qualifier value)"/>
+			<target>
+				<code value="PflegedurchAngehoerigeunbekannt"/>
+				<display value="Pflege durch Angehörige: unbekannt"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+	</group>
+	<group>
+		<source value="http://snomed.info/sct"/>
+		<sourceVersion value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Relatives_Notification_Status_German"/>
+		<targetVersion value="1.0.0"/>
+		<element>
+			<code value="129125009:{408731000=410512000,408730004=385660001,363589002=185087000,408732007=444148008}"/>
+			<display value="Procedure with explicit context (situation) : { Temporal context (attribute) = Current or specified time (qualifier value) , Procedure context (attribute) = Not done (qualifier value) , Associated procedure (attribute) = Notifications (procedure) , Subject relationship context (attribute) = Person in family of subject (person) }"/>
+			<target>
+				<code value="BenachrichtigungvonAnZugehoerigennichterfolgt"/>
+				<display value="Benachrichtigung von An-/Zugehörigen nicht erfolgt"/>
+				<equivalence value="narrower"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+		<element>
+			<code value="129125009:{408731000=410512000,408730004=410537005,363589002=185087000,408732007=444148008}"/>
+			<display value="Procedure with explicit context (situation) : { Temporal context (attribute) = Current or specified time (qualifier value) , Procedure context (attribute) = Action status unknown (qualifier value) , Associated procedure (attribute) = Notifications (procedure) , Subject relationship context (attribute) = Person in family of subject (person) }"/>
+			<target>
+				<code value="BenachrichtigungsstatusvonAnZugehoerigenunbekannt"/>
+				<display value="Benachrichtigungsstatus von An-/Zugehörigen unbekannt"/>
+				<equivalence value="narrower"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+		<element>
+			<code value="418404007"/>
+			<display value="Family notified (situation)"/>
+			<target>
+				<code value="BenachrichtigungvonAnZugehoerigenerfolgt"/>
+				<display value="Benachrichtigung von An-/Zugehörigen erfolgt"/>
+				<equivalence value="narrower"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+	</group>
+	<group>
+		<source value="http://snomed.info/sct"/>
+		<sourceVersion value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Respiratory_Access_German"/>
+		<targetVersion value="1.0.0"/>
+		<element>
+			<code value="302108003"/>
+			<display value="Tracheostomy present (finding)"/>
+			<target>
+				<code value="Tracheostoma"/>
+				<display value="Tracheostoma"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="366141005"/>
+			<display value="Finding of route of breathing (finding)"/>
+			<target>
+				<code value="AndereArtderLuftleitung"/>
+				<display value="Andere Art der Luftleitung"/>
+				<equivalence value="wider"/>
+			</target>
+		</element>
+	</group>
+	<group>
+		<source value="http://snomed.info/sct"/>
+		<sourceVersion value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Risk_German"/>
+		<targetVersion value="1.0.0"/>
+		<element>
+			<code value="129839007"/>
+			<display value="At risk for falls (finding)"/>
+			<target>
+				<code value="Sturzrisiko"/>
+				<display value="Sturzrisiko"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="129845004"/>
+			<display value="At risk for imbalanced nutrition, less than body requirements (finding)"/>
+			<target>
+				<code value="Mangelernaehrungsrisiko"/>
+				<display value="Mangelernährungsrisiko"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="281694009+111360009"/>
+			<display value="Finding of at risk (finding) + Obstipation (disorder)"/>
+			<target>
+				<code value="Obstipationsrisiko"/>
+				<display value="Obstipationsrisiko"/>
+				<equivalence value="wider"/>
+			</target>
+		</element>
+		<element>
+			<code value="281694009+233604007"/>
+			<display value="Finding of at risk (finding) + Pneumonia (disorder)"/>
+			<target>
+				<code value="Pneumonierisiko"/>
+				<display value="Pneumonierisiko"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="281694009+48340000"/>
+			<display value="Finding of at risk (finding) + Incontinence (finding)"/>
+			<target>
+				<code value="Inkontinenzrisiko"/>
+				<display value="Inkontinenzrisiko"/>
+				<equivalence value="wider"/>
+			</target>
+		</element>
+		<element>
+			<code value="285304000"/>
+			<display value="At risk of pressure ulcer (finding)"/>
+			<target>
+				<code value="Dekubitusrisiko"/>
+				<display value="Dekubitusrisiko"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="371736008"/>
+			<display value="At risk for aspiration (finding)"/>
+			<target>
+				<code value="Aspirationsrisiko"/>
+				<display value="Aspirationsrisiko"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="427631000"/>
+			<display value="At risk of venous thromboembolus (finding)"/>
+			<target>
+				<code value="Thromboserisiko"/>
+				<display value="Thromboserisiko"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="67722007"/>
+			<display value="At risk for joint contractures (finding)"/>
+			<target>
+				<code value="Kontrakturrisiko"/>
+				<display value="Kontrakturrisiko"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="704420006"/>
+			<display value="At risk of dehydration (finding)"/>
+			<target>
+				<code value="Dehydratationsrisiko"/>
+				<display value="Dehydratationsrisiko"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="704448006"/>
+			<display value="Tendency to wander (finding)"/>
+			<target>
+				<code value="Hinlaufgefaehrdung"/>
+				<display value="Hinlaufgefährdung"/>
+				<equivalence value="wider"/>
+			</target>
+		</element>
+	</group>
+	<group>
+		<source value="http://snomed.info/sct"/>
+		<sourceVersion value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Risk_Presence_German"/>
+		<targetVersion value="1.0.0"/>
+		<element>
+			<code value="373572006:246090004=281694009"/>
+			<display value="Clinical finding absent (situation) : Associated finding (attribute) = Finding of at risk (finding)"/>
+			<target>
+				<code value="Risikenliegennichtvor"/>
+				<display value="Risiken liegen nicht vor"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="373573001:246090004=281694009"/>
+			<display value="Clinical finding present (situation) : Associated finding (attribute) = Finding of at risk (finding)"/>
+			<target>
+				<code value="Risikenliegenvor"/>
+				<display value="Risiken liegen vor"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="413350009:{246090004=281694009,408729009=261665006,408732007=410604004,408731000=410512000}"/>
+			<display value="Finding with explicit context (situation) : { Associated finding (attribute) = Finding of at risk (finding) , Finding context (attribute) = Unknown (qualifier value) , Subject relationship context (attribute) = Subject of record (person) , Temporal context (attribute) = Current or specified time (qualifier value) }"/>
+			<target>
+				<code value="VorliegenvonRisikenunbekannt"/>
+				<display value="Vorliegen von Risiken unbekannt"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+	</group>
+	<group>
+		<source value="http://snomed.info/sct"/>
+		<sourceVersion value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Type_Of_Facility_German"/>
+		<targetVersion value="1.0.0"/>
+		<element>
+			<code value="1179644005"/>
+			<display value="Residential home for disabled people (environment)"/>
+			<target>
+				<code value="EinrichtungderEingliederungshilfe"/>
+				<display value="Einrichtung der Eingliederungshilfe"/>
+				<equivalence value="inexact"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+		<element>
+			<code value="22232009"/>
+			<display value="Hospital (environment)"/>
+			<target>
+				<code value="Krankenhaus"/>
+				<display value="Krankenhaus"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="284546000"/>
+			<display value="Hospice (environment)"/>
+			<target>
+				<code value="Hospiz"/>
+				<display value="Hospiz"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="42665001"/>
+			<display value="Nursing home (environment)"/>
+			<target>
+				<code value="EinrichtungderstationaerenLangzeitpflege"/>
+				<display value="Einrichtung der stationären Langzeitpflege"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="43741000"/>
+			<display value="Site of care (environment)"/>
+			<target>
+				<code value="AndererEinrichtungstyp"/>
+				<display value="Anderer Einrichtungstyp"/>
+				<equivalence value="wider"/>
+			</target>
+		</element>
+		<element>
+			<code value="66280005"/>
+			<display value="Private home-based care (environment)"/>
+			<target>
+				<code value="AmbulanterPflegedienst"/>
+				<display value="Ambulanter Pflegedienst"/>
+				<equivalence value="inexact"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+		<element>
+			<code value="702916001"/>
+			<display value="Rehabilitation clinic (environment)"/>
+			<target>
+				<code value="Rehabilitationseinrichtung"/>
+				<display value="Rehabilitationseinrichtung"/>
+				<equivalence value="narrower"/>
+				<comment value="TBD"/>
+			</target>
+		</element>
+	</group>
+</ConceptMap>

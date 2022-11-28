@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+	<url value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Provenance_Source_of_Information"/>
+	<version value="1.0.0"/>
+	<name value="KBV_PR_MIO_ULB_Provenance_Source_of_Information"/>
+	<title value="KBV_PR_MIO_ULB_Provenance_Source_of_Information"/>
+	<status value="draft"/>
+	<publisher value="Kassenärztliche Bundesvereinigung (KBV)"/>
+	<description value="Dieses Profil bildet die Informationsquelle ab."/>
+	<fhirVersion value="4.0.1"/>
+	<mapping>
+		<identity value="workflow"/>
+		<uri value="http://hl7.org/fhir/workflow"/>
+		<name value="Workflow Pattern"/>
+	</mapping>
+	<mapping>
+		<identity value="rim"/>
+		<uri value="http://hl7.org/v3"/>
+		<name value="RIM Mapping"/>
+	</mapping>
+	<mapping>
+		<identity value="w3c.prov"/>
+		<uri value="http://www.w3.org/ns/prov"/>
+		<name value="W3C PROV"/>
+	</mapping>
+	<mapping>
+		<identity value="w5"/>
+		<uri value="http://hl7.org/fhir/fivews"/>
+		<name value="FiveWs Pattern Mapping"/>
+	</mapping>
+	<mapping>
+		<identity value="fhirauditevent"/>
+		<uri value="http://hl7.org/fhir/auditevent"/>
+		<name value="FHIR AuditEvent Mapping"/>
+	</mapping>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="Provenance"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Provenance"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Provenance">
+			<path value="Provenance"/>
+			<definition value="Dieses Profil bildet die Informationsquelle ab."/>
+		</element>
+		<element id="Provenance.meta">
+			<path value="Provenance.meta"/>
+			<min value="1"/>
+		</element>
+		<element id="Provenance.meta.versionId">
+			<path value="Provenance.meta.versionId"/>
+			<max value="0"/>
+		</element>
+		<element id="Provenance.meta.lastUpdated">
+			<path value="Provenance.meta.lastUpdated"/>
+			<max value="0"/>
+		</element>
+		<element id="Provenance.meta.source">
+			<path value="Provenance.meta.source"/>
+			<max value="0"/>
+		</element>
+		<element id="Provenance.meta.profile">
+			<path value="Provenance.meta.profile"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Provenance_Source_of_Information|1.0.0"/>
+		</element>
+		<element id="Provenance.meta.security">
+			<path value="Provenance.meta.security"/>
+			<max value="0"/>
+		</element>
+		<element id="Provenance.meta.tag">
+			<path value="Provenance.meta.tag"/>
+			<max value="0"/>
+		</element>
+		<element id="Provenance.implicitRules">
+			<path value="Provenance.implicitRules"/>
+			<max value="0"/>
+		</element>
+		<element id="Provenance.language">
+			<path value="Provenance.language"/>
+			<max value="0"/>
+		</element>
+		<element id="Provenance.text">
+			<path value="Provenance.text"/>
+			<definition value="In diesem Element können die in der Instanz enthaltenen Informationen in einer menschenlesbaren Form zusammengefasst werden. Dabei ist zu beachten, dass keine Informationen aufgenommen werden dürfen, die nicht in strukturierter Form an anderer Stelle in der Instanz enthalten sind."/>
+		</element>
+		<element id="Provenance.text.status">
+			<path value="Provenance.text.status"/>
+			<patternCode value="extensions"/>
+		</element>
+		<element id="Provenance.contained">
+			<path value="Provenance.contained"/>
+			<max value="0"/>
+		</element>
+		<element id="Provenance.target">
+			<path value="Provenance.target"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Condition_Medical_Problem_Diagnosis|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Device_Implant|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Deprivation_Liberty_Measures|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_MedicationStatement_Administration_Instruction|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Procedure_Isolation|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_AllergyIntolerance|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Pain|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Fecal_Drainage|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Urinary_Drainage|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Food_Type|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Food_Administration_Form|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Nutrition|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Cognitive_Awareness|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Orientation|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Respiratory_Support|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Respiratory_Access|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Provenance.target.reference">
+			<path value="Provenance.target.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Provenance.target.type">
+			<path value="Provenance.target.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Provenance.target.identifier">
+			<path value="Provenance.target.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Provenance.target.display">
+			<path value="Provenance.target.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Provenance.occurred[x]">
+			<path value="Provenance.occurred[x]"/>
+			<max value="0"/>
+		</element>
+		<element id="Provenance.policy">
+			<path value="Provenance.policy"/>
+			<max value="0"/>
+		</element>
+		<element id="Provenance.location">
+			<path value="Provenance.location"/>
+			<max value="0"/>
+		</element>
+		<element id="Provenance.reason">
+			<path value="Provenance.reason"/>
+			<max value="0"/>
+		</element>
+		<element id="Provenance.activity">
+			<path value="Provenance.activity"/>
+			<max value="0"/>
+		</element>
+		<element id="Provenance.agent">
+			<path value="Provenance.agent"/>
+			<max value="1"/>
+		</element>
+		<element id="Provenance.agent.type">
+			<path value="Provenance.agent.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Provenance.agent.role">
+			<path value="Provenance.agent.role"/>
+			<max value="0"/>
+		</element>
+		<element id="Provenance.agent.who.extension">
+			<path value="Provenance.agent.who.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+			<min value="1"/>
+		</element>
+		<element id="Provenance.agent.who.extension:data-absent-reason">
+			<path value="Provenance.agent.who.extension"/>
+			<sliceName value="data-absent-reason"/>
+			<min value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
+			</type>
+		</element>
+		<element id="Provenance.agent.who.extension:data-absent-reason.value[x]">
+			<path value="Provenance.agent.who.extension.value[x]"/>
+			<slicing>
+				<discriminator>
+					<type value="type"/>
+					<path value="$this"/>
+				</discriminator>
+				<rules value="closed"/>
+			</slicing>
+		</element>
+		<element id="Provenance.agent.who.extension:data-absent-reason.value[x]:valueCode">
+			<path value="Provenance.agent.who.extension.value[x]"/>
+			<sliceName value="valueCode"/>
+			<min value="1"/>
+			<patternCode value="unknown"/>
+		</element>
+		<element id="Provenance.agent.who.reference">
+			<path value="Provenance.agent.who.reference"/>
+			<max value="0"/>
+		</element>
+		<element id="Provenance.agent.who.type">
+			<path value="Provenance.agent.who.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Provenance.agent.who.identifier">
+			<path value="Provenance.agent.who.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Provenance.agent.who.display">
+			<path value="Provenance.agent.who.display"/>
+			<min value="1"/>
+			<patternString value="unknown"/>
+		</element>
+		<element id="Provenance.agent.onBehalfOf">
+			<path value="Provenance.agent.onBehalfOf"/>
+			<max value="0"/>
+		</element>
+		<element id="Provenance.entity">
+			<path value="Provenance.entity"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Provenance.entity.role">
+			<path value="Provenance.entity.role"/>
+			<patternCode value="source"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Provenance.entity.what">
+			<path value="Provenance.entity.what"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_DocumentReference_ePa_Reference|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Provenance.entity.what.reference">
+			<path value="Provenance.entity.what.reference"/>
+			<min value="0"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Provenance.entity.what.type">
+			<path value="Provenance.entity.what.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Provenance.entity.what.identifier">
+			<path value="Provenance.entity.what.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Provenance.entity.what.display">
+			<path value="Provenance.entity.what.display"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Provenance.entity.agent">
+			<path value="Provenance.entity.agent"/>
+			<max value="0"/>
+		</element>
+		<element id="Provenance.signature">
+			<path value="Provenance.signature"/>
+			<max value="0"/>
+		</element>
+	</differential>
+</StructureDefinition>

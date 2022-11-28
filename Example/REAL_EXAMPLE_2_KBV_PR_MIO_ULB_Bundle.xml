@@ -1,0 +1,991 @@
+<Bundle xmlns="http://hl7.org/fhir">
+	<id value="40d19a47-2761-4bd2-ad5b-0f5556c95aa8"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Bundle|1.0.0"/>
+	</meta>
+	<identifier>
+		<system value="urn:ietf:rfc:3986"/>
+		<value value="urn:uuid:ddb65820-67df-4d57-9802-123b480a8b67"/>
+	</identifier>
+	<type value="document"/>
+	<timestamp value="2022-01-07T12:30:02Z"/>
+	<entry>
+		<fullUrl value="urn:uuid:dc45c59a-69c2-4563-9b6e-296546659ddf"/>
+		<resource>
+			<Composition>
+				<id value="dc45c59a-69c2-4563-9b6e-296546659ddf"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Composition|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Composition</h1>
+					</div>
+				</text>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Receiving_Institution">
+					<valueReference>
+						<reference value="urn:uuid:879b30b1-dfdb-43fc-9695-cbc9b8cbea98"/>
+					</valueReference>
+				</extension>
+				<status value="final"/>
+				<type>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="721919000"/>
+						<display value="Nurse discharge summary (record artifact)"/>
+					</coding>
+				</type>
+				<subject>
+					<reference value="urn:uuid:b4788ece-fdd7-4e78-a53b-0f3fcc31a3fd"/>
+				</subject>
+				<date value="2009-12-10"/>
+				<author>
+					<reference value="urn:uuid:01e04ad7-2c40-4cbf-b752-075493a233fa"/>
+				</author>
+				<title value="Überleitungsbogen"/>
+				<section>
+					<title value="Pflegegrad"/>
+					<code>
+						<coding>
+							<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Section_Codes"/>
+							<version value="1.0.0"/>
+							<code value="SectionPflegegrad"/>
+							<display value="Bereich Pflegegrad"/>
+						</coding>
+					</code>
+					<entry>
+						<reference value="urn:uuid:01044fb1-15f0-4e0b-ac38-30f88ae27188"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Persönliche Erklärungen / Gesetzliche Betreuung"/>
+					<code>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+							<code value="224329005"/>
+							<display value="Legal affairs and legal constraints (observable entity)"/>
+						</coding>
+					</code>
+					<entry>
+						<reference value="urn:uuid:930cc67f-9474-4727-8636-cd8c85ea84be"/>
+					</entry>
+					<entry>
+						<reference value="urn:uuid:50104928-67a2-4bdb-a7eb-a239d789fc62"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Funktionsbeurteilungen"/>
+					<code>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+							<code value="1184588000"/>
+							<display value="Functional status document section (record artifact)"/>
+						</coding>
+					</code>
+					<entry>
+						<reference value="urn:uuid:788257f3-f33f-414d-ae0c-ce2fec76f731"/>
+					</entry>
+				</section>
+			</Composition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:79e74152-4119-403d-b925-edf05363f9c5"/>
+		<resource>
+			<Observation>
+				<id value="79e74152-4119-403d-b925-edf05363f9c5"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Assessment_Free|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Beurteilung Körperpflege Unterkörper</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<category>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="424836000"/>
+						<display value="Assessment section (record artifact)"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://epaAC.de"/>
+						<version value="2.3.01"/>
+						<code value="E2_I_010"/>
+						<display value="Körperpflege Unterkörper"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:b4788ece-fdd7-4e78-a53b-0f3fcc31a3fd"/>
+				</subject>
+				<effectiveDateTime value="2022-01-01"/>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://epaAC.de"/>
+						<version value="2.3.01"/>
+						<code value="E3_I_0108"/>
+						<display value="2 (gering vorhandene Fähigkeit)"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:b4788ece-fdd7-4e78-a53b-0f3fcc31a3fd"/>
+		<resource>
+			<Patient>
+				<id value="b4788ece-fdd7-4e78-a53b-0f3fcc31a3fd"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Patient</h1>
+					</div>
+				</text>
+				<identifier>
+					<use value="official"/>
+					<type>
+						<coding>
+							<system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+							<code value="GKV"/>
+							<display value="Gesetzliche Krankenversicherung"/>
+						</coding>
+					</type>
+					<system value="http://fhir.de/sid/gkv/kvid-10"/>
+					<value value="P234567890"/>
+				</identifier>
+				<name>
+					<use value="official"/>
+					<text value="Elfriede Schlosser"/>
+					<family value="Schlosser">
+						<extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+							<valueString value="Schlosser"/>
+						</extension>
+					</family>
+					<given value="Elfriede"/>
+				</name>
+				<gender value="female"/>
+				<birthDate value="1949-07-22"/>
+			</Patient>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:01e04ad7-2c40-4cbf-b752-075493a233fa"/>
+		<resource>
+			<Organization>
+				<id value="01e04ad7-2c40-4cbf-b752-075493a233fa"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Organization|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Organisation</h1>
+					</div>
+				</text>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment">
+					<valueString value="test"/>
+				</extension>
+				<identifier>
+					<type>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+							<code value="XX"/>
+							<display value="Organisations-ID"/>
+						</coding>
+					</type>
+					<system value="http://fhir.de/sid/arge-ik/iknr"/>
+					<value value="123456789"/>
+				</identifier>
+				<type>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="22232009"/>
+						<display value="Hospital (environment)"/>
+					</coding>
+				</type>
+				<name value="Krankenhaus Polarexpress"/>
+				<telecom>
+					<system value="phone"/>
+					<value value="123456789"/>
+				</telecom>
+				<address>
+					<use value="temp"/>
+					<type value="both"/>
+					<text value="Musterstraße 1"/>
+					<line value="Musterstr. 1">
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+							<valueString value="Musterstr."/>
+						</extension>
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+							<valueString value="1"/>
+						</extension>
+					</line>
+					<city value="Darmstadt"/>
+					<postalCode value="64283"/>
+					<country value="D"/>
+				</address>
+			</Organization>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:879b30b1-dfdb-43fc-9695-cbc9b8cbea98"/>
+		<resource>
+			<Organization>
+				<id value="879b30b1-dfdb-43fc-9695-cbc9b8cbea98"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Organization|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Organisation</h1>
+					</div>
+				</text>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment">
+					<valueString value="test"/>
+				</extension>
+				<type>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="43741000"/>
+						<display value="Site of care (environment)"/>
+					</coding>
+				</type>
+				<name value="Pflegeheim Sonnenschein"/>
+				<telecom>
+					<system value="phone"/>
+					<value value="658792584"/>
+				</telecom>
+				<address>
+					<use value="temp"/>
+					<type value="both"/>
+					<text value="Kastenstraße 58"/>
+					<line value="Kastenstraße 58">
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+							<valueString value="Kastenstraße"/>
+						</extension>
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+							<valueString value="58"/>
+						</extension>
+					</line>
+					<city value="Darmstadt"/>
+					<postalCode value="64283"/>
+					<country value="D"/>
+				</address>
+			</Organization>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:788257f3-f33f-414d-ae0c-ce2fec76f731"/>
+		<resource>
+			<Observation>
+				<id value="788257f3-f33f-414d-ae0c-ce2fec76f731"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Presence_Functional_Assessment|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Vorliegen von Funktionseinschränkungen</h1>
+					</div>
+				</text>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Has_Member">
+					<valueReference>
+						<reference value="urn:uuid:2bbbd4e0-b149-42fd-89f2-371df3aac6f3"/>
+					</valueReference>
+				</extension>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Has_Member">
+					<valueReference>
+						<reference value="urn:uuid:9b56ec24-ffa0-4c0a-9be0-e40cc46781a1"/>
+					</valueReference>
+				</extension>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Has_Member">
+					<valueReference>
+						<reference value="urn:uuid:2523dbe6-04ea-4e1b-9311-c01856fcb76a"/>
+					</valueReference>
+				</extension>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Has_Member">
+					<valueReference>
+						<reference value="urn:uuid:6fb958e0-9df0-4ef8-9966-c894c5eb4569"/>
+					</valueReference>
+				</extension>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Has_Member">
+					<valueReference>
+						<reference value="urn:uuid:9ab0b64a-4541-4b30-9c88-bd8d7da93b8f"/>
+					</valueReference>
+				</extension>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Has_Member">
+					<valueReference>
+						<reference value="urn:uuid:71415093-66fc-4f43-880b-b68451c43868"/>
+					</valueReference>
+				</extension>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Has_Member">
+					<valueReference>
+						<reference value="urn:uuid:79e74152-4119-403d-b925-edf05363f9c5"/>
+					</valueReference>
+				</extension>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Has_Member">
+					<valueReference>
+						<reference value="urn:uuid:6e4c07c3-c62f-4d54-946a-c3bbad0019a8"/>
+					</valueReference>
+				</extension>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Has_Member">
+					<valueReference>
+						<reference value="urn:uuid:050e3b36-e061-4012-a0d7-708da0e4e695"/>
+					</valueReference>
+				</extension>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Has_Member">
+					<valueReference>
+						<reference value="urn:uuid:7840ad82-a5a3-4c98-980f-9a0b5c2864c8"/>
+					</valueReference>
+				</extension>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Has_Member">
+					<valueReference>
+						<reference value="urn:uuid:99977bcf-a07d-46ad-b13d-f611a721b7f4"/>
+					</valueReference>
+				</extension>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="363787002:704326004=105719004"/>
+						<display value="Observable entity (observable entity) : Precondition (attribute) = Body disability AND/OR failure state (finding)"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:b4788ece-fdd7-4e78-a53b-0f3fcc31a3fd"/>
+				</subject>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="373573001:246090004=105719004"/>
+						<display value="Clinical finding present (situation) : Associated finding (attribute) = Body disability AND/OR failure state (finding)"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:50104928-67a2-4bdb-a7eb-a239d789fc62"/>
+		<resource>
+			<Observation>
+				<id value="50104928-67a2-4bdb-a7eb-a239d789fc62"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Personal_Statements|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Vorliegen von persönlichen Erklärungen</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="363787002:704325000=371538006"/>
+						<display value="Observable entity (observable entity): Relative to (attribute) = Advance directive report (record artifact)"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:b4788ece-fdd7-4e78-a53b-0f3fcc31a3fd"/>
+				</subject>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="310301000:363713009=373068000"/>
+						<display value="Advance healthcare directive status (finding) : Has interpretation (attribute) = Undetermined (qualifier value)"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:930cc67f-9474-4727-8636-cd8c85ea84be"/>
+		<resource>
+			<Observation>
+				<id value="930cc67f-9474-4727-8636-cd8c85ea84be"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Information_Legal_Care|1.0.0"/>
+				</meta>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="363787002:704319004=58626002,704325000=419891008"/>
+						<display value="Observable entity (observable entity) : Inheres in (attribute) = Legal guardian (person) , Relative to (attribute) = Record artifact (record artifact)"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:b4788ece-fdd7-4e78-a53b-0f3fcc31a3fd"/>
+				</subject>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="243796009:{408732007=58626002}{246090004=(404684003:47429007=419891008)}{246090004=(310385006:363713009=373068000)}"/>
+						<display value="Situation with explicit context (situation) : { Subject relationship context (attribute) = Legal guardian (person) } { Associated finding (attribute) = ( Clinical finding (finding) : Associated with (attribute) = Record artifact (record artifact) ) } { Associated finding (attribute) = ( Information status (finding) : Has interpretation (attribute) = Undetermined (qualifier value) ) }"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:01044fb1-15f0-4e0b-ac38-30f88ae27188"/>
+		<resource>
+			<Observation>
+				<id value="01044fb1-15f0-4e0b-ac38-30f88ae27188"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Care_Level|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Pflegegrad</h1>
+					</div>
+				</text>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Application_Status">
+					<extension url="antragsstatusPflegegrad">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Application_Status_Care_Level"/>
+								<version value="1.0.0"/>
+								<code value="Pflegegrad_noch_nie_beantragt"/>
+								<display value="Pflegegrad noch nie beantragt"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+				</extension>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<version value="2.72"/>
+						<code value="80391-6"/>
+						<display value="Level of care [Type]"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:b4788ece-fdd7-4e78-a53b-0f3fcc31a3fd"/>
+				</subject>
+				<effectivePeriod>
+					<start value="2020-01-31"/>
+					<end value="2020-02-17"/>
+				</effectivePeriod>
+				<dataAbsentReason>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/data-absent-reason"/>
+						<version value="4.0.1"/>
+						<code value="unknown"/>
+						<display value="unknown"/>
+					</coding>
+				</dataAbsentReason>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:99977bcf-a07d-46ad-b13d-f611a721b7f4"/>
+		<resource>
+			<Observation>
+				<id value="99977bcf-a07d-46ad-b13d-f611a721b7f4"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Assessment_Free|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Beurteilung Urinausscheidung durchführen</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<category>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="424836000"/>
+						<display value="Assessment section (record artifact)"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://epaAC.de"/>
+						<version value="2.3.01"/>
+						<code value="E2_I_024"/>
+						<display value="Urinausscheidung durchführen"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:b4788ece-fdd7-4e78-a53b-0f3fcc31a3fd"/>
+				</subject>
+				<effectiveDateTime value="2022-01-01"/>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://epaAC.de"/>
+						<version value="2.3.01"/>
+						<code value="E3_I_0069"/>
+						<display value="2 (gering vorhandene Fähigkeit)"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:7840ad82-a5a3-4c98-980f-9a0b5c2864c8"/>
+		<resource>
+			<Observation>
+				<id value="7840ad82-a5a3-4c98-980f-9a0b5c2864c8"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Assessment_Free|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Beurteilung Trinken</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<category>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="424836000"/>
+						<display value="Assessment section (record artifact)"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://epaAC.de"/>
+						<version value="2.3.01"/>
+						<code value="E2_I_017"/>
+						<display value="Trinken"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:b4788ece-fdd7-4e78-a53b-0f3fcc31a3fd"/>
+				</subject>
+				<effectiveDateTime value="2022-01-01"/>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://epaAC.de"/>
+						<version value="2.3.01"/>
+						<code value="E3_I_0047"/>
+						<display value="4 (überwiegend vorhandene Fähigkeit)"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:050e3b36-e061-4012-a0d7-708da0e4e695"/>
+		<resource>
+			<Observation>
+				<id value="050e3b36-e061-4012-a0d7-708da0e4e695"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Assessment_Free|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Beurteilung Stuhlausscheidung durchführen</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<category>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="424836000"/>
+						<display value="Assessment section (record artifact)"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://epaAC.de"/>
+						<version value="2.3.01"/>
+						<code value="E2_I_026"/>
+						<display value="Stuhlausscheidung durchführen"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:b4788ece-fdd7-4e78-a53b-0f3fcc31a3fd"/>
+				</subject>
+				<effectiveDateTime value="2022-01-01"/>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://epaAC.de"/>
+						<version value="2.3.01"/>
+						<code value="E3_I_0079"/>
+						<display value="2 (gering vorhandene Fähigkeit)"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:6e4c07c3-c62f-4d54-946a-c3bbad0019a8"/>
+		<resource>
+			<Observation>
+				<id value="6e4c07c3-c62f-4d54-946a-c3bbad0019a8"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Assessment_Free|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Beurteilung Körperpflege Oberkörper</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<category>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="424836000"/>
+						<display value="Assessment section (record artifact)"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://epaAC.de"/>
+						<version value="2.3.01"/>
+						<code value="E2_I_009"/>
+						<display value="Körperpflege Oberkörper"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:b4788ece-fdd7-4e78-a53b-0f3fcc31a3fd"/>
+				</subject>
+				<effectiveDateTime value="2022-01-01"/>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://epaAC.de"/>
+						<version value="2.3.01"/>
+						<code value="E3_I_0104"/>
+						<display value="3 (überwiegend vorhandene Fähigkeit)"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:71415093-66fc-4f43-880b-b68451c43868"/>
+		<resource>
+			<Observation>
+				<id value="71415093-66fc-4f43-880b-b68451c43868"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Assessment_Free|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Beurteilung Informationen verarbeiten/verstehen</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<category>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="424836000"/>
+						<display value="Assessment section (record artifact)"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://epaAC.de"/>
+						<version value="2.3.01"/>
+						<code value="E2_I_082"/>
+						<display value="Informationen verarbeiten/verstehen"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:b4788ece-fdd7-4e78-a53b-0f3fcc31a3fd"/>
+				</subject>
+				<effectiveDateTime value="2022-01-01"/>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://epaAC.de"/>
+						<version value="2.3.01"/>
+						<code value="E3_I_0389"/>
+						<display value="3 (überwiegend vorhandene Fähigkeit)"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:9ab0b64a-4541-4b30-9c88-bd8d7da93b8f"/>
+		<resource>
+			<Observation>
+				<id value="9ab0b64a-4541-4b30-9c88-bd8d7da93b8f"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Assessment_Free|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Beurteilung Fortbewegung</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<category>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="424836000"/>
+						<display value="Assessment section (record artifact)"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://epaAC.de"/>
+						<version value="2.3.01"/>
+						<code value="E2_I_001"/>
+						<display value="Fortbewegung"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:b4788ece-fdd7-4e78-a53b-0f3fcc31a3fd"/>
+				</subject>
+				<effectiveDateTime value="2022-01-01"/>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://epaAC.de"/>
+						<version value="2.3.01"/>
+						<code value="E3_I_0002"/>
+						<display value="2 (gering vorhandene Fähigkeit)"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:6fb958e0-9df0-4ef8-9966-c894c5eb4569"/>
+		<resource>
+			<Observation>
+				<id value="6fb958e0-9df0-4ef8-9966-c894c5eb4569"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Assessment_Free|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Beurteilung Essen</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<category>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="424836000"/>
+						<display value="Assessment section (record artifact)"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://epaAC.de"/>
+						<version value="2.3.01"/>
+						<code value="E2_I_013"/>
+						<display value="Essen"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:b4788ece-fdd7-4e78-a53b-0f3fcc31a3fd"/>
+				</subject>
+				<effectiveDateTime value="2022-01-01"/>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://epaAC.de"/>
+						<version value="2.3.01"/>
+						<code value="E3_I_0028"/>
+						<display value="3 (überwiegend vorhandene Fähigkeit)"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:2bbbd4e0-b149-42fd-89f2-371df3aac6f3"/>
+		<resource>
+			<Observation>
+				<id value="2bbbd4e0-b149-42fd-89f2-371df3aac6f3"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Assessment_Free|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Ergebnis des Selbstpflegeindex</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<category>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="424836000"/>
+						<display value="Assessment section (record artifact)"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://epaAC.de"/>
+						<version value="2.3.01"/>
+						<code value="E0_I_0048"/>
+						<display value="Selbstpflegeindex SPI"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:b4788ece-fdd7-4e78-a53b-0f3fcc31a3fd"/>
+				</subject>
+				<effectiveDateTime value="2022-01-01"/>
+				<valueQuantity>
+					<value value="23"/>
+					<unit value="Punkte"/>
+				</valueQuantity>
+				<hasMember>
+					<reference value="urn:uuid:9ab0b64a-4541-4b30-9c88-bd8d7da93b8f"/>
+				</hasMember>
+				<hasMember>
+					<reference value="urn:uuid:6e4c07c3-c62f-4d54-946a-c3bbad0019a8"/>
+				</hasMember>
+				<hasMember>
+					<reference value="urn:uuid:79e74152-4119-403d-b925-edf05363f9c5"/>
+				</hasMember>
+				<hasMember>
+					<reference value="urn:uuid:9b56ec24-ffa0-4c0a-9be0-e40cc46781a1"/>
+				</hasMember>
+				<hasMember>
+					<reference value="urn:uuid:2523dbe6-04ea-4e1b-9311-c01856fcb76a"/>
+				</hasMember>
+				<hasMember>
+					<reference value="urn:uuid:6fb958e0-9df0-4ef8-9966-c894c5eb4569"/>
+				</hasMember>
+				<hasMember>
+					<reference value="urn:uuid:7840ad82-a5a3-4c98-980f-9a0b5c2864c8"/>
+				</hasMember>
+				<hasMember>
+					<reference value="urn:uuid:99977bcf-a07d-46ad-b13d-f611a721b7f4"/>
+				</hasMember>
+				<hasMember>
+					<reference value="urn:uuid:050e3b36-e061-4012-a0d7-708da0e4e695"/>
+				</hasMember>
+				<hasMember>
+					<reference value="urn:uuid:71415093-66fc-4f43-880b-b68451c43868"/>
+				</hasMember>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:2523dbe6-04ea-4e1b-9311-c01856fcb76a"/>
+		<resource>
+			<Observation>
+				<id value="2523dbe6-04ea-4e1b-9311-c01856fcb76a"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Assessment_Free|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Beurteilung An-/Auskleiden Unterkörper</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<category>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="424836000"/>
+						<display value="Assessment section (record artifact)"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://epaAC.de"/>
+						<version value="2.3.01"/>
+						<code value="E2_I_012"/>
+						<display value="An-/Auskleiden Unterkörper"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:b4788ece-fdd7-4e78-a53b-0f3fcc31a3fd"/>
+				</subject>
+				<effectiveDateTime value="2022-01-01"/>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://epaAC.de"/>
+						<version value="2.3.01"/>
+						<code value="E3_I_0117"/>
+						<display value="1 (keine Fähigkeit)"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:9b56ec24-ffa0-4c0a-9be0-e40cc46781a1"/>
+		<resource>
+			<Observation>
+				<id value="9b56ec24-ffa0-4c0a-9be0-e40cc46781a1"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Assessment_Free|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Beurteilung An-/Auskleiden Oberkörper</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<category>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="424836000"/>
+						<display value="Assessment section (record artifact)"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://epaAC.de"/>
+						<version value="2.3.01"/>
+						<code value="E2_I_011"/>
+						<display value="An-/Auskleiden Oberkörper"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:b4788ece-fdd7-4e78-a53b-0f3fcc31a3fd"/>
+				</subject>
+				<effectiveDateTime value="2022-01-01"/>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://epaAC.de"/>
+						<version value="2.3.01"/>
+						<code value="E3_I_0112"/>
+						<display value="1 (keine Fähigkeit)"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+</Bundle>

@@ -1,0 +1,4554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+	<url value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Composition"/>
+	<version value="1.0.0"/>
+	<name value="KBV_PR_MIO_ULB_Composition"/>
+	<title value="KBV_PR_MIO_ULB_Composition"/>
+	<status value="draft"/>
+	<publisher value="Kassenärztliche Bundesvereinigung (KBV)"/>
+	<description value="Dieses Profil bündelt alle Informationen des Überleitungsbogens."/>
+	<copyright value="Im folgenden Profil können Codes aus den Code-Systemen SNOMED CT®, LOINC, Ucum, ATC, ICD-10-GM, ICD-10-WHO, OPS, ALpha-ID/Alpha-ID-SE und ICF enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED CT® Clinical Terms® (SNOMED CT® CT®) which is used by permission of SNOMED CT® International. All rights reserved. SNOMED CT® CT®, was originally created by The College of American Pathologists. SNOMED CT® and SNOMED CT® CT are registered trademarks of SNOMED CT® International. Implementers of these artefacts must have the appropriate SNOMED CT® CT Affiliate license. This material contains content from LOINC (http://LOINC.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://LOINC.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at ​http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED 'AS IS.' ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. Dieses Material enthält Inhalte aus ATC. Die Erstellung erfolgte unter Verwendung der Datenträger der amtlichen Fassung der ATC-Klassifikation mit DDD des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM). Dieses Material enthält Inhalte aus ICD-10-GM, ICD-10-WHO, OPS Alpha-ID ans Alpha-ID-SE. Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM). Dieses Material enthält Inhalte aus ICF. Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Deutschen Instituts für Medizinische Dokumentation und Information (DIMDI). ICF-Kodes, -Begriffe und -Texte © Weltgesundheitsorganisation, übersetzt und herausgegeben durch das Deutsche Institut für Medizinische Dokumentation und Information von der International classification of functioning, disability and health – ICF, herausgegeben durch die Weltgesundheitsorganisation."/>
+	<fhirVersion value="4.0.1"/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="Composition"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Composition">
+			<path value="Composition"/>
+			<definition value="Dieses Profil bündelt alle Informationen des Pflegeüberleitungsbogens."/>
+			<constraint>
+				<key value="date-1"/>
+				<severity value="error"/>
+				<human value="Datetime must be at least day, month and year."/>
+				<expression value="(date as dateTime).toString().length() &gt;= 10"/>
+				<source value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Composition"/>
+			</constraint>
+		</element>
+		<element id="Composition.meta">
+			<path value="Composition.meta"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.meta.versionId">
+			<path value="Composition.meta.versionId"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.meta.lastUpdated">
+			<path value="Composition.meta.lastUpdated"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.meta.source">
+			<path value="Composition.meta.source"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.meta.profile">
+			<path value="Composition.meta.profile"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Composition|1.0.0"/>
+		</element>
+		<element id="Composition.meta.security">
+			<path value="Composition.meta.security"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.meta.tag">
+			<path value="Composition.meta.tag"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.implicitRules">
+			<path value="Composition.implicitRules"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.language">
+			<path value="Composition.language"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.text">
+			<path value="Composition.text"/>
+			<definition value="In diesem Element können die in der Instanz enthaltenen Informationen in einer menschenlesbaren Form zusammengefasst werden. Dabei ist zu beachten, dass keine Informationen aufgenommen werden dürfen, die nicht in strukturierter Form an anderer Stelle in der Instanz enthalten sind."/>
+		</element>
+		<element id="Composition.text.status">
+			<path value="Composition.text.status"/>
+			<patternCode value="extensions"/>
+		</element>
+		<element id="Composition.contained">
+			<path value="Composition.contained"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.extension">
+			<path value="Composition.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+			<min value="0"/>
+		</element>
+		<element id="Composition.extension:empfangendeEinrichtung">
+			<path value="Composition.extension"/>
+			<sliceName value="empfangendeEinrichtung"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Receiving_Institution"/>
+			</type>
+			<mustSupport value="true"/>
+			<isModifier value="false"/>
+		</element>
+		<element id="Composition.extension:empfangendeEinrichtung.value[x]">
+			<path value="Composition.extension.value[x]"/>
+			<slicing>
+				<discriminator>
+					<type value="type"/>
+					<path value="$this"/>
+				</discriminator>
+				<rules value="closed"/>
+			</slicing>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.extension:empfangendeEinrichtung.value[x]:valueReference">
+			<path value="Composition.extension.value[x]"/>
+			<sliceName value="valueReference"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.extension:empfangendeEinrichtung.value[x]:valueReference.reference">
+			<path value="Composition.extension.value[x].reference"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.identifier">
+			<path value="Composition.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.status">
+			<path value="Composition.status"/>
+			<patternCode value="final"/>
+		</element>
+		<element id="Composition.type">
+			<path value="Composition.type"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.type.coding">
+			<path value="Composition.type.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="721919000"/>
+				<display value="Nurse discharge summary (record artifact)"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.type.coding.system">
+			<path value="Composition.type.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.type.coding.version">
+			<path value="Composition.type.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.type.coding.code">
+			<path value="Composition.type.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.type.coding.display">
+			<path value="Composition.type.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.type.coding.userSelected">
+			<path value="Composition.type.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.type.text">
+			<path value="Composition.type.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.category">
+			<path value="Composition.category"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.subject">
+			<path value="Composition.subject"/>
+			<min value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.subject.reference">
+			<path value="Composition.subject.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.subject.type">
+			<path value="Composition.subject.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.subject.identifier">
+			<path value="Composition.subject.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.subject.display">
+			<path value="Composition.subject.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.encounter">
+			<path value="Composition.encounter"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.date">
+			<path value="Composition.date"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.author">
+			<path value="Composition.author"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Practitioner|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_PractitionerRole|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Organization|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.author.reference">
+			<path value="Composition.author.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.author.type">
+			<path value="Composition.author.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.author.identifier">
+			<path value="Composition.author.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.author.display">
+			<path value="Composition.author.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.title">
+			<path value="Composition.title"/>
+			<patternString value="Überleitungsbogen"/>
+		</element>
+		<element id="Composition.confidentiality">
+			<path value="Composition.confidentiality"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.attester">
+			<path value="Composition.attester"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.custodian">
+			<path value="Composition.custodian"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.relatesTo">
+			<path value="Composition.relatesTo"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.event">
+			<path value="Composition.event"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section">
+			<path value="Composition.section"/>
+			<slicing>
+				<discriminator>
+					<type value="pattern"/>
+					<path value="code.coding"/>
+				</discriminator>
+				<rules value="closed"/>
+			</slicing>
+		</element>
+		<element id="Composition.section:patientenAdressbuch">
+			<path value="Composition.section"/>
+			<sliceName value="patientenAdressbuch"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:patientenAdressbuch.title">
+			<path value="Composition.section.title"/>
+			<patternString value="Patienten-Adressbuch"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:patientenAdressbuch.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:patientenAdressbuch.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Address_Book"/>
+				<version value="1.0.0"/>
+				<code value="Kontakt_und_behandelnde_Personen"/>
+				<display value="Kontakt- und behandelnde Personen"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:patientenAdressbuch.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:patientenAdressbuch.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:patientenAdressbuch.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:patientenAdressbuch.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:patientenAdressbuch.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:patientenAdressbuch.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:patientenAdressbuch.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:patientenAdressbuch.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:patientenAdressbuch.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:patientenAdressbuch.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:patientenAdressbuch.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:patientenAdressbuch.entry">
+			<path value="Composition.section.entry"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_CareTeam|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_PractitionerRole|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_RelatedPerson_Contact_Person|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:patientenAdressbuch.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:patientenAdressbuch.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:patientenAdressbuch.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:patientenAdressbuch.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:patientenAdressbuch.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:patientenAdressbuch.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:pflegegrad">
+			<path value="Composition.section"/>
+			<sliceName value="pflegegrad"/>
+			<min value="1"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:pflegegrad.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Pflegegrad"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:pflegegrad.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:pflegegrad.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Section_Codes"/>
+				<version value="1.0.0"/>
+				<code value="SectionPflegegrad"/>
+				<display value="Bereich Pflegegrad"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:pflegegrad.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:pflegegrad.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:pflegegrad.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:pflegegrad.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:pflegegrad.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:pflegegrad.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:pflegegrad.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:pflegegrad.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:pflegegrad.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:pflegegrad.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:pflegegrad.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:pflegegrad.entry">
+			<path value="Composition.section.entry"/>
+			<min value="1"/>
+			<max value="2"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Care_Level|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:pflegegrad.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:pflegegrad.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:pflegegrad.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:pflegegrad.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:pflegegrad.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:pflegegrad.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:gradDerBehinderung">
+			<path value="Composition.section"/>
+			<sliceName value="gradDerBehinderung"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:gradDerBehinderung.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Grad der Behinderung"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:gradDerBehinderung.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:gradDerBehinderung.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="363787002:704326004=21134002"/>
+				<display value="Observable entity (observable entity) : Precondition (attribute) = Disability (finding)"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:gradDerBehinderung.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:gradDerBehinderung.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:gradDerBehinderung.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:gradDerBehinderung.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:gradDerBehinderung.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:gradDerBehinderung.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:gradDerBehinderung.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:gradDerBehinderung.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:gradDerBehinderung.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:gradDerBehinderung.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:gradDerBehinderung.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:gradDerBehinderung.entry">
+			<path value="Composition.section.entry"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Degree_Of_Disability_Available|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:gradDerBehinderung.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:gradDerBehinderung.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:gradDerBehinderung.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:gradDerBehinderung.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:gradDerBehinderung.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:gradDerBehinderung.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:pflegeDurchAngehoerige">
+			<path value="Composition.section"/>
+			<sliceName value="pflegeDurchAngehoerige"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:pflegeDurchAngehoerige.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Pflege durch Angehörige"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:pflegeDurchAngehoerige.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:pflegeDurchAngehoerige.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="405204003"/>
+				<display value="Family involvement behavior : health care (observable entity)"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:pflegeDurchAngehoerige.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:pflegeDurchAngehoerige.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:pflegeDurchAngehoerige.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:pflegeDurchAngehoerige.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:pflegeDurchAngehoerige.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:pflegeDurchAngehoerige.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:pflegeDurchAngehoerige.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:pflegeDurchAngehoerige.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:pflegeDurchAngehoerige.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:pflegeDurchAngehoerige.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:pflegeDurchAngehoerige.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:pflegeDurchAngehoerige.entry">
+			<path value="Composition.section.entry"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Care_By_Relatives|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:pflegeDurchAngehoerige.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:pflegeDurchAngehoerige.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:pflegeDurchAngehoerige.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:pflegeDurchAngehoerige.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:pflegeDurchAngehoerige.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:pflegeDurchAngehoerige.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:benachrichtigungVonAn-undZugehoerigen">
+			<path value="Composition.section"/>
+			<sliceName value="benachrichtigungVonAn-undZugehoerigen"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:benachrichtigungVonAn-undZugehoerigen.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Benachrichtigung von An- und Zugehörigen"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:benachrichtigungVonAn-undZugehoerigen.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:benachrichtigungVonAn-undZugehoerigen.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="302160007:704321009=(185087000:370131001=35359004)"/>
+				<display value="Household, family and support network detail (observable entity) : Characterizes (attribute) = ( Notifications (procedure) : Recipient category (attribute) = Family (social concept) )"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:benachrichtigungVonAn-undZugehoerigen.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:benachrichtigungVonAn-undZugehoerigen.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:benachrichtigungVonAn-undZugehoerigen.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:benachrichtigungVonAn-undZugehoerigen.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:benachrichtigungVonAn-undZugehoerigen.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:benachrichtigungVonAn-undZugehoerigen.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:benachrichtigungVonAn-undZugehoerigen.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:benachrichtigungVonAn-undZugehoerigen.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:benachrichtigungVonAn-undZugehoerigen.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:benachrichtigungVonAn-undZugehoerigen.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:benachrichtigungVonAn-undZugehoerigen.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:benachrichtigungVonAn-undZugehoerigen.entry">
+			<path value="Composition.section.entry"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Relatives_Notified|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:benachrichtigungVonAn-undZugehoerigen.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:benachrichtigungVonAn-undZugehoerigen.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:benachrichtigungVonAn-undZugehoerigen.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:benachrichtigungVonAn-undZugehoerigen.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:benachrichtigungVonAn-undZugehoerigen.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:benachrichtigungVonAn-undZugehoerigen.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:mitgabeKrankenkassenkarte">
+			<path value="Composition.section"/>
+			<sliceName value="mitgabeKrankenkassenkarte"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:mitgabeKrankenkassenkarte.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Mitgabe der Krankenkassenkarte"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:mitgabeKrankenkassenkarte.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:mitgabeKrankenkassenkarte.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Health_Insurance_Card"/>
+				<version value="1.0.0"/>
+				<code value="krankenkassenkarte_mitgegeben"/>
+				<display value="Krankenkassenkarte mitgegeben"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:mitgabeKrankenkassenkarte.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:mitgabeKrankenkassenkarte.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:mitgabeKrankenkassenkarte.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:mitgabeKrankenkassenkarte.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:mitgabeKrankenkassenkarte.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:mitgabeKrankenkassenkarte.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:mitgabeKrankenkassenkarte.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:mitgabeKrankenkassenkarte.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:mitgabeKrankenkassenkarte.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:mitgabeKrankenkassenkarte.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:mitgabeKrankenkassenkarte.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:mitgabeKrankenkassenkarte.entry">
+			<path value="Composition.section.entry"/>
+			<max value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Health_Insurance_Card_Given|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:mitgabeKrankenkassenkarte.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:mitgabeKrankenkassenkarte.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:mitgabeKrankenkassenkarte.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:mitgabeKrankenkassenkarte.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:mitgabeKrankenkassenkarte.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:mitgabeKrankenkassenkarte.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:zuzahlungsbefreiung">
+			<path value="Composition.section"/>
+			<sliceName value="zuzahlungsbefreiung"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:zuzahlungsbefreiung.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Zuzahlungsbefreiung"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:zuzahlungsbefreiung.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:zuzahlungsbefreiung.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="363787002:704326004=308315007"/>
+				<display value="Observable entity (observable entity) : Precondition (attribute) = Prescription payment exemption status (finding)"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:zuzahlungsbefreiung.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:zuzahlungsbefreiung.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:zuzahlungsbefreiung.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:zuzahlungsbefreiung.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:zuzahlungsbefreiung.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:zuzahlungsbefreiung.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:zuzahlungsbefreiung.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:zuzahlungsbefreiung.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:zuzahlungsbefreiung.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:zuzahlungsbefreiung.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:zuzahlungsbefreiung.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:zuzahlungsbefreiung.entry">
+			<path value="Composition.section.entry"/>
+			<max value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Copayment_Exemption|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:zuzahlungsbefreiung.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:zuzahlungsbefreiung.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:zuzahlungsbefreiung.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:zuzahlungsbefreiung.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:zuzahlungsbefreiung.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:zuzahlungsbefreiung.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:krankenhausaufenthalt">
+			<path value="Composition.section"/>
+			<sliceName value="krankenhausaufenthalt"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:krankenhausaufenthalt.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Krankenhausaufenthalt"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:krankenhausaufenthalt.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:krankenhausaufenthalt.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="170551006"/>
+				<display value="Last hospital inpatient (finding)"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:krankenhausaufenthalt.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:krankenhausaufenthalt.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:krankenhausaufenthalt.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:krankenhausaufenthalt.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:krankenhausaufenthalt.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:krankenhausaufenthalt.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:krankenhausaufenthalt.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:krankenhausaufenthalt.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:krankenhausaufenthalt.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:krankenhausaufenthalt.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:krankenhausaufenthalt.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:krankenhausaufenthalt.entry">
+			<path value="Composition.section.entry"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Encounter_Hospital_Stay|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:krankenhausaufenthalt.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:krankenhausaufenthalt.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:krankenhausaufenthalt.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:krankenhausaufenthalt.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:krankenhausaufenthalt.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:krankenhausaufenthalt.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung">
+			<path value="Composition.section"/>
+			<sliceName value="persoenlicheErklaerungenGesetzlicheBetreuung"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Persönliche Erklärungen / Gesetzliche Betreuung"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="224329005"/>
+				<display value="Legal affairs and legal constraints (observable entity)"/>
+			</patternCoding>
+		</element>
+		<element id="Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.entry">
+			<path value="Composition.section.entry"/>
+			<definition value="A reference to th e actual resource from which the narrative in the section is derived."/>
+			<max value="2"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Personal_Statements|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Information_Legal_Care|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:relevanteInformationsquellen">
+			<path value="Composition.section"/>
+			<sliceName value="relevanteInformationsquellen"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:relevanteInformationsquellen.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Relevante Informationsquellen"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:relevanteInformationsquellen.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:relevanteInformationsquellen.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://loinc.org"/>
+				<version value="2.72"/>
+				<code value="48766-0"/>
+				<display value="Information source"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:relevanteInformationsquellen.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:relevanteInformationsquellen.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:relevanteInformationsquellen.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:relevanteInformationsquellen.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:relevanteInformationsquellen.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:relevanteInformationsquellen.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:relevanteInformationsquellen.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:relevanteInformationsquellen.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:relevanteInformationsquellen.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:relevanteInformationsquellen.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:relevanteInformationsquellen.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:relevanteInformationsquellen.entry">
+			<path value="Composition.section.entry"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Provenance_Source_of_Information|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:relevanteInformationsquellen.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:relevanteInformationsquellen.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:relevanteInformationsquellen.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:relevanteInformationsquellen.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:relevanteInformationsquellen.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:relevanteInformationsquellen.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:kommentar">
+			<path value="Composition.section"/>
+			<sliceName value="kommentar"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:kommentar.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Freitext Kommentar"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:kommentar.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:kommentar.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="703852005"/>
+				<display value="Narrative comment section (record artifact)"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:kommentar.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:kommentar.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:kommentar.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:kommentar.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:kommentar.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:kommentar.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:kommentar.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:kommentar.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:kommentar.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:kommentar.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:kommentar.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:kommentar.entry">
+			<path value="Composition.section.entry"/>
+			<max value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Comment|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:kommentar.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:kommentar.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:kommentar.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:kommentar.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:kommentar.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:kommentar.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende">
+			<path value="Composition.section"/>
+			<sliceName value="mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Mitgegebene Dokumente / Arzneimittel / Hilfsmittel / Gegenstände"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="363787002:704326004=(404684003:47429007=49062001,363713009=52101004)"/>
+				<display value="Observable entity (observable entity) : Precondition (attribute) = (Clinical finding (finding): Associated with (attribute) = Device (physical object) , Has interpretation (attribute) = Present (qualifier value) )"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.entry">
+			<path value="Composition.section.entry"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Device_Aid|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Medication|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Provenance_Source_of_Information|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Device|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Device_Other_Item|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:probleme">
+			<path value="Composition.section"/>
+			<sliceName value="probleme"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:probleme.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Probleme"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:probleme.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:probleme.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="1184595009"/>
+				<display value="Present problem document section (record artifact)"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:probleme.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:probleme.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:probleme.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:probleme.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:probleme.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:probleme.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:probleme.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:probleme.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:probleme.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:probleme.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:probleme.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:probleme.entry">
+			<path value="Composition.section.entry"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Presence_Problems|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:probleme.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:probleme.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:probleme.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:probleme.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:probleme.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:probleme.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:risiken">
+			<path value="Composition.section"/>
+			<sliceName value="risiken"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:risiken.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Risiken"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:risiken.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:risiken.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://loinc.org"/>
+				<version value="2.72"/>
+				<code value="75456-4"/>
+				<display value="Nurse Risk assessment and screening note"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:risiken.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:risiken.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:risiken.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:risiken.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:risiken.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:risiken.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:risiken.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:risiken.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:risiken.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:risiken.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:risiken.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:risiken.entry">
+			<path value="Composition.section.entry"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Presence_Risks|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:risiken.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:risiken.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:risiken.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:risiken.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:risiken.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:risiken.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:schmerzsymptomatik">
+			<path value="Composition.section"/>
+			<sliceName value="schmerzsymptomatik"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:schmerzsymptomatik.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Schmerzsymptomatik"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:schmerzsymptomatik.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:schmerzsymptomatik.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="406189006"/>
+				<display value="Pain observable (observable entity)"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:schmerzsymptomatik.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:schmerzsymptomatik.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:schmerzsymptomatik.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:schmerzsymptomatik.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:schmerzsymptomatik.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:schmerzsymptomatik.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:schmerzsymptomatik.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:schmerzsymptomatik.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:schmerzsymptomatik.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:schmerzsymptomatik.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:schmerzsymptomatik.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:schmerzsymptomatik.entry">
+			<path value="Composition.section.entry"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Pain|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:schmerzsymptomatik.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:schmerzsymptomatik.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:schmerzsymptomatik.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:schmerzsymptomatik.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:schmerzsymptomatik.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:schmerzsymptomatik.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:ernaehrung">
+			<path value="Composition.section"/>
+			<sliceName value="ernaehrung"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:ernaehrung.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Ernährung"/>
+		</element>
+		<element id="Composition.section:ernaehrung.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:ernaehrung.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://loinc.org"/>
+				<version value="2.72"/>
+				<code value="34801-1"/>
+				<display value="Nutrition and dietetics Note"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:ernaehrung.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:ernaehrung.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:ernaehrung.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:ernaehrung.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:ernaehrung.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:ernaehrung.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:ernaehrung.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:ernaehrung.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:ernaehrung.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:ernaehrung.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:ernaehrung.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:ernaehrung.entry">
+			<path value="Composition.section.entry"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Presence_Information_Nutrition|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:ernaehrung.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:ernaehrung.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:ernaehrung.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:ernaehrung.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:ernaehrung.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:ernaehrung.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:raeumlicheIsolation">
+			<path value="Composition.section"/>
+			<sliceName value="raeumlicheIsolation"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:raeumlicheIsolation.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Notwendigkeit der räumlichen Isoation"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:raeumlicheIsolation.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:raeumlicheIsolation.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="363787002:704321009=40174006"/>
+				<display value="Observable entity (observable entity) : Characterizes (attribute) = Isolation procedure (procedure)"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:raeumlicheIsolation.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:raeumlicheIsolation.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:raeumlicheIsolation.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:raeumlicheIsolation.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:raeumlicheIsolation.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:raeumlicheIsolation.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:raeumlicheIsolation.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:raeumlicheIsolation.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:raeumlicheIsolation.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:raeumlicheIsolation.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:raeumlicheIsolation.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:raeumlicheIsolation.entry">
+			<path value="Composition.section.entry"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Isolation_Necessary|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:raeumlicheIsolation.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:raeumlicheIsolation.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:raeumlicheIsolation.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:raeumlicheIsolation.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:raeumlicheIsolation.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:raeumlicheIsolation.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:funktionsbeurteilungen">
+			<path value="Composition.section"/>
+			<sliceName value="funktionsbeurteilungen"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:funktionsbeurteilungen.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Funktionsbeurteilungen"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:funktionsbeurteilungen.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:funktionsbeurteilungen.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="1184588000"/>
+				<display value="Functional status document section (record artifact)"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:funktionsbeurteilungen.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:funktionsbeurteilungen.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:funktionsbeurteilungen.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:funktionsbeurteilungen.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:funktionsbeurteilungen.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:funktionsbeurteilungen.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:funktionsbeurteilungen.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:funktionsbeurteilungen.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:funktionsbeurteilungen.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:funktionsbeurteilungen.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:funktionsbeurteilungen.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:funktionsbeurteilungen.entry">
+			<path value="Composition.section.entry"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Presence_Functional_Assessment|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:funktionsbeurteilungen.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:funktionsbeurteilungen.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:funktionsbeurteilungen.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:funktionsbeurteilungen.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:funktionsbeurteilungen.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:funktionsbeurteilungen.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:medizinprodukte">
+			<path value="Composition.section"/>
+			<sliceName value="medizinprodukte"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:medizinprodukte.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Medizinprodukte"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:medizinprodukte.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:medizinprodukte.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="1184586001"/>
+				<display value="Medical device document section (record artifact)"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:medizinprodukte.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:medizinprodukte.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:medizinprodukte.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:medizinprodukte.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:medizinprodukte.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:medizinprodukte.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:medizinprodukte.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:medizinprodukte.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:medizinprodukte.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:medizinprodukte.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:medizinprodukte.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:medizinprodukte.entry">
+			<path value="Composition.section.entry"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Relevant_Information_Medical_Devices|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:medizinprodukte.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:medizinprodukte.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:medizinprodukte.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:medizinprodukte.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:medizinprodukte.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:medizinprodukte.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:allergienUndUnvertraeglichkeiten">
+			<path value="Composition.section"/>
+			<sliceName value="allergienUndUnvertraeglichkeiten"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:allergienUndUnvertraeglichkeiten.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Allergien und Unverträglichkeiten"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:allergienUndUnvertraeglichkeiten.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:allergienUndUnvertraeglichkeiten.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="722446000"/>
+				<display value="Allergy record (record artifact)"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:allergienUndUnvertraeglichkeiten.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:allergienUndUnvertraeglichkeiten.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:allergienUndUnvertraeglichkeiten.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:allergienUndUnvertraeglichkeiten.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:allergienUndUnvertraeglichkeiten.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:allergienUndUnvertraeglichkeiten.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:allergienUndUnvertraeglichkeiten.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:allergienUndUnvertraeglichkeiten.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:allergienUndUnvertraeglichkeiten.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:allergienUndUnvertraeglichkeiten.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:allergienUndUnvertraeglichkeiten.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:allergienUndUnvertraeglichkeiten.entry">
+			<path value="Composition.section.entry"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Presence_Allergies|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:allergienUndUnvertraeglichkeiten.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:allergienUndUnvertraeglichkeiten.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:allergienUndUnvertraeglichkeiten.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:allergienUndUnvertraeglichkeiten.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:allergienUndUnvertraeglichkeiten.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:allergienUndUnvertraeglichkeiten.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:medikationsplan">
+			<path value="Composition.section"/>
+			<sliceName value="medikationsplan"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:medikationsplan.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Medikationsplan"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:medikationsplan.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:medikationsplan.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="736378000"/>
+				<display value="Medication management plan (record artifact)"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:medikationsplan.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:medikationsplan.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:medikationsplan.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:medikationsplan.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:medikationsplan.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:medikationsplan.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:medikationsplan.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:medikationsplan.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:medikationsplan.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:medikationsplan.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:medikationsplan.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:medikationsplan.entry">
+			<path value="Composition.section.entry"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Information_Medicines|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:medikationsplan.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:medikationsplan.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:medikationsplan.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:medikationsplan.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:medikationsplan.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:medikationsplan.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:orientierungPsyche">
+			<path value="Composition.section"/>
+			<sliceName value="orientierungPsyche"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:orientierungPsyche.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Orientierung / Psyche"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:orientierungPsyche.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:orientierungPsyche.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="43173001+312012004"/>
+				<display value="Orientation , function (observable entity) + Cognitive function : awareness (observable entity)"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:orientierungPsyche.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:orientierungPsyche.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:orientierungPsyche.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:orientierungPsyche.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:orientierungPsyche.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:orientierungPsyche.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:orientierungPsyche.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:orientierungPsyche.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:orientierungPsyche.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:orientierungPsyche.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:orientierungPsyche.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:orientierungPsyche.entry">
+			<path value="Composition.section.entry"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Cognitive_Awareness|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Orientation|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Assessment_Free|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:orientierungPsyche.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:orientierungPsyche.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:orientierungPsyche.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:orientierungPsyche.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:orientierungPsyche.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:orientierungPsyche.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:vitalparameter">
+			<path value="Composition.section"/>
+			<sliceName value="vitalparameter"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:vitalparameter.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Vitalzeichen und Körpermaße"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:vitalparameter.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:vitalparameter.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="1184593002"/>
+				<display value="Vital sign document section (record artifact)"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:vitalparameter.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:vitalparameter.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:vitalparameter.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:vitalparameter.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:vitalparameter.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:vitalparameter.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:vitalparameter.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:vitalparameter.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:vitalparameter.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:vitalparameter.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:vitalparameter.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:vitalparameter.entry">
+			<path value="Composition.section.entry"/>
+			<max value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_DiagnosticReport_Vital_Signs_and_Body_Measures|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:vitalparameter.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:vitalparameter.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:vitalparameter.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:vitalparameter.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:vitalparameter.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:vitalparameter.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:empfehlung">
+			<path value="Composition.section"/>
+			<sliceName value="empfehlung"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:empfehlung.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Empfehung an die empfangende Einrichtung"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:empfehlung.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:empfehlung.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="406216001"/>
+				<display value="Recommendation to caregiver (procedure)"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:empfehlung.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:empfehlung.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:empfehlung.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:empfehlung.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:empfehlung.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:empfehlung.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:empfehlung.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:empfehlung.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:empfehlung.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:empfehlung.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:empfehlung.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:empfehlung.entry">
+			<path value="Composition.section.entry"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_CarePlan_Recommendation_Receiving_Institution|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:empfehlung.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:empfehlung.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:empfehlung.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:empfehlung.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:empfehlung.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:empfehlung.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:pflegerischeMassnahme">
+			<path value="Composition.section"/>
+			<sliceName value="pflegerischeMassnahme"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:pflegerischeMassnahme.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Pflegerische Maßnahme"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:pflegerischeMassnahme.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:pflegerischeMassnahme.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="9632001"/>
+				<display value="Nursing procedure (procedure)"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:pflegerischeMassnahme.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:pflegerischeMassnahme.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:pflegerischeMassnahme.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:pflegerischeMassnahme.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:pflegerischeMassnahme.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:pflegerischeMassnahme.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:pflegerischeMassnahme.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:pflegerischeMassnahme.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:pflegerischeMassnahme.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:pflegerischeMassnahme.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:pflegerischeMassnahme.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:pflegerischeMassnahme.entry">
+			<path value="Composition.section.entry"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Procedure_Nursing_Measures|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:pflegerischeMassnahme.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:pflegerischeMassnahme.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:pflegerischeMassnahme.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:pflegerischeMassnahme.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:pflegerischeMassnahme.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:pflegerischeMassnahme.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:auffaelligesVerhalten">
+			<path value="Composition.section"/>
+			<sliceName value="auffaelligesVerhalten"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:auffaelligesVerhalten.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Auffälliges Verhalten"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:auffaelligesVerhalten.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:auffaelligesVerhalten.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="363896009:704326004=25786006"/>
+				<display value="Behavior observable (observable entity) : Precondition (attribute) = Abnormal behavior (finding)"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:auffaelligesVerhalten.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:auffaelligesVerhalten.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:auffaelligesVerhalten.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:auffaelligesVerhalten.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:auffaelligesVerhalten.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:auffaelligesVerhalten.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:auffaelligesVerhalten.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:auffaelligesVerhalten.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:auffaelligesVerhalten.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:auffaelligesVerhalten.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:auffaelligesVerhalten.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:auffaelligesVerhalten.entry">
+			<path value="Composition.section.entry"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Striking_Behavior|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:auffaelligesVerhalten.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:auffaelligesVerhalten.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:auffaelligesVerhalten.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:auffaelligesVerhalten.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:auffaelligesVerhalten.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:auffaelligesVerhalten.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:freiheitsentziehendeMassnahmen">
+			<path value="Composition.section"/>
+			<sliceName value="freiheitsentziehendeMassnahmen"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:freiheitsentziehendeMassnahmen.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Freiheitsentziehende Maßnahmen"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:freiheitsentziehendeMassnahmen.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:freiheitsentziehendeMassnahmen.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="363787002:704321009=225214000"/>
+				<display value="Observable entity (observable entity) : Characterizes (attribute) = Procedures relating to control, restraint, seclusion and segregation (procedure)"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:freiheitsentziehendeMassnahmen.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:freiheitsentziehendeMassnahmen.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:freiheitsentziehendeMassnahmen.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:freiheitsentziehendeMassnahmen.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:freiheitsentziehendeMassnahmen.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:freiheitsentziehendeMassnahmen.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:freiheitsentziehendeMassnahmen.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:freiheitsentziehendeMassnahmen.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:freiheitsentziehendeMassnahmen.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:freiheitsentziehendeMassnahmen.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:freiheitsentziehendeMassnahmen.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:freiheitsentziehendeMassnahmen.entry">
+			<path value="Composition.section.entry"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Deprivation_Liberty_Measures|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:freiheitsentziehendeMassnahmen.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:freiheitsentziehendeMassnahmen.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:freiheitsentziehendeMassnahmen.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:freiheitsentziehendeMassnahmen.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:freiheitsentziehendeMassnahmen.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:freiheitsentziehendeMassnahmen.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:qualitativeBeschreibungAtmung">
+			<path value="Composition.section"/>
+			<sliceName value="qualitativeBeschreibungAtmung"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:qualitativeBeschreibungAtmung.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Qualitative Beschreibung der Atmung"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:qualitativeBeschreibungAtmung.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:qualitativeBeschreibungAtmung.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="78064003:370132008=26716007"/>
+				<display value="Respiratory function (observable entity) : Scale type (attribute) = Qualitative (qualifier value)"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:qualitativeBeschreibungAtmung.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:qualitativeBeschreibungAtmung.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:qualitativeBeschreibungAtmung.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:qualitativeBeschreibungAtmung.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:qualitativeBeschreibungAtmung.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:qualitativeBeschreibungAtmung.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:qualitativeBeschreibungAtmung.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:qualitativeBeschreibungAtmung.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:qualitativeBeschreibungAtmung.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:qualitativeBeschreibungAtmung.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:qualitativeBeschreibungAtmung.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:qualitativeBeschreibungAtmung.entry">
+			<path value="Composition.section.entry"/>
+			<max value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Qualitative_Description_Breathing|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:qualitativeBeschreibungAtmung.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:qualitativeBeschreibungAtmung.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:qualitativeBeschreibungAtmung.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:qualitativeBeschreibungAtmung.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:qualitativeBeschreibungAtmung.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:qualitativeBeschreibungAtmung.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:freitextAnEmpfangendeEinrichtung">
+			<path value="Composition.section"/>
+			<sliceName value="freitextAnEmpfangendeEinrichtung"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:freitextAnEmpfangendeEinrichtung.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Freitext Nachricht an die empfangende Einrichtung"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:freitextAnEmpfangendeEinrichtung.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:freitextAnEmpfangendeEinrichtung.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="721927009"/>
+				<display value="Referral note (record artifact)"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:freitextAnEmpfangendeEinrichtung.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:freitextAnEmpfangendeEinrichtung.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:freitextAnEmpfangendeEinrichtung.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:freitextAnEmpfangendeEinrichtung.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:freitextAnEmpfangendeEinrichtung.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:freitextAnEmpfangendeEinrichtung.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:freitextAnEmpfangendeEinrichtung.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:freitextAnEmpfangendeEinrichtung.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:freitextAnEmpfangendeEinrichtung.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:freitextAnEmpfangendeEinrichtung.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:freitextAnEmpfangendeEinrichtung.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:freitextAnEmpfangendeEinrichtung.entry">
+			<path value="Composition.section.entry"/>
+			<max value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Message_Receiving_Institution|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:freitextAnEmpfangendeEinrichtung.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:freitextAnEmpfangendeEinrichtung.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:freitextAnEmpfangendeEinrichtung.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:freitextAnEmpfangendeEinrichtung.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:freitextAnEmpfangendeEinrichtung.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:freitextAnEmpfangendeEinrichtung.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:anzahlStuerzeLetzte6Monate">
+			<path value="Composition.section"/>
+			<sliceName value="anzahlStuerzeLetzte6Monate"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:anzahlStuerzeLetzte6Monate.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Anzahl der Stürze in den letzten 6 Monaten"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:anzahlStuerzeLetzte6Monate.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:anzahlStuerzeLetzte6Monate.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="391002003:704323007=88561007"/>
+				<display value="Number of falls in last year (observable entity) : Process duration (attribute) = Semi-annual (qualifier value)"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:anzahlStuerzeLetzte6Monate.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:anzahlStuerzeLetzte6Monate.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:anzahlStuerzeLetzte6Monate.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:anzahlStuerzeLetzte6Monate.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:anzahlStuerzeLetzte6Monate.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:anzahlStuerzeLetzte6Monate.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:anzahlStuerzeLetzte6Monate.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:anzahlStuerzeLetzte6Monate.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:anzahlStuerzeLetzte6Monate.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:anzahlStuerzeLetzte6Monate.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:anzahlStuerzeLetzte6Monate.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:anzahlStuerzeLetzte6Monate.entry">
+			<path value="Composition.section.entry"/>
+			<max value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Falls_Last_6_Months|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:anzahlStuerzeLetzte6Monate.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:anzahlStuerzeLetzte6Monate.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:anzahlStuerzeLetzte6Monate.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:anzahlStuerzeLetzte6Monate.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:anzahlStuerzeLetzte6Monate.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:anzahlStuerzeLetzte6Monate.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:atemwegszugang">
+			<path value="Composition.section"/>
+			<sliceName value="atemwegszugang"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:atemwegszugang.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Atemwegszugang"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:atemwegszugang.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:atemwegszugang.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="313292002"/>
+				<display value="Route of breathing (observable entity)"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:atemwegszugang.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:atemwegszugang.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:atemwegszugang.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:atemwegszugang.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:atemwegszugang.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:atemwegszugang.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:atemwegszugang.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:atemwegszugang.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:atemwegszugang.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:atemwegszugang.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:atemwegszugang.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:atemwegszugang.entry">
+			<path value="Composition.section.entry"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Respiratory_Access|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:atemwegszugang.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:atemwegszugang.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:atemwegszugang.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:atemwegszugang.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:atemwegszugang.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:atemwegszugang.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:atmungsunterstuetzung">
+			<path value="Composition.section"/>
+			<sliceName value="atmungsunterstuetzung"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:atmungsunterstuetzung.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Atmungsunterstützung"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:atmungsunterstuetzung.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:atmungsunterstuetzung.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="363787002:704321009=40617009"/>
+				<display value="Observable entity (observable entity) : Characterizes (attribute) = Artificial respiration (procedure)"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:atmungsunterstuetzung.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:atmungsunterstuetzung.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:atmungsunterstuetzung.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:atmungsunterstuetzung.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:atmungsunterstuetzung.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:atmungsunterstuetzung.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:atmungsunterstuetzung.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:atmungsunterstuetzung.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:atmungsunterstuetzung.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:atmungsunterstuetzung.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:atmungsunterstuetzung.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:atmungsunterstuetzung.entry">
+			<path value="Composition.section.entry"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Respiratory_Support|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:atmungsunterstuetzung.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:atmungsunterstuetzung.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:atmungsunterstuetzung.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:atmungsunterstuetzung.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:atmungsunterstuetzung.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:atmungsunterstuetzung.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:harnkontinenzDifferenzierteEinschaetzung">
+			<path value="Composition.section"/>
+			<sliceName value="harnkontinenzDifferenzierteEinschaetzung"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:harnkontinenzDifferenzierteEinschaetzung.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Harnkontinenz differenzierte Einschätzung"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:harnkontinenzDifferenzierteEinschaetzung.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:harnkontinenzDifferenzierteEinschaetzung.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="129009001"/>
+				<display value="Bladder control, function (observable entity)"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:harnkontinenzDifferenzierteEinschaetzung.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:harnkontinenzDifferenzierteEinschaetzung.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:harnkontinenzDifferenzierteEinschaetzung.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:harnkontinenzDifferenzierteEinschaetzung.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:harnkontinenzDifferenzierteEinschaetzung.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:harnkontinenzDifferenzierteEinschaetzung.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:harnkontinenzDifferenzierteEinschaetzung.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:harnkontinenzDifferenzierteEinschaetzung.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:harnkontinenzDifferenzierteEinschaetzung.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:harnkontinenzDifferenzierteEinschaetzung.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:harnkontinenzDifferenzierteEinschaetzung.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:harnkontinenzDifferenzierteEinschaetzung.entry">
+			<path value="Composition.section.entry"/>
+			<max value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Urinary_Continence_Differentiated_Assessment|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:harnkontinenzDifferenzierteEinschaetzung.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:harnkontinenzDifferenzierteEinschaetzung.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:harnkontinenzDifferenzierteEinschaetzung.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:harnkontinenzDifferenzierteEinschaetzung.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:harnkontinenzDifferenzierteEinschaetzung.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:harnkontinenzDifferenzierteEinschaetzung.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:harnableitung">
+			<path value="Composition.section"/>
+			<sliceName value="harnableitung"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:harnableitung.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Harnableitung"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:harnableitung.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:harnableitung.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="406219008"/>
+				<display value="Urinary elimination status (observable entity)"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:harnableitung.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:harnableitung.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:harnableitung.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:harnableitung.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:harnableitung.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:harnableitung.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:harnableitung.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:harnableitung.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:harnableitung.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:harnableitung.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:harnableitung.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:harnableitung.entry">
+			<path value="Composition.section.entry"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Urinary_Drainage|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:harnableitung.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:harnableitung.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:harnableitung.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:harnableitung.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:harnableitung.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:harnableitung.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzteMiktion">
+			<path value="Composition.section"/>
+			<sliceName value="zeitpunktLetzteMiktion"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzteMiktion.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Zeitpunkt der letzten Miktion"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzteMiktion.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzteMiktion.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="364201005:370134009=57615005"/>
+				<display value="Urine output observable (observable entity) : Time aspect (attribute) = Definite time (qualifier value)"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzteMiktion.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzteMiktion.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzteMiktion.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzteMiktion.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzteMiktion.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzteMiktion.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzteMiktion.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzteMiktion.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzteMiktion.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzteMiktion.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzteMiktion.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzteMiktion.entry">
+			<path value="Composition.section.entry"/>
+			<max value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Last_Micturition|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzteMiktion.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzteMiktion.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzteMiktion.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzteMiktion.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzteMiktion.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzteMiktion.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:stuhlkontinenzDifferenzierteEinschaetzung">
+			<path value="Composition.section"/>
+			<sliceName value="stuhlkontinenzDifferenzierteEinschaetzung"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Stuhlkontinenz differenzierte Einschätzung"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="16490003"/>
+				<display value="Anorectal continence, function (observable entity)"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.entry">
+			<path value="Composition.section.entry"/>
+			<max value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Fecal_Continence_Differentiated_Assessment|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:stuhlableitung">
+			<path value="Composition.section"/>
+			<sliceName value="stuhlableitung"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:stuhlableitung.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Stuhlableitung"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:stuhlableitung.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:stuhlableitung.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="363787002:704321009=266683002"/>
+				<display value="Observable entity (observable entity) : Characterizes (attribute) = Evacuation of gastrointestinal tract contents (procedure)"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:stuhlableitung.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:stuhlableitung.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:stuhlableitung.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:stuhlableitung.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:stuhlableitung.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:stuhlableitung.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:stuhlableitung.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:stuhlableitung.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:stuhlableitung.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:stuhlableitung.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:stuhlableitung.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:stuhlableitung.entry">
+			<path value="Composition.section.entry"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Fecal_Drainage|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:stuhlableitung.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:stuhlableitung.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:stuhlableitung.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:stuhlableitung.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:stuhlableitung.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:stuhlableitung.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzterStuhlgang">
+			<path value="Composition.section"/>
+			<sliceName value="zeitpunktLetzterStuhlgang"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzterStuhlgang.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Zeitpunkt des letzten Stuhlgangs"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzterStuhlgang.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzterStuhlgang.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="364171004:370134009=57615005"/>
+				<display value="Defecation observable (observable entity) : Time aspect (attribute) = Definite time (qualifier value)"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzterStuhlgang.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzterStuhlgang.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzterStuhlgang.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzterStuhlgang.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzterStuhlgang.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzterStuhlgang.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzterStuhlgang.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzterStuhlgang.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzterStuhlgang.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzterStuhlgang.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzterStuhlgang.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzterStuhlgang.entry">
+			<path value="Composition.section.entry"/>
+			<max value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Last_Bowel_Movement|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzterStuhlgang.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzterStuhlgang.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzterStuhlgang.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzterStuhlgang.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzterStuhlgang.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:zeitpunktLetzterStuhlgang.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:patientenwunsch">
+			<path value="Composition.section"/>
+			<sliceName value="patientenwunsch"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:patientenwunsch.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Patientenwunsch"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:patientenwunsch.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:patientenwunsch.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="1186606009"/>
+				<display value="Patient request observable (observable entity)"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:patientenwunsch.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:patientenwunsch.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:patientenwunsch.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:patientenwunsch.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:patientenwunsch.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:patientenwunsch.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:patientenwunsch.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:patientenwunsch.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:patientenwunsch.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:patientenwunsch.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:patientenwunsch.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:patientenwunsch.entry">
+			<path value="Composition.section.entry"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Wish|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:patientenwunsch.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:patientenwunsch.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:patientenwunsch.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:patientenwunsch.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:patientenwunsch.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:patientenwunsch.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:assessmentFrei">
+			<path value="Composition.section"/>
+			<sliceName value="assessmentFrei"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:assessmentFrei.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<patternString value="Assessment - frei / Beobachtung"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:assessmentFrei.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:assessmentFrei.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="424836000"/>
+				<display value="Assessment section (record artifact)"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:assessmentFrei.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:assessmentFrei.code.coding.version">
+			<path value="Composition.section.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:assessmentFrei.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:assessmentFrei.code.coding.display">
+			<path value="Composition.section.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:assessmentFrei.code.coding.userSelected">
+			<path value="Composition.section.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:assessmentFrei.code.text">
+			<path value="Composition.section.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:assessmentFrei.author">
+			<path value="Composition.section.author"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:assessmentFrei.focus">
+			<path value="Composition.section.focus"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:assessmentFrei.text">
+			<path value="Composition.section.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:assessmentFrei.mode">
+			<path value="Composition.section.mode"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:assessmentFrei.orderedBy">
+			<path value="Composition.section.orderedBy"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:assessmentFrei.entry">
+			<path value="Composition.section.entry"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Assessment_Free|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:assessmentFrei.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:assessmentFrei.entry.type">
+			<path value="Composition.section.entry.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:assessmentFrei.entry.identifier">
+			<path value="Composition.section.entry.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:assessmentFrei.entry.display">
+			<path value="Composition.section.entry.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:assessmentFrei.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:assessmentFrei.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+	</differential>
+</StructureDefinition>

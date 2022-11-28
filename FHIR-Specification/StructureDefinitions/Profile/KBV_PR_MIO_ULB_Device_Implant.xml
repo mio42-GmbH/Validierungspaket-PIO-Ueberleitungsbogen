@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Device_Implant" />
+  <version value="1.0.0" />
+  <name value="KBV_PR_MIO_ULB_Device_Implant" />
+  <title value="KBV_PR_MIO_ULB_Device_Implant" />
+  <status value="draft" />
+  <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
+  <description value="Mit diesem Profil kann ein Implantat abgebildet werden." />
+  <copyright value="Im folgenden Profil können Codes aus den Code-Systemen SNOMED CT®, LOINC, Ucum, ATC, ICD-10-GM, ICD-10-WHO, OPS, ALpha-ID/Alpha-ID-SE und ICF enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED CT® Clinical Terms® (SNOMED CT® CT®) which is used by permission of SNOMED CT® International. All rights reserved. SNOMED CT® CT®, was originally created by The College of American Pathologists. SNOMED CT® and SNOMED CT® CT are registered trademarks of SNOMED CT® International. Implementers of these artefacts must have the appropriate SNOMED CT® CT Affiliate license. This material contains content from LOINC (http://LOINC.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://LOINC.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at ​http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED 'AS IS.' ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. Dieses Material enthält Inhalte aus ATC. Die Erstellung erfolgte unter Verwendung der Datenträger der amtlichen Fassung der ATC-Klassifikation mit DDD des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM). Dieses Material enthält Inhalte aus ICD-10-GM, ICD-10-WHO, OPS Alpha-ID ans Alpha-ID-SE. Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM). Dieses Material enthält Inhalte aus ICF. Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Deutschen Instituts für Medizinische Dokumentation und Information (DIMDI). ICF-Kodes, -Begriffe und -Texte © Weltgesundheitsorganisation, übersetzt und herausgegeben durch das Deutsche Institut für Medizinische Dokumentation und Information von der International classification of functioning, disability and health – ICF, herausgegeben durch die Weltgesundheitsorganisation." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="udi" />
+    <uri value="http://fda.gov/UDI" />
+    <name value="UDI Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Device" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Device" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Device">
+      <path value="Device" />
+      <definition value="Dieses Profil kann ein Implantat abgebildet werden." />
+    </element>
+    <element id="Device.meta">
+      <path value="Device.meta" />
+      <min value="1" />
+    </element>
+    <element id="Device.meta.versionId">
+      <path value="Device.meta.versionId" />
+      <max value="0" />
+    </element>
+    <element id="Device.meta.lastUpdated">
+      <path value="Device.meta.lastUpdated" />
+      <max value="0" />
+    </element>
+    <element id="Device.meta.source">
+      <path value="Device.meta.source" />
+      <max value="0" />
+    </element>
+    <element id="Device.meta.profile">
+      <path value="Device.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <patternCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Device_Implant|1.0.0" />
+    </element>
+    <element id="Device.meta.security">
+      <path value="Device.meta.security" />
+      <max value="0" />
+    </element>
+    <element id="Device.meta.tag">
+      <path value="Device.meta.tag" />
+      <max value="0" />
+    </element>
+    <element id="Device.implicitRules">
+      <path value="Device.implicitRules" />
+      <max value="0" />
+    </element>
+    <element id="Device.language">
+      <path value="Device.language" />
+      <max value="0" />
+    </element>
+    <element id="Device.text">
+      <path value="Device.text" />
+      <definition value="In diesem Element können die in der Instanz enthaltenen Informationen in einer menschenlesbaren Form zusammengefasst werden. Dabei ist zu beachten, dass keine Informationen aufgenommen werden dürfen, die nicht in strukturierter Form an anderer Stelle in der Instanz enthalten sind." />
+    </element>
+    <element id="Device.text.status">
+      <path value="Device.text.status" />
+      <patternCode value="extensions" />
+    </element>
+    <element id="Device.contained">
+      <path value="Device.contained" />
+      <max value="0" />
+    </element>
+    <element id="Device.extension">
+      <path value="Device.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Device.extension:TAImplantat">
+      <path value="Device.extension" />
+      <sliceName value="TAImplantat" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Terminologie_Assoziation" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Device.extension:TAImplantat.value[x]:valueCodeableConcept">
+      <path value="Device.extension.value[x]" />
+      <sliceName value="valueCodeableConcept" />
+    </element>
+    <element id="Device.extension:TAImplantat.value[x]:valueCodeableConcept.coding">
+      <path value="Device.extension.value[x].coding" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+        <version value="http://snomed.info/sct/900000000000207008/version/20220331" />
+        <code value="40388003" />
+        <display value="Implant, device (physical object)" />
+      </patternCoding>
+    </element>
+    <element id="Device.identifier">
+      <path value="Device.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Device.definition">
+      <path value="Device.definition" />
+      <max value="0" />
+    </element>
+    <element id="Device.udiCarrier">
+      <path value="Device.udiCarrier" />
+      <max value="0" />
+    </element>
+    <element id="Device.status">
+      <path value="Device.status" />
+      <max value="0" />
+    </element>
+    <element id="Device.statusReason">
+      <path value="Device.statusReason" />
+      <max value="0" />
+    </element>
+    <element id="Device.distinctIdentifier">
+      <path value="Device.distinctIdentifier" />
+      <max value="0" />
+    </element>
+    <element id="Device.manufacturer">
+      <path value="Device.manufacturer" />
+      <max value="0" />
+    </element>
+    <element id="Device.manufactureDate">
+      <path value="Device.manufactureDate" />
+      <max value="0" />
+    </element>
+    <element id="Device.expirationDate">
+      <path value="Device.expirationDate" />
+      <max value="0" />
+    </element>
+    <element id="Device.lotNumber">
+      <path value="Device.lotNumber" />
+      <max value="0" />
+    </element>
+    <element id="Device.serialNumber">
+      <path value="Device.serialNumber" />
+      <max value="0" />
+    </element>
+    <element id="Device.deviceName">
+      <path value="Device.deviceName" />
+      <max value="0" />
+    </element>
+    <element id="Device.modelNumber">
+      <path value="Device.modelNumber" />
+      <max value="0" />
+    </element>
+    <element id="Device.partNumber">
+      <path value="Device.partNumber" />
+      <max value="0" />
+    </element>
+    <element id="Device.type">
+      <path value="Device.type" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Device.type.coding">
+      <path value="Device.type.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Device.type.coding:snomedCode">
+      <path value="Device.type.coding" />
+      <sliceName value="snomedCode" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+      </patternCoding>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Medical_Device|1.0.0" />
+      </binding>
+    </element>
+    <element id="Device.type.coding:snomedCode.system">
+      <path value="Device.type.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Device.type.coding:snomedCode.version">
+      <path value="Device.type.coding.version" />
+      <min value="1" />
+    </element>
+    <element id="Device.type.coding:snomedCode.code">
+      <path value="Device.type.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Device.type.coding:snomedCode.display">
+      <path value="Device.type.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="Device.type.coding:snomedCode.userSelected">
+      <path value="Device.type.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Device.type.text">
+      <path value="Device.type.text" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Device.specialization">
+      <path value="Device.specialization" />
+      <max value="0" />
+    </element>
+    <element id="Device.version">
+      <path value="Device.version" />
+      <max value="0" />
+    </element>
+    <element id="Device.property">
+      <path value="Device.property" />
+      <max value="0" />
+    </element>
+    <element id="Device.patient">
+      <path value="Device.patient" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient|1.0.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Device.patient.reference">
+      <path value="Device.patient.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Device.patient.type">
+      <path value="Device.patient.type" />
+      <max value="0" />
+    </element>
+    <element id="Device.patient.identifier">
+      <path value="Device.patient.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Device.patient.display">
+      <path value="Device.patient.display" />
+      <max value="0" />
+    </element>
+    <element id="Device.owner">
+      <path value="Device.owner" />
+      <max value="0" />
+    </element>
+    <element id="Device.contact">
+      <path value="Device.contact" />
+      <max value="0" />
+    </element>
+    <element id="Device.location">
+      <path value="Device.location" />
+      <max value="0" />
+    </element>
+    <element id="Device.url">
+      <path value="Device.url" />
+      <max value="0" />
+    </element>
+    <element id="Device.note">
+      <path value="Device.note" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Device.note.author[x]">
+      <path value="Device.note.author[x]" />
+      <max value="0" />
+    </element>
+    <element id="Device.note.time">
+      <path value="Device.note.time" />
+      <max value="0" />
+    </element>
+    <element id="Device.note.text">
+      <path value="Device.note.text" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Device.safety">
+      <path value="Device.safety" />
+      <max value="0" />
+    </element>
+    <element id="Device.parent">
+      <path value="Device.parent" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

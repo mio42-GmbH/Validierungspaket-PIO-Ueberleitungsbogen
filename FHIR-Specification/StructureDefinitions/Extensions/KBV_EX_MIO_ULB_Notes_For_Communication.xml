@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Notes_For_Communication" />
+  <version value="1.0.0" />
+  <name value="KBV_EX_MIO_ULB_Notes_For_Communication" />
+  <title value="KBV_EX_MIO_ULB_Notes_For_Communication" />
+  <status value="draft" />
+  <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
+  <description value="Diese Extension bildet Angaben zur Kommunikation ab, die nicht eine Sprache und deren Kenntnis betreffen, sondern z.B. das Sprechen oder psychische Auswirkungen auf die Kommunikationsfähigkeit." />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Patient" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <definition value="Diese Extension bildet Angaben zur Kommunikation ab, die nicht eine Sprache und deren Kenntnis betreffen, sondern z.B. das Sprechen oder psychische Auswirkungen auf die Kommunikationsfähigkeit." />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Notes_For_Communication" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.value[x]:valueString">
+      <path value="Extension.valueString" />
+      <sliceName value="valueString" />
+      <min value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

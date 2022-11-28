@@ -1,0 +1,144 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="KBV-CS-MIO-ULB-Food-Type-German"/>
+    <url value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Food_Type_German"/>
+    <version value="1.0.0"/>
+    <name value="KBV_CS_MIO_ULB_Food_Type_German"/>
+    <title value="Kostform"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="Kassenärztliche Bundesvereinigung (KBV)"/>
+    <contact>
+        <telecom>
+            <system value="url"/>
+            <value value="https://mio.kbv.de"/>
+        </telecom>
+    </contact>
+    <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für Kostform."/>
+    <copyright value="Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED &quot;AS IS.&quot; ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+    <concept>
+        <code value="FluessigeKost"/>
+        <display value="Flüssige Kost"/>
+    </concept>
+    <concept>
+        <code value="BallaststoffreicheKost"/>
+        <display value="Ballaststoffreiche Kost"/>
+    </concept>
+    <concept>
+        <code value="VeganeKost"/>
+        <display value="Vegane Kost"/>
+    </concept>
+    <concept>
+        <code value="EiweissreichKost"/>
+        <display value="Eiweißreich Kost"/>
+    </concept>
+    <concept>
+        <code value="Diabeteskost"/>
+        <display value="Diabeteskost"/>
+    </concept>
+    <concept>
+        <code value="FettarmeKost"/>
+        <display value="Fettarme Kost"/>
+    </concept>
+    <concept>
+        <code value="Nuechtern"/>
+        <display value="Nüchtern"/>
+    </concept>
+    <concept>
+        <code value="LeichteVollkost"/>
+        <display value="Leichte Vollkost"/>
+    </concept>
+    <concept>
+        <code value="StoffwechseladaptierteDiaet"/>
+        <display value="Stoffwechseladaptierte Diät"/>
+    </concept>
+    <concept>
+        <code value="SchweinefleischfreieKost"/>
+        <display value="Schweinefleischfreie Kost"/>
+    </concept>
+    <concept>
+        <code value="PurinarmKost"/>
+        <display value="Purinarm Kost"/>
+    </concept>
+    <concept>
+        <code value="Rohkost"/>
+        <display value="Rohkost"/>
+    </concept>
+    <concept>
+        <code value="Wunschkost"/>
+        <display value="Wunschkost"/>
+    </concept>
+    <concept>
+        <code value="KaliumarmeKost"/>
+        <display value="Kaliumarme Kost"/>
+    </concept>
+    <concept>
+        <code value="VegetarischeKost"/>
+        <display value="Vegetarische Kost"/>
+    </concept>
+    <concept>
+        <code value="Reduktionskost"/>
+        <display value="Reduktionskost"/>
+    </concept>
+    <concept>
+        <code value="Vollkost"/>
+        <display value="Vollkost"/>
+    </concept>
+    <concept>
+        <code value="Schonkost"/>
+        <display value="Schonkost"/>
+    </concept>
+    <concept>
+        <code value="KochsalzarmeKost"/>
+        <display value="Kochsalzarme Kost"/>
+    </concept>
+    <concept>
+        <code value="KochsalzfreieKost"/>
+        <display value="Kochsalzfreie Kost"/>
+    </concept>
+    <concept>
+        <code value="LaktosefreiearmeKost"/>
+        <display value="Laktosefreie/-arme Kost"/>
+    </concept>
+    <concept>
+        <code value="KaliumreicheKost"/>
+        <display value="Kaliumreiche Kost"/>
+    </concept>
+    <concept>
+        <code value="GlutenfreiearmeKost"/>
+        <display value="Glutenfreie/-arme Kost"/>
+    </concept>
+    <concept>
+        <code value="WeicheKost"/>
+        <display value="Weiche Kost"/>
+    </concept>
+    <concept>
+        <code value="PuerierteKost"/>
+        <display value="Pürierte Kost"/>
+    </concept>
+    <concept>
+        <code value="KalorienreicheAufbaukost"/>
+        <display value="Kalorienreiche Aufbaukost"/>
+    </concept>
+    <concept>
+        <code value="OvolactischmitFisch"/>
+        <display value="Ovo-lactisch mit Fisch"/>
+    </concept>
+    <concept>
+        <code value="OvolactischohneFisch"/>
+        <display value="Ovo-lactisch ohne Fisch"/>
+    </concept>
+    <concept>
+        <code value="KoschereKost"/>
+        <display value="Koschere Kost"/>
+    </concept>
+    <concept>
+        <code value="FructosefreiearmeKost"/>
+        <display value="Fructosefreie/-arme Kost"/>
+    </concept>
+    <concept>
+        <code value="KalorienreduzierteKost"/>
+        <display value="Kalorienreduzierte Kost"/>
+    </concept>
+</CodeSystem>

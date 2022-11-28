@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+	<url value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Condition_Care_Problem"/>
+	<version value="1.0.0"/>
+	<name value="KBV_PR_MIO_ULB_Condition_Care_Problem"/>
+	<title value="KBV_PR_MIO_ULB_Condition_Care_Problem"/>
+	<status value="draft"/>
+	<publisher value="Kassenärztliche Bundesvereinigung (KBV)"/>
+	<description value="Mit diesem Profil kann ein Pflegeproblem dokumentiert werden."/>
+	<copyright value="Im folgenden Profil können Codes aus den Code-Systemen SNOMED CT®, LOINC, Ucum, ATC, ICD-10-GM, ICD-10-WHO, OPS, ALpha-ID/Alpha-ID-SE und ICF enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED CT® Clinical Terms® (SNOMED CT® CT®) which is used by permission of SNOMED CT® International. All rights reserved. SNOMED CT® CT®, was originally created by The College of American Pathologists. SNOMED CT® and SNOMED CT® CT are registered trademarks of SNOMED CT® International. Implementers of these artefacts must have the appropriate SNOMED CT® CT Affiliate license. This material contains content from LOINC (http://LOINC.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://LOINC.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at ​http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED 'AS IS.' ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. Dieses Material enthält Inhalte aus ATC. Die Erstellung erfolgte unter Verwendung der Datenträger der amtlichen Fassung der ATC-Klassifikation mit DDD des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM). Dieses Material enthält Inhalte aus ICD-10-GM, ICD-10-WHO, OPS Alpha-ID ans Alpha-ID-SE. Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM). Dieses Material enthält Inhalte aus ICF. Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Deutschen Instituts für Medizinische Dokumentation und Information (DIMDI). ICF-Kodes, -Begriffe und -Texte © Weltgesundheitsorganisation, übersetzt und herausgegeben durch das Deutsche Institut für Medizinische Dokumentation und Information von der International classification of functioning, disability and health – ICF, herausgegeben durch die Weltgesundheitsorganisation."/>
+	<fhirVersion value="4.0.1"/>
+	<mapping>
+		<identity value="workflow"/>
+		<uri value="http://hl7.org/fhir/workflow"/>
+		<name value="Workflow Pattern"/>
+	</mapping>
+	<mapping>
+		<identity value="sct-concept"/>
+		<uri value="http://snomed.info/conceptdomain"/>
+		<name value="SNOMED CT Concept Domain Binding"/>
+	</mapping>
+	<mapping>
+		<identity value="v2"/>
+		<uri value="http://hl7.org/v2"/>
+		<name value="HL7 v2 Mapping"/>
+	</mapping>
+	<mapping>
+		<identity value="rim"/>
+		<uri value="http://hl7.org/v3"/>
+		<name value="RIM Mapping"/>
+	</mapping>
+	<mapping>
+		<identity value="w5"/>
+		<uri value="http://hl7.org/fhir/fivews"/>
+		<name value="FiveWs Pattern Mapping"/>
+	</mapping>
+	<mapping>
+		<identity value="sct-attr"/>
+		<uri value="http://snomed.org/attributebinding"/>
+		<name value="SNOMED CT Attribute Binding"/>
+	</mapping>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="Condition"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Condition"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Condition">
+			<path value="Condition"/>
+			<definition value="Mit diesem Profil kann ein Pflegeproblem dokumentiert werden."/>
+		</element>
+		<element id="Condition.meta">
+			<path value="Condition.meta"/>
+			<min value="1"/>
+		</element>
+		<element id="Condition.meta.versionId">
+			<path value="Condition.meta.versionId"/>
+			<max value="0"/>
+		</element>
+		<element id="Condition.meta.lastUpdated">
+			<path value="Condition.meta.lastUpdated"/>
+			<max value="0"/>
+		</element>
+		<element id="Condition.meta.source">
+			<path value="Condition.meta.source"/>
+			<max value="0"/>
+		</element>
+		<element id="Condition.meta.profile">
+			<path value="Condition.meta.profile"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Condition_Care_Problem|1.0.0"/>
+		</element>
+		<element id="Condition.meta.security">
+			<path value="Condition.meta.security"/>
+			<max value="0"/>
+		</element>
+		<element id="Condition.meta.tag">
+			<path value="Condition.meta.tag"/>
+			<max value="0"/>
+		</element>
+		<element id="Condition.implicitRules">
+			<path value="Condition.implicitRules"/>
+			<max value="0"/>
+		</element>
+		<element id="Condition.language">
+			<path value="Condition.language"/>
+			<max value="0"/>
+		</element>
+		<element id="Condition.text">
+			<path value="Condition.text"/>
+			<definition value="In diesem Element können die in der Instanz enthaltenen Informationen in einer menschenlesbaren Form zusammengefasst werden. Dabei ist zu beachten, dass keine Informationen aufgenommen werden dürfen, die nicht in strukturierter Form an anderer Stelle in der Instanz enthalten sind."/>
+		</element>
+		<element id="Condition.text.status">
+			<path value="Condition.text.status"/>
+			<patternCode value="extensions"/>
+		</element>
+		<element id="Condition.contained">
+			<path value="Condition.contained"/>
+			<max value="0"/>
+		</element>
+		<element id="Condition.extension">
+			<path value="Condition.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+			<min value="0"/>
+		</element>
+		<element id="Condition.extension:anlassUrsache">
+			<path value="Condition.extension"/>
+			<sliceName value="anlassUrsache"/>
+			<min value="0"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Reason_Cause"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Condition.extension:anlassUrsache.extension">
+			<path value="Condition.extension.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+			<min value="0"/>
+		</element>
+		<element id="Condition.extension:anlassUrsache.extension:referenzAnlassUrsache">
+			<path value="Condition.extension.extension"/>
+			<sliceName value="referenzAnlassUrsache"/>
+			<min value="0"/>
+		</element>
+		<element id="Condition.extension:anlassUrsache.extension:referenzAnlassUrsache.value[x]:valueReference">
+			<path value="Condition.extension.extension.value[x]"/>
+			<sliceName value="valueReference"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_AllergyIntolerance|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Pain|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Condition_Medical_Problem_Diagnosis|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Condition_Care_Problem|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Striking_Behavior|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Deprivation_Liberty_Measures|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Risk|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Fecal_Drainage|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Fecal_Continence_Differentiated_Assessment|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Urinary_Drainage|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Urinary_Continence_Differentiated_Assessment|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_MedicationStatement_Administration_Instruction|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Device_Implant|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Device_Aid|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Procedure_Isolation|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Food_Administration_Form|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Food_Type|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Nutrition|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Orientation|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Cognitive_Awareness|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Qualitative_Description_Breathing|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Falls_Last_6_Months|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Assessment_Free|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Body_Height|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Body_Weight|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Respiratory_Rate|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Blood_Pressure|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Body_Temperature|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Heart_Rate|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Peripheral_Oxygen_Saturation|1.0.0"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Glucose_Concentration|1.0.0"/>
+			</type>
+		</element>
+		<element id="Condition.identifier">
+			<path value="Condition.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Condition.clinicalStatus">
+			<path value="Condition.clinicalStatus"/>
+			<max value="0"/>
+		</element>
+		<element id="Condition.verificationStatus">
+			<path value="Condition.verificationStatus"/>
+			<max value="0"/>
+		</element>
+		<element id="Condition.category">
+			<path value="Condition.category"/>
+			<min value="1"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Condition.category.coding">
+			<path value="Condition.category.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="439401001:704326004=86644006"/>
+				<display value="Diagnosis (observable entity) : Precondition (attribute) = Nursing diagnosis (finding)"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Condition.category.coding.system">
+			<path value="Condition.category.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Condition.category.coding.version">
+			<path value="Condition.category.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Condition.category.coding.code">
+			<path value="Condition.category.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Condition.category.coding.display">
+			<path value="Condition.category.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Condition.category.coding.userSelected">
+			<path value="Condition.category.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Condition.category.text">
+			<path value="Condition.category.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Condition.severity">
+			<path value="Condition.severity"/>
+			<max value="0"/>
+		</element>
+		<element id="Condition.code">
+			<path value="Condition.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Condition.code.coding">
+			<path value="Condition.code.coding"/>
+			<slicing>
+				<discriminator>
+					<type value="pattern"/>
+					<path value="$this"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Condition.code.coding:codeSnomed">
+			<path value="Condition.code.coding"/>
+			<sliceName value="codeSnomed"/>
+			<max value="1"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+			<binding>
+				<strength value="extensible"/>
+				<valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Diagnosis_ICNP|1.0.0"/>
+			</binding>
+		</element>
+		<element id="Condition.code.coding:codeSnomed.system">
+			<path value="Condition.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Condition.code.coding:codeSnomed.version">
+			<path value="Condition.code.coding.version"/>
+			<min value="1"/>
+		</element>
+		<element id="Condition.code.coding:codeSnomed.code">
+			<path value="Condition.code.coding.code"/>
+			<min value="1"/>
+		</element>
+		<element id="Condition.code.coding:codeSnomed.display">
+			<path value="Condition.code.coding.display"/>
+			<min value="1"/>
+		</element>
+		<element id="Condition.code.coding:codeSnomed.userSelected">
+			<path value="Condition.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Condition.code.text">
+			<path value="Condition.code.text"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Condition.bodySite">
+			<path value="Condition.bodySite"/>
+			<max value="0"/>
+		</element>
+		<element id="Condition.subject">
+			<path value="Condition.subject"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient|1.0.0"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Condition.subject.reference">
+			<path value="Condition.subject.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Condition.subject.type">
+			<path value="Condition.subject.type"/>
+			<max value="0"/>
+		</element>
+		<element id="Condition.subject.identifier">
+			<path value="Condition.subject.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Condition.subject.display">
+			<path value="Condition.subject.display"/>
+			<max value="0"/>
+		</element>
+		<element id="Condition.encounter">
+			<path value="Condition.encounter"/>
+			<max value="0"/>
+		</element>
+		<element id="Condition.onset[x]">
+			<path value="Condition.onset[x]"/>
+			<slicing>
+				<discriminator>
+					<type value="type"/>
+					<path value="$this"/>
+				</discriminator>
+				<rules value="closed"/>
+			</slicing>
+			<type>
+				<code value="dateTime"/>
+			</type>
+		</element>
+		<element id="Condition.onset[x]:onsetDateTime">
+			<path value="Condition.onset[x]"/>
+			<sliceName value="onsetDateTime"/>
+			<type>
+				<code value="dateTime"/>
+			</type>
+		</element>
+		<element id="Condition.abatement[x]">
+			<path value="Condition.abatement[x]"/>
+			<max value="0"/>
+		</element>
+		<element id="Condition.recordedDate">
+			<path value="Condition.recordedDate"/>
+			<max value="0"/>
+		</element>
+		<element id="Condition.recorder">
+			<path value="Condition.recorder"/>
+			<max value="0"/>
+		</element>
+		<element id="Condition.asserter">
+			<path value="Condition.asserter"/>
+			<max value="0"/>
+		</element>
+		<element id="Condition.stage">
+			<path value="Condition.stage"/>
+			<max value="0"/>
+		</element>
+		<element id="Condition.evidence">
+			<path value="Condition.evidence"/>
+			<max value="0"/>
+		</element>
+		<element id="Condition.note">
+			<path value="Condition.note"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Condition.note.author[x]">
+			<path value="Condition.note.author[x]"/>
+			<max value="0"/>
+		</element>
+		<element id="Condition.note.time">
+			<path value="Condition.note.time"/>
+			<max value="0"/>
+		</element>
+		<element id="Condition.note.text">
+			<path value="Condition.note.text"/>
+			<mustSupport value="true"/>
+		</element>
+	</differential>
+</StructureDefinition>

@@ -1,0 +1,4304 @@
+<Bundle xmlns="http://hl7.org/fhir">
+	<id value="4f6ebb18-09e9-4a29-a8f2-fe379a23e468"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Bundle|1.0.0"/>
+	</meta>
+	<identifier>
+		<system value="urn:ietf:rfc:3986"/>
+		<value value="urn:uuid:ddb65820-67df-4d57-9802-123b480a8b67"/>
+	</identifier>
+	<type value="document"/>
+	<timestamp value="2022-08-03T12:30:02Z"/>
+	<entry>
+		<fullUrl value="urn:uuid:8d31e00f-e96c-46e2-bfcd-d5b55143de42"/>
+		<resource>
+			<Composition>
+				<id value="8d31e00f-e96c-46e2-bfcd-d5b55143de42"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Composition|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Composition</h1>
+					</div>
+				</text>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Receiving_Institution">
+					<valueReference>
+						<reference value="urn:uuid:aac231b6-0634-4067-b8f1-5b36b9c1d69b"/>
+					</valueReference>
+				</extension>
+				<status value="final"/>
+				<type>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="721919000"/>
+						<display value="Nurse discharge summary (record artifact)"/>
+					</coding>
+				</type>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<date value="2022-01-04"/>
+				<author>
+					<reference value="urn:uuid:51755a1d-c542-4624-8c81-5686bea67734"/>
+				</author>
+				<title value="Überleitungsbogen"/>
+				<section>
+					<title value="Patienten-Adressbuch"/>
+					<code>
+						<coding>
+							<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Address_Book"/>
+							<version value="1.0.0"/>
+							<code value="Kontakt_und_behandelnde_Personen"/>
+							<display value="Kontakt- und behandelnde Personen"/>
+						</coding>
+					</code>
+					<entry>
+						<reference value="urn:uuid:460358c0-37a3-4210-bd08-8d146155b308"/>
+					</entry>
+					<entry>
+						<reference value="urn:uuid:ca5c9feb-f02d-4a88-aee7-e80d84d6034e"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Pflegegrad"/>
+					<code>
+						<coding>
+							<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Section_Codes"/>
+							<version value="1.0.0"/>
+							<code value="SectionPflegegrad"/>
+							<display value="Bereich Pflegegrad"/>
+						</coding>
+					</code>
+					<entry>
+						<reference value="urn:uuid:28c38db5-6197-48b7-ae37-35c2a38bafcf"/>
+					</entry>
+					<entry>
+						<reference value="urn:uuid:185e5afd-87bd-4a53-b789-fc8ce5e5d5a2"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Grad der Behinderung"/>
+					<code>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+							<code value="363787002:704326004=21134002"/>
+							<display value="Observable entity (observable entity) : Precondition (attribute) = Disability (finding)"/>
+						</coding>
+					</code>
+					<entry>
+						<reference value="urn:uuid:920db16f-db84-40a4-b059-73ca16a624d1"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Pflege durch Angehörige"/>
+					<code>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+							<code value="405204003"/>
+							<display value="Family involvement behavior : health care (observable entity)"/>
+						</coding>
+					</code>
+					<entry>
+						<reference value="urn:uuid:7c799ed1-2bc7-47a0-832b-f517421c4e8e"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Zuzahlungsbefreiung"/>
+					<code>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+							<code value="363787002:704326004=308315007"/>
+							<display value="Observable entity (observable entity) : Precondition (attribute) = Prescription payment exemption status (finding)"/>
+						</coding>
+					</code>
+					<entry>
+						<reference value="urn:uuid:e559267f-0a07-4587-a91b-f1d0ad181380"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Persönliche Erklärungen / Gesetzliche Betreuung"/>
+					<code>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+							<code value="224329005"/>
+							<display value="Legal affairs and legal constraints (observable entity)"/>
+						</coding>
+					</code>
+					<entry>
+						<reference value="urn:uuid:a52a81b4-e686-4514-98b2-07aa01af8047"/>
+					</entry>
+					<entry>
+						<reference value="urn:uuid:ea7620b6-2afa-46e0-97dc-681655b19375"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Probleme"/>
+					<code>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+							<code value="1184595009"/>
+							<display value="Present problem document section (record artifact)"/>
+						</coding>
+					</code>
+					<entry>
+						<reference value="urn:uuid:6d16202b-61a5-4334-bb37-21f5a2e4ebf0"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Risiken"/>
+					<code>
+						<coding>
+							<system value="http://loinc.org"/>
+							<version value="2.72"/>
+							<code value="75456-4"/>
+							<display value="Nurse Risk assessment and screening note"/>
+						</coding>
+					</code>
+					<entry>
+						<reference value="urn:uuid:b527b9b2-6758-4674-9267-9bae236e7073"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Schmerzsymptomatik"/>
+					<code>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+							<code value="406189006"/>
+							<display value="Pain observable (observable entity)"/>
+						</coding>
+					</code>
+					<entry>
+						<reference value="urn:uuid:82547c47-6580-4ee9-a792-847a69dcd4e4"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Ernährung"/>
+					<code>
+						<coding>
+							<system value="http://loinc.org"/>
+							<version value="2.72"/>
+							<code value="34801-1"/>
+							<display value="Nutrition and dietetics Note"/>
+						</coding>
+					</code>
+					<entry>
+						<reference value="urn:uuid:edf72cb5-16f1-4fb8-a180-2c4646d93ed8"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Notwendigkeit der räumlichen Isoation"/>
+					<code>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+							<code value="363787002:704321009=40174006"/>
+							<display value="Observable entity (observable entity) : Characterizes (attribute) = Isolation procedure (procedure)"/>
+						</coding>
+					</code>
+					<entry>
+						<reference value="urn:uuid:69b06124-159f-466f-9ec4-7dd55821a8d3"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Funktionsbeurteilungen"/>
+					<code>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+							<code value="1184588000"/>
+							<display value="Functional status document section (record artifact)"/>
+						</coding>
+					</code>
+					<entry>
+						<reference value="urn:uuid:aef6acce-778e-474e-bf87-59de54b97c90"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Medizinprodukte"/>
+					<code>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+							<code value="1184586001"/>
+							<display value="Medical device document section (record artifact)"/>
+						</coding>
+					</code>
+					<entry>
+						<reference value="urn:uuid:c552bb9b-dcef-49d9-a88b-9b3b47ad01c6"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Allergien und Unverträglichkeiten"/>
+					<code>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+							<code value="722446000"/>
+							<display value="Allergy record (record artifact)"/>
+						</coding>
+					</code>
+					<entry>
+						<reference value="urn:uuid:044d8189-5b3f-4bdc-b2c3-d2730764772f"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Medikationsplan"/>
+					<code>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+							<code value="736378000"/>
+							<display value="Medication management plan (record artifact)"/>
+						</coding>
+					</code>
+					<entry>
+						<reference value="urn:uuid:75ac315b-793d-447d-9fd0-942ce2aadc78"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Orientierung / Psyche"/>
+					<code>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+							<code value="43173001+312012004"/>
+							<display value="Orientation , function (observable entity) + Cognitive function : awareness (observable entity)"/>
+						</coding>
+					</code>
+					<entry>
+						<reference value="urn:uuid:a5041a5f-a522-4def-a0e1-5a2260cc945d"/>
+					</entry>
+					<entry>
+						<reference value="urn:uuid:bb847dc3-212d-4627-ab15-d11b25fcf408"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Vitalzeichen und Körpermaße"/>
+					<code>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+							<code value="1184593002"/>
+							<display value="Vital sign document section (record artifact)"/>
+						</coding>
+					</code>
+					<entry>
+						<reference value="urn:uuid:3421fcd4-703c-4523-a83d-64c85206f29c"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Pflegerische Maßnahme"/>
+					<code>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+							<code value="9632001"/>
+							<display value="Nursing procedure (procedure)"/>
+						</coding>
+					</code>
+					<entry>
+						<reference value="urn:uuid:c13e4d22-8d02-4f46-926d-fc0947fd57d5"/>
+					</entry>
+					<entry>
+						<reference value="urn:uuid:cee006c4-3ec8-4dcc-8044-2e021e6a7b5c"/>
+					</entry>
+					<entry>
+						<reference value="urn:uuid:1c012ad5-caab-49c1-ad1c-d1149f3d48cd"/>
+					</entry>
+					<entry>
+						<reference value="urn:uuid:de3b89bf-f66c-49ee-9e3c-eea580dafa6d"/>
+					</entry>
+					<entry>
+						<reference value="urn:uuid:19f2f420-81df-4d13-b049-ccb4d65d41a9"/>
+					</entry>
+					<entry>
+						<reference value="urn:uuid:1e0d89e4-433b-45e3-89bd-178deba2ef7f"/>
+					</entry>
+					<entry>
+						<reference value="urn:uuid:957d69fb-ce0f-4ae2-80d4-3d9583f42de4"/>
+					</entry>
+					<entry>
+						<reference value="urn:uuid:5d3b067f-8ca5-4168-a827-fa98dea74e60"/>
+					</entry>
+					<entry>
+						<reference value="urn:uuid:07e4f9c7-4b70-4ccb-96e4-42b10db5dfa4"/>
+					</entry>
+					<entry>
+						<reference value="urn:uuid:70edebd8-20ab-40dd-b52a-ff9d00a3ab14"/>
+					</entry>
+					<entry>
+						<reference value="urn:uuid:6622d187-c22e-4063-86d9-df15a0fbf2b8"/>
+					</entry>
+					<entry>
+						<reference value="urn:uuid:8d09a12a-0862-4f8c-85f7-82c7099475f1"/>
+					</entry>
+					<entry>
+						<reference value="urn:uuid:d74cdf91-a45d-479c-b753-1c3f1923fb82"/>
+					</entry>
+					<entry>
+						<reference value="urn:uuid:75bf9a5a-27f4-4c65-8b58-39ece1519f32"/>
+					</entry>
+					<entry>
+						<reference value="urn:uuid:0353e621-ef83-4d1e-85d2-78f0c0b4d517"/>
+					</entry>
+					<entry>
+						<reference value="urn:uuid:e506d185-16df-42da-8bd5-c0a1a3ebc144"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Freiheitsentziehende Maßnahmen"/>
+					<code>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+							<code value="363787002:704321009=225214000"/>
+							<display value="Observable entity (observable entity) : Characterizes (attribute) = Procedures relating to control, restraint, seclusion and segregation (procedure)"/>
+						</coding>
+					</code>
+					<entry>
+						<reference value="urn:uuid:e6a171db-53ae-4cb2-85b5-7f192d8fd65f"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Freitext Nachricht an die empfangende Einrichtung"/>
+					<code>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+							<code value="721927009"/>
+							<display value="Referral note (record artifact)"/>
+						</coding>
+					</code>
+					<entry>
+						<reference value="urn:uuid:72166569-3b4e-480c-8556-46d6dd8477dd"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Anzahl der Stürze in den letzten 6 Monaten"/>
+					<code>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+							<code value="391002003:704323007=88561007"/>
+							<display value="Number of falls in last year (observable entity) : Process duration (attribute) = Semi-annual (qualifier value)"/>
+						</coding>
+					</code>
+					<entry>
+						<reference value="urn:uuid:9a4565f9-786b-4db1-8ac9-2305a4bebac5"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Patientenwunsch"/>
+					<code>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+							<code value="1186606009"/>
+							<display value="Patient request observable (observable entity)"/>
+						</coding>
+					</code>
+					<entry>
+						<reference value="urn:uuid:bbdf4e70-eaea-4b87-b471-6c194ca85af3"/>
+					</entry>
+				</section>
+			</Composition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:ca5c9feb-f02d-4a88-aee7-e80d84d6034e"/>
+		<resource>
+			<RelatedPerson>
+				<id value="ca5c9feb-f02d-4a88-aee7-e80d84d6034e"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_RelatedPerson_Contact_Person|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Kontaktperson, bevollmächtigte Person</h1>
+					</div>
+				</text>
+				<patient>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</patient>
+				<relationship>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+						<version value="2018-08-12"/>
+						<code value="DAUC"/>
+						<display value="daughter"/>
+					</coding>
+				</relationship>
+				<relationship>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
+						<version value="2.1.0"/>
+						<code value="N"/>
+						<display value="Next-of-Kin"/>
+					</coding>
+				</relationship>
+				<name>
+					<use value="official"/>
+					<text value="Fatima Schmidt"/>
+					<family value="Schmidt">
+						<extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+							<valueString value="Schmidt"/>
+						</extension>
+					</family>
+					<given value="Fatima"/>
+				</name>
+				<telecom>
+					<system value="phone"/>
+					<value value="020/34633332"/>
+				</telecom>
+				<address>
+					<use value="home"/>
+					<type value="both"/>
+					<text value="Platanendamm 1, 12345 Deuerstadt"/>
+					<line value="Platanendamm 1">
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+							<valueString value="Platanendamm"/>
+						</extension>
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+							<valueString value="1"/>
+						</extension>
+					</line>
+					<city value="Deuerstadt"/>
+					<postalCode value="12345"/>
+					<country value="DE"/>
+				</address>
+			</RelatedPerson>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:2b61d43e-2b51-43a1-90fc-e8ef9cb85a00"/>
+		<resource>
+			<Provenance>
+				<id value="2b61d43e-2b51-43a1-90fc-e8ef9cb85a00"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Provenance_Source_of_Information|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Informationsquelle für die Informationen zur freiheitsenziehenden Maßnahme</h1>
+					</div>
+				</text>
+				<target>
+					<reference value="urn:uuid:e6a171db-53ae-4cb2-85b5-7f192d8fd65f"/>
+				</target>
+				<recorded value="2021-12-31T13:28:17.239+02:00"/>
+				<agent>
+					<who>
+						<extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+							<valueCode value="unknown"/>
+						</extension>
+						<display value="unknown"/>
+					</who>
+				</agent>
+				<entity>
+					<role value="source"/>
+					<what>
+						<display value="Da keine Notwendigkeit für freiheitsentziehende Maßnahmen keine Informationsquelle anzugeben"/>
+					</what>
+				</entity>
+			</Provenance>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:d037ff36-c22f-4d5f-914b-d4a12c33b47d"/>
+		<resource>
+			<Provenance>
+				<id value="d037ff36-c22f-4d5f-914b-d4a12c33b47d"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Provenance_Source_of_Information|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Informationsquelle für die Diagnose Alzheimer/Demenz, benigne essentielle Hypertonie und Medication</h1>
+					</div>
+				</text>
+				<target>
+					<reference value="urn:uuid:47e6b244-fc2c-494f-be3f-be70a2877479"/>
+				</target>
+				<target>
+					<reference value="urn:uuid:fcfed3a9-f045-4573-9cc6-ad461c97d805"/>
+				</target>
+				<target>
+					<reference value="urn:uuid:30ca5260-699a-455e-8f00-fea13529c4b4"/>
+				</target>
+				<recorded value="2021-12-31T13:28:17.239+02:00"/>
+				<agent>
+					<who>
+						<extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+							<valueCode value="unknown"/>
+						</extension>
+						<display value="unknown"/>
+					</who>
+				</agent>
+				<entity>
+					<role value="source"/>
+					<what>
+						<reference value="urn:uuid:ba7f2242-995d-4c11-8a62-112c2aa0ab6f"/>
+						<display value="Arztbrief vom 12. Dezember 2021 von Herrn Dr. med. Max Musterarzt"/>
+					</what>
+				</entity>
+			</Provenance>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:8d09a12a-0862-4f8c-85f7-82c7099475f1"/>
+		<resource>
+			<Procedure>
+				<id value="8d09a12a-0862-4f8c-85f7-82c7099475f1"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Procedure_Nursing_Measures|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>pflegerische Maßnahme: überwachen des neurologischen Status</h1>
+					</div>
+				</text>
+				<status value="completed"/>
+				<code>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/icnp"/>
+						<version value="2.0.1"/>
+						<code value="10035326"/>
+						<display value="überwachen des neurologischen Status"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+			</Procedure>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:5d3b067f-8ca5-4168-a827-fa98dea74e60"/>
+		<resource>
+			<Procedure>
+				<id value="5d3b067f-8ca5-4168-a827-fa98dea74e60"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Procedure_Nursing_Measures|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>pflegerische Maßnahme: überwachen der Nahrungsaufnahme</h1>
+					</div>
+				</text>
+				<status value="completed"/>
+				<code>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/icnp"/>
+						<version value="2.0.1"/>
+						<code value="10036614"/>
+						<display value="überwachen der Nahrungsaufnahme"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+			</Procedure>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:07e4f9c7-4b70-4ccb-96e4-42b10db5dfa4"/>
+		<resource>
+			<Procedure>
+				<id value="07e4f9c7-4b70-4ccb-96e4-42b10db5dfa4"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Procedure_Nursing_Measures|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>pflegerische Maßnahme: überwachen der Flüssigkeitsaufnahme</h1>
+					</div>
+				</text>
+				<status value="completed"/>
+				<code>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/icnp"/>
+						<version value="2.0.1"/>
+						<code value="10035303"/>
+						<display value="überwachen der Flüssigkeitsaufnahme"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+			</Procedure>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:6622d187-c22e-4063-86d9-df15a0fbf2b8"/>
+		<resource>
+			<Procedure>
+				<id value="6622d187-c22e-4063-86d9-df15a0fbf2b8"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Procedure_Nursing_Measures|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>pflegerische Maßnahme: überwachen des Blutdrucks</h1>
+					</div>
+				</text>
+				<status value="completed"/>
+				<code>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/icnp"/>
+						<version value="2.0.1"/>
+						<code value="10032052"/>
+						<display value="überwachen des Blutdrucks"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+			</Procedure>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:75bf9a5a-27f4-4c65-8b58-39ece1519f32"/>
+		<resource>
+			<Procedure>
+				<id value="75bf9a5a-27f4-4c65-8b58-39ece1519f32"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Procedure_Nursing_Measures|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>pflegerische Maßnahme: Wandering control management</h1>
+					</div>
+				</text>
+				<status value="completed"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="408898000"/>
+						<display value="Wandering control management (procedure)"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+			</Procedure>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:c13e4d22-8d02-4f46-926d-fc0947fd57d5"/>
+		<resource>
+			<Procedure>
+				<id value="c13e4d22-8d02-4f46-926d-fc0947fd57d5"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Procedure_Nursing_Measures|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>pflegerische Maßnahme: Verabreichen vön Lösungen und Tabletten</h1>
+					</div>
+				</text>
+				<status value="completed"/>
+				<code>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/icnp"/>
+						<version value="2.0.1"/>
+						<code value="10025975"/>
+						<display value="Mangel an Wissen über Medikation"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+			</Procedure>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:957d69fb-ce0f-4ae2-80d4-3d9583f42de4"/>
+		<resource>
+			<Procedure>
+				<id value="957d69fb-ce0f-4ae2-80d4-3d9583f42de4"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Procedure_Nursing_Measures|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>pflegerische Maßnahme: unterstützen von spirituellen Ritualen</h1>
+					</div>
+				</text>
+				<status value="completed"/>
+				<code>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/icnp"/>
+						<version value="2.0.1"/>
+						<code value="10024591"/>
+						<display value="unterstützen von spirituellen Ritualen"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+			</Procedure>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:1c012ad5-caab-49c1-ad1c-d1149f3d48cd"/>
+		<resource>
+			<Procedure>
+				<id value="1c012ad5-caab-49c1-ad1c-d1149f3d48cd"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Procedure_Nursing_Measures|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>pflegerische Maßnahme: anbieten sozialer Unterstützung</h1>
+					</div>
+				</text>
+				<status value="completed"/>
+				<code>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/icnp"/>
+						<version value="2.0.1"/>
+						<code value="10027046"/>
+						<display value="anbieten sozialer Unterstützung"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+			</Procedure>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:70edebd8-20ab-40dd-b52a-ff9d00a3ab14"/>
+		<resource>
+			<Procedure>
+				<id value="70edebd8-20ab-40dd-b52a-ff9d00a3ab14"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Procedure_Nursing_Measures|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>pflegerische Maßnahme: fördern des Schlafs</h1>
+					</div>
+				</text>
+				<status value="completed"/>
+				<code>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/icnp"/>
+						<version value="2.0.1"/>
+						<code value="10050949"/>
+						<display value="fördern des Schlafs"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+			</Procedure>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:1e0d89e4-433b-45e3-89bd-178deba2ef7f"/>
+		<resource>
+			<Procedure>
+				<id value="1e0d89e4-433b-45e3-89bd-178deba2ef7f"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Procedure_Nursing_Measures|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>pflegerische Maßnahme: schützen des religiösen Glaubens</h1>
+					</div>
+				</text>
+				<status value="completed"/>
+				<code>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/icnp"/>
+						<version value="2.0.1"/>
+						<code value="10026381"/>
+						<display value="schützen des religiösen Glaubens"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+			</Procedure>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:d74cdf91-a45d-479c-b753-1c3f1923fb82"/>
+		<resource>
+			<Procedure>
+				<id value="d74cdf91-a45d-479c-b753-1c3f1923fb82"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Procedure_Nursing_Measures|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>pflegerische Maßnahme: messen des Blutdrucks</h1>
+					</div>
+				</text>
+				<status value="completed"/>
+				<code>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/icnp"/>
+						<version value="2.0.1"/>
+						<code value="10031996"/>
+						<display value="messen des Blutdrucks"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+			</Procedure>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:e506d185-16df-42da-8bd5-c0a1a3ebc144"/>
+		<resource>
+			<Procedure>
+				<id value="e506d185-16df-42da-8bd5-c0a1a3ebc144"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Procedure_Nursing_Measures|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>pflegerische Maßnahme: Hilfe bei der Haushaltsführung</h1>
+					</div>
+				</text>
+				<status value="completed"/>
+				<code>
+					<text value="Hilfe bei der Haushaltsführung: Aufräumen, Putzen, Lüften, Wäsche waschen, Bett beziehen usw."/>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+			</Procedure>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:cee006c4-3ec8-4dcc-8044-2e021e6a7b5c"/>
+		<resource>
+			<Procedure>
+				<id value="cee006c4-3ec8-4dcc-8044-2e021e6a7b5c"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Procedure_Nursing_Measures|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>pflegerische Maßnahme: anbieten emotionaler Unterstützung</h1>
+					</div>
+				</text>
+				<status value="completed"/>
+				<code>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/icnp"/>
+						<version value="2.0.1"/>
+						<code value="10027051"/>
+						<display value="anbieten emotionaler Unterstützung"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+			</Procedure>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:0353e621-ef83-4d1e-85d2-78f0c0b4d517"/>
+		<resource>
+			<Procedure>
+				<id value="0353e621-ef83-4d1e-85d2-78f0c0b4d517"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Procedure_Nursing_Measures|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>pflegerische Maßnahme: beurteilen des Schlafs</h1>
+					</div>
+				</text>
+				<status value="completed"/>
+				<code>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/icnp"/>
+						<version value="2.0.1"/>
+						<code value="10036764"/>
+						<display value="beurteilen des Schlafs"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+			</Procedure>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:19f2f420-81df-4d13-b049-ccb4d65d41a9"/>
+		<resource>
+			<Procedure>
+				<id value="19f2f420-81df-4d13-b049-ccb4d65d41a9"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Procedure_Nursing_Measures|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>pflegerische Maßnahme: assistieren beim Waschen des eigenen Körpers</h1>
+					</div>
+				</text>
+				<status value="completed"/>
+				<code>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/icnp"/>
+						<version value="2.0.1"/>
+						<code value="10051442"/>
+						<display value="assistieren beim Waschen des eigenen Körpers"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+			</Procedure>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:de3b89bf-f66c-49ee-9e3c-eea580dafa6d"/>
+		<resource>
+			<Procedure>
+				<id value="de3b89bf-f66c-49ee-9e3c-eea580dafa6d"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Procedure_Nursing_Measures|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>pflegerische Maßnahme: assistieren bei der Benutzung der Toilette</h1>
+					</div>
+				</text>
+				<status value="completed"/>
+				<code>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/icnp"/>
+						<version value="2.0.1"/>
+						<code value="10023531"/>
+						<display value="assistieren bei der Benutzung der Toilette"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+			</Procedure>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:9587cccb-00ec-4c65-a1ee-61135bdf8391"/>
+		<resource>
+			<Practitioner>
+				<id value="9587cccb-00ec-4c65-a1ee-61135bdf8391"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Practitioner|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Practitioner Michael Musterpfleger</h1>
+					</div>
+				</text>
+				<identifier>
+					<use value="official"/>
+					<type>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+							<code value="PRN"/>
+							<display value="Provider number"/>
+						</coding>
+					</type>
+					<system value="https://gematik.de/fhir/sid/telematik-id"/>
+					<value value="685772411"/>
+				</identifier>
+				<name>
+					<use value="official"/>
+					<text value="Michael Musterpfelger"/>
+					<family value="Michael Musterpfleger">
+						<extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+							<valueString value="Musterpfleger"/>
+						</extension>
+					</family>
+					<given value="Michael"/>
+				</name>
+				<qualification>
+					<code>
+						<coding>
+							<system value="urn:oid:1.3.6.1.4.1.19376.3.276.1.5.11"/>
+							<version value="1.0.0"/>
+							<code value="186"/>
+							<display value="Pflegefachmann/Pflegefachfrau"/>
+						</coding>
+					</code>
+				</qualification>
+			</Practitioner>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:79a2522e-fea8-4650-b5fe-cb524daa7304"/>
+		<resource>
+			<Practitioner>
+				<id value="79a2522e-fea8-4650-b5fe-cb524daa7304"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Practitioner|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Practitioner Max Musterarzt</h1>
+					</div>
+				</text>
+				<identifier>
+					<use value="official"/>
+					<type>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+							<code value="LANR"/>
+							<display value="Lifelong physician number"/>
+						</coding>
+					</type>
+					<system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR"/>
+					<value value="123146567"/>
+				</identifier>
+				<name>
+					<use value="official"/>
+					<text value="Dr. med. Max Musterarzt"/>
+					<family value="Max Musterazt">
+						<extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+							<valueString value="Musterarzt"/>
+						</extension>
+					</family>
+					<given value="Max"/>
+					<prefix value="Dr. med.">
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+							<valueCode value="AC"/>
+						</extension>
+					</prefix>
+				</name>
+				<qualification>
+					<code>
+						<coding>
+							<system value="urn:oid:1.2.276.0.76.5.514"/>
+							<version value="v3"/>
+							<code value="11001"/>
+							<display value="FA Allgemeinmedizin"/>
+						</coding>
+					</code>
+				</qualification>
+			</Practitioner>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:86bf7607-e895-42a4-b606-c45f38c2a476"/>
+		<resource>
+			<PractitionerRole>
+				<id value="86bf7607-e895-42a4-b606-c45f38c2a476"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_PractitionerRole|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>PractitionerRole</h1>
+					</div>
+				</text>
+				<practitioner>
+					<reference value="urn:uuid:9587cccb-00ec-4c65-a1ee-61135bdf8391"/>
+				</practitioner>
+				<organization>
+					<reference value="urn:uuid:a7e9117c-45e7-4d66-b0d4-b188a4d7cb93"/>
+				</organization>
+			</PractitionerRole>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:597e2923-5f3e-403e-9059-a97216b20515"/>
+		<resource>
+			<PractitionerRole>
+				<id value="597e2923-5f3e-403e-9059-a97216b20515"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_PractitionerRole|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>PractitionerRole</h1>
+					</div>
+				</text>
+				<practitioner>
+					<reference value="urn:uuid:79a2522e-fea8-4650-b5fe-cb524daa7304"/>
+				</practitioner>
+				<organization>
+					<reference value="urn:uuid:e156ed81-4a13-4ab9-952d-5d2d4eaf10c5"/>
+				</organization>
+			</PractitionerRole>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+		<resource>
+			<Patient>
+				<id value="a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Patient</h1>
+					</div>
+				</text>
+				<identifier>
+					<use value="official"/>
+					<type>
+						<coding>
+							<system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+							<code value="GKV"/>
+							<display value="Gesetzliche Krankenversicherung"/>
+						</coding>
+					</type>
+					<system value="http://fhir.de/sid/gkv/kvid-10"/>
+					<value value="B123456789"/>
+				</identifier>
+				<name>
+					<use value="official"/>
+					<text value="Dr. Mehmet Yilmaz"/>
+					<family value="Yilmaz">
+						<extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+							<valueString value="Yilmaz"/>
+						</extension>
+					</family>
+					<given value="Mehmet"/>
+					<prefix value="Dr.">
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+							<valueCode value="AC"/>
+						</extension>
+					</prefix>
+				</name>
+				<telecom>
+					<system value="phone"/>
+					<value value="123/839475843"/>
+				</telecom>
+				<gender value="male"/>
+				<birthDate value="1937-12-31"/>
+				<address>
+					<use value="home"/>
+					<type value="both"/>
+					<text value="Lilienweg 38, 27961 Musterstadt"/>
+					<line value="Lilienweg 38">
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+							<valueString value="Lilienweg"/>
+						</extension>
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+							<valueString value="38"/>
+						</extension>
+					</line>
+					<city value="Musterstadt"/>
+					<postalCode value="27961"/>
+					<country value="DE"/>
+				</address>
+				<communication>
+					<language>
+						<coding>
+							<system value="urn:ietf:bcp:47"/>
+							<version value="4.0.1"/>
+							<code value="de-DE"/>
+							<display value="German"/>
+						</coding>
+					</language>
+				</communication>
+				<communication>
+					<language>
+						<coding>
+							<system value="urn:ietf:bcp:47"/>
+							<version value="4.0.1"/>
+							<code value="tr-TR"/>
+							<display value="Turkish"/>
+						</coding>
+					</language>
+				</communication>
+			</Patient>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:51755a1d-c542-4624-8c81-5686bea67734"/>
+		<resource>
+			<Organization>
+				<id value="51755a1d-c542-4624-8c81-5686bea67734"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Organization|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>entsendende Einrichtung</h1>
+					</div>
+				</text>
+				<type>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="413456002"/>
+						<display value="Adult day care center (environment)"/>
+					</coding>
+				</type>
+				<name value="Ambulanter Pflegdienst Mio42-Süd"/>
+				<telecom>
+					<system value="phone"/>
+					<value value="020/74836574"/>
+				</telecom>
+				<address>
+					<use value="temp"/>
+					<type value="both"/>
+					<text value="Rosenallee 4, 27961 Musterstadt"/>
+					<line value="Rosenallee 4">
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+							<valueString value="Rosenallee"/>
+						</extension>
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+							<valueString value="4"/>
+						</extension>
+					</line>
+					<city value="Musterstadt"/>
+					<postalCode value="27961"/>
+					<country value="D"/>
+				</address>
+			</Organization>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:aac231b6-0634-4067-b8f1-5b36b9c1d69b"/>
+		<resource>
+			<Organization>
+				<id value="aac231b6-0634-4067-b8f1-5b36b9c1d69b"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Organization|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>empfangende Einrichtung</h1>
+					</div>
+				</text>
+				<type>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="42665001"/>
+						<display value="Nursing home (environment)"/>
+					</coding>
+				</type>
+				<name value="Stationäre Langzeitpflege Haus mio42"/>
+				<telecom>
+					<system value="phone"/>
+					<value value="020/85947032"/>
+				</telecom>
+				<address>
+					<use value="temp"/>
+					<type value="both"/>
+					<text value="Kastanienallee 12 4, 27555 Musterstadt"/>
+					<line value="Kastanienallee 12">
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+							<valueString value="Kastanienallee"/>
+						</extension>
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+							<valueString value="12"/>
+						</extension>
+					</line>
+					<city value="Musterstadt"/>
+					<postalCode value="27555"/>
+					<country value="D"/>
+				</address>
+			</Organization>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:e156ed81-4a13-4ab9-952d-5d2d4eaf10c5"/>
+		<resource>
+			<Organization>
+				<id value="e156ed81-4a13-4ab9-952d-5d2d4eaf10c5"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Organization|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Behandelnde Organisation Allgemeinmedizinische Praxis Max Musterarzt</h1>
+					</div>
+				</text>
+				<type>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="43741000"/>
+						<display value="Site of care (environment)"/>
+					</coding>
+				</type>
+				<name value="Allgemeinmedizinische Praxis Max Musterarzt"/>
+				<telecom>
+					<system value="phone"/>
+					<value value="123/93845677"/>
+				</telecom>
+				<address>
+					<type value="both"/>
+					<text value="Geranienweg 6"/>
+					<line value="Musterstr. 1">
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+							<valueString value="Geranienweg"/>
+						</extension>
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+							<valueString value="6"/>
+						</extension>
+					</line>
+					<city value="Musterstadt"/>
+					<postalCode value="27111"/>
+					<country value="D"/>
+				</address>
+			</Organization>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:a7e9117c-45e7-4d66-b0d4-b188a4d7cb93"/>
+		<resource>
+			<Organization>
+				<id value="a7e9117c-45e7-4d66-b0d4-b188a4d7cb93"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Organization|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Behandelnde Organisation Ambulanter Pflegdienst Mio42-Süd</h1>
+					</div>
+				</text>
+				<type>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="66280005"/>
+						<display value="Private home-based care (environment)"/>
+					</coding>
+				</type>
+				<name value="Ambulanter Pflegdienst Mio42-Süd"/>
+				<telecom>
+					<system value="phone"/>
+					<value value="020/74836574"/>
+				</telecom>
+				<address>
+					<type value="both"/>
+					<text value="Rosenalle 4"/>
+					<line value="Musterstr. 1">
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+							<valueString value="Rosenalle"/>
+						</extension>
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+							<valueString value="4"/>
+						</extension>
+					</line>
+					<city value="Musterstadt"/>
+					<postalCode value="27961"/>
+					<country value="D"/>
+				</address>
+			</Organization>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:bbdf4e70-eaea-4b87-b471-6c194ca85af3"/>
+		<resource>
+			<Observation>
+				<id value="bbdf4e70-eaea-4b87-b471-6c194ca85af3"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Wish|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Patientenwunsch</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="1186606009"/>
+						<display value="Patient request observable (observable entity)"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<valueCodeableConcept>
+					<text value="Essen und Tagesablauf muss sich nach den Geboten des Islams richten. Die regelmäßige Struktur des Gebets hat positive Auswirkung auf den Zustand des Patienten und hilft dabei, die übrigen Alltagshandlungen zu bewältigen. Bitte bei Fragen mit Tochter Frau Fatima Schmidt Kontakt aufnehmen."/>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:c1614ecb-5ab5-460d-b99c-13aaa21cc3db"/>
+		<resource>
+			<Observation>
+				<id value="c1614ecb-5ab5-460d-b99c-13aaa21cc3db"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Total_Barthel_Index|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>vollständiger Barthel Index</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="725594005"/>
+						<display value="Barthel Index of Activities of Daily Living score (observable entity)"/>
+					</coding>
+					<coding>
+						<system value="http://loinc.org"/>
+						<version value="2.72"/>
+						<code value="96761-2"/>
+						<display value="Total score Barthel Index"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<effectiveDateTime value="2022-01-01"/>
+				<valueQuantity>
+					<value value="80"/>
+				</valueQuantity>
+				<hasMember>
+					<reference value="urn:uuid:49f13d64-283d-47f6-b2a1-48dee32d17db"/>
+				</hasMember>
+				<hasMember>
+					<reference value="urn:uuid:918d722c-ff29-486c-8d8b-ab51459cf826"/>
+				</hasMember>
+				<hasMember>
+					<reference value="urn:uuid:2f4e998a-7649-4a4a-8106-9f0acd3d64a9"/>
+				</hasMember>
+				<hasMember>
+					<reference value="urn:uuid:5ef8dd45-b620-4155-ab55-87dfbdb7c367"/>
+				</hasMember>
+				<hasMember>
+					<reference value="urn:uuid:90f98685-6b73-4cd7-8dbb-5f58d6e8fd57"/>
+				</hasMember>
+				<hasMember>
+					<reference value="urn:uuid:ec49db3c-a42a-4fb2-95ad-6e7bc75e70f5"/>
+				</hasMember>
+				<hasMember>
+					<reference value="urn:uuid:4863b0b2-826b-4eca-9cb1-beb5c94af78a"/>
+				</hasMember>
+				<hasMember>
+					<reference value="urn:uuid:05bfd141-093c-487c-990d-d61f0f88ad85"/>
+				</hasMember>
+				<hasMember>
+					<reference value="urn:uuid:be57b7ae-4fe5-4ac1-8d16-07cb2f60e3ba"/>
+				</hasMember>
+				<hasMember>
+					<reference value="urn:uuid:431f5f07-1237-4f5a-9215-0d16f6afdffe"/>
+				</hasMember>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:47d52114-65f0-4fc9-a94a-a7aa012c9a74"/>
+		<resource>
+			<Observation>
+				<id value="47d52114-65f0-4fc9-a94a-a7aa012c9a74"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Risk|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Risiko Hinlaufgefährdung</h1>
+					</div>
+				</text>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Reason_Cause">
+					<extension url="referenzAnlassUrsache">
+						<valueReference>
+							<reference value="urn:uuid:47e6b244-fc2c-494f-be3f-be70a2877479"/>
+						</valueReference>
+					</extension>
+				</extension>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="80943009"/>
+						<display value="Risk factor (observable entity)"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="704448006"/>
+						<display value="Tendency to wander (finding)"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:236c0f47-0af9-4ec8-bd0c-9568f166ce43"/>
+		<resource>
+			<Observation>
+				<id value="236c0f47-0af9-4ec8-bd0c-9568f166ce43"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Respiratory_Rate|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Atemfrequenz</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+						<version value="4.0.1"/>
+						<code value="vital-signs"/>
+						<display value="Vital Signs"/>
+					</coding>
+				</category>
+				<category>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="1184593002"/>
+						<display value="Vital sign document section (record artifact)"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<version value="2.72"/>
+						<code value="9279-1"/>
+						<display value="Respiratory rate"/>
+					</coding>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="86290005"/>
+						<display value="Respiratory rate (observable entity)"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<effectiveDateTime value="2022-01-01"/>
+				<valueQuantity>
+					<value value="16"/>
+					<unit value="per minute"/>
+					<system value="http://unitsofmeasure.org"/>
+					<code value="/min"/>
+				</valueQuantity>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:c552bb9b-dcef-49d9-a88b-9b3b47ad01c6"/>
+		<resource>
+			<Observation>
+				<id value="c552bb9b-dcef-49d9-a88b-9b3b47ad01c6"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Relevant_Information_Medical_Devices|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Relevante Informationen zu Medizinprodukten liegen nicht vor</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="408699006:704325000=63653004"/>
+						<display value="Device observable (observable entity) : Relative to (attribute) = Biomedical device (physical object)"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="373572006:246090004=404684003:47429007=63653004"/>
+						<display value="Clinical finding absent (situation) : Associated finding (attribute) = Clinical finding (finding) : Associated with (attribute) = Biomedical device (physical object)"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:b527b9b2-6758-4674-9267-9bae236e7073"/>
+		<resource>
+			<Observation>
+				<id value="b527b9b2-6758-4674-9267-9bae236e7073"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Presence_Risks|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Vorliegen von Risiken</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="102485007"/>
+						<display value="Personal risk factor (observable entity)"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="373573001:246090004=281694009"/>
+						<display value="Clinical finding present (situation) : Associated finding (attribute) = Finding of at risk (finding)"/>
+					</coding>
+				</valueCodeableConcept>
+				<hasMember>
+					<reference value="urn:uuid:47d52114-65f0-4fc9-a94a-a7aa012c9a74"/>
+				</hasMember>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:6d16202b-61a5-4334-bb37-21f5a2e4ebf0"/>
+		<resource>
+			<Observation>
+				<id value="6d16202b-61a5-4334-bb37-21f5a2e4ebf0"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Presence_Problems|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Vorliegen von Problemen</h1>
+					</div>
+				</text>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Has_Member">
+					<valueReference>
+						<reference value="urn:uuid:47e6b244-fc2c-494f-be3f-be70a2877479"/>
+					</valueReference>
+				</extension>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Has_Member">
+					<valueReference>
+						<reference value="urn:uuid:d8949bb8-1f14-40b3-8418-8cb163a7b3f1"/>
+					</valueReference>
+				</extension>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Has_Member">
+					<valueReference>
+						<reference value="urn:uuid:d8949bb8-1f14-40b3-8418-8cb163a7b3f1"/>
+					</valueReference>
+				</extension>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Has_Member">
+					<valueReference>
+						<reference value="urn:uuid:5fc339c2-cc7c-4ec8-8296-3b8e8fd63929"/>
+					</valueReference>
+				</extension>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Has_Member">
+					<valueReference>
+						<reference value="urn:uuid:73d9e047-fc97-41e7-b16b-703b2b80966e"/>
+					</valueReference>
+				</extension>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Has_Member">
+					<valueReference>
+						<reference value="urn:uuid:260c22a0-6901-4618-ac0e-857b66287409"/>
+					</valueReference>
+				</extension>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Has_Member">
+					<valueReference>
+						<reference value="urn:uuid:6da2a0d0-b93f-4f20-a172-3ba3741cc1ef"/>
+					</valueReference>
+				</extension>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Has_Member">
+					<valueReference>
+						<reference value="urn:uuid:e1ad10d5-99a2-474a-a031-7da300935c02"/>
+					</valueReference>
+				</extension>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Has_Member">
+					<valueReference>
+						<reference value="urn:uuid:93cd4709-fc84-4c1e-a001-2867dfb8563b"/>
+					</valueReference>
+				</extension>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Has_Member">
+					<valueReference>
+						<reference value="urn:uuid:b14a822d-11e0-4561-bed0-3f3a754594eb"/>
+					</valueReference>
+				</extension>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Has_Member">
+					<valueReference>
+						<reference value="urn:uuid:a166a9fb-4cde-4eed-8ef9-b38d34a6620d"/>
+					</valueReference>
+				</extension>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Has_Member">
+					<valueReference>
+						<reference value="urn:uuid:e8488ca3-949a-4849-8559-cc48d1c17bdf"/>
+					</valueReference>
+				</extension>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Has_Member">
+					<valueReference>
+						<reference value="urn:uuid:4f81e5f6-02db-48d7-89bc-5f8aca8e9280"/>
+					</valueReference>
+				</extension>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="363787002:704326004=(404684003:47429007=55607006)"/>
+						<display value="Observable entity (observable entity) : Precondition (attribute) = ( Clinical finding (finding) : Associated with (attribute) = Problem (finding) )"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="373573001:246090004=55607006"/>
+						<display value="Clinical finding present (situation) : Associated finding (attribute) = Problem (finding)"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:edf72cb5-16f1-4fb8-a180-2c4646d93ed8"/>
+		<resource>
+			<Observation>
+				<id value="edf72cb5-16f1-4fb8-a180-2c4646d93ed8"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Presence_Information_Nutrition|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Hinweise zur Ernährung liegen vor</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="364393001:704321009=384760004"/>
+						<display value="Nutritional observable (observable entity) : Characterizes (attribute) = Feeding and dietary regime (regime/therapy)"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="373573001:246090004=300893006"/>
+						<display value="Clinical finding present (situation) : Associated finding (attribute) = Nutritional finding (finding)"/>
+					</coding>
+				</valueCodeableConcept>
+				<hasMember>
+					<reference value="urn:uuid:b173a6ea-de2c-44d0-b05e-3eb6600329ae"/>
+				</hasMember>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:aef6acce-778e-474e-bf87-59de54b97c90"/>
+		<resource>
+			<Observation>
+				<id value="aef6acce-778e-474e-bf87-59de54b97c90"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Presence_Functional_Assessment|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Vorliegen einer Funktionseinschränkung</h1>
+					</div>
+				</text>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Has_Member">
+					<valueReference>
+						<reference value="urn:uuid:da288e59-2118-4abc-a497-4bd433c74e60"/>
+					</valueReference>
+				</extension>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Has_Member">
+					<valueReference>
+						<reference value="urn:uuid:c1614ecb-5ab5-460d-b99c-13aaa21cc3db"/>
+					</valueReference>
+				</extension>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="363787002:704326004=105719004"/>
+						<display value="Observable entity (observable entity) : Precondition (attribute) = Body disability AND/OR failure state (finding)"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="373573001:246090004=105719004"/>
+						<display value="Clinical finding present (situation) : Associated finding (attribute) = Body disability AND/OR failure state (finding)"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:044d8189-5b3f-4bdc-b2c3-d2730764772f"/>
+		<resource>
+			<Observation>
+				<id value="044d8189-5b3f-4bdc-b2c3-d2730764772f"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Presence_Allergies|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Allergien oder Unverträglichkeiten liegen nicht vor</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="363787002:704326004=420134006"/>
+						<display value="Observable entity (observable entity) : Precondition (attribute) = Propensity to adverse reaction (finding)"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="420134006:363713009=2667000"/>
+						<display value="Propensity to adverse reaction (finding) : Has interpretation (attribute) = Absent (qualifier value)"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:a52a81b4-e686-4514-98b2-07aa01af8047"/>
+		<resource>
+			<Observation>
+				<id value="a52a81b4-e686-4514-98b2-07aa01af8047"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Personal_Statements|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Vorliegen von persönlichen Erklärungen</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="363787002:704325000=371538006"/>
+						<display value="Observable entity (observable entity): Relative to (attribute) = Advance directive report (record artifact)"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="310301000:363713009=52101004"/>
+						<display value="Advance healthcare directive status (finding) : Has interpretation (attribute) = Present (qualifier value)"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:82547c47-6580-4ee9-a792-847a69dcd4e4"/>
+		<resource>
+			<Observation>
+				<id value="82547c47-6580-4ee9-a792-847a69dcd4e4"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Pain|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Eine Schmerzsymtomatik liegt nicht vor.</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="406189006"/>
+						<display value="Pain observable (observable entity)"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="413350009:{246090004=22253000,408729009=261665006,408732007=410604004,408731000=410512000}"/>
+						<display value="No pain (situation)"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:bb847dc3-212d-4627-ab15-d11b25fcf408"/>
+		<resource>
+			<Observation>
+				<id value="bb847dc3-212d-4627-ab15-d11b25fcf408"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Orientation|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Orientierung</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="43173001"/>
+						<display value="Orientation, function (observable entity)"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<component>
+					<code>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+							<code value="405017007:370130000=410669006"/>
+							<display value="Ability to identify person, place, and time (observable entity): Property (attribute) = Time (property) (qualifier value)"/>
+						</coding>
+					</code>
+					<valueCodeableConcept>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+							<code value="426794005:363713009=260400001"/>
+							<display value="Oriented to time (finding)"/>
+						</coding>
+					</valueCodeableConcept>
+				</component>
+				<component>
+					<code>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+							<code value="405017007+302149003"/>
+							<display value="Ability to identify person, place, and time (observable entity) + Housing, local environment and transport detail (observable entity)"/>
+						</coding>
+					</code>
+					<valueCodeableConcept>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+							<code value="427161009:363713009=260400001"/>
+							<display value="Oriented to place (finding) : Has interpretation (attribute) = Reduced (qualifier value)"/>
+						</coding>
+					</valueCodeableConcept>
+				</component>
+				<component>
+					<code>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+							<code value="405017007+160476009"/>
+							<display value="Ability to identify person, place, and time (observable entity) + Social / personal history observable (observable entity)"/>
+						</coding>
+					</code>
+					<valueCodeableConcept>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+							<code value="427645006"/>
+							<display value="Oriented to person (finding)"/>
+						</coding>
+					</valueCodeableConcept>
+				</component>
+				<component>
+					<code>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+							<code value="43173001+395659009"/>
+							<display value="Orientation, function (observable entity) + Ability to comprehend (observable entity)"/>
+						</coding>
+					</code>
+					<valueCodeableConcept>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+							<code value="247663003:363713009=260400001"/>
+							<display value="Orientated (finding) : Has interpretation (attribute) = Reduced (qualifier value)"/>
+						</coding>
+					</valueCodeableConcept>
+				</component>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:72166569-3b4e-480c-8556-46d6dd8477dd"/>
+		<resource>
+			<Observation>
+				<id value="72166569-3b4e-480c-8556-46d6dd8477dd"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Message_Receiving_Institution|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Freitext Nachricht an die empfangende Einrichtung</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="721927009"/>
+						<display value="Referral note (record artifact)"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<valueString value="Herr Dr. Yilmaz wird seit drei Jahren von uns versorgt. Er hat eine Alzheimer-Demenz und Bluthochdruck. Es liegen leichte altersbedingte körperliche Einschränkungen vor. Vor einem Jahr ist Frau Yilmaz überraschend verstorben. Vorher hatte sie einen Großteil der Pflege übernommen, weswegen die Pflege durch den Pflegedienst aufgestockt werden musste. Morgens und abends kommt eine Pflegefachperson zur Unterstützung bei der Körperpflege und beim Ankleiden sowie bei der Medikamenteneinnahme. Dienstag- und Freitagvormittag erhält Herr Yilmaz Hilfe beim Duschen. Mittags kommt eine Betreuungskraft nach § 45a SGB XI für zwei Stunden, bereitet das von der Tochter vorbereitete Mittagsessen zu und leistet ihm beim Einnehmen der Mahlzeit Gesellschaft. Herr Yilmaz ist gläubiger Muslim. Aus diesem Grund ist es wichtig, dass sich das Essen nach den Geboten des Islams richtet. Das regelmäßige Gebet hilft bei der Strukturierung seines Tages und hat eine positive Auswirkung auf seinen Zustand, sodass dies ein wichtiger Bestandteil seines Tagesablaufs ist. Ansonsten putzt die Betreuungskraft einmal in der Woche die Wohnung. Nachmittags kommt für gewöhnlich seine Tochter Fatima Schmidt nach ihrer Arbeit vorbei, um sich um ihren Vater zu kümmern. Sollte sie es nicht schaffen, gibt es eine Nachbarin, die nach Herrn Yilmaz sehen kann.In den letzten Wochen verschlechterte sich der Allgemeinzustand von Herr Yilmaz jedoch merklich. Er ist sehr unruhig, fragt viel nach seiner Frau und sucht diese auch. Sein Tag-Nacht-Rhythmus ist ebenfalls gestört. Die Nachbarin berichtet, dass sie ihn nachts öfter in der Wohnung umherwandern hört und alle Lichter an sind. So stand er schon mehrmals nachts vor ihrer Wohnung und hat nach seiner Frau gefragt und mitgeteilt, dass er vorhat, sie suchen zu gehen. An einem Abend konnte sie ihn nicht davon überzeugen, zurück in seine Wohnung zu gehen. Da ist er dann in Schlafanzug und Pantoffeln nach draußen gegangen. Die Nachbarin hat umgehend die Tochter informiert. Zusammen konnten sie ihn wenige Straßen weiter finden und heimbringen. Seit diesem Abend schläft die Tochter aus Angst bei ihrem Vater. Wenn sie morgens zur Arbeit geht, schließt sie die Wohnung ab, da sie sonst Sorge hat, dass ihr Vater wieder und diesmal vielleicht unbemerkt nach draußen geht. Dies ist jedoch keine dauerhafte Lösung, da ihr Vater, wenn er bemerkt, dass die Tür verschlossen ist, laut wird und nach Hilfe ruft. Außerdem hat er sich beim dem Versuch, die Tür zu öffnen, schon verletzt. Frau Schmidt hat selbst Kinder, deren Versorgung durch die zeitaufwendige Betreuung des Vaters erschwert wird. Gemeinsam mit der verantwortlichen Pflegefachperson entscheidet sich Frau Schmidt aufgrund der Situation für einen Umzug ihres Vaters in ein Pflegeheim."/>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:69b06124-159f-466f-9ec4-7dd55821a8d3"/>
+		<resource>
+			<Observation>
+				<id value="69b06124-159f-466f-9ec4-7dd55821a8d3"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Isolation_Necessary|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Notwendigkeit der räumlichen Isolation</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="363787002:704321009=40174006"/>
+						<display value="Observable entity (observable entity) : Characterizes (attribute) = Isolation procedure (procedure)"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="129125009:363589002=40174006,408730004=897016006"/>
+						<display value="Procedure with explicit context (situation) : Associated procedure (attribute) = Isolation procedure (procedure) , Procedure context (attribute) = Not recommended (qualifier value)"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:75ac315b-793d-447d-9fd0-942ce2aadc78"/>
+		<resource>
+			<Observation>
+				<id value="75ac315b-793d-447d-9fd0-942ce2aadc78"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Information_Medicines|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Vorliegen einer Medikation</h1>
+					</div>
+				</text>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Has_Member">
+					<valueReference>
+						<reference value="urn:uuid:30ca5260-699a-455e-8f00-fea13529c4b4"/>
+					</valueReference>
+				</extension>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="363819003"/>
+						<display value="Drug therapy observable (observable entity)"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="309298003:363713009=52101004"/>
+						<display value="Drug therapy finding (finding) : Has interpretation (attribute) = Present (qualifier value)"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:ea7620b6-2afa-46e0-97dc-681655b19375"/>
+		<resource>
+			<Observation>
+				<id value="ea7620b6-2afa-46e0-97dc-681655b19375"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Information_Legal_Care|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Vorliegen von Informationen zur gesetzlichen Betreuung</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="363787002:704319004=58626002,704325000=419891008"/>
+						<display value="Observable entity (observable entity) : Inheres in (attribute) = Legal guardian (person) , Relative to (attribute) = Record artifact (record artifact)"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="243796009:{408732007=58626002}{246090004=(404684003:47429007=419891008)}{246090004=(310385006:363713009=2667000)}"/>
+						<display value="Situation with explicit context (situation) : { Subject relationship context (attribute) = Legal guardian (person) } { Associated finding (attribute) = ( Clinical finding (finding) : Associated with (attribute) = Record artifact (record artifact) ) } { Associated finding (attribute) = ( Information status (finding) : Has interpretation (attribute) = Absent (qualifier value) ) }"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:927467ec-8314-4bda-b931-66aed71ea186"/>
+		<resource>
+			<Observation>
+				<id value="927467ec-8314-4bda-b931-66aed71ea186"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Heart_Rate|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Herzfrequenz</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+						<version value="4.0.1"/>
+						<code value="vital-signs"/>
+						<display value="Vital Signs"/>
+					</coding>
+				</category>
+				<category>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="1184593002"/>
+						<display value="Vital sign document section (record artifact)"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<version value="2.72"/>
+						<code value="8867-4"/>
+						<display value="Heart rate"/>
+					</coding>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="364075005"/>
+						<display value="Heart rate (observable entity)"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<effectiveDateTime value="2022-01-01"/>
+				<valueQuantity>
+					<value value="80"/>
+					<unit value="per minute"/>
+					<system value="http://unitsofmeasure.org"/>
+					<code value="/min"/>
+				</valueQuantity>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:b173a6ea-de2c-44d0-b05e-3eb6600329ae"/>
+		<resource>
+			<Observation>
+				<id value="b173a6ea-de2c-44d0-b05e-3eb6600329ae"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Food_Type|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Hinweise zur Kostform</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="230092000"/>
+						<display value="General food types intake (observable entity)"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="226237003"/>
+						<display value="No pork diet (finding)"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:9a4565f9-786b-4db1-8ac9-2305a4bebac5"/>
+		<resource>
+			<Observation>
+				<id value="9a4565f9-786b-4db1-8ac9-2305a4bebac5"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Falls_Last_6_Months|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Anzahl der Stürze in den letzten 6 Monaten</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="391002003:704323007=88561007"/>
+						<display value="Number of falls in last year (observable entity) : Process duration (attribute) = Semi-annual (qualifier value)"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<valueInteger value="0"/>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:e6a171db-53ae-4cb2-85b5-7f192d8fd65f"/>
+		<resource>
+			<Observation>
+				<id value="e6a171db-53ae-4cb2-85b5-7f192d8fd65f"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Deprivation_Liberty_Measures|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Freiheitsentziehende Maßnahmen ind nicht notwendig.</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="363787002:704321009=225214000"/>
+						<display value="Observable entity (observable entity) : Characterizes (attribute) = Procedures relating to control, restraint, seclusion and segregation (procedure)"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="129125009:363589002=225214000,408730004=410536001"/>
+						<display value="Procedure with explicit context (situation) : Associated procedure (attribute) = Procedures relating to control, restraint, seclusion and segregation (procedure) , Procedure context (attribute) = Contraindicated (qualifier value)"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:920db16f-db84-40a4-b059-73ca16a624d1"/>
+		<resource>
+			<Observation>
+				<id value="920db16f-db84-40a4-b059-73ca16a624d1"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Degree_Of_Disability_Available|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Grad der Behinderung nicht vorhanden</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="363787002:704326004=(404684003:363713009=260411009,47429007=(21134002:363713009=272520006))"/>
+						<display value="Observable entity (observable entity) : Precondition (attribute) = ( Clinical finding (finding) : Has interpretation (attribute) = Presence findings (qualifier value) , Associated with (attribute) = ( Disability (finding) : Has interpretation (attribute) = Degree findings (qualifier value) ) )"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<effectiveDateTime value="2020-01-02"/>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="404684003:363713009=2667000,47429007=(21134002:363713009=272520006)"/>
+						<display value="Clinical finding (finding) : Has interpretation (attribute) = Absent (qualifier value) , Associated with (attribute) = ( Disability (finding) : Has interpretation (attribute) = Degree findings (qualifier value) )"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:e559267f-0a07-4587-a91b-f1d0ad181380"/>
+		<resource>
+			<Observation>
+				<id value="e559267f-0a07-4587-a91b-f1d0ad181380"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Copayment_Exemption|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Zuzahlungsbefreiung ist nicht vorhanden</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="363787002:704326004=308315007"/>
+						<display value="Observable entity (observable entity): Precondition (attribute) = Prescription payment exemption status (finding)"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="308315007:363713009=2667000"/>
+						<display value="Prescription payment exemption status (finding) : Has interpretation (attribute) = Absent (qualifier value)"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:a5041a5f-a522-4def-a0e1-5a2260cc945d"/>
+		<resource>
+			<Observation>
+				<id value="a5041a5f-a522-4def-a0e1-5a2260cc945d"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Cognitive_Awareness|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Bewusstseinslage</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="312012004"/>
+						<display value="Cognitive function: awareness (observable entity)"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="271591004"/>
+						<display value="Fully conscious (finding)"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:28c38db5-6197-48b7-ae37-35c2a38bafcf"/>
+		<resource>
+			<Observation>
+				<id value="28c38db5-6197-48b7-ae37-35c2a38bafcf"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Care_Level|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Pflegegrad Eintrag 1</h1>
+					</div>
+				</text>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Application_Status">
+					<extension url="antragsstatusPflegegrad">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Application_Status_Care_Level"/>
+								<version value="1.0.0"/>
+								<code value="Beantragung_mit_Pflegegradzuweisung_abgeschlossen"/>
+								<display value="Beantragung mit Pflegegradzuweisung abgeschlossen"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+				</extension>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Status_Care_Level">
+					<valueCodeableConcept>
+						<coding>
+							<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Application_Status_Care_Level"/>
+							<version value="1.0.0"/>
+							<code value="Pflegegrad_bewilligt"/>
+							<display value="Pflegegrad bewilligt"/>
+						</coding>
+					</valueCodeableConcept>
+				</extension>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<version value="2.72"/>
+						<code value="80391-6"/>
+						<display value="Level of care [Type]"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<effectivePeriod>
+					<start value="2021-12-01"/>
+				</effectivePeriod>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://fhir.de/CodeSystem/bfarm/ops"/>
+						<version value="2021"/>
+						<code value="9-984.8"/>
+						<display value="Pflegebedürftig nach Pflegegrad 3"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:185e5afd-87bd-4a53-b789-fc8ce5e5d5a2"/>
+		<resource>
+			<Observation>
+				<id value="185e5afd-87bd-4a53-b789-fc8ce5e5d5a2"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Care_Level|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Pflegegrad Eintrag 2</h1>
+					</div>
+				</text>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Application_Status">
+					<extension url="antragsstatusPflegegrad">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Application_Status_Care_Level"/>
+								<version value="1.0.0"/>
+								<code value="Beantragung_mit_Pflegegradzuweisung_abgeschlossen"/>
+								<display value="Beantragung mit Pflegegradzuweisung abgeschlossen"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+				</extension>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Status_Care_Level">
+					<valueCodeableConcept>
+						<coding>
+							<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Application_Status_Care_Level"/>
+							<version value="1.0.0"/>
+							<code value="Pflegegrad_bewilligt"/>
+							<display value="Pflegegrad bewilligt"/>
+						</coding>
+					</valueCodeableConcept>
+				</extension>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<version value="2.72"/>
+						<code value="80391-6"/>
+						<display value="Level of care [Type]"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<effectivePeriod>
+					<start value="2019-02-01"/>
+					<end value="2021-11-30"/>
+				</effectivePeriod>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://fhir.de/CodeSystem/bfarm/ops"/>
+						<version value="2021"/>
+						<code value="9-984.6"/>
+						<display value="Pflegebedürftig nach Pflegegrad 1"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:7c799ed1-2bc7-47a0-832b-f517421c4e8e"/>
+		<resource>
+			<Observation>
+				<id value="7c799ed1-2bc7-47a0-832b-f517421c4e8e"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Care_By_Relatives|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Pflege durch Angehörige</h1>
+					</div>
+				</text>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Contact_Person">
+					<valueReference>
+						<reference value="urn:uuid:ca5c9feb-f02d-4a88-aee7-e80d84d6034e"/>
+					</valueReference>
+				</extension>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="405204003"/>
+						<display value="Family involvement behavior: health care (observable entity)"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="224483009"/>
+						<display value="Relatives unable to care for patient (finding)"/>
+					</coding>
+				</valueCodeableConcept>
+				<note>
+					<text value="Bisher hat die Tochter den Vater mit versorgt. Dies ist jetzt nicht mehr möglich."/>
+				</note>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:3cbccfe8-25db-4e6e-a289-b2c251f9c362"/>
+		<resource>
+			<Observation>
+				<id value="3cbccfe8-25db-4e6e-a289-b2c251f9c362"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Body_Weight|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Körpergewicht</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+						<version value="4.0.1"/>
+						<code value="vital-signs"/>
+						<display value="Vital Signs"/>
+					</coding>
+				</category>
+				<category>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="1184593002"/>
+						<display value="Vital sign document section (record artifact)"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<version value="2.72"/>
+						<code value="29463-7"/>
+						<display value="Body weight"/>
+					</coding>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="27113001"/>
+						<display value="Body weight (observable entity)"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<effectiveDateTime value="2022-01-01"/>
+				<valueQuantity>
+					<value value="70"/>
+					<unit value="kg"/>
+					<system value="http://unitsofmeasure.org"/>
+					<code value="kg"/>
+				</valueQuantity>
+				<method>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="363808001"/>
+						<display value="Measured body weight (observable entity)"/>
+					</coding>
+				</method>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:feb61d0f-d671-47d0-939b-5a1b8c88c083"/>
+		<resource>
+			<Observation>
+				<id value="feb61d0f-d671-47d0-939b-5a1b8c88c083"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Body_Temperature|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Körpertemperatur</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+						<version value="4.0.1"/>
+						<code value="vital-signs"/>
+						<display value="Vital Signs"/>
+					</coding>
+				</category>
+				<category>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="1184593002"/>
+						<display value="Vital sign document section (record artifact)"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<version value="2.72"/>
+						<code value="8310-5"/>
+						<display value="Body temperature"/>
+					</coding>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="415974002"/>
+						<display value="Core body temperature measured at tympanic membrane (observable entity)"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<effectiveDateTime value="2022-01-01"/>
+				<valueQuantity>
+					<value value="36.5"/>
+					<unit value="Cel"/>
+					<system value="http://unitsofmeasure.org"/>
+					<code value="Cel"/>
+				</valueQuantity>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:057a0c32-ca59-4af1-b766-420a2ade5758"/>
+		<resource>
+			<Observation>
+				<id value="057a0c32-ca59-4af1-b766-420a2ade5758"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Body_Height|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Körpergröße</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+						<version value="4.0.1"/>
+						<code value="vital-signs"/>
+						<display value="Vital Signs"/>
+					</coding>
+				</category>
+				<category>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="1184593002"/>
+						<display value="Vital sign document section (record artifact)"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<version value="2.72"/>
+						<code value="8302-2"/>
+						<display value="Body height"/>
+					</coding>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="248333004"/>
+						<display value="Standing height (observable entity)"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<effectiveDateTime value="2022-01-01"/>
+				<valueQuantity>
+					<value value="170"/>
+					<unit value="cm"/>
+					<system value="http://unitsofmeasure.org"/>
+					<code value="cm"/>
+				</valueQuantity>
+				<bodySite>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="38266002"/>
+						<display value="Entire body as a whole (body structure)"/>
+					</coding>
+				</bodySite>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:52610f89-9e67-47bd-a645-263af1f0a413"/>
+		<resource>
+			<Observation>
+				<id value="52610f89-9e67-47bd-a645-263af1f0a413"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Blood_Pressure|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Blutdruck</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+						<version value="4.0.1"/>
+						<code value="vital-signs"/>
+						<display value="Vital Signs"/>
+					</coding>
+				</category>
+				<category>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="1184593002"/>
+						<display value="Vital sign document section (record artifact)"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<version value="2.72"/>
+						<code value="85354-9"/>
+						<display value="Blood pressure panel with all children optional"/>
+					</coding>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="75367002"/>
+						<display value="Blood pressure (observable entity)"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<effectiveDateTime value="2022-01-01"/>
+				<component>
+					<code>
+						<coding>
+							<system value="http://loinc.org"/>
+							<version value="2.72"/>
+							<code value="8480-6"/>
+							<display value="Systolic blood pressure"/>
+						</coding>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+							<code value="271649006"/>
+							<display value="Systolic blood pressure (observable entity)"/>
+						</coding>
+					</code>
+					<valueQuantity>
+						<value value="135"/>
+						<unit value="mm Hg"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="mm[Hg]"/>
+					</valueQuantity>
+				</component>
+				<component>
+					<code>
+						<coding>
+							<system value="http://loinc.org"/>
+							<version value="2.72"/>
+							<code value="8462-4"/>
+							<display value="Diastolic blood pressure"/>
+						</coding>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+							<code value="271650006"/>
+							<display value="Diastolic blood pressure (observable entity)"/>
+						</coding>
+					</code>
+					<valueQuantity>
+						<value value="85"/>
+						<unit value="mm Hg"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="mm[Hg]"/>
+					</valueQuantity>
+				</component>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:918d722c-ff29-486c-8d8b-ab51459cf826"/>
+		<resource>
+			<Observation>
+				<id value="918d722c-ff29-486c-8d8b-ab51459cf826"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Transfer|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Barthel Transfer</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="165236004"/>
+						<display value="Chair/bed transfer ability (observable entity)"/>
+					</coding>
+					<coding>
+						<system value="http://loinc.org"/>
+						<version value="2.72"/>
+						<code value="83185-9"/>
+						<display value="Transferring - functional ability"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<effectiveDateTime value="2022-01-01"/>
+				<valueQuantity>
+					<value value="15"/>
+				</valueQuantity>
+				<interpretation>
+					<coding>
+						<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Barthel_Index_Transfer_Hamburg_Manual"/>
+						<version value="1.0.0"/>
+						<code value="15"/>
+						<display value="komplett selbständig aus liegender Position in (Roll-)Stuhl und zurück"/>
+					</coding>
+				</interpretation>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:2f4e998a-7649-4a4a-8106-9f0acd3d64a9"/>
+		<resource>
+			<Observation>
+				<id value="2f4e998a-7649-4a4a-8106-9f0acd3d64a9"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Toileting|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Barthel Toilettenbenutzung</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="284906000"/>
+						<display value="Ability to use toilet (observable entity)"/>
+					</coding>
+					<coding>
+						<system value="http://loinc.org"/>
+						<version value="2.72"/>
+						<code value="83183-4"/>
+						<display value="Toileting - functional ability"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<effectiveDateTime value="2022-01-01"/>
+				<valueQuantity>
+					<value value="5"/>
+				</valueQuantity>
+				<interpretation>
+					<coding>
+						<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Barthel_Index_Toileting_Hamburg_Manual"/>
+						<version value="1.0.0"/>
+						<code value="5"/>
+						<display value="vor Ort Hilfe oder Aufsicht bei Toiletten- oder Toilettenstuhlbenutzung oder deren Spülung / Reinigung erforderlich"/>
+					</coding>
+				</interpretation>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:49f13d64-283d-47f6-b2a1-48dee32d17db"/>
+		<resource>
+			<Observation>
+				<id value="49f13d64-283d-47f6-b2a1-48dee32d17db"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Mobility|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Barthel Mobilität</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="363803005"/>
+						<display value="Mobility (observable entity)"/>
+					</coding>
+					<coding>
+						<system value="http://loinc.org"/>
+						<version value="2.72"/>
+						<code value="83186-7"/>
+						<display value="Ambulation - functional ability"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<effectiveDateTime value="2022-01-01"/>
+				<valueQuantity>
+					<value value="15"/>
+				</valueQuantity>
+				<interpretation>
+					<coding>
+						<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Barthel_Index_Mobility_Hamburg_Manual"/>
+						<version value="1.0.0"/>
+						<code value="15"/>
+						<display value="ohne Aufsicht oder personelle Hilfe vom Sitz in den Stand kommen und mindestens 50 m ohne Gehwagen (aber ggf. mit Stöcken/Gehstützen) gehen"/>
+					</coding>
+				</interpretation>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:431f5f07-1237-4f5a-9215-0d16f6afdffe"/>
+		<resource>
+			<Observation>
+				<id value="431f5f07-1237-4f5a-9215-0d16f6afdffe"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Grooming|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Barthel "Sich Waschen"</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="288469009"/>
+						<display value="Ability to perform washing and drying of self activities (observable entity)"/>
+					</coding>
+					<coding>
+						<system value="http://loinc.org"/>
+						<version value="2.72"/>
+						<code value="96767-9"/>
+						<display value="Grooming - functional ability"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<effectiveDateTime value="2022-01-01"/>
+				<valueQuantity>
+					<value value="0"/>
+				</valueQuantity>
+				<interpretation>
+					<coding>
+						<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Barthel_Index_Grooming_Hamburg_Manual"/>
+						<version value="1.0.0"/>
+						<code value="0"/>
+						<display value="erfüllt &quot;5&quot; nicht"/>
+					</coding>
+				</interpretation>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:05bfd141-093c-487c-990d-d61f0f88ad85"/>
+		<resource>
+			<Observation>
+				<id value="05bfd141-093c-487c-990d-d61f0f88ad85"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Feeding|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Barthel "Essen"</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="288999009"/>
+						<display value="Ability to feed self (observable entity)"/>
+					</coding>
+					<coding>
+						<system value="http://loinc.org"/>
+						<version value="2.72"/>
+						<code value="83184-2"/>
+						<display value="Feeding or eating - functional ability"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<effectiveDateTime value="2022-01-01"/>
+				<valueQuantity>
+					<value value="10"/>
+				</valueQuantity>
+				<interpretation>
+					<coding>
+						<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Barthel_Index_Feeding_Hamburg_Manual"/>
+						<version value="1.0.0"/>
+						<code value="10"/>
+						<display value="komplett selbständig oder selbständige PEG (perkutane endoskopische Gastrostomie)-Beschickung/-Versorgung"/>
+					</coding>
+				</interpretation>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:4863b0b2-826b-4eca-9cb1-beb5c94af78a"/>
+		<resource>
+			<Observation>
+				<id value="4863b0b2-826b-4eca-9cb1-beb5c94af78a"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Dressing|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Barthel An-und Auskleiden</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="165235000"/>
+						<display value="Ability to dress (observable entity)"/>
+					</coding>
+					<coding>
+						<system value="http://loinc.org"/>
+						<version value="2.72"/>
+						<code value="83182-6"/>
+						<display value="Dressing - functional ability"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<effectiveDateTime value="2022-01-01"/>
+				<valueQuantity>
+					<value value="5"/>
+				</valueQuantity>
+				<interpretation>
+					<coding>
+						<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Barthel_Index_Dressing_Hamburg_Manual"/>
+						<version value="1.0.0"/>
+						<code value="5"/>
+						<display value="kleidet mindestens den Oberkörper in angemessener Zeit selbständig an und aus, sofern die Utensilien in greifbarer Nähe sind"/>
+					</coding>
+				</interpretation>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:ec49db3c-a42a-4fb2-95ad-6e7bc75e70f5"/>
+		<resource>
+			<Observation>
+				<id value="ec49db3c-a42a-4fb2-95ad-6e7bc75e70f5"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Climbing_Stairs|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Barthel Treppensteigen</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="282190004"/>
+						<display value="Ability to walk up stairs (observable entity)"/>
+					</coding>
+					<coding>
+						<system value="http://loinc.org"/>
+						<version value="2.72"/>
+						<code value="96758-8"/>
+						<display value="Stairs - functional ability"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<effectiveDateTime value="2022-01-01"/>
+				<valueQuantity>
+					<value value="10"/>
+				</valueQuantity>
+				<interpretation>
+					<coding>
+						<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Barthel_Index_Stairs_Hamburg_Manual"/>
+						<version value="1.0.0"/>
+						<code value="10"/>
+						<display value="ohne Aufsicht oder personelle Hilfe (ggf. inkl. Stöcken/Gehstützen) mindestens ein Stockwerk hinauf- und hinuntersteigen"/>
+					</coding>
+				</interpretation>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:90f98685-6b73-4cd7-8dbb-5f58d6e8fd57"/>
+		<resource>
+			<Observation>
+				<id value="90f98685-6b73-4cd7-8dbb-5f58d6e8fd57"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Bowel_Control|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Barthel Stuhlkontrolle</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="129008009"/>
+						<display value="Bowel control, function (observable entity)"/>
+					</coding>
+					<coding>
+						<system value="http://loinc.org"/>
+						<version value="2.72"/>
+						<code value="96759-6"/>
+						<display value="Bowel control - functional ability"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<effectiveDateTime value="2022-01-01"/>
+				<valueQuantity>
+					<value value="10"/>
+				</valueQuantity>
+				<interpretation>
+					<coding>
+						<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Barthel_Index_Bowel_Hamburg_Manual"/>
+						<version value="1.0.0"/>
+						<code value="10"/>
+						<display value="ist stuhlkontinent, ggf. selbständig bei rektalen Abführmaßnahmen oder AP-Versorgung"/>
+					</coding>
+				</interpretation>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:5ef8dd45-b620-4155-ab55-87dfbdb7c367"/>
+		<resource>
+			<Observation>
+				<id value="5ef8dd45-b620-4155-ab55-87dfbdb7c367"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Bladder_Control|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Barthel Harnkontrolle</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="129009001"/>
+						<display value="Bladder control, function (observable entity)"/>
+					</coding>
+					<coding>
+						<system value="http://loinc.org"/>
+						<version value="2.72"/>
+						<code value="96760-4"/>
+						<display value="Bladder control - functional ability"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<effectiveDateTime value="2022-01-01"/>
+				<valueQuantity>
+					<value value="10"/>
+				</valueQuantity>
+				<interpretation>
+					<coding>
+						<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Barthel_Index_Bladder_Hamburg_Manual"/>
+						<version value="1.0.0"/>
+						<code value="10"/>
+						<display value="ist harnkontinent oder kompensiert seine Harninkontinenz / versorgt seinen Dauerkatheter (DK) komplett selbständig und mit Erfolg (kein Einnässen von Kleidung oder Bettwäsche)"/>
+					</coding>
+				</interpretation>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:be57b7ae-4fe5-4ac1-8d16-07cb2f60e3ba"/>
+		<resource>
+			<Observation>
+				<id value="be57b7ae-4fe5-4ac1-8d16-07cb2f60e3ba"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Bathing|1.0.0"/>
+				</meta>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="284791006+165250009"/>
+						<display value="Ability to shower self (observable entity)+ Ability to bathe self (observable entity)"/>
+					</coding>
+					<coding>
+						<system value="http://loinc.org"/>
+						<version value="2.72"/>
+						<code value="83181-8"/>
+						<display value="Bathing - functional ability"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<effectiveDateTime value="2022-01-01"/>
+				<valueQuantity>
+					<value value="0"/>
+				</valueQuantity>
+				<interpretation>
+					<coding>
+						<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Barthel_Index_Bathing_Hamburg_Manual"/>
+						<version value="1.0.0"/>
+						<code value="0"/>
+						<display value="erfüllt &quot;5&quot; nicht"/>
+					</coding>
+				</interpretation>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:30ca5260-699a-455e-8f00-fea13529c4b4"/>
+		<resource>
+			<MedicationStatement>
+				<id value="30ca5260-699a-455e-8f00-fea13529c4b4"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_MedicationStatement_Administration_Instruction|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Verabreichungsinformation Medikament/Rezept</h1>
+					</div>
+				</text>
+				<status value="active"/>
+				<medicationReference>
+					<reference value="urn:uuid:de6003b2-db4d-4f7e-9258-b24c1f0442a3"/>
+				</medicationReference>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<dosage>
+					<timing>
+						<repeat>
+							<when value="MORN"/>
+							<when value="EVE"/>
+						</repeat>
+					</timing>
+					<route>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+							<code value="26643006"/>
+							<display value="Oral route (qualifier value)"/>
+						</coding>
+					</route>
+					<doseAndRate>
+						<doseQuantity>
+							<value value="1"/>
+							<unit value="1"/>
+							<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT|1.01"/>
+							<code value="1"/>
+						</doseQuantity>
+					</doseAndRate>
+				</dosage>
+			</MedicationStatement>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:de6003b2-db4d-4f7e-9258-b24c1f0442a3"/>
+		<resource>
+			<Medication>
+				<id value="de6003b2-db4d-4f7e-9258-b24c1f0442a3"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Medication|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Medikation</h1>
+					</div>
+				</text>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Medication_Type">
+					<valueCodeableConcept>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+							<code value="763158003"/>
+							<display value="Medicinal product (product)"/>
+						</coding>
+					</valueCodeableConcept>
+				</extension>
+				<code>
+					<coding>
+						<system value="http://fhir.de/CodeSystem/ifa/pzn"/>
+						<version value="0.2"/>
+						<code value="00766759"/>
+						<display value="Ramipril"/>
+					</coding>
+					<text value="RAMIPRIL-1A Pharma 5 mg Tabletten"/>
+				</code>
+				<form>
+					<coding>
+						<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM"/>
+						<version value="1.08"/>
+						<code value="TAB"/>
+						<display value="Tabletten"/>
+					</coding>
+				</form>
+				<ingredient>
+					<itemCodeableConcept>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+							<code value="386872004"/>
+							<display value="Ramipril (substance)"/>
+						</coding>
+					</itemCodeableConcept>
+					<strength>
+						<numerator>
+							<value value="5"/>
+							<unit value="mg"/>
+						</numerator>
+						<denominator>
+							<value value="1"/>
+							<unit value="Tabelette"/>
+						</denominator>
+					</strength>
+				</ingredient>
+			</Medication>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:7006d3fe-b2ca-4738-8b17-4c17d3b4c494"/>
+		<resource>
+			<Encounter>
+				<id value="7006d3fe-b2ca-4738-8b17-4c17d3b4c494"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Encounter_Current_Location|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Aktueller Aufenthaltsort</h1>
+					</div>
+				</text>
+				<status value="finished"/>
+				<class>
+					<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Current_Location_Status"/>
+					<version value="1.0.0"/>
+					<code value="Aufenthaltsort_wie_Anschrift_des_Wohnsitzes"/>
+					<display value="Aufenthaltsort wie Anschrift des Wohnsitzes"/>
+				</class>
+				<type>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="105529008"/>
+						<display value="Lives alone (finding)"/>
+					</coding>
+					<text value="Alleine Wohnen ist nicht mehr möglich, vor allem, da der Patient die Wohnung schon einige Male verlassen hat und nicht mehr zurück fand."/>
+				</type>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+			</Encounter>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:ba7f2242-995d-4c11-8a62-112c2aa0ab6f"/>
+		<resource>
+			<DocumentReference>
+				<id value="ba7f2242-995d-4c11-8a62-112c2aa0ab6f"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_DocumentReference_ePa_Reference|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>ePa Reference</h1>
+					</div>
+				</text>
+				<status value="current"/>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<content>
+					<attachment>
+						<url value="https://reference_epa.de/0457239457823904857"/>
+						<title value="Arztbrief-upload.pdf"/>
+					</attachment>
+				</content>
+			</DocumentReference>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:3421fcd4-703c-4523-a83d-64c85206f29c"/>
+		<resource>
+			<DiagnosticReport>
+				<id value="3421fcd4-703c-4523-a83d-64c85206f29c"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_DiagnosticReport_Vital_Signs_and_Body_Measures|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Vitalzeichen und Körpermaße</h1>
+					</div>
+				</text>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="1184593002"/>
+						<display value="Vital sign document section (record artifact)"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<result>
+					<reference value="urn:uuid:3cbccfe8-25db-4e6e-a289-b2c251f9c362"/>
+				</result>
+				<result>
+					<reference value="urn:uuid:057a0c32-ca59-4af1-b766-420a2ade5758"/>
+				</result>
+				<result>
+					<reference value="urn:uuid:feb61d0f-d671-47d0-939b-5a1b8c88c083"/>
+				</result>
+				<result>
+					<reference value="urn:uuid:52610f89-9e67-47bd-a645-263af1f0a413"/>
+				</result>
+				<result>
+					<reference value="urn:uuid:236c0f47-0af9-4ec8-bd0c-9568f166ce43"/>
+				</result>
+				<result>
+					<reference value="urn:uuid:927467ec-8314-4bda-b931-66aed71ea186"/>
+				</result>
+			</DiagnosticReport>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:fcfed3a9-f045-4573-9cc6-ad461c97d805"/>
+		<resource>
+			<Condition>
+				<id value="fcfed3a9-f045-4573-9cc6-ad461c97d805"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Condition_Medical_Problem_Diagnosis|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Medizinisches Problem / Diganose: Benigne essentielle Hypertonie</h1>
+					</div>
+				</text>
+				<clinicalStatus>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+						<version value="4.0.1"/>
+						<code value="active"/>
+						<display value="Active"/>
+					</coding>
+				</clinicalStatus>
+				<verificationStatus>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+						<version value="4.0.1"/>
+						<code value="confirmed"/>
+						<display value="Confirmed"/>
+					</coding>
+				</verificationStatus>
+				<code>
+					<coding>
+						<extension url="http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit">
+							<valueCoding>
+								<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_DIAGNOSESICHERHEIT"/>
+								<version value="1.0.0"/>
+								<code value="G"/>
+								<display value="gesicherte Diagnose"/>
+							</valueCoding>
+						</extension>
+						<system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm"/>
+						<version value="2021"/>
+						<code value="I10.0"/>
+						<display value="Benigne essentielle Hypertonie"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<asserter>
+					<reference value="urn:uuid:79a2522e-fea8-4650-b5fe-cb524daa7304"/>
+				</asserter>
+			</Condition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:47e6b244-fc2c-494f-be3f-be70a2877479"/>
+		<resource>
+			<Condition>
+				<id value="47e6b244-fc2c-494f-be3f-be70a2877479"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Condition_Medical_Problem_Diagnosis|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Medizinisches Problem / Diganose</h1>
+					</div>
+				</text>
+				<clinicalStatus>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+						<version value="4.0.1"/>
+						<code value="active"/>
+						<display value="Active"/>
+					</coding>
+				</clinicalStatus>
+				<verificationStatus>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+						<version value="4.0.1"/>
+						<code value="confirmed"/>
+						<display value="Confirmed"/>
+					</coding>
+				</verificationStatus>
+				<code>
+					<coding>
+						<extension url="http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit">
+							<valueCoding>
+								<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_DIAGNOSESICHERHEIT"/>
+								<version value="1.0.0"/>
+								<code value="G"/>
+								<display value="gesicherte Diagnose"/>
+							</valueCoding>
+						</extension>
+						<system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm"/>
+						<version value="2021"/>
+						<code value="F00.1"/>
+						<display value="Alzheimer Demenz"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<asserter>
+					<reference value="urn:uuid:79a2522e-fea8-4650-b5fe-cb524daa7304"/>
+				</asserter>
+			</Condition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:5fc339c2-cc7c-4ec8-8296-3b8e8fd63929"/>
+		<resource>
+			<Condition>
+				<id value="5fc339c2-cc7c-4ec8-8296-3b8e8fd63929"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Condition_Care_Problem|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Pflegeproblem: verzerrter Denkprozess</h1>
+					</div>
+				</text>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Reason_Cause">
+					<extension url="referenzAnlassUrsache">
+						<valueReference>
+							<reference value="urn:uuid:47e6b244-fc2c-494f-be3f-be70a2877479"/>
+						</valueReference>
+					</extension>
+				</extension>
+				<category>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="439401001:704326004=86644006"/>
+						<display value="Diagnosis (observable entity) : Precondition (attribute) = Nursing diagnosis (finding)"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/icnp"/>
+						<version value="2.0.1"/>
+						<code value="10000669"/>
+						<display value="verzerrter Denkprozess"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+			</Condition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:4f81e5f6-02db-48d7-89bc-5f8aca8e9280"/>
+		<resource>
+			<Condition>
+				<id value="4f81e5f6-02db-48d7-89bc-5f8aca8e9280"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Condition_Care_Problem|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Pflegeproblem: Trauerreaktion</h1>
+					</div>
+				</text>
+				<category>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="439401001:704326004=86644006"/>
+						<display value="Diagnosis (observable entity) : Precondition (attribute) = Nursing diagnosis (finding)"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/icnp"/>
+						<version value="2.0.1"/>
+						<code value="10001183"/>
+						<display value="Vermisst seine Frau, versteht nicht, dass sie gestorben ist."/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<note>
+					<text value="Die Betreuungskraft putzt einmal in der Woche die Wohnung."/>
+				</note>
+			</Condition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:a166a9fb-4cde-4eed-8ef9-b38d34a6620d"/>
+		<resource>
+			<Condition>
+				<id value="a166a9fb-4cde-4eed-8ef9-b38d34a6620d"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Condition_Care_Problem|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Pflegeproblem: Risiko des Weglaufens</h1>
+					</div>
+				</text>
+				<category>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="439401001:704326004=86644006"/>
+						<display value="Diagnosis (observable entity) : Precondition (attribute) = Nursing diagnosis (finding)"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/icnp"/>
+						<version value="2.0.1"/>
+						<code value="10027411"/>
+						<display value="Risiko des Weglaufens"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+			</Condition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:d8949bb8-1f14-40b3-8418-8cb163a7b3f1"/>
+		<resource>
+			<Condition>
+				<id value="d8949bb8-1f14-40b3-8418-8cb163a7b3f1"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Condition_Care_Problem|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Pflegeproblem: Mangel an Wissen über Medikation</h1>
+					</div>
+				</text>
+				<category>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="439401001:704326004=86644006"/>
+						<display value="Diagnosis (observable entity) : Precondition (attribute) = Nursing diagnosis (finding)"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/icnp"/>
+						<version value="2.0.1"/>
+						<code value="10025975"/>
+						<display value="Mangel an Wissen über Medikation"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+			</Condition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:6da2a0d0-b93f-4f20-a172-3ba3741cc1ef"/>
+		<resource>
+			<Condition>
+				<id value="6da2a0d0-b93f-4f20-a172-3ba3741cc1ef"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Condition_Care_Problem|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Pflegeproblem: körperliche Unruhe</h1>
+					</div>
+				</text>
+				<category>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="439401001:704326004=86644006"/>
+						<display value="Diagnosis (observable entity) : Precondition (attribute) = Nursing diagnosis (finding)"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/icnp"/>
+						<version value="2.0.1"/>
+						<code value="10025705"/>
+						<display value="körperliche Unruhe / Agitation"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+			</Condition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:73d9e047-fc97-41e7-b16b-703b2b80966e"/>
+		<resource>
+			<Condition>
+				<id value="73d9e047-fc97-41e7-b16b-703b2b80966e"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Condition_Care_Problem|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Pflegeproblem: Blutdruckveränderung</h1>
+					</div>
+				</text>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Reason_Cause">
+					<extension url="referenzAnlassUrsache">
+						<valueReference>
+							<reference value="urn:uuid:fcfed3a9-f045-4573-9cc6-ad461c97d805"/>
+						</valueReference>
+					</extension>
+				</extension>
+				<category>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="439401001:704326004=86644006"/>
+						<display value="Diagnosis (observable entity) : Precondition (attribute) = Nursing diagnosis (finding)"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/icnp"/>
+						<version value="2.0.1"/>
+						<code value="10022954"/>
+						<display value="Blutdruckveränderung"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+			</Condition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:b14a822d-11e0-4561-bed0-3f3a754594eb"/>
+		<resource>
+			<Condition>
+				<id value="b14a822d-11e0-4561-bed0-3f3a754594eb"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Condition_Care_Problem|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Pflegeproblem: beeinträchtigte Haushaltsführung</h1>
+					</div>
+				</text>
+				<category>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="439401001:704326004=86644006"/>
+						<display value="Diagnosis (observable entity) : Precondition (attribute) = Nursing diagnosis (finding)"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/icnp"/>
+						<version value="2.0.1"/>
+						<code value="10000925"/>
+						<display value="beeinträchtigte Haushaltsführung"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<note>
+					<text value="Die Betreuungskraft putzt einmal in der Woche die Wohnung."/>
+				</note>
+			</Condition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:93cd4709-fc84-4c1e-a001-2867dfb8563b"/>
+		<resource>
+			<Condition>
+				<id value="93cd4709-fc84-4c1e-a001-2867dfb8563b"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Condition_Care_Problem|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Pflegeproblem: beeinträchtigte Fähigkeit der Nahrungszubereitung</h1>
+					</div>
+				</text>
+				<category>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="439401001:704326004=86644006"/>
+						<display value="Diagnosis (observable entity) : Precondition (attribute) = Nursing diagnosis (finding)"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/icnp"/>
+						<version value="2.0.1"/>
+						<code value="10029650"/>
+						<display value="beeinträchtigte Fähigkeit der Nahrungszubereitung"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<note>
+					<text value="Herr Dr. Yilmaz ist prinzipiell in der Lage, unter Anweisung Essen zuzubereiten. Herr Dr. Yilmaz vergisst manchmal, den Prozess des Essenszubereitung zu beenden, z. B. macht den Herd an und kocht dann nicht."/>
+				</note>
+			</Condition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:e8488ca3-949a-4849-8559-cc48d1c17bdf"/>
+		<resource>
+			<Condition>
+				<id value="e8488ca3-949a-4849-8559-cc48d1c17bdf"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Condition_Care_Problem|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Pflegeproblem: beeinträchtigte Fähigkeit Körperpflege durchzuführen</h1>
+					</div>
+				</text>
+				<category>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="439401001:704326004=86644006"/>
+						<display value="Diagnosis (observable entity) : Precondition (attribute) = Nursing diagnosis (finding)"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/icnp"/>
+						<version value="2.0.1"/>
+						<code value="10000987"/>
+						<display value="beeinträchtigte Fähigkeit Körperpflege durchzuführen"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<note>
+					<text value="Körperpflege kann grundsätzlich selbstständig durchgeführt werden, braucht aber für die Ausführung in der richtigen Reihenfolge Anleitung."/>
+				</note>
+			</Condition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:e1ad10d5-99a2-474a-a031-7da300935c02"/>
+		<resource>
+			<Condition>
+				<id value="e1ad10d5-99a2-474a-a031-7da300935c02"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Condition_Care_Problem|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Pflegeproblem: beeinträchtige Fähigkeit sich zu kleiden</h1>
+					</div>
+				</text>
+				<category>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="439401001:704326004=86644006"/>
+						<display value="Diagnosis (observable entity) : Precondition (attribute) = Nursing diagnosis (finding)"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/icnp"/>
+						<version value="2.0.1"/>
+						<code value="10027578"/>
+						<display value="beeinträchtige Fähigkeit sich zu kleiden"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+			</Condition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:260c22a0-6901-4618-ac0e-857b66287409"/>
+		<resource>
+			<Condition>
+				<id value="260c22a0-6901-4618-ac0e-857b66287409"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Condition_Care_Problem|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Pflegeproblem: beeinträchtigter Schlaf</h1>
+					</div>
+				</text>
+				<category>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="439401001:704326004=86644006"/>
+						<display value="Diagnosis (observable entity) : Precondition (attribute) = Nursing diagnosis (finding)"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/icnp"/>
+						<version value="2.0.1"/>
+						<code value="10012929"/>
+						<display value="beeinträchtigter Schlaf"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+			</Condition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:da288e59-2118-4abc-a497-4bd433c74e60"/>
+		<resource>
+			<ClinicalImpression>
+				<id value="da288e59-2118-4abc-a497-4bd433c74e60"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_ClinicalImpression_Individual_Functions_Barthel|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Einzelne Funktionen nach Barthel</h1>
+					</div>
+				</text>
+				<status value="completed"/>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<investigation>
+					<code>
+						<text value="Einzelne Funktionen nach Barthel"/>
+					</code>
+					<item>
+						<reference value="urn:uuid:49f13d64-283d-47f6-b2a1-48dee32d17db"/>
+					</item>
+					<item>
+						<reference value="urn:uuid:918d722c-ff29-486c-8d8b-ab51459cf826"/>
+					</item>
+					<item>
+						<reference value="urn:uuid:2f4e998a-7649-4a4a-8106-9f0acd3d64a9"/>
+					</item>
+					<item>
+						<reference value="urn:uuid:5ef8dd45-b620-4155-ab55-87dfbdb7c367"/>
+					</item>
+					<item>
+						<reference value="urn:uuid:90f98685-6b73-4cd7-8dbb-5f58d6e8fd57"/>
+					</item>
+					<item>
+						<reference value="urn:uuid:ec49db3c-a42a-4fb2-95ad-6e7bc75e70f5"/>
+					</item>
+					<item>
+						<reference value="urn:uuid:4863b0b2-826b-4eca-9cb1-beb5c94af78a"/>
+					</item>
+					<item>
+						<reference value="urn:uuid:05bfd141-093c-487c-990d-d61f0f88ad85"/>
+					</item>
+					<item>
+						<reference value="urn:uuid:be57b7ae-4fe5-4ac1-8d16-07cb2f60e3ba"/>
+					</item>
+					<item>
+						<reference value="urn:uuid:431f5f07-1237-4f5a-9215-0d16f6afdffe"/>
+					</item>
+				</investigation>
+			</ClinicalImpression>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:460358c0-37a3-4210-bd08-8d146155b308"/>
+		<resource>
+			<CareTeam>
+				<id value="460358c0-37a3-4210-bd08-8d146155b308"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_CareTeam|1.0.0"/>
+				</meta>
+				<text>
+					<status value="extensions"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h1>Beahndlungsteam</h1>
+					</div>
+				</text>
+				<subject>
+					<reference value="urn:uuid:a27d94a1-e6dd-42b8-800c-d22701c5f9e6"/>
+				</subject>
+				<participant>
+					<member>
+						<reference value="urn:uuid:597e2923-5f3e-403e-9059-a97216b20515"/>
+					</member>
+				</participant>
+				<participant>
+					<role>
+						<coding>
+							<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_Base_Role_Care_Team"/>
+							<version value="1.3.0"/>
+							<code value="BP"/>
+							<display value="Bevollmächtigte Person"/>
+						</coding>
+					</role>
+					<member>
+						<reference value="urn:uuid:86bf7607-e895-42a4-b606-c45f38c2a476"/>
+					</member>
+				</participant>
+			</CareTeam>
+		</resource>
+	</entry>
+</Bundle>

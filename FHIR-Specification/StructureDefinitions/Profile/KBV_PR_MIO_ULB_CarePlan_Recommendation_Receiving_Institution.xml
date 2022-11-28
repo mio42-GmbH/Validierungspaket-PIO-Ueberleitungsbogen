@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_CarePlan_Recommendation_Receiving_Institution" />
+  <version value="1.0.0" />
+  <name value="KBV_PR_MIO_ULB_CarePlan_Recommendation_Receiving_Institution" />
+  <title value="KBV_PR_MIO_ULB_CarePlan_Recommendation_Receiving_Institution" />
+  <status value="draft" />
+  <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
+  <description value="Dieses Profil bildet eine Empfehlung an die empfangende Einrichtung ab." />
+  <copyright value="Im folgenden Profil können Codes aus den Code-Systemen SNOMED CT®, LOINC, Ucum, ATC, ICD-10-GM, ICD-10-WHO, OPS, Alpha-ID/Alpha-ID-SE und ICF enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED CT® Clinical Terms® (SNOMED CT® CT®) which is used by permission of SNOMED CT® International. All rights reserved. SNOMED CT® CT®, was originally created by The College of American Pathologists. SNOMED CT® and SNOMED CT® CT are registered trademarks of SNOMED CT® International. Implementers of these artefacts must have the appropriate SNOMED CT® CT Affiliate license. This material contains content from LOINC (http://LOINC.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://LOINC.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at ​http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED 'AS IS.' ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. Dieses Material enthält Inhalte aus ATC. Die Erstellung erfolgte unter Verwendung der Datenträger der amtlichen Fassung der ATC-Klassifikation mit DDD des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM). Dieses Material enthält Inhalte aus ICD-10-GM, ICD-10-WHO, OPS Alpha-ID ans Alpha-ID-SE. Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM). Dieses Material enthält Inhalte aus ICF. Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Deutschen Instituts für Medizinische Dokumentation und Information (DIMDI). ICF-Kodes, -Begriffe und -Texte © Weltgesundheitsorganisation, übersetzt und herausgegeben durch das Deutsche Institut für Medizinische Dokumentation und Information von der International classification of functioning, disability and health – ICF, herausgegeben durch die Weltgesundheitsorganisation." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="CarePlan" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="CarePlan">
+      <path value="CarePlan" />
+      <definition value="Dieses Profil bildet eine Empfehlung an die empfangende Einrichtung ab." />
+    </element>
+    <element id="CarePlan.meta">
+      <path value="CarePlan.meta" />
+      <min value="1" />
+    </element>
+    <element id="CarePlan.meta.versionId">
+      <path value="CarePlan.meta.versionId" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.meta.lastUpdated">
+      <path value="CarePlan.meta.lastUpdated" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.meta.source">
+      <path value="CarePlan.meta.source" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.meta.profile">
+      <path value="CarePlan.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <patternCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_CarePlan_Recommendation_Receiving_Institution|1.0.0" />
+    </element>
+    <element id="CarePlan.meta.security">
+      <path value="CarePlan.meta.security" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.meta.tag">
+      <path value="CarePlan.meta.tag" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.implicitRules">
+      <path value="CarePlan.implicitRules" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.language">
+      <path value="CarePlan.language" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.text">
+      <path value="CarePlan.text" />
+      <definition value="In diesem Element können die in der Instanz enthaltenen Informationen in einer menschenlesbaren Form zusammengefasst werden. Dabei ist zu beachten, dass keine Informationen aufgenommen werden dürfen, die nicht in strukturierter Form an anderer Stelle in der Instanz enthalten sind." />
+    </element>
+    <element id="CarePlan.text.status">
+      <path value="CarePlan.text.status" />
+      <patternCode value="extensions" />
+    </element>
+    <element id="CarePlan.contained">
+      <path value="CarePlan.contained" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.extension">
+      <path value="CarePlan.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="CarePlan.extension:empfehlungMassnahme">
+      <path value="CarePlan.extension" />
+      <sliceName value="empfehlungMassnahme" />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Recommendation_Continuation_Measure" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.extension:empfehlungMassnahme.value[x]">
+      <path value="CarePlan.extension.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.extension:empfehlungMassnahme.value[x]:valueReference">
+      <path value="CarePlan.extension.value[x]" />
+      <sliceName value="valueReference" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.extension:empfehlungMassnahme.value[x]:valueReference.reference">
+      <path value="CarePlan.extension.value[x].reference" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.extension:anlassUrsache">
+      <path value="CarePlan.extension" />
+      <sliceName value="anlassUrsache" />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Reason_Cause" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.extension:anlassUrsache.extension">
+      <path value="CarePlan.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="CarePlan.extension:anlassUrsache.extension:referenzAnlassUrsache">
+      <path value="CarePlan.extension.extension" />
+      <sliceName value="referenzAnlassUrsache" />
+      <min value="0" />
+    </element>
+    <element id="CarePlan.extension:anlassUrsache.extension:referenzAnlassUrsache.value[x]:valueReference">
+      <path value="CarePlan.extension.extension.value[x]" />
+      <sliceName value="valueReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_AllergyIntolerance|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Pain|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Condition_Medical_Problem_Diagnosis|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Condition_Care_Problem|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Striking_Behavior|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Deprivation_Liberty_Measures|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Risk|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Fecal_Drainage|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Fecal_Continence_Differentiated_Assessment|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Urinary_Drainage|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Urinary_Continence_Differentiated_Assessment|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_MedicationStatement_Administration_Instruction|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Device_Implant|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Device_Aid|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Procedure_Isolation|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Food_Administration_Form|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Food_Type|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Nutrition|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Orientation|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Care_Level|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Cognitive_Awareness|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Qualitative_Description_Breathing|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Falls_Last_6_Months|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Degree_Of_Disability|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Wish|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Assessment_Free|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Body_Height|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Body_Weight|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Respiratory_Rate|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Blood_Pressure|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Body_Temperature|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Heart_Rate|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Peripheral_Oxygen_Saturation|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Glucose_Concentration|1.0.0" />
+      </type>
+    </element>
+    <element id="CarePlan.identifier">
+      <path value="CarePlan.identifier" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.instantiatesCanonical">
+      <path value="CarePlan.instantiatesCanonical" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.instantiatesUri">
+      <path value="CarePlan.instantiatesUri" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.basedOn">
+      <path value="CarePlan.basedOn" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.replaces">
+      <path value="CarePlan.replaces" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.partOf">
+      <path value="CarePlan.partOf" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.status">
+      <path value="CarePlan.status" />
+      <patternCode value="draft" />
+    </element>
+    <element id="CarePlan.intent">
+      <path value="CarePlan.intent" />
+      <patternCode value="plan" />
+    </element>
+    <element id="CarePlan.category">
+      <path value="CarePlan.category" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.title">
+      <path value="CarePlan.title" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.description">
+      <path value="CarePlan.description" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.subject">
+      <path value="CarePlan.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient|1.0.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.subject.reference">
+      <path value="CarePlan.subject.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.subject.type">
+      <path value="CarePlan.subject.type" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.subject.identifier">
+      <path value="CarePlan.subject.identifier" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.subject.display">
+      <path value="CarePlan.subject.display" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.encounter">
+      <path value="CarePlan.encounter" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.period">
+      <path value="CarePlan.period" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.created">
+      <path value="CarePlan.created" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.author">
+      <path value="CarePlan.author" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.contributor">
+      <path value="CarePlan.contributor" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Practitioner|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_PractitionerRole|1.0.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Organization|1.0.0" />
+      </type>
+    </element>
+    <element id="CarePlan.contributor.reference">
+      <path value="CarePlan.contributor.reference" />
+      <min value="1" />
+    </element>
+    <element id="CarePlan.contributor.type">
+      <path value="CarePlan.contributor.type" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.contributor.identifier">
+      <path value="CarePlan.contributor.identifier" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.contributor.display">
+      <path value="CarePlan.contributor.display" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.careTeam">
+      <path value="CarePlan.careTeam" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.addresses">
+      <path value="CarePlan.addresses" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.supportingInfo">
+      <path value="CarePlan.supportingInfo" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.goal">
+      <path value="CarePlan.goal" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity">
+      <path value="CarePlan.activity" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.activity.outcomeCodeableConcept">
+      <path value="CarePlan.activity.outcomeCodeableConcept" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity.outcomeReference">
+      <path value="CarePlan.activity.outcomeReference" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity.progress">
+      <path value="CarePlan.activity.progress" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity.reference">
+      <path value="CarePlan.activity.reference" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity.detail">
+      <path value="CarePlan.activity.detail" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.activity.detail.kind">
+      <path value="CarePlan.activity.detail.kind" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity.detail.instantiatesCanonical">
+      <path value="CarePlan.activity.detail.instantiatesCanonical" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity.detail.instantiatesUri">
+      <path value="CarePlan.activity.detail.instantiatesUri" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity.detail.code">
+      <path value="CarePlan.activity.detail.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.activity.detail.code.coding">
+      <path value="CarePlan.activity.detail.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.activity.detail.code.coding:codeSnomed">
+      <path value="CarePlan.activity.detail.code.coding" />
+      <sliceName value="codeSnomed" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.activity.detail.code.coding:codeSnomed.system">
+      <path value="CarePlan.activity.detail.code.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="CarePlan.activity.detail.code.coding:codeSnomed.version">
+      <path value="CarePlan.activity.detail.code.coding.version" />
+      <min value="1" />
+    </element>
+    <element id="CarePlan.activity.detail.code.coding:codeSnomed.code">
+      <path value="CarePlan.activity.detail.code.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="CarePlan.activity.detail.code.coding:codeSnomed.display">
+      <path value="CarePlan.activity.detail.code.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="CarePlan.activity.detail.code.coding:codeSnomed.userSelected">
+      <path value="CarePlan.activity.detail.code.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity.detail.code.text">
+      <path value="CarePlan.activity.detail.code.text" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.activity.detail.reasonCode">
+      <path value="CarePlan.activity.detail.reasonCode" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity.detail.reasonReference">
+      <path value="CarePlan.activity.detail.reasonReference" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity.detail.goal">
+      <path value="CarePlan.activity.detail.goal" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity.detail.status">
+      <path value="CarePlan.activity.detail.status" />
+      <patternCode value="not-started" />
+    </element>
+    <element id="CarePlan.activity.detail.statusReason">
+      <path value="CarePlan.activity.detail.statusReason" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity.detail.doNotPerform">
+      <path value="CarePlan.activity.detail.doNotPerform" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity.detail.scheduled[x]">
+      <path value="CarePlan.activity.detail.scheduled[x]" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity.detail.location">
+      <path value="CarePlan.activity.detail.location" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity.detail.performer">
+      <path value="CarePlan.activity.detail.performer" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity.detail.product[x]">
+      <path value="CarePlan.activity.detail.product[x]" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity.detail.dailyAmount">
+      <path value="CarePlan.activity.detail.dailyAmount" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity.detail.quantity">
+      <path value="CarePlan.activity.detail.quantity" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity.detail.description">
+      <path value="CarePlan.activity.detail.description" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.note">
+      <path value="CarePlan.note" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

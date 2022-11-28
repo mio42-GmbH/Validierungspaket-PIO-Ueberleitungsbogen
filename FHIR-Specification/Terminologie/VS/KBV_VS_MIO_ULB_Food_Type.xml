@@ -1,0 +1,2258 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="KBV-VS-MIO-ULB-Food-Type"/>
+    <url value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Food_Type"/>
+    <version value="1.0.0"/>
+    <name value="KBV_VS_MIO_ULB_Food_Type"/>
+    <title value="Kostform"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="Kassenärztliche Bundesvereinigung (KBV)"/>
+    <contact>
+        <telecom>
+            <system value="url"/>
+            <value value="https://mio.kbv.de"/>
+        </telecom>
+    </contact>
+    <description value="Dieses Valueset enthält die Codes zur Beschreibung von Kostform."/>
+    <immutable value="false"/>
+    <copyright value="Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED &quot;AS IS.&quot; ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE."/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <concept>
+                <code value="11739001"/>
+                <display value="High residue diet (finding)"/>
+            </concept>
+            <concept>
+                <code value="160670007"/>
+                <display value="Diabetic diet (finding)"/>
+            </concept>
+            <concept>
+                <code value="14627000"/>
+                <display value="Increased protein diet (finding)"/>
+            </concept>
+            <concept>
+                <code value="16208003"/>
+                <display value="Low fat diet (finding)"/>
+            </concept>
+            <concept>
+                <code value="10888001"/>
+                <display value="Liquid diet (finding)"/>
+            </concept>
+            <concept>
+                <code value="765053006"/>
+                <display value="Low fructose diet (regime/therapy)"/>
+            </concept>
+            <concept>
+                <code value="437651000124104"/>
+                <display value="Gluten free diet (regime/therapy)"/>
+            </concept>
+            <concept>
+                <code value="26041009"/>
+                <display value="Potassium restricted diet (finding)"/>
+            </concept>
+            <concept>
+                <code value="437391000124102"/>
+                <display value="Increased potassium diet (regime/therapy)"/>
+            </concept>
+            <concept>
+                <code value="77806000"/>
+                <display value="Calorie restricted diet (finding)"/>
+            </concept>
+            <concept>
+                <code value="68097001"/>
+                <display value="Increased calorie diet (finding)"/>
+            </concept>
+            <concept>
+                <code value="386619000"/>
+                <display value="Low sodium diet (finding)"/>
+            </concept>
+            <concept>
+                <code value="386620006"/>
+                <display value="No added salt diet (finding)"/>
+            </concept>
+            <concept>
+                <code value="765025006"/>
+                <display value="Kosher diet (regime/therapy)"/>
+            </concept>
+            <concept>
+                <code value="425458000"/>
+                <display value="Lactose-free diet (regime/therapy)"/>
+            </concept>
+            <concept>
+                <code value="182924003"/>
+                <display value="Light diet (finding)"/>
+            </concept>
+            <concept>
+                <code value="16985007"/>
+                <display value="Fasting (finding)"/>
+            </concept>
+            <concept>
+                <code value="765022009:424361007=735971005"/>
+                <display value="Lacto-vegetarian diet (regime/therapy) : Using substance (attribute) = Fish (substance)"/>
+            </concept>
+            <concept>
+                <code value="765022009"/>
+                <display value="Lacto-vegetarian diet (regime/therapy)"/>
+            </concept>
+            <concept>
+                <code value="439121000124106"/>
+                <display value="Pureed diet (regime/therapy)"/>
+            </concept>
+            <concept>
+                <code value="22745007"/>
+                <display value="Purine restricted diet (finding)"/>
+            </concept>
+            <concept>
+                <code value="359649009"/>
+                <display value="Weight reduction diet (finding)"/>
+            </concept>
+            <concept>
+                <code value="228067006"/>
+                <display value="Raw food (substance)"/>
+            </concept>
+            <concept>
+                <code value="38226001"/>
+                <display value="Bland diet (finding)"/>
+            </concept>
+            <concept>
+                <code value="226237003"/>
+                <display value="No pork diet (finding)"/>
+            </concept>
+            <concept>
+                <code value="226217002"/>
+                <display value="Metabolic diet (finding)"/>
+            </concept>
+            <concept>
+                <code value="138045004"/>
+                <display value="Vegan diet (finding)"/>
+            </concept>
+            <concept>
+                <code value="267111003"/>
+                <display value="Vegan or strict vegetarian (finding)"/>
+            </concept>
+            <concept>
+                <code value="36823005"/>
+                <display value="Normal diet (finding)"/>
+            </concept>
+            <concept>
+                <code value="439101000124101"/>
+                <display value="Easy to chew diet (regime/therapy)"/>
+            </concept>
+            <concept>
+                <code value="248126008"/>
+                <display value="Comfort eating (finding)"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <filter>
+                <property value="concept"/>
+                <op value="descendent-of"/>
+                <value value="41829006"/>
+            </filter>
+        </include>
+    </compose>
+    <expansion>
+        <identifier value="d68316a1-619a-11ed-95f5-005056ad7401"/>
+        <timestamp value="2022-11-11T09:28:38+01:00"/>
+        <total value="349"/>
+        <offset value="0"/>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="11739001"/>
+            <display value="High residue diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="160670007"/>
+            <display value="Diabetic diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="14627000"/>
+            <display value="Increased protein diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="16208003"/>
+            <display value="Low fat diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="10888001"/>
+            <display value="Liquid diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="765053006"/>
+            <display value="Low fructose diet (regime/therapy)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="437651000124104"/>
+            <display value="Gluten free diet (regime/therapy)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="26041009"/>
+            <display value="Potassium restricted diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="437391000124102"/>
+            <display value="Increased potassium diet (regime/therapy)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="77806000"/>
+            <display value="Calorie restricted diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="68097001"/>
+            <display value="Increased calorie diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="386619000"/>
+            <display value="Low sodium diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="386620006"/>
+            <display value="No added salt diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="765025006"/>
+            <display value="Kosher diet (regime/therapy)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="425458000"/>
+            <display value="Lactose-free diet (regime/therapy)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="182924003"/>
+            <display value="Light diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="16985007"/>
+            <display value="Fasting (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="765022009:424361007=735971005"/>
+            <display value="Lacto-vegetarian diet (regime/therapy) : Using substance (attribute) = Fish (substance)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="765022009"/>
+            <display value="Lacto-vegetarian diet (regime/therapy)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="439121000124106"/>
+            <display value="Pureed diet (regime/therapy)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="22745007"/>
+            <display value="Purine restricted diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="359649009"/>
+            <display value="Weight reduction diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="228067006"/>
+            <display value="Raw food (substance)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="38226001"/>
+            <display value="Bland diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226237003"/>
+            <display value="No pork diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226217002"/>
+            <display value="Metabolic diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="138045004"/>
+            <display value="Vegan diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="267111003"/>
+            <display value="Vegan or strict vegetarian (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="36823005"/>
+            <display value="Normal diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="439101000124101"/>
+            <display value="Easy to chew diet (regime/therapy)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="248126008"/>
+            <display value="Comfort eating (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="102268008"/>
+            <display value="Macrobiotic diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="10396001"/>
+            <display value="Radiation diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="105955002"/>
+            <display value="Sodium, potassium AND/OR calcium diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="105956001"/>
+            <display value="Infant diet AND/OR formula (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="105957005"/>
+            <display value="Liquid AND/OR soft diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="105958000"/>
+            <display value="Test AND/OR disease related diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="111174006"/>
+            <display value="Post-laryngectomy diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="111175007"/>
+            <display value="Sodium restricted diet for use during pregnancy (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="111176008"/>
+            <display value="Calcium diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="111177004"/>
+            <display value="Infant diet 6-8 months: vegetables, fruits and fruit juice (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="112281000119102"/>
+            <display value="Overconsumption of milk in childhood (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="1162927005"/>
+            <display value="Dietary sodium intake normal (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="11674008"/>
+            <display value="Parenteral nutrient (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="1181000119106"/>
+            <display value="Inappropriate diet and eating habits (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="12631007"/>
+            <display value="Calcium restricted diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="12905008"/>
+            <display value="Hypoglycemia diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="13964001"/>
+            <display value="Iron supplement infant formula (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="14044002"/>
+            <display value="Sodium restricted diet, 20 milliequivalents (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="14466001"/>
+            <display value="Bread exchange list (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="14895001"/>
+            <display value="Fat exchange list (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="15108003"/>
+            <display value="Restricted fiber diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="15362005"/>
+            <display value="Hyperalimentation formula for severe diarrhea (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="15721002"/>
+            <display value="Protein supplementary feedings diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="15859004"/>
+            <display value="Chronic hemodialysis diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="16013009"/>
+            <display value="Hyperalimentation formula for short bowel syndrome (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="160660005"/>
+            <display value="Patient-initiated diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="160671006"/>
+            <display value="Gluten-free diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="160672004"/>
+            <display value="Cholesterol-lowering diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="160673009"/>
+            <display value="Low protein diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="160675002"/>
+            <display value="Low residue diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="162512009"/>
+            <display value="Dietary history (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="162515006"/>
+            <display value="Diet high in polyunsaturates (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="162516007"/>
+            <display value="Diet high in monounsaturates (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="162517003"/>
+            <display value="Diet high in saturated fats (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="162521005"/>
+            <display value="Diet high in soluble fiber (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="162522003"/>
+            <display value="Diet high in insoluble fiber (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="162536008"/>
+            <display value="Restricted diet pattern (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="162538009"/>
+            <display value="Ovo-lacto-vegetarian (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="17902004"/>
+            <display value="Hyperlipoproteinemia diet, type IIb and type III (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="182925002"/>
+            <display value="Biliary stone dissolving diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="182927005"/>
+            <display value="Phenylalanine-free diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="20676001"/>
+            <display value="Sodium diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="21941007"/>
+            <display value="30 gram fat diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="22073001"/>
+            <display value="Regular wired jaw diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226077000"/>
+            <display value="Therapeutic diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226078005"/>
+            <display value="Modified energy diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226079002"/>
+            <display value="Very low energy diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226081000"/>
+            <display value="High biological value protein diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226082007"/>
+            <display value="Peptide modified diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226084008"/>
+            <display value="Peptide-based diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226085009"/>
+            <display value="Short-chain peptide-based diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226086005"/>
+            <display value="Low biological value protein diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226087001"/>
+            <display value="Modified amino acid diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226088006"/>
+            <display value="Modified essential amino acid diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226089003"/>
+            <display value="Low methionine diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226090007"/>
+            <display value="Low leucine diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226091006"/>
+            <display value="Low valine diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226092004"/>
+            <display value="Low lysine diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226093009"/>
+            <display value="Modified non-essential amino acid diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226094003"/>
+            <display value="Low tyrosine diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226095002"/>
+            <display value="Low cysteine diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226096001"/>
+            <display value="Modified branched chain amino acid diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226097005"/>
+            <display value="High fat diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226099008"/>
+            <display value="High monounsaturated fat diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226100000"/>
+            <display value="High monounsaturated fatty acid diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226101001"/>
+            <display value="High polyunsaturated fat diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226102008"/>
+            <display value="High polyunsaturated fatty acid diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226103003"/>
+            <display value="High n-3 polyunsaturated fatty acid diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226104009"/>
+            <display value="High alpha-linolenic acid diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226105005"/>
+            <display value="High n-6 polyunsaturated fatty acid diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226106006"/>
+            <display value="High linoleic acid diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226107002"/>
+            <display value="High fish oil diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226109004"/>
+            <display value="Very low fat diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226110009"/>
+            <display value="Minimal fat diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226111008"/>
+            <display value="Low saturated fat diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226112001"/>
+            <display value="Low monounsaturated fat diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226113006"/>
+            <display value="Low polyunsaturated fat diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226114000"/>
+            <display value="Minimal long chain triglyceride diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226115004"/>
+            <display value="Lipid-lowering diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226116003"/>
+            <display value="Triglyceride-lowering diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226117007"/>
+            <display value="Low density lipoprotein-lowering diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226118002"/>
+            <display value="Modified carbohydrate diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226120004"/>
+            <display value="High carbohydrate diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226121000"/>
+            <display value="High complex carbohydrate diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226122007"/>
+            <display value="High simple carbohydrate diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226123002"/>
+            <display value="Carbohydrate-free diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226124008"/>
+            <display value="Low simple carbohydrate diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226125009"/>
+            <display value="Low complex carbohydrate diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226126005"/>
+            <display value="Low galactose diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226127001"/>
+            <display value="Low glucose diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226128006"/>
+            <display value="Low fructose diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226129003"/>
+            <display value="Low sucrose diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226132000"/>
+            <display value="Modified fiber diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226135003"/>
+            <display value="Low non-starch polysaccharide diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226136002"/>
+            <display value="Modified alcohol diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226137006"/>
+            <display value="Restricted alcohol diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226138001"/>
+            <display value="Alcohol-free diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226139009"/>
+            <display value="Modified vitamin diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226140006"/>
+            <display value="Vitamin-rich diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226141005"/>
+            <display value="Water soluble vitamin-rich diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226142003"/>
+            <display value="Vitamin B1-rich diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226143008"/>
+            <display value="Vitamin B2-rich diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226144002"/>
+            <display value="Niacin-rich diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226145001"/>
+            <display value="Vitamin C-rich diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226146000"/>
+            <display value="Vitamin B6-rich diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226147009"/>
+            <display value="Vitamin B12-rich diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226148004"/>
+            <display value="Folic acid-rich diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226149007"/>
+            <display value="Fat soluble vitamin-rich diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226150007"/>
+            <display value="Vitamin A-rich diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226151006"/>
+            <display value="Beta-catotene-rich diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226152004"/>
+            <display value="Vitamin D-rich diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226153009"/>
+            <display value="Vitamin E-rich diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226154003"/>
+            <display value="Antioxidant vitamin-rich diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226155002"/>
+            <display value="Modified mineral diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226156001"/>
+            <display value="High mineral diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226159008"/>
+            <display value="High phosphate diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226160003"/>
+            <display value="High magnesium diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226161004"/>
+            <display value="High iron diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226162006"/>
+            <display value="Antioxidant mineral-rich diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226163001"/>
+            <display value="Low mineral diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226164007"/>
+            <display value="Very low sodium diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226165008"/>
+            <display value="Low phosphate diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226166009"/>
+            <display value="Low magnesium diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226167000"/>
+            <display value="Low iron diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226172009"/>
+            <display value="High chromium diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226173004"/>
+            <display value="High selenium diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226175006"/>
+            <display value="Low copper diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226177003"/>
+            <display value="Low manganese diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226178008"/>
+            <display value="Low nickel diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226179000"/>
+            <display value="Food additive modified diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226180002"/>
+            <display value="Food additive-free diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226181003"/>
+            <display value="Food coloring-free diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226182005"/>
+            <display value="Azo dye-free diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226183000"/>
+            <display value="Tartrazine-free diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226184006"/>
+            <display value="Low food antioxidant diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226185007"/>
+            <display value="Butylated hydroxyanisole-free diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226186008"/>
+            <display value="Butylated hydroxytoluene-free diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226187004"/>
+            <display value="Low food preservative diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226188009"/>
+            <display value="Minimal benzoate diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226189001"/>
+            <display value="Low monosodium glutamate diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226190005"/>
+            <display value="Low sulfur dioxide diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226191009"/>
+            <display value="Chocolate-free diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226192002"/>
+            <display value="Cocoa-free diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226193007"/>
+            <display value="Elemental diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226194001"/>
+            <display value="Elimination diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226195000"/>
+            <display value="Low allergen diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226196004"/>
+            <display value="Low tyramine diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226197008"/>
+            <display value="Low salicylate diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226198003"/>
+            <display value="Cow's milk-free diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226199006"/>
+            <display value="Cow's milk protein-free diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226200009"/>
+            <display value="Nut-free diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226201008"/>
+            <display value="Peanut-free diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226202001"/>
+            <display value="Brazil nut-free diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226204000"/>
+            <display value="Soy-free diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226205004"/>
+            <display value="Wheat-free diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226206003"/>
+            <display value="Yeast-free diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226207007"/>
+            <display value="Modified texture diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226208002"/>
+            <display value="Fluid restricted diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226209005"/>
+            <display value="High fluid diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226210000"/>
+            <display value="Liquidized diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226211001"/>
+            <display value="Pureed diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226212008"/>
+            <display value="Single texture diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226213003"/>
+            <display value="Thickened fluids diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226214009"/>
+            <display value="Bowel preparation diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226215005"/>
+            <display value="Diet for balance study (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226216006"/>
+            <display value="Low vanillyl mandelic acid diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226218007"/>
+            <display value="Research diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226219004"/>
+            <display value="Test diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226220005"/>
+            <display value="Clean diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226221009"/>
+            <display value="Sterile diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226222002"/>
+            <display value="Non-therapeutic diets (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226223007"/>
+            <display value="Afro-Caribbean diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226224001"/>
+            <display value="Asian diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226225000"/>
+            <display value="Muslim diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226228003"/>
+            <display value="Sikh diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226229006"/>
+            <display value="Balanced diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226230001"/>
+            <display value="Bristol diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226231002"/>
+            <display value="Chinese diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226232009"/>
+            <display value="Food combining diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226233004"/>
+            <display value="Halal meat diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226234005"/>
+            <display value="Healthy diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226235006"/>
+            <display value="Muesli belt diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226236007"/>
+            <display value="No red meat diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226238008"/>
+            <display value="No beef diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226239000"/>
+            <display value="Rastafarian diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226240003"/>
+            <display value="Seventh Day Adventist diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226241004"/>
+            <display value="Stone age diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226242006"/>
+            <display value="Vietnamese diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="226243001"/>
+            <display value="West African diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="25875002"/>
+            <display value="Hypoallergenic infant formula (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="260226009"/>
+            <display value="Protein-rich meal (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="260229002"/>
+            <display value="Standard meal (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="27029007"/>
+            <display value="Hyperalimentation formula (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="278904002"/>
+            <display value="Hemodialysis diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="278905001"/>
+            <display value="Continuous ambulatory peritoneal dialysis diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="27938007"/>
+            <display value="Bland diet, stage 3 (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="281014009"/>
+            <display value="Strict vegetarian (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="284648005"/>
+            <display value="Dietary intake finding (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="284655007"/>
+            <display value="Dietary requirement finding (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="29958000"/>
+            <display value="Protein hydrolysate (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="300928006"/>
+            <display value="Vegetarian (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="30105008"/>
+            <display value="Acute renal failure diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="302320003"/>
+            <display value="Milk-free diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="302322006"/>
+            <display value="Egg-free diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="30852000"/>
+            <display value="General diet for child (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="30950009"/>
+            <display value="Bland diet, stage 4 (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="31002004"/>
+            <display value="Controlled potassium, controlled sodium and controlled protein diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="310245002"/>
+            <display value="Weaning diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="310264008"/>
+            <display value="Immunocompromised diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="310265009"/>
+            <display value="Modified electrolyte diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="310500000"/>
+            <display value="Diet good (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="310502008"/>
+            <display value="Diet poor (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="310503003"/>
+            <display value="Diet average (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="31150002"/>
+            <display value="Medium fat meat exchange list (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="315207000"/>
+            <display value="Diabetic lipid lowering diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="315208005"/>
+            <display value="Diabetic weight reducing diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="31609009"/>
+            <display value="Infant formula for metabolic dysfunction (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="32671009"/>
+            <display value="Hyperlipoproteinemia diet, type IIa (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="33489005"/>
+            <display value="Renal disease diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="33861001"/>
+            <display value="Weight maintenance regimen (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="34170007"/>
+            <display value="Adult diabetes diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="34394003"/>
+            <display value="Hyperalimentation formula for burn hypermetabolism (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="3528008"/>
+            <display value="Restricted carbohydrate fat controlled diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="366361007"/>
+            <display value="Finding of dietary sodium intake (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="366363005"/>
+            <display value="Finding of dietary potassium intake (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="37573006"/>
+            <display value="Bland diet, stage 2 (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="37824006"/>
+            <display value="Basic hospital diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="38258006"/>
+            <display value="Hyperalimentation formula for inflammatory bowel disease (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="386615006"/>
+            <display value="Low sugar diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="386636008"/>
+            <display value="No added sugar diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="39545002"/>
+            <display value="Low cholesterol-low saturated fat diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="39908000"/>
+            <display value="Food exchange list (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="39980005"/>
+            <display value="Fat controlled diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="40546006"/>
+            <display value="Sodium restricted diet, 90 milliequivalents (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="408340004"/>
+            <display value="Diet high intake - oily fish (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="408511001"/>
+            <display value="Meal substitute used (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="409002"/>
+            <display value="Food allergy diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="41112006"/>
+            <display value="150 milligram calcium diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="412744006"/>
+            <display value="High sugar diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="413297007"/>
+            <display value="Diet not appropriate for age (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="41449007"/>
+            <display value="General diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="415150004"/>
+            <display value="Postoperative progressive diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="42096009"/>
+            <display value="Dental liquid diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="42239005"/>
+            <display value="Carbohydrate diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="42289002"/>
+            <display value="Wired jaw diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="424890008"/>
+            <display value="Unbalanced diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="42633004"/>
+            <display value="Bland diet, stage 1 (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="43577009"/>
+            <display value="Vegetable exchange list (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="44963006"/>
+            <display value="General diet for pregnancy and lactation (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="4550001"/>
+            <display value="Special infant formula (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="46522005"/>
+            <display value="Fruit exchange list (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="47016003"/>
+            <display value="Hyperalimentation formula for pancreatitis (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="48325002"/>
+            <display value="Hyperalimentation formula for peritonitis (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="49139000"/>
+            <display value="70 gram fat diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="52659007"/>
+            <display value="Vitamin K restricted diet during anticoagulation therapy (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="54123004"/>
+            <display value="Sodium restricted diet, 40 milliequivalents (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="54500007"/>
+            <display value="Clear fluid diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="54970002"/>
+            <display value="Monoamine restricted diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="55180007"/>
+            <display value="Potassium diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="55765009"/>
+            <display value="Hyperlipoproteinemia diet, type V (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="55923008"/>
+            <display value="Infant diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="56718006"/>
+            <display value="Hyperlipoproteinemia diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="57883007"/>
+            <display value="Renin test diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="60929008"/>
+            <display value="Miscellaneous diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="61745006"/>
+            <display value="High protein, high fat, low carbohydrate diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="62682007"/>
+            <display value="50 gram fat diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="6329009"/>
+            <display value="Lean meat exchange list (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="63526009"/>
+            <display value="Cardiac semi-soft 2 gram sodium diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="63740007"/>
+            <display value="Mechanical regular diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="64300006"/>
+            <display value="Oxalate restricted diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="64460009"/>
+            <display value="Hyperalimentation formula for intestinal fistula (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="6552007"/>
+            <display value="Lactose free infant formula (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="65579002"/>
+            <display value="Chronic renal failure diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="66539004"/>
+            <display value="Carbohydrate restricted diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="703977005"/>
+            <display value="Weight gain diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="714033002"/>
+            <display value="Soy-based infant formula (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="715060002"/>
+            <display value="Amino acid-based infant formula (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="71809002"/>
+            <display value="Fat diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="7285009"/>
+            <display value="Milk free infant formula (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="73789003"/>
+            <display value="Diet for special test (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="74424000"/>
+            <display value="Infant diet 6 months: rice, barley, iron, no honey (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="7487003"/>
+            <display value="200 milligram calcium diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="74930008"/>
+            <display value="Hyperalimentation formula for renal failure (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="7564008"/>
+            <display value="Liquid cardiac diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="7631003"/>
+            <display value="Infant formula with medium chain triglycerides (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="76426001"/>
+            <display value="Calorie diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="76713001"/>
+            <display value="Protein diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="77063006"/>
+            <display value="Hyperlipoproteinemia diet, type IV (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="77318000"/>
+            <display value="General diet for adult (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="77698005"/>
+            <display value="Protein exchange list (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="77943002"/>
+            <display value="Selected 20 gram protein diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="78150000"/>
+            <display value="Soft diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="78502005"/>
+            <display value="Lactose free diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="788006"/>
+            <display value="Disease-related diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="79367009"/>
+            <display value="Child diabetes diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="80359000"/>
+            <display value="Infant diet 7-9 months: meat and egg (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="82285009"/>
+            <display value="Low fat wired jaw diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="83346009"/>
+            <display value="Infant diet 5-7 months: cereal (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="83573009"/>
+            <display value="Phenylalanine restricted diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="83813007"/>
+            <display value="Tube feeding diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="83853005"/>
+            <display value="Enteral formula (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="84805004"/>
+            <display value="Dental soft diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="85544008"/>
+            <display value="Hyperalimentation formula for digestive tract maldevelopment (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="85778000"/>
+            <display value="Milk exchange list (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="86433007"/>
+            <display value="Infant diet 0-12 months: human milk, vitamin D and C, fluoride and iron (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="865004"/>
+            <display value="Hyperalimentation formula for ileus (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="87613006"/>
+            <display value="Purine diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="88847008"/>
+            <display value="General liquid diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="89211009"/>
+            <display value="Hard diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="89571002"/>
+            <display value="Premature infant diet: vitamin E at 10 days and iron at 3 weeks (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="90006008"/>
+            <display value="High fat meat exchange list (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="91209001"/>
+            <display value="Modified basic hospital diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="91555003"/>
+            <display value="Infant formula (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="91584007"/>
+            <display value="Lactose controlled diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="91633000"/>
+            <display value="Iron free infant formula (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="926305006"/>
+            <display value="Jain diet (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="9617008"/>
+            <display value="Hyperlipoproteinemia diet, type I (finding)"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <code value="9799002"/>
+            <display value="Burn patient diet, high calorie, high protein (finding)"/>
+        </contains>
+    </expansion>
+</ValueSet>
