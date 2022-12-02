@@ -4,7 +4,7 @@
 	<version value="1.0.0"/>
 	<name value="KBV_PR_MIO_ULB_Provenance_Source_of_Information"/>
 	<title value="KBV_PR_MIO_ULB_Provenance_Source_of_Information"/>
-	<status value="draft"/>
+	<status value="active"/>
 	<publisher value="Kassenärztliche Bundesvereinigung (KBV)"/>
 	<description value="Dieses Profil bildet die Informationsquelle ab."/>
 	<fhirVersion value="4.0.1"/>

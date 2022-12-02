@@ -4,7 +4,7 @@
   <version value="1.0.0" />
   <name value="KBV_EX_MIO_ULB_Reference_Reason_Cause" />
   <title value="KBV_EX_MIO_ULB_Reference_Reason_Cause" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
   <description value="Diese Extension dient der Referenzierung von Inhalten, die als Anlass/Ursache eines bestimmten Sachverhalts gesehen werden. In der Extension selbst sind keine konkreten Profile referenziert. Die Ausspezifizierung erfolgt innerhalb der Profile, in welche die Extension eingebunden ist. Hintergrund für dieses Vorgehen ist, dass die Referenzen je nach Profil (Sachverhalt) definiert werden und unterschiedlich sein können." />
   <fhirVersion value="4.0.1" />

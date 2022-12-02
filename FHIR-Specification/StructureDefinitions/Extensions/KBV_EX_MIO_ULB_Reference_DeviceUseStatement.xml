@@ -4,7 +4,7 @@
   <version value="1.0.0" />
   <name value="KBV_EX_MIO_ULB_Reference_DeviceUseStatement" />
   <title value="KBV_EX_MIO_ULB_Reference_DeviceUseStatement" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
   <description value="Diese Extension dient der Referenzierung des Benutzungszeitraumes eines Hilfsmittels, Implantats oder Gerätes." />
   <fhirVersion value="4.0.1" />

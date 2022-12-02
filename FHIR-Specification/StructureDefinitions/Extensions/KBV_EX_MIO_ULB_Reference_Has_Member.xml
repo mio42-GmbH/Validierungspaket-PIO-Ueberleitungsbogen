@@ -4,7 +4,7 @@
   <version value="1.0.0" />
   <name value="KBV_EX_MIO_ULB_Reference_Has_Member" />
   <title value="KBV_EX_MIO_ULB_Reference_Has_Member" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
   <description value="Diese Extension dient der Referenzierung zu näher beschreibenden Profilen des vorliegenden Sachverhalts und wird genutzt, wenn in einer Observation eine Referenzierung über das Element &quot;hasMember&quot; nicht möglich ist." />
   <fhirVersion value="4.0.1" />

@@ -4,7 +4,7 @@
   <version value="1.0.0" />
   <name value="KBV_EX_MIO_ULB_Consent_File_Location" />
   <title value="KBV_EX_MIO_ULB_Consent_File_Location" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
   <description value="Diese Extension bildet den Ablageort von persönlichen Erklärungen ab." />
   <fhirVersion value="4.0.1" />

@@ -4,7 +4,7 @@
   <version value="1.0.0" />
   <name value="KBV_PR_MIO_ULB_Bundle" />
   <title value="KBV_PR_MIO_ULB_Bundle" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
   <description value="Dieses Profil dient als bündelndes Element. Das Bundle kann als Klammer-Ressource verstanden werden, die die notwendigen Ressourcen zusammenfügt. Diese Ressource und die darin gebündelten Ressourcen können dann mit einer Signatur versehen werden. Das Bundle umfasst in dieser Anwendung den vollständigen Überleitungsbogen." />
   <fhirVersion value="4.0.1" />

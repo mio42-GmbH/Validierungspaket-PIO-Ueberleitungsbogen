@@ -3,7 +3,7 @@
 		<profile value="http://fhir.de/StructureDefinition/namingsystem-de-basis"/>
 	</meta>
 	<name value="KBV_NS_MIO_ULB_Hilfsmittelverzeichnis"/>
-	<status value="draft"/>
+	<status value="active"/>
 	<kind value="codesystem"/>
 	<date value="2022-08-01"/>
 	<publisher value="Kassenärztliche Bundesvereinigung (KBV)"/>

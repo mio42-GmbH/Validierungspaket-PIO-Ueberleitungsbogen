@@ -4,7 +4,7 @@
   <version value="1.0.0" />
   <name value="KBV_PR_MIO_ULB_Identifier_PKV_KVID_10" />
   <title value="KBV_PR_MIO_ULB_Identifier_PKV_KVID_10" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
   <description value="Identifier-Profil für den unveränderlichen 10-stelligen Teil der Versicherten ID der privaten Krankenversicherungen." />
   <fhirVersion value="4.0.1" />

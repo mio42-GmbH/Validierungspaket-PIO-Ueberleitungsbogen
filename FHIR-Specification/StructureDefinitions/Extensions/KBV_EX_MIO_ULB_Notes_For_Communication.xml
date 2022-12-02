@@ -4,7 +4,7 @@
   <version value="1.0.0" />
   <name value="KBV_EX_MIO_ULB_Notes_For_Communication" />
   <title value="KBV_EX_MIO_ULB_Notes_For_Communication" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
   <description value="Diese Extension bildet Angaben zur Kommunikation ab, die nicht eine Sprache und deren Kenntnis betreffen, sondern z.B. das Sprechen oder psychische Auswirkungen auf die Kommunikationsfähigkeit." />
   <fhirVersion value="4.0.1" />
