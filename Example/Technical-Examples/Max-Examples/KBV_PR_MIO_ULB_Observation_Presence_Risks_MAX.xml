@@ -1,0 +1,39 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="f7c17f1c-2804-4b40-808c-c2965ee5192f"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Presence_Risks|1.0.0"/>
+	</meta>
+	<text>
+		<status value="extensions"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h1>Vorliegen von Risiken</h1>
+		</div>
+	</text>
+	<status value="final"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="102485007"/>
+			<display value="Personal risk factor (observable entity)"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e"/>
+	</subject>
+	<effectiveDateTime value="2020-01-31"/>
+	<performer>
+		<reference value="urn:uuid:1513b56a-69d9-441d-930a-05839601b133"/>
+	</performer>
+	<valueCodeableConcept>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="373573001:246090004=281694009"/>
+			<display value="Clinical finding present (situation) : Associated finding (attribute) = Finding of at risk (finding)"/>
+		</coding>
+	</valueCodeableConcept>
+	<hasMember>
+		<reference value="urn:uuid:1513b56a-69d9-441d-930a-05839601b133"/>
+	</hasMember>
+</Observation>

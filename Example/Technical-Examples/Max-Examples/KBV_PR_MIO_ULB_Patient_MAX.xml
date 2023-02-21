@@ -1,0 +1,162 @@
+<Patient xmlns="http://hl7.org/fhir">
+	<id value="0afad899-878b-413a-ac94-54801d02b07e"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient|1.0.0"/>
+	</meta>
+	<text>
+		<status value="extensions"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h1>Patient</h1>
+		</div>
+	</text>
+	<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Religion">
+		<valueString value="katholisch"/>
+	</extension>
+	<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Interpreter_Required">
+		<valueBoolean value="false"/>
+	</extension>
+	<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Notes_For_Communication">
+		<valueString value="test"/>
+	</extension>
+	<!-- GKV -->
+	<identifier>
+		<use value="official"/>
+		<type>
+			<coding>
+				<system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+				<code value="GKV"/>
+				<display value="Gesetzliche Krankenversicherung"/>
+			</coding>
+		</type>
+		<system value="http://fhir.de/sid/gkv/kvid-10"/>
+		<value value="P234567890"/>
+	</identifier>
+	<!-- kvk -->
+	<identifier>
+		<use value="temp"/>
+		<type>
+			<coding>
+				<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type"/>
+				<code value="kvk"/>
+				<display value="Krankenversichertenkarte"/>
+			</coding>
+		</type>
+		<system value="http://fhir.de/sid/gkv/kvk-versichertennummer"/>
+		<value value="1234567890"/>
+	</identifier>
+	<!-- PKV ID -->
+	<identifier>
+		<use value="old"/>
+		<type>
+			<coding>
+				<system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+				<code value="PKV"/>
+				<display value="Private Krankenversicherung"/>
+			</coding>
+		</type>
+		<system value="http://fhir.de/sid/pkv/kvid-10"/>
+		<value value="M123456789"/>
+	</identifier>
+	<name>
+		<use value="official"/>
+		<text value="Ludger Königsstein Graf von Mangels"/>
+		<family value="Königsstein">
+			<extension url="http://fhir.de/StructureDefinition/humanname-namenszusatz">
+				<valueString value="Graf"/>
+			</extension>
+			<extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+				<valueString value="Königsstein"/>
+			</extension>
+			<extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-prefix">
+				<valueString value="von"/>
+			</extension>
+		</family>
+		<given value="Ludger"/>
+		<prefix value="Dr.">
+			<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+				<valueCode value="AC"/>
+			</extension>
+		</prefix>
+	</name>
+	<name>
+		<use value="maiden"/>
+		<text value="Ludger Königsstein Graf von Mangels"/>
+		<family value="Königsstein">
+			<extension url="http://fhir.de/StructureDefinition/humanname-namenszusatz">
+				<valueString value="Graf"/>
+			</extension>
+			<extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+				<valueString value="Königsstein"/>
+			</extension>
+			<extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-prefix">
+				<valueString value="von"/>
+			</extension>
+		</family>
+	</name>
+	<telecom>
+		<system value="phone"/>
+		<value value="012345678901"/>
+	</telecom>
+	<gender value="male"/>
+	<birthDate value="1935-06-22"/>
+	<address>
+		<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct">
+			<valueString value="Mitte"/>
+		</extension>
+		<use value="home"/>
+		<type value="both"/>
+		<text value="test"/>
+		<line value="Musterweg">
+			<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+				<valueString value="Musterweg"/>
+			</extension>
+			<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+				<valueString value="42"/>
+			</extension>
+		</line>
+		<line value="Hinterhof">
+			<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator">
+				<valueString value="Hinterhof"/>
+			</extension>
+		</line>
+		<line value="Mitte"/>
+		<city value="Berlin"/>
+		<postalCode value="10787"/>
+		<country value="DE"/>
+	</address>
+	<address>
+		<!-- <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct">
+			<valueString value="Mitte" />
+		</extension> -->
+		<use value="home"/>
+		<type value="postal"/>
+		<text value="test"/>
+		<line value="12345">
+			<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox">
+				<valueString value="12345"/>
+			</extension>
+		</line>
+		<!-- <line value="Mitte" /> -->
+		<city value="Darmstadt"/>
+		<postalCode value="64283"/>
+		<country value="D"/>
+	</address>
+	<maritalStatus>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+			<version value="2.1.0"/>
+			<code value="M"/>
+			<display value="Married"/>
+		</coding>
+	</maritalStatus>
+	<communication>
+		<language>
+			<coding>
+				<system value="urn:ietf:bcp:47"/>
+				<version value="4.0.1"/>
+				<code value="de"/>
+				<display value="German"/>
+			</coding>
+		</language>
+	</communication>
+</Patient>

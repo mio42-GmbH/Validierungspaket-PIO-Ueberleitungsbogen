@@ -1,0 +1,39 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="edf72cb5-16f1-4fb8-a180-2c4646d93ed8" />
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Presence_Information_Nutrition|1.0.0" />
+	</meta>
+	<text>
+		<status value="extensions" />
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h1>Vorliegen von Hinweisen zur Ernährung</h1>
+		</div>
+	</text>
+	<status value="final" />
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct" />
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331" />
+			<code value="364393001:704321009=384760004" />
+			<display value="Nutritional observable (observable entity) : Characterizes (attribute) = Feeding and dietary regime (regime/therapy)" />
+		</coding>
+	</code>
+	<subject>
+		<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e" />
+	</subject>
+	<effectiveDateTime value="2020-01-31" />
+	<performer>
+		<reference value="urn:uuid:1513b56a-69d9-441d-930a-05839601b133" />
+	</performer>
+	<valueCodeableConcept>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="373573001:246090004=300893006"/>
+			<display value="Clinical finding present (situation) : Associated finding (attribute) = Nutritional finding (finding)"/>
+		</coding>
+	</valueCodeableConcept>
+	<hasMember>
+		<reference value="urn:uuid:9d79d166-5e17-471e-ace8-b697a898138f" />
+	</hasMember>
+</Observation>

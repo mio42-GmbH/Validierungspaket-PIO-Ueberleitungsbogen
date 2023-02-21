@@ -1,0 +1,121 @@
+<MedicationStatement xmlns="http://hl7.org/fhir">
+	<id value="6651d3d3-e667-4599-8a4b-b5683ada4961"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_MedicationStatement_Administration_Instruction|1.0.0"/>
+	</meta>
+	<text>
+		<status value="extensions"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h1>Verabreichungsinformation Medikament/Rezept</h1>
+		</div>
+	</text>
+	<extension url="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal">
+		<valueReference>
+			<reference value="urn:uuid:dca58e9c-3179-11ec-8d3d-0242ac130003"/>
+		</valueReference>
+	</extension>
+	<status value="active"/>
+	<statusReason>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="182878004"/>
+			<display value="Medication increased (finding)"/>
+		</coding>
+	</statusReason>
+	<medicationReference>
+		<reference value="urn:uuid:7d261218-8678-11eb-8dcd-0242ac130003"/>
+	</medicationReference>
+	<subject>
+		<reference value="urn:uuid:7d261218-8678-11eb-8dcd-0242ac130003"/>
+	</subject>
+	<effectiveDateTime value="2020-02-02"/>
+	<dateAsserted value="2022-01-01"/>
+	<reasonCode>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="182878004"/>
+			<display value="Medication increased (finding)"/>
+		</coding>
+	</reasonCode>
+	<reasonReference>
+		<reference value="urn:uuid:7d261218-8678-11eb-8dcd-0242ac130003"/>
+	</reasonReference>
+	<note>
+		<text value="test"/>
+	</note>
+	<dosage>
+		<text value="test"/>
+		<patientInstruction value="test"/>
+		<timing>
+			<repeat>
+				<duration value="5"/>
+				<durationMax value="10"/>
+				<durationUnit value="d"/>
+				<frequency value="3"/>
+				<frequencyMax value="6"/>
+				<period value="8"/>
+				<periodMax value="10"/>
+				<periodUnit value="wk"/>
+				<dayOfWeek value="mon"/>
+				<timeOfDay value="12:24:11"/>
+				<!-- <when value="MORN"/> -->
+			</repeat>
+		</timing>
+		<asNeededBoolean value="true"/>
+		<site>
+			<text value="oral"/>
+		</site>
+		<route>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="10547007"/>
+				<display value="Otic route (qualifier value)"/>
+			</coding>
+		</route>
+		<doseAndRate>
+			<doseQuantity>
+				<value value="1"/>
+				<unit value="b"/>
+				<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT|1.01"/>
+				<code value="b"/>
+			</doseQuantity>
+			<rateRatio>
+				<numerator>
+					<value value="7"/>
+					<unit value="2"/>
+					<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+					<code value="2"/>
+				</numerator>
+				<denominator>
+					<value value="7"/>
+					<unit value="s"/>
+					<system value="http://unitsofmeasure.org"/>
+					<code value="s"/>
+				</denominator>
+			</rateRatio>
+		</doseAndRate>
+		<maxDosePerPeriod>
+			<numerator>
+				<value value="7"/>
+				<unit value="2"/>
+				<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+				<code value="2"/>
+			</numerator>
+			<denominator>
+				<value value="7"/>
+				<unit value="s"/>
+				<system value="http://unitsofmeasure.org"/>
+				<code value="s"/>
+			</denominator>
+		</maxDosePerPeriod>
+		<maxDosePerAdministration>
+			<value value="7"/>
+			<unit value="2"/>
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+			<code value="2"/>
+		</maxDosePerAdministration>
+	</dosage>
+</MedicationStatement>

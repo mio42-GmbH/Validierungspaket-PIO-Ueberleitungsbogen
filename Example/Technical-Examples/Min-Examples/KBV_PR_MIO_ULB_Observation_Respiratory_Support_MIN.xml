@@ -1,0 +1,26 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="563de2a6-64cb-4e89-895c-2af5703f00bf"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Respiratory_Support|1.0.0"/>
+	</meta>
+	<status value="final"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="363787002:704321009=40617009"/>
+			<display value="Observable entity (observable entity) : Characterizes (attribute) = Artificial respiration (procedure)"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e"/>
+	</subject>
+	<valueCodeableConcept>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="106048009:47429007=40617009,363713009=2667000"/>
+			<display value="Respiratory finding (finding) : Associated with (attribute) = Artificial respiration (procedure) , Has interpretation (attribute) = Absent (qualifier value)"/>
+		</coding>
+	</valueCodeableConcept>
+</Observation>

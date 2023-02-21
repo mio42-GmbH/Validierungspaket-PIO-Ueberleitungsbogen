@@ -1,0 +1,69 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="01044fb1-15f0-4e0b-ac38-30f88ae27188"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Care_Level|1.0.0"/>
+	</meta>
+	<text>
+		<status value="extensions"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h1>Pflegegrad</h1>
+		</div>
+	</text>
+	<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Recommendation_Receiving_Institution">
+		<valueReference>
+			<reference value="urn:uuid:2bdd13cb-8624-4c10-a69d-c0327204f855"/>
+		</valueReference>
+	</extension>
+	<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Application_Status">
+		<extension url="beantragungsdatum">
+			<valueDateTime value="2020-03-01"/>
+		</extension>
+		<extension url="antragsstatusPflegegrad">
+			<valueCodeableConcept>
+				<coding>
+					<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Application_Status_Care_Level"/>
+					<version value="1.0.0"/>
+					<code value="Pflegegrad_unbekannt"/>
+					<display value="Pflegegrad unbekannt"/>
+				</coding>
+			</valueCodeableConcept>
+		</extension>
+	</extension>
+	<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Status_Care_Level">
+		<valueCodeableConcept>
+			<coding>
+				<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Application_Status_Care_Level"/>
+				<version value="1.0.0"/>
+				<code value="Pflegegrad_vorlaeufig"/>
+				<display value="Pflegegrad vorläufig"/>
+			</coding>
+		</valueCodeableConcept>
+	</extension>
+	<status value="final"/>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<version value="2.72"/>
+			<code value="80391-6"/>
+			<display value="Level of care [Type]"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e"/>
+	</subject>
+	<effectivePeriod>
+		<start value="2020-01-31"/>
+		<end value="2020-02-17"/>
+	</effectivePeriod>
+	<performer>
+		<reference value="urn:uuid:1513b56a-69d9-441d-930a-05839601b133"/>
+	</performer>
+	<valueCodeableConcept>
+		<coding>
+			<system value="http://fhir.de/CodeSystem/bfarm/ops"/>
+			<version value="2021"/>
+			<code value="9-984.7"/>
+			<display value="Pflegebedürftig nach Pflegegrad 2"/>
+		</coding>
+	</valueCodeableConcept>
+</Observation>

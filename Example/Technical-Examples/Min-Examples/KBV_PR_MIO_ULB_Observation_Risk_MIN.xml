@@ -1,0 +1,26 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="7c7370d2-5c84-4558-8438-0b4009c1f7e7"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Risk|1.0.0"/>
+	</meta>
+	<status value="final"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="80943009"/>
+			<display value="Risk factor (observable entity)"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e"/>
+	</subject>
+	<valueCodeableConcept>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="129839007"/>
+			<display value="At risk for falls (finding)"/>
+		</coding>
+	</valueCodeableConcept>
+</Observation>

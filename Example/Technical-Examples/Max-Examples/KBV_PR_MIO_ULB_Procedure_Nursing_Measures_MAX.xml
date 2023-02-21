@@ -1,0 +1,94 @@
+<Procedure xmlns="http://hl7.org/fhir">
+	<id value="7b383df2-11fe-41e7-82ff-77dce4f24f6a"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Procedure_Nursing_Measures|1.0.0"/>
+	</meta>
+	<text>
+		<status value="extensions"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h1>pflegerische Maßnahme</h1>
+		</div>
+	</text>
+	<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Timetable">
+		<extension url="codeSnomed">
+			<valueCodeableConcept>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+					<code value="364713004"/>
+					<display value="Temporal observable (observable entity)"/>
+				</coding>
+			</valueCodeableConcept>
+		</extension>
+		<extension url="angabeStrukturiert">
+			<extension url="dauer">
+				<valueQuantity>
+					<value value="10"/>
+					<unit value="min"/>
+					<system value="http://unitsofmeasure.org"/>
+					<code value="min"/>
+				</valueQuantity>
+			</extension>
+			<extension url="frequenz">
+				<valueTiming>
+					<repeat>
+						<frequency value="3"/>
+						<period value="1"/>
+						<periodUnit value="d"/>
+					</repeat>
+				</valueTiming>
+			</extension>
+			<extension url="zeitpunkt">
+				<valueTiming>
+					<code>
+						<coding>
+							<system value="http://hl7.org/fhir/event-timing"/>
+							<version value="4.0.1"/>
+							<code value="NIGHT"/>
+							<display value="Night"/>
+						</coding>
+					</code>
+				</valueTiming>
+				<!-- valueTime value="12:30:00" /> -->
+			</extension>
+		</extension>
+		<extension url="angabeFreitext">
+			<valueString value="test test test"/>
+		</extension>
+	</extension>
+	<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Reason_Cause">
+		<extension url="referenzAnlassUrsache">
+			<valueReference>
+				<reference value="urn:uuid:7d06196a-fabd-4620-bd5d-bf3b963f3555"/>
+			</valueReference>
+		</extension>
+		<extension url="freitextAnlassUrsache">
+			<valueString value="Lebensmittelallergie auf Apfel"/>
+		</extension>
+	</extension>
+	<status value="completed"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="275829005"/>
+			<display value="Reverse isolation (procedure)"/>
+		</coding>
+		<text value="test"/>
+	</code>
+	<subject>
+		<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e"/>
+	</subject>
+	<performedPeriod>
+		<start value="2020-01-31"/>
+		<end value="2020-02-15"/>
+	</performedPeriod>
+	<performer>
+		<actor>
+			<reference value="urn:uuid:1513b56a-69d9-441d-930a-05839601b133"/>
+		</actor>
+	</performer>
+	<note>
+		<text value="test"/>
+	</note>
+</Procedure>

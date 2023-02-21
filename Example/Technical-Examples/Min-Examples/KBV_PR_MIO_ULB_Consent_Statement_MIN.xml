@@ -1,0 +1,34 @@
+<Consent xmlns="http://hl7.org/fhir">
+	<id value="710e1f3b-bcee-4ba9-98c7-81b80e940040"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Consent_Statement|1.0.0"/>
+	</meta>
+	<status value="active"/>
+	<scope>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+			<version value="4.0.1"/>
+			<code value="adr"/>
+			<display value="Advanced Care Directive"/>
+		</coding>
+	</scope>
+	<category>
+		<coding>
+			<system value="http://loinc.org"/>
+			<version value="2.72"/>
+			<code value="59284-0"/>
+			<display value="Patient Consent"/>
+		</coding>
+	</category>
+	<patient>
+		<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e"/>
+	</patient>
+	<policyRule>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="371538006"/>
+			<display value="Patientenverfügung"/>
+		</coding>
+	</policyRule>
+</Consent>

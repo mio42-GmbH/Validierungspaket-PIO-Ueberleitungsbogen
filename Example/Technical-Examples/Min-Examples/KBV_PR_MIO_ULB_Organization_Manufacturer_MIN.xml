@@ -1,0 +1,7 @@
+<Organization xmlns="http://hl7.org/fhir">
+	<id value="879b30b1-dfdb-43fc-9695-cbc9b8cbea98"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Organization_Manufacturer|1.0.0"/>
+	</meta>
+	<name value="Praxis Dr. Mustermann"/>
+</Organization>

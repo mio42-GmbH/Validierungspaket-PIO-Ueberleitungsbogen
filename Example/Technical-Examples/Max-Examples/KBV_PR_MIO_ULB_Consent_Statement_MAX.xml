@@ -1,0 +1,91 @@
+<Consent xmlns="http://hl7.org/fhir">
+	<id value="710e1f3b-bcee-4ba9-98c7-81b80e940040"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Consent_Statement|1.0.0"/>
+	</meta>
+	<text>
+		<status value="extensions"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h1>Persönliche Erklärung</h1>
+		</div>
+	</text>
+	<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Consent_Description">
+		<valueString value="testtesttest"/>
+	</extension>
+	<status value="active"/>
+	<scope>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+			<version value="4.0.1"/>
+			<code value="adr"/>
+			<display value="Advanced Care Directive"/>
+		</coding>
+	</scope>
+	<category>
+		<coding>
+			<system value="http://loinc.org"/>
+			<version value="2.72"/>
+			<code value="59284-0"/>
+			<display value="Patient Consent"/>
+		</coding>
+	</category>
+	<patient>
+		<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e"/>
+	</patient>
+	<dateTime value="2021-04-05"/>
+	<sourceReference>
+		<display value="Musterweg 42">
+			<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Consent_File_Location">
+				<valueAddress>
+					<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct">
+						<valueString value="Mitte"/>
+					</extension>
+					<use value="home"/>
+					<type value="both"/>
+					<text value="test"/>
+					<line value="Musterweg">
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+							<valueString value="Musterweg"/>
+						</extension>
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+							<valueString value="42"/>
+						</extension>
+					</line>
+					<line value="Hinterhof">
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator">
+							<valueString value="Hinterhof"/>
+						</extension>
+					</line>
+					<line value="Mitte"/>
+					<city value="Berlin"/>
+					<postalCode value="10787"/>
+					<country value="DE"/>
+				</valueAddress>
+			</extension>
+		</display>
+	</sourceReference>
+	<policyRule>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="371538006"/>
+			<display value="Patientenverfügung"/>
+		</coding>
+	</policyRule>
+	<provision>
+		<type value="deny"/>
+		<actor>
+			<role>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+					<code value="54056000"/>
+					<display value="Trustee (person)"/>
+				</coding>
+			</role>
+			<reference>
+				<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e"/>
+			</reference>
+		</actor>
+	</provision>
+</Consent>

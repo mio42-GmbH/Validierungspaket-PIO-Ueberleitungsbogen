@@ -1,0 +1,48 @@
+<CarePlan xmlns="http://hl7.org/fhir">
+	<id value="c1b81631-7e67-4ef0-9bf3-88a7fa58afb0"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_CarePlan_Recommendation_Receiving_Institution|1.0.0"/>
+	</meta>
+	<text>
+		<status value="extensions"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h1>Empfehlung an die empfangende Einrichtung</h1>
+		</div>
+	</text>
+	<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Recommendation_Continuation_Measure">
+			<valueReference>
+				<reference value="urn:uuid:7d06196a-fabd-4620-bd5d-bf3b963f3555"/>
+			</valueReference>
+	</extension>
+	<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Reason_Cause">
+		<extension url="referenzAnlassUrsache">
+			<valueReference>
+				<reference value="urn:uuid:7d06196a-fabd-4620-bd5d-bf3b963f3555"/>
+			</valueReference>
+		</extension>
+		<extension url="freitextAnlassUrsache">
+			<valueString value="Lebensmittelallergie auf Apfel"/>
+		</extension>
+	</extension>
+	<status value="draft"/>
+	<intent value="plan"/>
+	<subject>
+		<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e"/>
+	</subject>
+	<contributor>
+		<reference value="urn:uuid:1513b56a-69d9-441d-930a-05839601b133"/>
+	</contributor>
+	<activity>
+		<detail>
+			<code>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+					<code value="22253000"/>
+					<display value="Pain (finding)"/>
+				</coding>
+			</code>
+			<status value="not-started"/>
+		</detail>
+	</activity>
+</CarePlan>

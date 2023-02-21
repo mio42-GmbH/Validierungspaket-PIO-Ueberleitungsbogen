@@ -1,0 +1,26 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="c1ccf32a-110b-496b-9e7a-bc263d9ac3a1"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Relatives_Notified|1.0.0"/>
+	</meta>
+	<status value="final"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="302160007:704321009=(185087000:370131001=35359004)"/>
+			<display value="Household, family and support network detail (observable entity) : Characterizes (attribute) = ( Notifications (procedure) : Recipient category (attribute) = Family (social concept) )"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e"/>
+	</subject>
+	<valueCodeableConcept>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="418404007"/>
+			<display value="Family notified (situation)"/>
+		</coding>
+	</valueCodeableConcept>
+</Observation>

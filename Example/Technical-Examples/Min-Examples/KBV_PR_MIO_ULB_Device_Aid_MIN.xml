@@ -1,0 +1,27 @@
+<Device xmlns="http://hl7.org/fhir">
+	<id value="dca58050-3179-11ec-8d3d-0242ac130003" />
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Device_Aid|1.0.0" />
+	</meta>
+	<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Terminologie_Assoziation" >
+		<valueCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct" />
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331" />
+				<code value="1141802005" />
+				<display value="Assistive device (physical object)" />
+			</coding>
+		</valueCodeableConcept>
+	</extension>
+	<type>
+		<coding>
+			<system value="https://fhir.kbv.de/NamingSystem/KBV_NS_MIO_ULB_Hilfsmittelverzeichnis" />
+			<version value="1.0.0" />
+			<code value="25.21.50.2001" />
+			<display value="Formstabile Kontaktlinsen" />
+		</coding>
+	</type>
+	<patient>
+		<reference value="urn:uuid:7d261218-8678-11eb-8dcd-0242ac130003" />
+	</patient>
+</Device>

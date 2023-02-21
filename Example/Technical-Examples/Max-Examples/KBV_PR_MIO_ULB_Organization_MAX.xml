@@ -1,0 +1,100 @@
+<Organization xmlns="http://hl7.org/fhir">
+	<id value="879b30b1-dfdb-43fc-9695-cbc9b8cbea98" />
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Organization|1.0.0" />
+	</meta>
+	<text>
+		<status value="extensions" />
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h1>Organisation</h1>
+		</div>
+	</text>
+	<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment">
+		<valueString value="test" />
+	</extension>
+	<!--   Institutionskennzeichen   -->
+	<identifier>
+		<type>
+			<coding>
+				<system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+				<code value="XX" />
+				<display value="Organisations-ID" />
+			</coding>
+		</type>
+		<system value="http://fhir.de/sid/arge-ik/iknr" />
+		<value value="123456789" />
+	</identifier>
+	<!--   BSNR   -->
+	<identifier>
+		<type>
+			<coding>
+				<system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+				<code value="BSNR" />
+				<display value="Primary physician office number" />
+			</coding>
+		</type>
+		<system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_BSNR" />
+		<value value="012345678" />
+	</identifier>
+	<!--   KZV-Abrechnungsnummer   -->
+	<identifier>
+		<type>
+			<coding>
+				<system value="http://fhir.de/CodeSystem/identifier-type-de-basis" />
+				<code value="KZVA" />
+				<display value="KZVAbrechnungsnummer" />
+			</coding>
+		</type>
+		<system value="http://fhir.de/sid/kzbv/kzvabrechnungsnummer" />
+		<value value="123456789" />
+	</identifier>
+	<type>
+		<coding>
+			<system value="http://snomed.info/sct" />
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331" />
+			<code value="22232009" />
+			<display value="Hospital (environment)"/>
+		</coding>
+	</type>
+	<name value="Praxis Dr. Mustermann" />
+	<telecom>
+		<system value="phone" />
+		<value value="123456789" />
+	</telecom>
+	<address>
+		<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct">
+			<valueString value="Mitte" />
+		</extension>
+		<use value="temp" />
+		<type value="both" />
+		<text value="test" />
+		<line value="Musterstr. 1">
+			<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+				<valueString value="Musterstr." />
+			</extension>
+			<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+				<valueString value="1" />
+			</extension>
+			<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator">
+				<valueString value="1.OG" />
+			</extension>
+		</line>
+		<line value="Mitte" />
+		<city value="Darmstadt" />
+		<postalCode value="64283" />
+		<country value="D" />
+	</address>
+	<address>
+		<use value="old" />
+		<type value="postal" />
+		<text value="test" />
+		<line value="12345">
+			<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox">
+				<valueString value="12345" />
+			</extension>
+		</line>
+		<city value="Darmstadt" />
+		<postalCode value="64283" />
+		<country value="D" />
+	</address>
+</Organization>

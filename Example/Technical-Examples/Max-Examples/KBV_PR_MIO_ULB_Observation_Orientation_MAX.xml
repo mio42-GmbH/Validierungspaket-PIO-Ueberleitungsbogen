@@ -1,0 +1,100 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="bb847dc3-212d-4627-ab15-d11b25fcf408" />
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Orientation|1.0.0" />
+	</meta>
+	<text>
+		<status value="extensions" />
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h1>Orientierung</h1>
+		</div>
+	</text>
+	<status value="final" />
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct" />
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331" />
+			<code value="43173001" />
+			<display value="Orientation, function (observable entity)" />
+		</coding>
+	</code>
+	<subject>
+		<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e" />
+	</subject>
+	<effectiveDateTime value="2020-01-02" />
+	<performer>
+		<reference value="urn:uuid:8ad1ee6c-6164-493a-be52-c43cf49e9916" />
+	</performer>
+	<component>
+		<code>
+			<coding>
+				<system value="http://snomed.info/sct" />
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331" />
+				<code value="405017007:370130000=410669006" />
+				<display value="Ability to identify person, place, and time (observable entity): Property (attribute) = Time (property) (qualifier value)" />
+			</coding>
+		</code>
+		<valueCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct" />
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331" />
+				<code value="426794005" />
+				<display value="Oriented to time (finding)" />
+			</coding>
+		</valueCodeableConcept>
+	</component>
+	<component>
+		<code>
+			<coding>
+				<system value="http://snomed.info/sct" />
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331" />
+				<code value="405017007+302149003" />
+				<display value="Ability to identify person, place, and time (observable entity) + Housing, local environment and transport detail (observable entity)" />
+			</coding>
+		</code>
+		<valueCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct" />
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331" />
+				<code value="427161009" />
+				<display value="Oriented to place (finding)" />
+			</coding>
+		</valueCodeableConcept>
+	</component>
+	<component>
+		<code>
+			<coding>
+				<system value="http://snomed.info/sct" />
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331" />
+				<code value="405017007+160476009" />
+				<display value="Ability to identify person, place, and time (observable entity) + Social / personal history observable (observable entity)" />
+			</coding>
+		</code>
+		<valueCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct" />
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331" />
+				<code value="427645006" />
+				<display value="Oriented to person (finding)" />
+			</coding>
+		</valueCodeableConcept>
+	</component>
+	<component>
+		<code>
+			<coding>
+				<system value="http://snomed.info/sct" />
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331" />
+				<code value="43173001+395659009" />
+				<display value="Orientation, function (observable entity) + Ability to comprehend (observable entity)" />
+			</coding>
+		</code>
+		<valueCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct" />
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331" />
+				<code value="247663003" />
+				<display value="Orientated (finding)" />
+			</coding>
+		</valueCodeableConcept>
+	</component>
+</Observation>

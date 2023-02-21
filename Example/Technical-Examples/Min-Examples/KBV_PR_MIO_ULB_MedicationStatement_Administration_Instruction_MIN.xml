@@ -1,0 +1,13 @@
+<MedicationStatement xmlns="http://hl7.org/fhir">
+	<id value="6651d3d3-e667-4599-8a4b-b5683ada4961"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_MedicationStatement_Administration_Instruction|1.0.0"/>
+	</meta>
+	<status value="active"/>
+	<medicationReference>
+		<reference value="urn:uuid:7d261218-8678-11eb-8dcd-0242ac130003"/>
+	</medicationReference>
+	<subject>
+		<reference value="urn:uuid:7d261218-8678-11eb-8dcd-0242ac130003"/>
+	</subject>
+</MedicationStatement>

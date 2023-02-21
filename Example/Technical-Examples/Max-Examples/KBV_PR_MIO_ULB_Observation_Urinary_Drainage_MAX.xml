@@ -1,0 +1,69 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="89d9df49-24fc-47e4-b71d-f34870721b2a"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Urinary_Drainage|1.0.0"/>
+	</meta>
+	<text>
+		<status value="extensions"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h1>Harnableitung</h1>
+		</div>
+	</text>
+	<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_DeviceUseStatement">
+		<valueReference>
+			<reference value="urn:uuid:2bdd13cb-8624-4c10-a69d-c0327204f855"/>
+		</valueReference>
+	</extension>
+	<status value="final"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="406219008"/>
+			<display value="Urinary elimination status (observable entity)"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e"/>
+	</subject>
+	<effectivePeriod>
+		<start value="2020-01-02">
+			<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Insertion_Date_Fecal_Urinary_Drainage">
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="439272007:704321009=107733003"/>
+						<display value="Date of procedure (observable entity) : Characterizes (attribute) = Introduction procedure (procedure)"/>
+					</coding>
+				</valueCodeableConcept>
+			</extension>
+		</start>
+		<end value="2020-01-02">
+			<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Removal_Date_Fecal_Urinary_Drainage">
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="439272007:704321009=118292001"/>
+						<display value="Date of procedure (observable entity) : Characterizes (attribute) = Removal (procedure)"/>
+					</coding>
+				</valueCodeableConcept>
+			</extension>
+		</end>
+	</effectivePeriod>
+	<performer>
+		<reference value="urn:uuid:1513b56a-69d9-441d-930a-05839601b133"/>
+	</performer>
+	<valueCodeableConcept>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="404684003:47429007=236240005"/>
+			<display value="Clinical finding (finding) : Associated with (attribute) = Clean intermittent self-catheterization (procedure)"/>
+		</coding>
+	</valueCodeableConcept>
+	<note>
+		<text value="test"/>
+	</note>
+</Observation>

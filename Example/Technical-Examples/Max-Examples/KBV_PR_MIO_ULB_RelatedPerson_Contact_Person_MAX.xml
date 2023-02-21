@@ -1,0 +1,100 @@
+<RelatedPerson xmlns="http://hl7.org/fhir">
+	<id value="a01a8aa5-d0b1-4d7c-a4de-f9d408c2501e"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_RelatedPerson_Contact_Person|1.0.0"/>
+	</meta>
+	<text>
+		<status value="extensions"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h1>Kontaktperson</h1>
+		</div>
+	</text>
+	<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment">
+		<valueString value="test"/>
+	</extension>
+	<patient>
+		<reference value="urn:uuid:e8610a8a-85dc-4a49-88be-ee8d3ab69f73"/>
+	</patient>
+	<relationship>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+			<version value="2018-08-12"/>
+			<code value="GUARD"/>
+			<display value="guardian"/>
+		</coding>
+	</relationship>
+	<relationship>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
+			<version value="2.1.0"/>
+			<code value="N"/>
+			<display value="Next-of-Kin"/>
+		</coding>
+	</relationship>
+	<name>
+		<use value="official"/>
+		<text value="Ludger Königsstein Graf von Mangels"/>
+		<family value="Königsstein">
+			<extension url="http://fhir.de/StructureDefinition/humanname-namenszusatz">
+				<valueString value="Graf"/>
+			</extension>
+			<extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+				<valueString value="Königsstein"/>
+			</extension>
+			<extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-prefix">
+				<valueString value="von"/>
+			</extension>
+		</family>
+		<given value="Ludger"/>
+		<prefix value="Dr.">
+			<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+				<valueCode value="AC"/>
+			</extension>
+		</prefix>
+	</name>
+	<telecom>
+		<system value="phone"/>
+		<value value="012345678901"/>
+	</telecom>
+	<gender value="male"/>
+	<address>
+		<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct">
+			<valueString value="Mitte"/>
+		</extension>
+		<use value="home"/>
+		<type value="both"/>
+		<text value="test"/>
+		<line value="Musterstr. 1">
+			<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+				<valueString value="Musterstr."/>
+			</extension>
+			<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+				<valueString value="1"/>
+			</extension>
+			<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator">
+				<valueString value="1.OG"/>
+			</extension>
+		</line>
+		<line value="Mitte"/>
+		<city value="Berlin"/>
+		<postalCode value="10787"/>
+		<country value="DE"/>
+	</address>
+	<address>
+		<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct">
+			<valueString value="Mitte"/>
+		</extension>
+		<use value="home"/>
+		<type value="postal"/>
+		<text value="test"/>
+		<line value="12345">
+			<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox">
+				<valueString value="12345"/>
+			</extension>
+		</line>
+		<line value="Mitte"/>
+		<city value="Darmstadt"/>
+		<postalCode value="64283"/>
+		<country value="D"/>
+	</address>
+</RelatedPerson>

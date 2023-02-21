@@ -1,0 +1,25 @@
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+	<id value="c3fd0113-9833-4333-bfd2-fff813222b64"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_AllergyIntolerance|1.0.0"/>
+	</meta>
+	<clinicalStatus>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+			<version value="4.0.1"/>
+			<code value="active"/>
+			<display value="Active"/>
+		</coding>
+	</clinicalStatus>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="227493005"/>
+			<display value="Cashew nuts"/>
+		</coding>
+	</code>
+	<patient>
+		<reference value="urn:uuid:9774f67f-a238-4daf-b4e6-679deeef3811"/>
+	</patient>
+</AllergyIntolerance>

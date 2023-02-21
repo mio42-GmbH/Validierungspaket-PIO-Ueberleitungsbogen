@@ -1,0 +1,45 @@
+<Condition xmlns="http://hl7.org/fhir">
+	<id value="98336b6d-c253-4e36-ad0d-4106fb9afa80"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Condition_Care_Problem|1.0.0"/>
+	</meta>
+	<text>
+		<status value="extensions"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h1>Pflegeproblem</h1>
+		</div>
+	</text>
+	<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Reason_Cause">
+		<extension url="referenzAnlassUrsache">
+			<valueReference>
+				<reference value="urn:uuid:7d06196a-fabd-4620-bd5d-bf3b963f3555"/>
+			</valueReference>
+		</extension>
+		<extension url="freitextAnlassUrsache">
+			<valueString value="Lebensmittelallergie auf Apfel"/>
+		</extension>
+	</extension>
+	<category>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="439401001:704326004=86644006"/>
+			<display value="Diagnosis (observable entity) : Precondition (attribute) = Nursing diagnosis (finding)"/>
+		</coding>
+	</category>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="289123006"/>
+			<display value="Deep breathing (finding)"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e"/>
+	</subject>
+	<onsetDateTime value="2020-01-31"/>
+	<note>
+		<text value="test"/>
+	</note>
+</Condition>

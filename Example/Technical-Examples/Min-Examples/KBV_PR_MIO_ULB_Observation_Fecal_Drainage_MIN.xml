@@ -1,0 +1,26 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="ff16fe5f-8205-421f-b682-d207ea00b0e5"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Fecal_Drainage|1.0.0"/>
+	</meta>
+	<status value="final"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="363787002:704321009=266683002"/>
+			<display value="Observable entity (observable entity) : Characterizes (attribute) = Evacuation of gastrointestinal tract contents (procedure)"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e"/>
+	</subject>
+	<valueCodeableConcept>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="302112009"/>
+			<display value="Colostomy present (finding)"/>
+		</coding>
+	</valueCodeableConcept>
+</Observation>

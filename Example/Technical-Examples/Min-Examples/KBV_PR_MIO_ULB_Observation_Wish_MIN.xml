@@ -1,0 +1,27 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="4a57055e-c4d2-4410-ba1a-c5d5355922f5"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Wish|1.0.0"/>
+	</meta>
+	<status value="final"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="1186606009"/>
+			<display value="Patient request observable (observable entity)"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e"/>
+	</subject>
+	<valueCodeableConcept>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="80943009"/>
+			<display value="Risk factor (observable entity)"/>
+		</coding>
+		<text value="test"/>
+	</valueCodeableConcept>
+</Observation>

@@ -1,0 +1,28 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="215bc84a-b099-44c7-91c3-d145a737d32c"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Last_Micturition|1.0.0"/>
+	</meta>
+	<text>
+		<status value="extensions"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h1>Zeitpunkt der letzten Miktion</h1>
+		</div>
+	</text>
+	<status value="final"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="364201005:370134009=57615005"/>
+			<display value="Urine output observable (observable entity) : Time aspect (attribute) = Definite time (qualifier value)"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e"/>
+	</subject>
+	<performer>
+		<reference value="urn:uuid:1513b56a-69d9-441d-930a-05839601b133"/>
+	</performer>
+	<valueDateTime value="2022-09-08"/>
+</Observation>

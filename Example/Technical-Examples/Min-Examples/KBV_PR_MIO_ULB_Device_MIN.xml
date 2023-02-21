@@ -1,0 +1,17 @@
+<Device xmlns="http://hl7.org/fhir">
+	<id value="cd2f7d79-0d44-49f1-a467-caa88d07c789"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Device|1.0.0"/>
+	</meta>
+	<type>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="40388003"/>
+			<display value="Implant, device (physical object)"/>
+		</coding>
+	</type>
+	<patient>
+		<reference value="urn:uuid:7d261218-8678-11eb-8dcd-0242ac130003"/>
+	</patient>
+</Device>

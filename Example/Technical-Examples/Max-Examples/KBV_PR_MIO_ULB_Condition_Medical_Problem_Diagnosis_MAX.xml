@@ -1,0 +1,99 @@
+<Condition xmlns="http://hl7.org/fhir">
+	<id value="bb470ff6-320a-4e23-8208-3ef859080982" />
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Condition_Medical_Problem_Diagnosis|1.0.0" />
+	</meta>
+	<text>
+		<status value="extensions" />
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h1>Medizinisches Problem / Diganose</h1>
+		</div>
+	</text>
+	<extension url="http://hl7.org/fhir/StructureDefinition/condition-assertedDate">
+		<valueDateTime value="2012" />
+	</extension>
+	<clinicalStatus>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/condition-clinical" />
+			<version value="4.0.1" />
+			<code value="inactive" />
+			<display value="Inactive" />
+		</coding>
+	</clinicalStatus>
+	<severity>
+		<coding>
+			<system value="http://snomed.info/sct" />
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331" />
+			<code value="24484000" />
+			<display value="Severe (severity modifier) (qualifier value)"/>
+		</coding>
+	</severity>
+	<code>
+		<coding>
+			<system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm" />
+			<version value="2020" />
+			<code value="A00.0" />
+			<display value="test" />
+		</coding>
+		<coding>
+			<system value="http://fhir.de/CodeSystem/dimdi/alpha-id" />
+			<version value="2020" />
+			<code value="I6158" />
+			<display value="Ichthyosiformes Ekzem" />
+		</coding>
+		<coding>
+			<system value="http://snomed.info/sct" />
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331" />
+			<code value="404684003" />
+			<display value="Clinical finding (finding)" />
+		</coding>
+		<coding>
+			<system value="http://www.orpha.net" />
+			<version value="5.36.0" />
+			<code value="104075" />
+			<display value="Adenocarcinoma of the small bowel" />
+		</coding>
+	</code>
+	<bodySite>
+		<coding>
+			<system value="http://snomed.info/sct" />
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331" />
+			<code value="76505004" />
+			<display value="Thumb" />
+		</coding>
+	</bodySite>
+	<subject>
+		<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e" />
+	</subject>
+	<onsetAge>
+		<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Stage_Life">
+			<valueCodeableConcept>
+				<coding>
+					<system value="http://snomed.info/sct" />
+					<version value="http://snomed.info/sct/900000000000207008/version/20220331" />
+					<code value="271872005" />
+					<display value="Old age (qualifier value)"/>
+				</coding>
+			</valueCodeableConcept>
+		</extension>
+	</onsetAge>
+	<abatementAge>
+		<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Stage_Life">
+			<valueCodeableConcept>
+				<coding>
+					<system value="http://snomed.info/sct" />
+					<version value="http://snomed.info/sct/900000000000207008/version/20220331" />
+					<code value="271872005" />
+					<display value="Old age (qualifier value)"/>
+				</coding>
+			</valueCodeableConcept>
+		</extension>
+	</abatementAge>
+	<recordedDate value="2020-05-07" />
+	<asserter>
+		<reference value="urn:uuid:1513b56a-69d9-441d-930a-05839601b133" />
+	</asserter>
+	<note>
+		<text value="test" />
+	</note>
+</Condition>

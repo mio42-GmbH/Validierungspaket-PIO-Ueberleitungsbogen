@@ -1,0 +1,44 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="3b1b2083-e4a8-4d12-a779-6ecd7e9fc3a9"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Respiratory_Access|1.0.0"/>
+	</meta>
+	<text>
+		<status value="extensions"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h1>Atemwegszugang</h1>
+		</div>
+	</text>
+	<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_DeviceUseStatement">
+		<valueReference>
+			<reference value="urn:uuid:93798345-192f-43df-94f7-68ba2d3484b3"/>
+		</valueReference>
+	</extension>
+	<status value="final"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="313292002"/>
+			<display value="Route of breathing (observable entity)"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e"/>
+	</subject>
+	<effectivePeriod>
+		<start value="2021-11-05"/>
+		<end value="2022-06-02"/>
+	</effectivePeriod>
+	<performer>
+		<reference value="urn:uuid:1513b56a-69d9-441d-930a-05839601b133"/>
+	</performer>
+	<valueCodeableConcept>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="302108003"/>
+			<display value="Tracheostomy present (finding)"/>
+		</coding>
+	</valueCodeableConcept>
+</Observation>

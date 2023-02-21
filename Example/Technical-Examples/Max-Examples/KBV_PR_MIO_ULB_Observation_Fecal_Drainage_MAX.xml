@@ -1,0 +1,69 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="ff16fe5f-8205-421f-b682-d207ea00b0e5"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Fecal_Drainage|1.0.0"/>
+	</meta>
+	<text>
+		<status value="extensions"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h1>Stuhlableitung</h1>
+		</div>
+	</text>
+	<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_DeviceUseStatement">
+		<valueReference>
+			<reference value="urn:uuid:2bdd13cb-8624-4c10-a69d-c0327204f855"/>
+		</valueReference>
+	</extension>
+	<status value="final"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="363787002:704321009=266683002"/>
+			<display value="Observable entity (observable entity) : Characterizes (attribute) = Evacuation of gastrointestinal tract contents (procedure)"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e"/>
+	</subject>
+	<effectivePeriod>
+		<start value="2020-01-02">
+			<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Insertion_Date_Fecal_Urinary_Drainage">
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="439272007:704321009=107733003"/>
+						<display value="Date of procedure (observable entity) : Characterizes (attribute) = Introduction procedure (procedure)"/>
+					</coding>
+				</valueCodeableConcept>
+			</extension>
+		</start>
+		<end value="2020-01-02">
+			<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Removal_Date_Fecal_Urinary_Drainage">
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+						<code value="439272007:704321009=118292001"/>
+						<display value="Date of procedure (observable entity) : Characterizes (attribute) = Removal (procedure)"/>
+					</coding>
+				</valueCodeableConcept>
+			</extension>
+		</end>
+	</effectivePeriod>
+	<performer>
+		<reference value="urn:uuid:1513b56a-69d9-441d-930a-05839601b133"/>
+	</performer>
+	<valueCodeableConcept>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="302112009"/>
+			<display value="Colostomy present (finding)"/>
+		</coding>
+	</valueCodeableConcept>
+	<note>
+		<text value="test"/>
+	</note>
+</Observation>

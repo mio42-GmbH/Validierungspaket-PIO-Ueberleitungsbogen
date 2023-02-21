@@ -1,0 +1,37 @@
+<Patient xmlns="http://hl7.org/fhir">
+	<id value="0afad899-878b-413a-ac94-54801d02b07e"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient|1.0.0"/>
+	</meta>
+	<name>
+		<use value="official"/>
+		<text value="Ludger Königsstein Graf von Mangels"/>
+		<family value="Königsstein">
+			<extension url="http://fhir.de/StructureDefinition/humanname-namenszusatz">
+				<valueString value="Graf"/>
+			</extension>
+			<extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+				<valueString value="Königsstein"/>
+			</extension>
+			<extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-prefix">
+				<valueString value="von"/>
+			</extension>
+		</family>
+		<given value="Ludger"/>
+		<prefix value="Dr.">
+			<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+				<valueCode value="AC"/>
+			</extension>
+		</prefix>
+	</name>
+	<name>
+		<use value="maiden"/>
+		<text value="Ludger Königsstein Graf von Mangels"/>
+		<family value="Königsstein">
+			<extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+				<valueString value="Königsstein"/>
+			</extension>
+		</family>
+	</name>
+	<birthDate value="1965-10-03"/>
+</Patient>

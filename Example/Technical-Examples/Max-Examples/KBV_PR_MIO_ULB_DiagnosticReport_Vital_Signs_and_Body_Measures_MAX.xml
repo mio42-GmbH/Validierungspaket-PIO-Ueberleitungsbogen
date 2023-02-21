@@ -1,0 +1,31 @@
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+    <id value="2d4fe733-65a8-4306-b73a-108eb19f651c" />
+    <meta>
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_DiagnosticReport_Vital_Signs_and_Body_Measures|1.0.0" />
+    </meta>
+	<text>
+		<status value="extensions" />
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h1>Vitalzeichen und Körpermaße</h1>
+		</div>
+	</text>
+    <status value="final" />
+    <code>
+        <coding>
+           <system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="1184593002"/>
+			<display value="Vital sign document section (record artifact)"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="urn:uuid:e8610a8a-85dc-4a49-88be-ee8d3ab69f73" />
+    </subject>
+    <effectiveDateTime value="2020-01-02" />
+	<performer>
+		<reference value="urn:uuid:1513b56a-69d9-441d-930a-05839601b133" />
+	</performer>
+    <result>
+        <reference value="urn:uuid:a586c8d2-d658-474b-800b-59832b30356b" />
+    </result>
+</DiagnosticReport>

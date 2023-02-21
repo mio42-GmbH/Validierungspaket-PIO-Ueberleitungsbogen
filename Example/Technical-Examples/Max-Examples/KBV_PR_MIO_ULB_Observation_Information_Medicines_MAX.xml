@@ -1,0 +1,41 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="5950cd4d-3771-46d5-a9e8-a4ec59a9751a"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Information_Medicines|1.0.0"/>
+	</meta>
+	<text>
+		<status value="extensions"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h1>Vorliegen Informationen zur Medikation</h1>
+		</div>
+	</text>
+	<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Has_Member">
+		<valueReference>
+			<reference value="urn:uuid:dca58050-3179-11ec-8d3d-0242ac130003"/>
+		</valueReference>
+	</extension>
+	<status value="final"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="363819003"/>
+			<display value="Drug therapy observable (observable entity)"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e"/>
+	</subject>
+	<effectiveDateTime value="2020-01-31"/>
+	<performer>
+		<reference value="urn:uuid:1513b56a-69d9-441d-930a-05839601b133"/>
+	</performer>
+	<valueCodeableConcept>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="309298003:363713009=52101004"/>
+			<display value="Drug therapy finding (finding) : Has interpretation (attribute) = Present (qualifier value)"/>
+		</coding>
+	</valueCodeableConcept>
+</Observation>

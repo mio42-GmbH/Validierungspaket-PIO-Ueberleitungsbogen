@@ -1,0 +1,22 @@
+<CareTeam xmlns="http://hl7.org/fhir">
+	<id value="a2064012-1f01-47c6-be22-7c300b3276e6"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_CareTeam|1.0.0"/>
+	</meta>
+	<subject>
+		<reference value="urn:uuid:e8610a8a-85dc-4a49-88be-ee8d3ab69f73"/>
+	</subject>
+	<participant>
+		<role>
+			<coding>
+				<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_Base_Role_Care_Team"/>
+				<version value="1.3.0"/>
+				<code value="WBA"/>
+				<display value="Weiterbehandelnde/r Arzt/Ärztin"/>
+			</coding>
+		</role>
+		<member>
+			<reference value="urn:uuid:aa064012-1f01-47c6-be22-7c300b3276e6"/>
+		</member>
+	</participant>
+</CareTeam>

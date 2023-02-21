@@ -1,0 +1,45 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="bde1de6b-5d4b-490d-8495-29b811177a17"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Toileting|1.0.0"/>
+	</meta>
+	<text>
+		<status value="extensions"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h1>Barthel Toilettenbenutzung</h1>
+		</div>
+	</text>
+	<status value="final"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="284906000"/>
+			<display value="Ability to use toilet (observable entity)"/>
+		</coding>
+		<coding>
+			<system value="http://loinc.org"/>
+			<version value="2.72"/>
+			<code value="83183-4"/>
+			<display value="Toileting - functional ability"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e"/>
+	</subject>
+	<effectiveDateTime value="2020-01-31"/>
+	<performer>
+		<reference value="urn:uuid:1513b56a-69d9-441d-930a-05839601b133"/>
+	</performer>
+	<valueQuantity>
+		<value value="5"/>
+	</valueQuantity>
+	<interpretation>
+		<coding>
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Barthel_Index_Toileting_Hamburg_Manual"/>
+			<version value="1.0.0"/>
+			<code value="5"/>
+			<display value="vor Ort Hilfe oder Aufsicht bei Toiletten- oder Toilettenstuhlbenutzung oder deren Spülung / Reinigung erforderlich"/>
+		</coding>
+	</interpretation>
+</Observation>

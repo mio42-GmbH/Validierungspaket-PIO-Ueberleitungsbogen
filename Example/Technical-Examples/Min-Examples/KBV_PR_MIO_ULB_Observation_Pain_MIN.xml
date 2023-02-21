@@ -1,0 +1,29 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="1e9f4259-791f-4279-8399-8339851a28b2"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Pain|1.0.0"/>
+	</meta>
+	<status value="final"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="406189006"/>
+			<display value="Pain observable (observable entity)"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e"/>
+	</subject>
+	<valueCodeableConcept>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="22253000"/>
+			<display value="Pain (finding)"/>
+		</coding>
+	</valueCodeableConcept>
+	<hasMember>
+		<reference value="urn:uuid:1513b56a-69d9-441d-930a-05839601b133"/>
+	</hasMember>
+</Observation>

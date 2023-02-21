@@ -1,0 +1,41 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="e01c424e-0ccb-4217-a785-f48885ce9d8e"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Presence_Functional_Assessment|1.0.0"/>
+	</meta>
+	<text>
+		<status value="extensions"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h1>Vorliegen von Funktionseinschränkungen</h1>
+		</div>
+	</text>
+	<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Has_Member">
+		<valueReference>
+			<reference value="urn:uuid:dca58050-3179-11ec-8d3d-0242ac130003"/>
+		</valueReference>
+	</extension>
+	<status value="final"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="363787002:704326004=105719004"/>
+			<display value="Observable entity (observable entity) : Precondition (attribute) = Body disability AND/OR failure state (finding)"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e"/>
+	</subject>
+	<effectiveDateTime value="2020-01-31"/>
+	<performer>
+		<reference value="urn:uuid:1513b56a-69d9-441d-930a-05839601b133"/>
+	</performer>
+	<valueCodeableConcept>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="373573001:246090004=105719004"/>
+			<display value="Clinical finding present (situation) : Associated finding (attribute) = Body disability AND/OR failure state (finding)"/>
+		</coding>
+	</valueCodeableConcept>
+</Observation>

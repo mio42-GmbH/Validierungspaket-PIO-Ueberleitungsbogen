@@ -1,0 +1,36 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="bb847dc3-212d-4627-ab15-d11b25fcf408"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Orientation|1.0.0"/>
+	</meta>
+	<status value="final"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="43173001"/>
+			<display value="Orientation, function (observable entity)"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e"/>
+	</subject>
+	<component>
+		<code>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="405017007:370130000=410669006"/>
+				<display value="Ability to identify person, place, and time (observable entity): Property (attribute) = Time (property) (qualifier value)"/>
+			</coding>
+		</code>
+		<valueCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="426794005"/>
+				<display value="Oriented to time (finding)"/>
+			</coding>
+		</valueCodeableConcept>
+	</component>
+</Observation>

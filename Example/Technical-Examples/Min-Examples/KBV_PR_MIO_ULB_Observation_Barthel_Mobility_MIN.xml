@@ -1,0 +1,36 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="09aa780f-a3cb-4d48-a58e-46333df2402c"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Mobility|1.0.0"/>
+	</meta>
+	<status value="final"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="363803005"/>
+			<display value="Mobility (observable entity)"/>
+		</coding>
+		<coding>
+			<system value="http://loinc.org"/>
+			<version value="2.72"/>
+			<code value="83186-7"/>
+			<display value="Ambulation - functional ability"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e"/>
+	</subject>
+	<effectiveDateTime value="2020-01-31"/>
+	<valueQuantity>
+		<value value="5"/>
+	</valueQuantity>
+	<interpretation>
+		<coding>
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Barthel_Index_Mobility_Hamburg_Manual"/>
+			<version value="1.0.0"/>
+			<code value="5"/>
+			<display value="mit Laienhilfe oder Gehwagen vom Sitz in den Stand kommen und Strecken im Wohnbereich bewältigen alternativ: im Wohnbereich komplett selbständig im Rollstuhl"/>
+		</coding>
+	</interpretation>
+</Observation>

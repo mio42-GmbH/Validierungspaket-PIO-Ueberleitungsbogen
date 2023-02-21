@@ -1,0 +1,53 @@
+<Organization xmlns="http://hl7.org/fhir">
+	<id value="879b30b1-dfdb-43fc-9695-cbc9b8cbea98"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Organization_Manufacturer|1.0.0"/>
+	</meta>
+	<text>
+		<status value="extensions"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h1>Gerätehersteller</h1>
+		</div>
+	</text>
+	<name value="Praxis Dr. Mustermann"/>
+	<telecom>
+		<system value="url"/>
+		<value value="123456789"/>
+	</telecom>
+	<address>
+		<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct">
+			<valueString value="Mitte"/>
+		</extension>
+		<use value="temp"/>
+		<type value="both"/>
+		<text value="test"/>
+		<line value="Musterstr. 1">
+			<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+				<valueString value="Musterstr."/>
+			</extension>
+			<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+				<valueString value="1"/>
+			</extension>
+			<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator">
+				<valueString value="1.OG"/>
+			</extension>
+		</line>
+		<line value="Mitte"/>
+		<city value="Darmstadt"/>
+		<postalCode value="64283"/>
+		<country value="D"/>
+	</address>
+	<address>
+		<use value="old"/>
+		<type value="postal"/>
+		<text value="test"/>
+		<line value="12345">
+			<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox">
+				<valueString value="12345"/>
+			</extension>
+		</line>
+		<city value="Darmstadt"/>
+		<postalCode value="64283"/>
+		<country value="D"/>
+	</address>
+</Organization>

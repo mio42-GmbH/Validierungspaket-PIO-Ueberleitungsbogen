@@ -1,0 +1,21 @@
+<ClinicalImpression xmlns="http://hl7.org/fhir">
+	<id value="a5c4c609-887e-4754-bd99-5530f6df8290"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_ClinicalImpression_Individual_Functions_Barthel|1.0.0"/>
+	</meta>
+	<status value="completed"/>
+	<subject>
+		<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e"/>
+	</subject>
+	<investigation>
+		<code>
+			<text value="Einzelne Funktionen nach Barthel"/>
+		</code>
+		<item>
+			<reference value="urn:uuid:f2bb4050-1238-4920-a293-b8f124849dbe"/>
+		</item>
+		<item>
+			<reference value="urn:uuid:a2470515-24bf-4c85-8b11-d3939d6a786d"/>
+		</item>
+	</investigation>
+</ClinicalImpression>

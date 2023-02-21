@@ -1,0 +1,29 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="0b21d4a0-8bda-41ff-8178-12e21b318f38"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Falls_Last_6_Months|1.0.0"/>
+	</meta>
+	<text>
+		<status value="extensions"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h1>Anzahl der Stürze in den letzten 6 Monaten</h1>
+		</div>
+	</text>
+	<status value="final"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="391002003:704323007=88561007"/>
+			<display value="Number of falls in last year (observable entity) : Process duration (attribute) = Semi-annual (qualifier value)"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e"/>
+	</subject>
+	<effectiveDateTime value="2020-01-31"/>
+	<performer>
+		<reference value="urn:uuid:1513b56a-69d9-441d-930a-05839601b133"/>
+	</performer>
+	<valueInteger value="3"/>
+</Observation>

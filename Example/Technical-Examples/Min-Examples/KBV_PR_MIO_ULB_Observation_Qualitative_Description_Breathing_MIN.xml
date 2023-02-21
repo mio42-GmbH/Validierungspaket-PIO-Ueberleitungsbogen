@@ -1,0 +1,19 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="3010c07a-b891-46f8-b054-8c811407fa90"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Qualitative_Description_Breathing|1.0.0"/>
+	</meta>
+	<status value="final"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="78064003:370132008=26716007"/>
+			<display value="Respiratory function (observable entity) : Scale type (attribute) = Qualitative (qualifier value)"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="urn:uuid:6a15cff6-3cc1-4bf2-ab66-1cc6316e6777"/>
+	</subject>
+	<valueString value="test test test"/>
+</Observation>

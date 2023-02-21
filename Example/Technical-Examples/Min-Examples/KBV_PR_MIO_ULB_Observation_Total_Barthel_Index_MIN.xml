@@ -1,0 +1,58 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="e3e3f00b-3eef-437a-bdb1-406fc9742aff" />
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Total_Barthel_Index|1.0.0" />
+	</meta>
+	<status value="final" />
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct" />
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331" />
+			<code value="725594005" />
+			<display value="Barthel Index of Activities of Daily Living score (observable entity)" />
+		</coding>
+		<coding>
+			<system value="http://loinc.org" />
+			<version value="2.72" />
+			<code value="96761-2" />
+			<display value="Total score Barthel Index" />
+		</coding>
+	</code>
+	<subject>
+		<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e" />
+	</subject>
+	<effectiveDateTime value="2020-01-31" />
+	<valueQuantity>
+		<value value="50" />
+	</valueQuantity>
+	<hasMember>
+		<reference value="urn:uuid:bde1de6b-5d4b-490d-8495-29b811177a17" />
+	</hasMember>
+	<hasMember>
+		<reference value="urn:uuid:f2bb4050-1238-4920-a293-b8f124849dbe" />
+	</hasMember>
+	<hasMember>
+		<reference value="urn:uuid:bde1de6b-5d4b-490d-8495-29b811177a17" />
+	</hasMember>
+	<hasMember>
+		<reference value="urn:uuid:f2bb4050-1238-4920-a293-b8f124849dbe" />
+	</hasMember>
+	<hasMember>
+		<reference value="urn:uuid:bde1de6b-5d4b-490d-8495-29b811177a17" />
+	</hasMember>
+	<hasMember>
+		<reference value="urn:uuid:f2bb4050-1238-4920-a293-b8f124849dbe" />
+	</hasMember>
+	<hasMember>
+		<reference value="urn:uuid:bde1de6b-5d4b-490d-8495-29b811177a17" />
+	</hasMember>
+	<hasMember>
+		<reference value="urn:uuid:f2bb4050-1238-4920-a293-b8f124849dbe" />
+	</hasMember>
+	<hasMember>
+		<reference value="urn:uuid:bde1de6b-5d4b-490d-8495-29b811177a17" />
+	</hasMember>
+	<hasMember>
+		<reference value="urn:uuid:f2bb4050-1238-4920-a293-b8f124849dbe" />
+	</hasMember>
+</Observation>

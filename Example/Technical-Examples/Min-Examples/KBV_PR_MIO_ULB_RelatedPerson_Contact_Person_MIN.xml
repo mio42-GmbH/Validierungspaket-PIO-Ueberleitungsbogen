@@ -1,0 +1,9 @@
+<RelatedPerson xmlns="http://hl7.org/fhir">
+	<id value="a01a8aa5-d0b1-4d7c-a4de-f9d408c2501e"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_RelatedPerson_Contact_Person|1.0.0"/>
+	</meta>
+	<patient>
+		<reference value="urn:uuid:e8610a8a-85dc-4a49-88be-ee8d3ab69f73"/>
+	</patient>
+</RelatedPerson>

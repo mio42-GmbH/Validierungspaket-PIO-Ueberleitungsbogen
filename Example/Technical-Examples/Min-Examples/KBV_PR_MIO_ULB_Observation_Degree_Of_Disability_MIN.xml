@@ -1,0 +1,19 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="e3b47fc1-e5ac-42d7-840d-0303673c371a"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Degree_Of_Disability|1.0.0"/>
+	</meta>
+	<status value="final"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="116149007"/>
+			<display value="Disability percentage (finding)"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e"/>
+	</subject>
+	<valueInteger value="20"/>
+</Observation>

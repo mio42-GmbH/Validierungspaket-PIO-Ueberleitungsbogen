@@ -1,0 +1,19 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="a0548cb0-d739-4e98-b995-f83dc085ba24" />
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Comment|1.0.0" />
+	</meta>
+	<status value="final" />
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct" />
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331" />
+			<code value="703852005" />
+			<display value="Narrative comment section (record artifact)" />
+		</coding>
+	</code>
+	<subject>
+		<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e" />
+	</subject>
+	<valueString value="testtesttest" />
+</Observation>

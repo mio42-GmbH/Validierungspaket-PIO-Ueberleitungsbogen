@@ -1,0 +1,75 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="a21a7419-fa62-429b-9ca0-89f773cafb39" />
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Respiratory_Rate|1.0.0" />
+	</meta>
+	<text>
+		<status value="extensions" />
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h1>Atemfrequenz</h1>
+		</div>
+	</text>
+	<status value="final" />
+	<category>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+			<version value="4.0.1" />
+			<code value="vital-signs" />
+			<display value="Vital Signs" />
+		</coding>
+	</category>
+	<category>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="1184593002"/>
+			<display value="Vital sign document section (record artifact)"/>
+		</coding>
+	</category>
+	<code>
+		<coding>
+			<system value="http://loinc.org" />
+			<version value="2.72" />
+			<code value="9279-1" />
+			<display value="Respiratory rate"/>
+		</coding>
+		<coding>
+			<system value="http://snomed.info/sct" />
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331" />
+			<code value="86290005" />
+			<display value="Respiratory rate (observable entity)"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="urn:uuid:6a15cff6-3cc1-4bf2-ab66-1cc6316e6777" />
+	</subject>
+	<effectiveDateTime value="2020-01-02" />
+	<performer>
+		<reference value="urn:uuid:8ad1ee6c-6164-493a-be52-c43cf49e9916" />
+	</performer>
+	<valueQuantity>
+		<value value="40" />
+		<unit value="per minute" />
+		<system value="http://unitsofmeasure.org" />
+		<code value="/min" />
+	</valueQuantity>
+	<note>
+		<text value="test" />
+	</note>
+	<bodySite>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="38266002"/>
+			<display value="Entire body as a whole (body structure)"/>
+		</coding>
+	</bodySite>
+	<method>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="115341008"/>
+			<display value="Total measurement"/>
+		</coding>
+	</method>
+</Observation>

@@ -1,0 +1,36 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="872c1f1e-c447-4825-92f2-9d236336f124"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Grooming|1.0.0"/>
+	</meta>
+	<status value="final"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="288469009"/>
+			<display value="Ability to perform washing and drying of self activities (observable entity)"/>
+		</coding>
+		<coding>
+			<system value="http://loinc.org"/>
+			<version value="2.72"/>
+			<code value="96767-9"/>
+			<display value="Grooming - functional ability"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e"/>
+	</subject>
+	<effectiveDateTime value="2020-01-31"/>
+	<valueQuantity>
+		<value value="5"/>
+	</valueQuantity>
+	<interpretation>
+		<coding>
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Barthel_Index_Grooming_Hamburg_Manual"/>
+			<version value="1.0.0"/>
+			<code value="5"/>
+			<display value="vor Ort komplett selbständig inkl. Zähneputzen, Rasieren und Frisieren"/>
+		</coding>
+	</interpretation>
+</Observation>

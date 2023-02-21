@@ -1,0 +1,85 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="02cd9213-79c3-4d0c-b5bd-3d92e1fee9a7"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Blood_Pressure|1.0.0"/>
+	</meta>
+	<status value="final"/>
+	<category>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+			<version value="4.0.1"/>
+			<code value="vital-signs"/>
+			<display value="Vital Signs"/>
+		</coding>
+	</category>
+	<category>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="1184593002"/>
+			<display value="Vital sign document section (record artifact)"/>
+		</coding>
+	</category>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<version value="2.72"/>
+			<code value="85354-9"/>
+			<display value="Blood pressure panel with all children optional"/>
+		</coding>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="75367002"/>
+			<display value="Blood pressure (observable entity)"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e"/>
+	</subject>
+	<effectiveDateTime value="2020-01-02"/>
+	<component>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<version value="2.72"/>
+				<code value="8480-6"/>
+				<display value="Systolic blood pressure"/>
+			</coding>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="271649006"/>
+				<display value="Systolic blood pressure (observable entity)"/>
+			</coding>
+		</code>
+		<valueQuantity>
+			<value value="40"/>
+			<unit value="mm Hg"/>
+			<system value="http://unitsofmeasure.org"/>
+			<code value="mm[Hg]"/>
+		</valueQuantity>
+	</component>
+	<component>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<version value="2.72"/>
+				<code value="8462-4"/>
+				<display value="Diastolic blood pressure"/>
+			</coding>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+				<code value="271650006"/>
+				<display value="Diastolic blood pressure (observable entity)"/>
+			</coding>
+		</code>
+		<valueQuantity>
+			<value value="40"/>
+			<unit value="mm Hg"/>
+			<system value="http://unitsofmeasure.org"/>
+			<code value="mm[Hg]"/>
+		</valueQuantity>
+	</component>
+</Observation>

@@ -1,0 +1,59 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="2bbbd4e0-b149-42fd-89f2-371df3aac6f3"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Assessment_Free|1.0.0"/>
+	</meta>
+	<text>
+		<status value="extensions"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h1>Assessment frei</h1>
+		</div>
+	</text>
+	<status value="final"/>
+	<category>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="424836000"/>
+			<display value="Assessment section (record artifact)"/>
+		</coding>
+	</category>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="725594005"/>
+			<display value="Barthel Index of Activities of Daily Living score (observable entity)"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e"/>
+	</subject>
+	<effectiveDateTime value="2020-01-31"/>
+	<performer>
+		<reference value="urn:uuid:1513b56a-69d9-441d-930a-05839601b133"/>
+	</performer>
+	<valueCodeableConcept>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="10000006"/>
+			<display value="Radiating chest pain (finding)"/>
+		</coding>
+	</valueCodeableConcept>
+	<!-- <valueQuantity>
+		<value value="10" />
+		<comparator value=" <" />
+		<unit value="mg" />
+	</valueQuantity> -->
+	<!-- <valueBoolean value="true" /> -->
+	<hasMember>
+		<reference value="urn:uuid:bde1de6b-5d4b-490d-8495-29b811177a17"/>
+	</hasMember>
+	<hasMember>
+		<reference value="urn:uuid:f2bb4050-1238-4920-a293-b8f124849dbe"/>
+	</hasMember>
+	<derivedFrom>
+		<reference value="urn:uuid:absb4050-1238-4920-a293-b8f124849dbe"/>
+	</derivedFrom>
+</Observation>

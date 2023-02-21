@@ -1,0 +1,19 @@
+<Encounter xmlns="http://hl7.org/fhir">
+	<id value="e7f7416b-a40a-4ff9-b8a7-8c9b11358558"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Encounter_Hospital_Stay|1.0.0"/>
+	</meta>
+	<status value="finished"/>
+	<class>
+		<system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+		<version value="5.0.0"/>
+		<code value="IMP"/>
+		<display value="inpatient encounter"/>
+	</class>
+	<subject>
+		<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e"/>
+	</subject>
+	<period>
+		<end value="2019-11-25"/>
+	</period>
+</Encounter>

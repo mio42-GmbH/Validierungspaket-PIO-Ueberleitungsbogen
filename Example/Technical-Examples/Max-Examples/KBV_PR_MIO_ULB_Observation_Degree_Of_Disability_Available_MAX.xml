@@ -1,0 +1,39 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="b82b986e-da94-43fb-845e-778a02d0ddda" />
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Degree_Of_Disability_Available|1.0.0" />
+	</meta>
+	<text>
+		<status value="extensions" />
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h1>Grad der Behinderung vorhanden</h1>
+		</div>
+	</text>
+	<status value="final" />
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct" />
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331" />
+			<code value="363787002:704326004=(404684003:363713009=260411009,47429007=(21134002:363713009=272520006))" />
+			<display value="Observable entity (observable entity) : Precondition (attribute) = ( Clinical finding (finding) : Has interpretation (attribute) = Presence findings (qualifier value) , Associated with (attribute) = ( Disability (finding) : Has interpretation (attribute) = Degree findings (qualifier value) ) )" />
+		</coding>
+	</code>
+	<subject>
+		<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e" />
+	</subject>
+	<effectiveDateTime value="2020-01-02" />
+	<performer>
+		<reference value="urn:uuid:8ad1ee6c-6164-493a-be52-c43cf49e9916" />
+	</performer>
+	<valueCodeableConcept>
+		<coding>
+			<system value="http://snomed.info/sct" />
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331" />
+			<code value="404684003:363713009=52101004,47429007=(21134002:363713009=272520006)" />
+			<display value="Clinical finding (finding) : Has interpretation (attribute) = Present (qualifier value) , Associated with (attribute) = ( Disability (finding) : Has interpretation (attribute) = Degree findings (qualifier value) )" />
+		</coding>
+	</valueCodeableConcept>
+	<hasMember>
+		<reference value="urn:uuid:8ad1ee6c-6164-493a-be52-c43cf49e9916" />
+	</hasMember>
+</Observation>

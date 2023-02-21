@@ -1,0 +1,52 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="4a57055e-c4d2-4410-ba1a-c5d5355922f5" />
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Wish|1.0.0" />
+	</meta>
+	<text>
+		<status value="extensions" />
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h1>Patientenwunsch</h1>
+		</div>
+	</text>
+	<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Consent">
+		<valueReference>
+			<reference value="urn:uuid:2bdd13cb-8624-4c10-a69d-c0327204f855" />
+		</valueReference>
+	</extension>
+	<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Reason_Cause">
+		<extension url="referenzAnlassUrsache">
+			<valueReference>
+				<reference value="urn:uuid:7d06196a-fabd-4620-bd5d-bf3b963f3555"/>
+			</valueReference>
+		</extension>
+		<extension url="freitextAnlassUrsache">
+			<valueString value="Lebensmittelallergie auf Apfel"/>
+		</extension>
+	</extension>
+	<status value="final" />
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct" />
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331" />
+			<code value="1186606009" />
+			<display value="Patient request observable (observable entity)" />
+		</coding>
+	</code>
+	<subject>
+		<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e" />
+	</subject>
+	<effectiveDateTime value="2020-01-02" />
+	<performer>
+		<reference value="urn:uuid:123ad899-878b-413a-ac94-54801d02b07e" />
+	</performer>
+	<valueCodeableConcept>
+		<coding>
+			<system value="http://snomed.info/sct" />
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331" />
+			<code value="80943009" />
+			<display value="Risk factor (observable entity)" />
+		</coding>
+		<text value="test" />
+	</valueCodeableConcept>
+</Observation>

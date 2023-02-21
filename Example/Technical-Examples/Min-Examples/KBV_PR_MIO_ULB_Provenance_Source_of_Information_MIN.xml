@@ -1,0 +1,18 @@
+<Provenance xmlns="http://hl7.org/fhir">
+	<id value="c3b84041-2db7-4ee1-ba23-57c93cf86ddb"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Provenance_Source_of_Information|1.0.0"/>
+	</meta>
+	<target>
+		<reference value="urn:uuid:5bcb980c-5bd5-45a4-b71f-d8749efd90cc"/>
+	</target>
+	<recorded value="2015-02-07T13:28:17.239+02:00"/>
+	<agent>
+		<who>
+			<extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+				<valueCode value="unknown"/>
+			</extension>
+			<display value="unknown"/>
+		</who>
+	</agent>
+</Provenance>

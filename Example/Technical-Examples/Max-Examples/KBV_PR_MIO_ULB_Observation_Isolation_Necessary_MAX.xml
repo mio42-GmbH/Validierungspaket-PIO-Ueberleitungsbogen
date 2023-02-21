@@ -1,0 +1,41 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="413c26f1-01e9-4e2b-9624-ec207138a916"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Isolation_Necessary|1.0.0"/>
+	</meta>
+	<text>
+		<status value="extensions"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h1>Notwendigkeit der räumlichen Isolation</h1>
+		</div>
+	</text>
+	<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Has_Member">
+		<valueReference>
+			<reference value="urn:uuid:dca58050-3179-11ec-8d3d-0242ac130003"/>
+		</valueReference>
+	</extension>
+	<status value="final"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="363787002:704321009=40174006"/>
+			<display value="Observable entity (observable entity) : Characterizes (attribute) = Isolation procedure (procedure)"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="urn:uuid:0afad899-878b-413a-ac94-54801d02b07e"/>
+	</subject>
+	<effectiveDateTime value="2020-01-31"/>
+	<performer>
+		<reference value="urn:uuid:1513b56a-69d9-441d-930a-05839601b133"/>
+	</performer>
+	<valueCodeableConcept>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="129125009:363589002=40174006,408730004=897015005"/>
+			<display value="Procedure with explicit context (situation) : Associated procedure (attribute) = Isolation procedure (procedure) (qualifier value) , Procedure context (attribute) = Recommended (qualifier value)"/>
+		</coding>
+	</valueCodeableConcept>
+</Observation>

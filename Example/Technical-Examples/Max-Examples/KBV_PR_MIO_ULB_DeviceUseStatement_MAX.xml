@@ -1,0 +1,24 @@
+<DeviceUseStatement xmlns="http://hl7.org/fhir">
+	<id value="7d06196a-fabd-4620-bd5d-bf3b963f3e16" />
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_DeviceUseStatement|1.0.0" />
+	</meta>
+	<text>
+		<status value="extensions" />
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h1>Gerätenutzung</h1>
+		</div>
+	</text>
+	<status value="active" />
+	<subject>
+		<reference value="urn:uuid:7d261218-8678-11eb-8dcd-0242ac130003" />
+	</subject>
+	<timingPeriod>
+		<start value="2020-02-05" />
+		<end value="2021-02-05" />
+	</timingPeriod>
+	<!-- <timingDateTime value="2020-02-05" /> -->
+	<device>
+		<reference value="urn:uuid:5515c6ad-e773-4239-88da-d3fda750abb1" />
+	</device>
+</DeviceUseStatement>

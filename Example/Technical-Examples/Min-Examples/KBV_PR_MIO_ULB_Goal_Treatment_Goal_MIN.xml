@@ -1,0 +1,18 @@
+<Goal xmlns="http://hl7.org/fhir">
+	<id value="9784f553-b451-6ccd-z5r6-999dsdsf6831"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Goal_Treatment_Goal|1.0.0"/>
+	</meta>
+	<lifecycleStatus value="active"/>
+	<description>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+			<code value="238131007"/>
+			<display value="Overweight (finding)"/>
+		</coding>
+	</description>
+	<subject>
+		<reference value="urn:uuid:9774f67f-a238-4daf-b4e6-679deeef3811"/>
+	</subject>
+</Goal>
